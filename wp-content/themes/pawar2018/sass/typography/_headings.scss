@@ -1,9 +1,14 @@
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
+	font-family: $font__main;
+	font-weight: 900;
 }
 
 .section-title {
     border-bottom: 3px solid #fff;
     display: inline-block;
     padding: .5rem 0;
+	text-transform: uppercase;
+	font-weight: 900;
+	margin: 0 0 1rem 0;
 }

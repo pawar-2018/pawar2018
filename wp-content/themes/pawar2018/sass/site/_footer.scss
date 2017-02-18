@@ -6,8 +6,9 @@ footer {
     nav {
         ul {
             list-style: none;
-            h1.footer-logo {
-                line-height: 1;
+            .footer-logo {
+                max-width: 20rem;
+                margin: .5rem 0 0 -2.5rem;
             }
             li{
                 a{
