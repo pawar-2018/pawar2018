@@ -1,3 +1,13 @@
-.top-bar {
+header {
 	background-color: $color__background-header;
+	padding: 1.5rem 0;
+	.columns:not(.logo) {
+		text-align: center;
+		margin: 0 auto;
+	}
+	a {
+		color: white; //todo: color here
+		font-weight: 700;
+		text-decoration: none;
+	}
 }

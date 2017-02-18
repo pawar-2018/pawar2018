@@ -12,13 +12,51 @@
 
 <body <?php body_class(); ?>>
 
-<header class="row small-collapse">
-	<div class="site-branding">
-		<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-	</div><!-- .site-branding -->
-
-	<nav id="site-navigation" class="main-navigation" role="navigation">
-		<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', '_s' ); ?></button>
-		<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?>
-	</nav><!-- #site-navigation -->
-</header><!-- #masthead -->
+<header>
+	<div class="row small-collapse align-spaced">
+		<div class="logo small-4 columns">
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+				<img src="/assets/logo.png">
+			</a>
+		</div>
+		<div class="small-1 columns">
+			<a href="/">
+				Meet Ameya
+			</a>
+		</div>
+		<div class="small-1 columns">
+			<a href="/">
+				Issues
+			</a>
+		</div>
+		<div class="small-1 columns">
+			<a href="/">
+			  Events
+			</a>
+		</div>
+		<div class="small-1 columns">
+			<a href="/">
+				Get Involved
+			</a>
+		</div>
+		<div class="small-2 columns">
+			<a href="/">
+				<img src="/assets/facebook.svg">
+			</a>
+			<a href="/">
+				<img src="/assets/twitter.svg">
+			</a>
+			<a href="/">
+				<img src="/assets/instagram.svg">
+			</a>
+			<a href="/">
+				<img src="/assets/youtube.svg">
+			</a>
+		</div>
+		<div class="small-1 columns">
+			<a href="/">
+				Button
+			</a>
+		</div>
+	</div>
+</header>
