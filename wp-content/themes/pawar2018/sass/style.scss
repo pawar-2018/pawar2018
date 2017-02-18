@@ -46,6 +46,11 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "mixins/mixins-master";
 
 /*--------------------------------------------------------------
+# Foundation
+--------------------------------------------------------------*/
+@import "foundation.min.css";
+
+/*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
 @import "normalize";
@@ -104,8 +109,3 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Media
 --------------------------------------------------------------*/
 @import "media/media";
-
-/*--------------------------------------------------------------
-# Foundation
---------------------------------------------------------------*/
-@import "foundation.min.css";
