@@ -12,7 +12,7 @@
  *
  * @global array $themecolors
  */
-function _s_wpcom_setup() {
+function _pawar2018_wpcom_setup() {
 	global $themecolors;
 
 	// Set theme colors for third party services.
@@ -26,4 +26,4 @@ function _s_wpcom_setup() {
 		);
 	}
 }
-add_action( 'after_setup_theme', '_s_wpcom_setup' );
+add_action( 'after_setup_theme', '_pawar2018_wpcom_setup' );
