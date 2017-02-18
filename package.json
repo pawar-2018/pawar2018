@@ -1,0 +1,22 @@
+{
+  "name": "pawar2018",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pawar-2018/pawar2018.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pawar-2018/pawar2018/issues"
+  },
+  "homepage": "https://github.com/pawar-2018/pawar2018#readme",
+  "dependencies": {
+    "foundation-sites": "^6.3.0"
+  }
+}
