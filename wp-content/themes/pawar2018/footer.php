@@ -1,6 +1,6 @@
 <footer>
 	<div class="row">
-		<div class="large-3 columns">
+		<div class="large-6 columns">
 			<nav class="footer-nav">
 				<ul>
 					<h1 class="footer-logo">Ameya Pawar </h1>
@@ -11,6 +11,14 @@
 					<li><a href="/join">Join</a></li>
 				</ul>
 			</nav>
+		</div>
+		<div class="large-6 columns">
+			<h5 class="section-title">Newsletter</h5>
+			<h1>Stay In The Loop</h1>
+			<form>
+				<input type="text" placeholder="Email Address"></input>
+				<button type="submit">Subscribe</button>
+			</form>
 		</div>
 	</div>
 </footer>
