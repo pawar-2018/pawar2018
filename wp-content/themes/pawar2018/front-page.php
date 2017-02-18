@@ -1,7 +1,8 @@
 <?php get_header(); ?>
-    <main>
-        <div class="row">
-        </div>
-        <?php get_sidebar(); ?>
-    </main>
+  <main>
+  	<section clas="hero">
+  	</section>
+    <div class="row">
+    </div>
+  </main>
 <?php get_footer(); ?>
