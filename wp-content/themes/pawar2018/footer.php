@@ -4,11 +4,11 @@
 			<nav class="footer-nav">
 				<ul>
 					<img class="footer-logo" src="<?php echo get_bloginfo('template_url') ?>/assets/logo.png"/>
-					<li><a href="/about">About</a></li>
+					<li><a href="/meet-ameya">About</a></li>
 					<li><a href="/issues">Issues</a></li>
 					<li><a href="/events">Events</a></li>
 					<li><a href="/contact">Contact</a></li>
-					<li><a href="/join">Join</a></li>
+					<li><a href="/get-involved">Join</a></li>
 				</ul>
 			</nav>
 		</div>
