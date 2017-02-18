@@ -1,3 +1,4 @@
+=======
 # This is a template .gitignore file for git-managed WordPress projects.
 #
 # Fact: you don't want WordPress core files, or your server-specific
@@ -32,3 +33,7 @@ wp-content/plugins/*
 # specify (see the commented-out example for a hint on how to do this.)
 wp-content/themes/*
 !wp-content/themes/pawar2018
+
+.DS_Store
+node_modules/
+
