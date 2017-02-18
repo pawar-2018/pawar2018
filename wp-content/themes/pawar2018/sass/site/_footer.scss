@@ -1,9 +1,17 @@
 footer {
     background-color: $color__background-footer;
     color: #fff;
+    bottom: 0;
+    padding: 6.25rem 0;
     nav {
         ul {
             list-style: none;
+            li{
+                a{
+                    color: #fff;
+                    font-weight: 600;
+                }
+            }
         }
     }
 }
