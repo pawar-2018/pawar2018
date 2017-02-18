@@ -16,7 +16,7 @@
 	<div class="row small-collapse align-spaced">
 		<div class="logo small-4 columns">
 			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-				<img src="/assets/logo.png">
+				<img src="<?php echo get_bloginfo('template_url') ?>/assets/logo.png">
 			</a>
 		</div>
 		<div class="small-1 columns">
@@ -41,16 +41,16 @@
 		</div>
 		<div class="small-2 columns">
 			<a href="/">
-				<img src="/assets/facebook.svg">
+				<img src="<?php echo get_bloginfo('template_url') ?>/assets/facebook.svg">
 			</a>
 			<a href="/">
-				<img src="/assets/twitter.svg">
+				<img src="<?php echo get_bloginfo('template_url') ?>/assets/twitter.svg">
 			</a>
 			<a href="/">
-				<img src="/assets/instagram.svg">
+				<img src="<?php echo get_bloginfo('template_url') ?>/assets/instagram.svg">
 			</a>
 			<a href="/">
-				<img src="/assets/youtube.svg">
+				<img src="<?php echo get_bloginfo('template_url') ?>/assets/youtube.svg">
 			</a>
 		</div>
 		<div class="small-1 columns">
