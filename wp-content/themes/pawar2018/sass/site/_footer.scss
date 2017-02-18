@@ -6,6 +6,9 @@ footer {
     nav {
         ul {
             list-style: none;
+            h1.footer-logo {
+                line-height: 1;
+            }
             li{
                 a{
                     color: #fff;
