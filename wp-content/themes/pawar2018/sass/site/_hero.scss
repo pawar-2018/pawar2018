@@ -4,5 +4,8 @@ section.hero {
         color: $white;
         display: inline-block;
         margin: 0 auto;
+        &.page-title {
+            margin-top: 15rem;
+        }
     }
 }

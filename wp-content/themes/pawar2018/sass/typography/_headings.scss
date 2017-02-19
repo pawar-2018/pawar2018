@@ -1,6 +1,6 @@
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
-	font-family: $font__main;
+	font-family: $font__heading;
 	font-weight: 900;
 }
 
@@ -11,4 +11,14 @@ h1, h2, h3, h4, h5, h6 {
 	text-transform: uppercase;
 	font-weight: 900;
 	margin: 0 0 1rem 0;
+}
+
+.body .section-title {
+	border-bottom: 3px solid $burnt-orange;
+	display: inline-block;
+	padding: .5rem 0;
+	text-transform: none;
+	font-weight: 900;
+	margin: 0 0 1rem 0;
+	color: $light-blue;
 }
