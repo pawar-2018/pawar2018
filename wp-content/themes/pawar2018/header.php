@@ -39,7 +39,7 @@
 				Get Involved
 			</a>
 		</div>
-		<div class="social small-2 small-offset-1 columns row align-middle align-spaced">
+		<div class="social small-2 small-offset-2 columns row align-middle align-center">
 			<a href="/">
 				<img src="<?php echo get_bloginfo('template_url') ?>/assets/facebook.svg">
 			</a>
@@ -55,7 +55,7 @@
 		</div>
 		<div class="column">
 			<a href="/">
-				<button type="submit">Subscribe</button>
+				<button class="small" type="submit">Donate</button>
 			</a>
 		</div>
 	</div>
