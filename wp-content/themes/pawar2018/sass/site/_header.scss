@@ -3,9 +3,13 @@ header {
 	padding: 1.5rem 0;
 	.columns:not(.logo) {
 		text-align: center;
-		margin: 0 auto;
+	}
+	.social img {
+		width: 2rem;
+		height: 2rem;
 	}
 	a {
+    padding: .3rem 0 0 .25rem;
 		color: white; //todo: color here
 		font-weight: 700;
 		text-decoration: none;

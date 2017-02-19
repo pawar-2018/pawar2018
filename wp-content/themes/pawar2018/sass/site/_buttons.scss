@@ -1,9 +1,12 @@
 button, button[type="submit"] {
-    cursor: pointer;
-    background: $color__background-button;
-    padding: .75rem 2rem;
-    border-radius: 40px;
-    color: $white;
-    font-weight: 600;
-    min-width: 10rem;
+  cursor: pointer;
+  background: $color__background-button;
+  border-radius: 40px;
+  color: $white;
+  font-weight: 600;
+  min-width: 10rem;
+  padding: .75rem 2rem;
+  &.small {
+  	padding: .5rem 1.5rem;
+  }
 }

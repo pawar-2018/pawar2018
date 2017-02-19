@@ -13,13 +13,13 @@
 <body <?php body_class(); ?>>
 
 <header>
-	<div class="row small-collapse align-spaced">
-		<div class="logo small-4 columns">
+	<div class="row small-collapse align-between align-middle">
+		<div class="logo small-3 columns">
 			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 				<img src="<?php echo get_bloginfo('template_url') ?>/assets/logo.png">
 			</a>
 		</div>
-		<div class="small-1 columns">
+		<div class="small-1 small-offset-1 columns">
 			<a href="/">
 				Meet Ameya
 			</a>
@@ -39,7 +39,7 @@
 				Get Involved
 			</a>
 		</div>
-		<div class="small-2 columns">
+		<div class="social small-2 small-offset-2 columns row align-middle align-center">
 			<a href="/">
 				<img src="<?php echo get_bloginfo('template_url') ?>/assets/facebook.svg">
 			</a>
@@ -53,9 +53,9 @@
 				<img src="<?php echo get_bloginfo('template_url') ?>/assets/youtube.svg">
 			</a>
 		</div>
-		<div class="small-1 columns">
+		<div class="column">
 			<a href="/">
-				Button
+				<button class="small" type="submit">Donate</button>
 			</a>
 		</div>
 	</div>
