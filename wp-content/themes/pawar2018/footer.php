@@ -1,3 +1,21 @@
+<div class="footer-social">
+	<div class="row align-center">
+		<div class="social">
+			<a href="/">
+				<img src="<?php echo get_bloginfo('template_url') ?>/assets/facebook.svg">
+			</a>
+			<a href="/">
+				<img src="<?php echo get_bloginfo('template_url') ?>/assets/twitter.svg">
+			</a>
+			<a href="/">
+				<img src="<?php echo get_bloginfo('template_url') ?>/assets/instagram.svg">
+			</a>
+			<a href="/">
+				<img src="<?php echo get_bloginfo('template_url') ?>/assets/youtube.svg">
+			</a>
+		</div>
+	</div>
+</div>
 <footer>
 	<div class="row">
 		<div class="large-5 large-offset-1 columns">
