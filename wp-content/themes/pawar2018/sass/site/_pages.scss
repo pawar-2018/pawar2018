@@ -1,0 +1,14 @@
+.body {
+    margin: 6rem 0;
+    .section-title {
+        color: $light-blue;
+        text-transform: none;
+        &:after {
+            content: "";
+            display: block;
+            height: 5px;
+            width: 6rem;
+            background-color: $burnt-orange;
+        }
+    }
+}
