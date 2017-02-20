@@ -1,0 +1,11 @@
+.hero {
+  background-image: url("./assets/Pawar_01.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: $navy-blue;
+	height: 32.5rem;
+	.row {
+		height: 100%;
+	}
+}

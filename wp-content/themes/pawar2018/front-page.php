@@ -1,6 +1,11 @@
 <?php get_header(); ?>
   <main>
-  	<section clas="hero">
+  	<section class="hero">
+  		<div class="row align-middle">
+  			<div class="small-12 columns">
+  				<h1>A New Deal For Illinois</h1>
+  			</div>
+  		</div>
   	</section>
     <div class="row">
     </div>
