@@ -13,12 +13,29 @@ h1, h2, h3, h4, h5, h6 {
 	margin: 0 0 1rem 0;
 }
 
-.body .section-title {
-	border-bottom: 3px solid $burnt-orange;
-	display: inline-block;
-	padding: .5rem 0;
-	text-transform: none;
-	font-weight: 900;
-	margin: 1rem 0 4rem 0;
-	color: $light-blue;
+.hero {
+	* {
+		color: white; //todo: color
+	}
+	h1 {
+		font-size: 3.625rem;
+  	font-family: 'Montserrat', sans-serif;
+  	font-weight: 700;
+	}
+
+	h2 {
+		font-size: 1.3125rem;
+	  font-weight: normal;
+	}
+
+	h3 {
+		text-transform: uppercase;
+		font-size: .8125rem;
+  	font-weight: 700;
+  	margin-top: 3rem;
+	}
+
+	input {
+		max-width: 17rem;
+	}
 }

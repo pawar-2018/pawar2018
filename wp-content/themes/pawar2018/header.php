@@ -5,8 +5,8 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
 
 <?php wp_head(); ?>
 </head>
@@ -20,22 +20,22 @@
 				<img src="<?php echo get_bloginfo('template_url') ?>/assets/logo.png">
 			</a>
 		</div>
-		<div class="small-1 small-offset-1 columns">
+		<div class="small-offset-1 columns">
 			<a href="/">
 				Meet Ameya
 			</a>
 		</div>
-		<div class="small-1 columns">
+		<div class="columns">
 			<a href="/">
 				Issues
 			</a>
 		</div>
-		<div class="small-1 columns">
+		<div class="columns">
 			<a href="/">
 			  Events
 			</a>
 		</div>
-		<div class="small-1 columns">
+		<div class="columns">
 			<a href="/">
 				Get Involved
 			</a>
