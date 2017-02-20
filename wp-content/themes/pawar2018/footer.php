@@ -18,7 +18,7 @@
 </div>
 <footer>
 	<div class="row">
-		<div class="large-5 large-offset-1 columns">
+		<div class="small-12 large-5 large-offset-1 columns">
 			<nav class="footer-nav">
 				<ul>
 					<img class="footer-logo" src="<?php echo get_bloginfo('template_url') ?>/assets/logo.png"/>
@@ -30,7 +30,7 @@
 				</ul>
 			</nav>
 		</div>
-		<div class="large-6 columns">
+		<div class="small-12 large-6 columns">
 			<h6 class="section-title">Newsletter</h6>
 			<h3>Stay in the loop</h3>
 			<form>
