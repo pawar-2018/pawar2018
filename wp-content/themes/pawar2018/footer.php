@@ -42,6 +42,6 @@
 </footer>
 
 <?php wp_footer(); ?>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.0/js/foundation.min.js"></script>
 </body>
 </html>
