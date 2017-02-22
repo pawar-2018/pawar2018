@@ -1,11 +1,88 @@
 .hero {
   background-image: url("./assets/Pawar_01.png");
-  background-position: center center;
-  background-size: cover; // todo: move to row? Look at new mocks
+  background-position: top center;
+  background-size: contain;
   background-repeat: no-repeat;
-  background-color: $navy-blue;
-	height: 32.5rem;
-	.row {
-		height: 100%;
+  background-color: $color__background-pre;
+	@include breakpoint(medium) {
+  	background-size: cover; // todo: move to row? Look at new mocks
+ 		height: 32.5rem;
+	}
+	.row:first-child,
+	.row:last-child {
+		height: 40%;
+	}
+
+	h1 {
+		@include breakpoint(small only) {
+			margin-top: 1.5rem;
+			margin-bottom: 2rem;
+			line-height: 1;
+			font-size: 1.75rem;
+			max-width: 13rem;
+		}
+  	@include breakpoint(23.125rem) {
+			font-size: 2.25rem;
+  	}
+   	@include breakpoint(25rem) {
+			font-size: 2.5rem;
+			max-width: 15rem;
+  	}
+   	@include breakpoint(26rem) {
+  		max-width: 45rem;
+			font-size: 3.625rem;
+		}
+	}
+
+	h2 {
+		@include breakpoint(small only) {
+			margin-top: 1.5rem;
+			font-size: .9rem;
+			color: $charcoal;
+		}
+  	@include breakpoint(21rem) {
+			margin-top: 2rem;
+  	}
+   	@include breakpoint(26.25rem) {
+			margin-top: 3rem;
+  	}
+   	@include breakpoint(27.75rem) {
+   		margin-top: 3.5rem;
+   	}
+   	@include breakpoint(29.375rem) {
+   		margin-top: 4rem;
+   	}
+   	@include breakpoint(31.25rem) {
+   		margin-top: 4.5rem;
+   	}
+   	@include breakpoint(32.5rem) {
+   		margin-top: 5rem;
+		}
+   	@include breakpoint(33.5rem) {
+   		margin-top: 5.5rem;
+		}
+   	@include breakpoint(34.5rem) {
+   		margin-top: 6rem;
+		}
+   	@include breakpoint(36.5rem) {
+   		margin-top: 7rem;
+		}
+   	@include breakpoint(38rem) {
+   		margin-top: 7.5rem;
+		}
+   	@include breakpoint(40rem) {
+   		margin-top: 1rem;
+		}
+	}
+	h3 {
+		@include breakpoint(small only) {
+			margin-top: 1rem;
+			color: $charcoal;
+		}
+	}
+	button {
+		@include breakpoint(small only) {
+			margin-bottom: 1rem;
+		}
 	}
 }

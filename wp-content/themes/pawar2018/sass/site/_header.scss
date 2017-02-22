@@ -1,17 +1,51 @@
 header {
 	background-color: $color__background-header;
-	padding: 1.5rem 0;
-	.columns:not(.logo) {
-		text-align: center;
+	padding: 1rem 0;
+	@include breakpoint(medium) {
+		padding: 1.5rem 0;
 	}
-	.social img {
-		width: 2rem;
-		height: 2rem;
+	.title-bar {
+		@include breakpoint(small only) {
+			margin-left: 1rem;
+			margin-bottom: .5rem;
+		}
+	}
+	.columns:not(.logo) {
+		@include breakpoint(large) {
+			text-align: center;
+		}
+	}
+	.columns .columns {
+		@include breakpoint(medium down) {
+			padding: 0 0 1rem 2.5rem;
+		}
+	}
+	.logo img,
+	button {
+		max-width: 20rem;
+		@include breakpoint(medium down) {
+			max-width: 15rem;
+			margin-left: 1rem;
+		}
+	}
+	.social {
+		img {
+    	margin: .5rem 0 0 .25rem;
+			width: 2rem;
+			height: 2rem;
+			@include breakpoint(medium down) {
+				margin-top: 2.5rem;
+			}
+		}
 	}
 	a {
-    padding: .3rem 0 0 .25rem;
 		color: white; //todo: color here
 		font-weight: 700;
 		text-decoration: none;
+	}
+	#top-menu {
+		@include breakpoint(medium down) {
+			height: 100vh;
+		}
 	}
 }
