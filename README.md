@@ -3,9 +3,13 @@
 ## Getting started
 1. Install Docker (www.docker.com)
 2. Clone the repo
-    git@github.com:pawar-2018/pawar2018.git
+````
+    git clone git@github.com:pawar-2018/pawar2018.git
+````    
 3. Start the docker container
+````
     docker-compose up -d
+````    
 4. Go to http://localhost:8000
 
 ## URLS
