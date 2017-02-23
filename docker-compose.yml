@@ -23,7 +23,7 @@ services:
        WORDPRESS_DB_HOST: db:3306
        WORDPRESS_DB_PASSWORD: wordpress
      volumes:
-       - /Users/johntelford/Develop/AmeyaPawar/pawar2018/wp-content/themes:/var/www/html/wp-content/themes
+       - ./wp-content/themes:/var/www/html/wp-content/themes
 volumes:
     db_data:
 
