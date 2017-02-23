@@ -39,6 +39,8 @@
                 </div>
             </div>
         </div>
+    </section>
+    <section>
         <div class="issue-accordion">
         <div class="row align-center">
             <div class="large-10 small-12 columns">
@@ -95,6 +97,6 @@
             </div>
         </div>
     </div>
-    <section>
-  </main>
+</section>
+ </main>
 <?php get_footer(); ?>
