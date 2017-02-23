@@ -44,6 +44,11 @@
 			<p>P.O. Box 577162<br>Chicago, Il 60657</p>
 	</div>
 </footer>
+<div class="footer-paid">
+	<div class="row align-center">
+		<p>Paid For By Ameya Pawar For Governor.</p>
+	</div>
+</div>
 
 <?php wp_footer(); ?>
 <script
