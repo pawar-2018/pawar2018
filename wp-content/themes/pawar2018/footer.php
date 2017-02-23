@@ -18,7 +18,7 @@
 </div>
 <footer>
 	<div class="row">
-		<div class="small-12 large-5 large-offset-1 columns">
+		<div class="small-12 large-4 columns">
 			<nav class="footer-nav">
 				<ul>
 					<img class="footer-logo" src="<?php echo get_bloginfo('template_url') ?>/assets/logo.png"/>
@@ -30,7 +30,7 @@
 				</ul>
 			</nav>
 		</div>
-		<div class="small-12 large-6 columns">
+		<div class="small-12 large-4 columns">
 			<h6 class="section-title">Newsletter</h6>
 			<h3>Stay in the loop</h3>
 			<form>
@@ -38,8 +38,17 @@
 				<button type="submit">Subscribe</button>
 			</form>
 		</div>
+		<div class="small-12 large-3 large-offset-1 columns">
+			<h6 class="section-title">Ameya Pawar For Governor</h6>
+			<a href="mailto:info@pawar2018.com">info@pawar2018.com</a>
+			<p>P.O. Box 577162<br>Chicago, Il 60657</p>
 	</div>
 </footer>
+<div class="footer-paid">
+	<div class="row align-center">
+		<p>Paid For By Ameya Pawar For Governor.</p>
+	</div>
+</div>
 
 <?php wp_footer(); ?>
 <script
