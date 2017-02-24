@@ -23,13 +23,29 @@
   	</section>
     <div class="row main-content align-middle align-justify">
       <div class="small-12 large-4 columns">
-        <h1 class="main-callout">Lorem ipsum dolor sit amet, consectetur adipiscing</h1>
+        <h1 class="main-callout">I’m running for governor to forge a New Deal for Illinois.</h1>
       </div>
       <div class="small-12 large-8 columns">
         <p class="main-copy">
-          Sed a eros ut lectus sagittis congue ac sit amet arcu. Suspendisse non nunc tincidunt, vehicula nulla sed, suscipit ante. Ut fermentum libero nisi, eu sollicitudin nunc suscipit eget. Etiam lobortis libero id justo ultricies, quis sagittis orci volutpat. Donec convallis vitae nulla in elementum. Nunc ultrices porttitor mi semper lacinia. Duis libero urna, euismod ac lacus placerat, eleifend ultricies lorem. Proin id elementum ante. Fusce eget dictum justo, nec luctus mi. Nullam sagittis, nisi sit amet fermentum aliquam, lacus erat iaculis turpis, in ultrices erat diam tristique ligula. Fusce mauris ante, efficitur ut elementum nec, consectetur ut lectus.
+          President Roosevelt’s New Deal took our country out of depression and laid the foundation for decades of growth and prosperity. We can do the same thing in Illinois by rebuilding our crumbling infrastructure, reinvesting in good-paying jobs, and recommitting to early childhood education and public schools. And we can do it without further burdening the middle class.
         </p>
       </div>
     </div>
+    <div class="action-content">
+      <div class="pillar-content">
+        <h4>Ameya's Four Pillars</h4>
+        <hr />
+        <h1 class="main-callout">What's in a New Deal for 2018.</h1>
+      </div>
+      <div class="event-content">
+        <h4>Upcoming Events</h4>
+        <hr />
+        <h1 class="main-callout">Let's talk.</h1>
+        <p>
+          President Roosevelt’s New Deal took our country out of depression and laid the foundation for decades of growth and prosperity. We can do the same thing in Illinois by rebuilding our crumbling infrastructure, reinvesting in good-paying jobs, and recommitting to early childhood education and public schools. And we can do it without further burdening the middle class.
+        </p>
+      </div>
+    </div>
+  </div>
   </main>
 <?php get_footer(); ?>

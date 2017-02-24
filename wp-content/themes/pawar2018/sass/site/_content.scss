@@ -1,13 +1,59 @@
 .main-callout {
 	color: $secondary-color;
-	font-size: 2.5rem;
+	font-size: 2.25rem;
 	line-height: 3rem;
 }
 
 .main-content {
 	min-height: 20rem;
+	font-size: 1.3125rem;
 }
 
 .main-copy {
 	margin-bottom: 0;
+}
+
+.action-content {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.pillar-content,
+.event-content {
+	h4 {
+  	text-transform: uppercase;
+  	font-size: .8125rem;
+  	font-family: $font__heading;
+  }
+  hr {
+  	width: 5rem;
+  	border-top: $burnt-orange 2px solid;
+  	margin: 1.5rem 0;
+  }
+}
+
+.pillar-content {
+	background-color: #f7f7f7;
+	flex: 1 0 100%;
+	padding-left: calc(((100% - 75rem)/2) + .9375rem);
+	padding-right: .9375rem;
+	padding-top: 3rem;
+	@include breakpoint(medium) {
+		flex: 1 0 66.6667%;
+	}
+}
+
+.event-content {
+	background-color: $primary-color;
+	color: $white;
+	flex: 1 0 100%;
+	padding-right: calc(((100% - 75rem)/2) + 15px);
+	padding-left: 8.333333333%;
+	padding-top: 3rem;
+	@include breakpoint(medium) {
+		flex: 1 0 33.3333%;
+	}
+	.main-callout {
+		color: $white
+	}
 }
