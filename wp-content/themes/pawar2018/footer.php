@@ -16,18 +16,19 @@
 		</div>
 	</div>
 </div>
-<footer>
+
+<footer class="footer">
 	<div class="row">
 		<div class="small-12 large-4 columns">
 			<nav class="footer-nav">
-				<ul>
-					<img class="footer-logo" src="<?php echo get_bloginfo('template_url') ?>/assets/logo.png"/>
-					<li><a href="/meet-ameya">About</a></li>
-					<li><a href="/issues">Issues</a></li>
-					<li><a href="/events">Events</a></li>
-					<li><a href="/contact">Contact</a></li>
-					<li><a href="/get-involved">Join</a></li>
-				</ul>
+        <a class="footer-nav__link" href="">
+          <img class="footer-nav__logo" src="<?php echo get_bloginfo('template_url') ?>/assets/logo.png"/>
+        </a>
+        <a class="footer-nav__link" href="/meet-ameya">About</a>
+        <a class="footer-nav__link" href="/issues">Issues</a>
+        <a class="footer-nav__link" href="/events">Events</a>
+        <a class="footer-nav__link" href="/contact">Contact</a>
+        <a class="footer-nav__link" href="/get-involved">Join</a>
 			</nav>
 		</div>
 		<div class="small-12 large-4 columns">
@@ -40,10 +41,11 @@
 		</div>
 		<div class="small-12 large-3 large-offset-1 columns">
 			<h6 class="section-title">Ameya Pawar For Governor</h6>
-			<a href="mailto:info@pawar2018.com">info@pawar2018.com</a>
+			<a class="footer__link" href="mailto:info@pawar2018.com">info@pawar2018.com</a>
 			<p>P.O. Box 577162<br>Chicago, Il 60657</p>
 	</div>
 </footer>
+
 <div class="footer-paid">
 	<div class="row align-center">
 		<p>Paid For By Ameya Pawar For Governor.</p>
