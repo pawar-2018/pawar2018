@@ -19,6 +19,8 @@
     git clone git@github.com:pawar-2018/pawar2018.git
 ````
 3. Start the docker container
+  1. You might need to change the volumes for Wordpress to:
+       ```- /wp-content/themes/pawar2018:/var/www/html/wp-content/themes/pawar2018```
 ````
     docker-compose up -d
 ````
