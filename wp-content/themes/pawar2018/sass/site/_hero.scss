@@ -3,7 +3,7 @@
   background-position: top center;
   background-size: contain;
   background-repeat: no-repeat;
-  background-color: $color__background-pre;
+  background-color: $primary-color;
 	@include breakpoint(medium) {
   	background-size: cover; // todo: move to row? Look at new mocks
  		height: 32.5rem;

@@ -17,6 +17,7 @@
 !README.md
 !.gitignore
 !wp-content/
+!gulpfile.js
 
 # Ignore everything in the "wp-content" directory, except the "plugins"
 # and "themes" directories.
