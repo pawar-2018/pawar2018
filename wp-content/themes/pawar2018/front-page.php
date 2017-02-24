@@ -77,13 +77,32 @@
           </div>
         </div>
       </div>
-      <div class="event-content">
+      <div class="event-wrapper">
         <h4>Upcoming Events</h4>
         <hr />
         <h1 class="main-callout">Let's talk.</h1>
-        <p>
-          President Roosevelt’s New Deal took our country out of depression and laid the foundation for decades of growth and prosperity. We can do the same thing in Illinois by rebuilding our crumbling infrastructure, reinvesting in good-paying jobs, and recommitting to early childhood education and public schools. And we can do it without further burdening the middle class.
-        </p>
+        <div class="row small-collpase small-up-1">
+          <div class="column column-block event-content">
+            <p class="event-date">Saturday, March 5th at 11 AM</p>
+            <h5 class="event-header">The Future of Illinois with Gubernatorial Candidate Ameya Pawar</h5>
+            <p class="event-locale">Irish American Heritage Center</p>
+            <p class="event-address">
+              4626 N Knox Ave
+              <br />
+              Chicago IL
+            </p>
+          </div>
+          <div class="column column-block event-content">
+            <p class="event-date">Friday, March 7th at 9 PM</p>
+            <h5 class="event-header">The Future of Illinois with Gubernatorial Candidate Ameya Pawar</h5>
+            <p class="event-locale">Irish American Heritage Center</p>
+            <p class="event-address">
+              4626 N Knox Ave
+              <br />
+              Chicago IL
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </div>

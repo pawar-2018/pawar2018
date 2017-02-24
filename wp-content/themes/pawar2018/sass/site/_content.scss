@@ -24,7 +24,7 @@
 }
 
 .pillar-wrapper,
-.event-content {
+.event-wrapper {
 	h4 {
   	text-transform: uppercase;
   	font-size: .8125rem;
@@ -35,6 +35,9 @@
   	border-top: $burnt-orange 2px solid;
   	margin: 1.5rem 0;
   }
+	.row {
+		padding-top: 2rem;
+	}
 }
 
 .pillar-wrapper {
@@ -43,16 +46,13 @@
 	padding-left: 8.333333333%;
 	padding-right: 8.333333333%;
 	padding-top: 3rem;
-	.row {
-		padding-top: 2rem;
-	}
 	@include breakpoint(medium) {
 		flex: 1 0 66.6667%;
 		padding-left: calc(((100% - 75rem)/2) + .9375rem);
 	}
 }
 
-.event-content {
+.event-wrapper {
 	background-color: $primary-color;
 	color: $white;
 	flex: 1 0 100%;
@@ -81,4 +81,15 @@
 .pillar-copy {
 	flex: 1 0 75%;
 	margin: 0 auto;
+	p {
+		font-size: 1.125rem;
+	}
+}
+
+.event-content {
+	padding: 0;
+	p, h5 {
+		font-size: .9375rem;
+		margin: .25rem auto .5rem;
+	}
 }
