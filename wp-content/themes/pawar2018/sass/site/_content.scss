@@ -1,12 +1,17 @@
 .main-callout {
 	color: $secondary-color;
-	font-size: 2.25rem;
-	line-height: 3rem;
+	font-size: 1.5rem;
+	line-height: 2.5rem;
+	@include breakpoint(medium) {
+		font-size: 2.25rem;
+		line-height: 3rem;
+	}
 }
 
 .main-content {
 	min-height: 20rem;
 	font-size: 1.3125rem;
+	padding-bottom: 1rem;
 }
 
 .main-copy {
@@ -35,11 +40,12 @@
 .pillar-content {
 	background-color: #f7f7f7;
 	flex: 1 0 100%;
-	padding-left: calc(((100% - 75rem)/2) + .9375rem);
-	padding-right: .9375rem;
+	padding-left: 8.333333333%;
+	padding-right: 8.333333333%;
 	padding-top: 3rem;
 	@include breakpoint(medium) {
 		flex: 1 0 66.6667%;
+		padding-left: calc(((100% - 75rem)/2) + .9375rem);
 	}
 }
 
@@ -47,11 +53,12 @@
 	background-color: $primary-color;
 	color: $white;
 	flex: 1 0 100%;
-	padding-right: calc(((100% - 75rem)/2) + 15px);
+	padding-right: 8.333333333%;
 	padding-left: 8.333333333%;
 	padding-top: 3rem;
 	@include breakpoint(medium) {
 		flex: 1 0 33.3333%;
+		padding-right: calc(((100% - 75rem)/2) + 15px);
 	}
 	.main-callout {
 		color: $white
