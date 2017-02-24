@@ -1,16 +1,16 @@
-<div class="footer-social">
+<div class="footer-social__container">
 	<div class="row align-center">
-		<div class="social">
-			<a href="/">
+		<div class="footer-social__icons">
+			<a class="footer-social__link" href="/" target="_blank">
 				<img src="<?php echo get_bloginfo('template_url') ?>/assets/facebook.svg">
 			</a>
-			<a href="/">
+			<a class="footer-social__link" href="/" target="_blank">
 				<img src="<?php echo get_bloginfo('template_url') ?>/assets/twitter.svg">
 			</a>
-			<a href="/">
+			<a class="footer-social__link" href="/" target="_blank">
 				<img src="<?php echo get_bloginfo('template_url') ?>/assets/instagram.svg">
 			</a>
-			<a href="/">
+			<a class="footer-social__link" href="/" target="_blank">
 				<img src="<?php echo get_bloginfo('template_url') ?>/assets/youtube.svg">
 			</a>
 		</div>
