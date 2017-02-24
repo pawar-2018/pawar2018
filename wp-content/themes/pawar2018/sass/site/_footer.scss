@@ -3,6 +3,13 @@ footer {
     color: #fff;
     bottom: 0;
     padding: 6.25rem 0;
+    a {
+        color: #fff;
+        font-weight: 900;
+        &:hover {
+            color: $burnt-orange;
+        }
+    }
     nav {
         ul {
             list-style: none;
@@ -26,4 +33,10 @@ footer {
      div.social a {
          margin: 0 1rem 0 0;
     }
+}
+
+.footer-paid {
+    background: darken($navy-blue, 5);
+    color: #fff;
+    padding: 1.5rem 0 0;
 }
