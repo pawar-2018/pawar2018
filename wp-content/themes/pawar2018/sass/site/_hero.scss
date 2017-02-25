@@ -13,6 +13,11 @@
 	.row:last-child {
 		height: 40%;
 	}
+	.inner-page & {
+		.row:first-child {
+			height: 100%;
+		}
+	}
 
 	h1 {
 		@include breakpoint(small only) {

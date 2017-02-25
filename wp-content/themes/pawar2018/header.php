@@ -28,22 +28,22 @@
 		</div>
 		<nav class="row large-collapse columns align-middle" id="top-menu">
 			<div class="small-order-1 columns">
-				<a href="/">
+				<a href="/meet-ameya" <?php echo esc_url( home_url( '/meet-ameya' ) ) ?' class="active"' : ''; ?>>
 					Meet Ameya
 				</a>
 			</div>
 			<div class="columns small-order-2">
-				<a href="/">
+				<a href="/issues" <?php echo esc_url( home_url( '/issues' ) ) ?' class="active"' : ''; ?>>
 					Issues
 				</a>
 			</div>
 			<div class="columns small-order-3">
-				<a href="/">
+				<a href="/events" <?php echo esc_url( home_url( '/events' ) ) ?' class="active"' : ''; ?>>
 				  Events
 				</a>
 			</div>
 			<div class="columns small-order-4">
-				<a href="/">
+				<a href="/page-get-involved.php" <?php echo (basename( $_SERVER['REQUEST_URI'] ) == 'page-get-involved.php') ? ' class="active"' : ''; ?>>
 					Get Involved
 				</a>
 			</div>

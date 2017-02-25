@@ -106,10 +106,18 @@ header {
 		color: white; //todo: color here
 		font-weight: 700;
 		text-decoration: none;
+		padding-bottom: .25rem;
 		&:hover {
-			color: $burnt-orange;
+			color: white;
+			border-bottom: 2px solid white;
 			text-decoration: none;
 		}
+		&.active {
+			border-bottom: 2px solid $burnt-orange;
+		}
+	}
+	.logo a {
+		border-bottom: none;
 	}
 	#top-menu {
 		@include breakpoint(medium down) {
