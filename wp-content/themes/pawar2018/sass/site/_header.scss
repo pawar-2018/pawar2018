@@ -106,6 +106,10 @@ header {
 		color: white; //todo: color here
 		font-weight: 700;
 		text-decoration: none;
+		&:hover {
+			color: $burnt-orange;
+			text-decoration: none;
+		}
 	}
 	#top-menu {
 		@include breakpoint(medium down) {
