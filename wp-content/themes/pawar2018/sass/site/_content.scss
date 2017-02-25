@@ -1,4 +1,17 @@
-.main-callout {
+.main-content,
+.bottom-content {
+	min-height: 20rem;
+	font-size: 1.3125rem;
+	margin-bottom: 1.5rem;
+	margin-top: 1.25rem;
+	@include breakpoint(medium) {
+		margin-bottom: 0;
+		margin-top: 0;
+	}
+}
+
+.main-callout,
+.main-quote {
 	color: $secondary-color;
 	font-size: 1.5rem;
 	line-height: 2.5rem;
@@ -8,10 +21,18 @@
 	}
 }
 
-.main-content {
-	min-height: 20rem;
-	font-size: 1.3125rem;
-	padding-bottom: 1rem;
+.main-quote,
+.main-caption {
+	text-align: center;
+}
+
+.main-quote {
+	margin-top: 2.5rem;
+}
+
+.main-caption {
+	font-style: italic; //todo: see about font specification here
+	margin: 0 0 2rem;
 }
 
 .main-copy {
@@ -30,13 +51,11 @@
   	font-size: .8125rem;
   	font-family: $font__heading;
   }
-  hr {
-  	width: 5rem;
-  	border-top: $burnt-orange 2px solid;
-  	margin: 1.5rem 0;
-  }
 	.row {
-		padding-top: 2rem;
+		padding-top: 1rem;
+		@include breakpoint(medium) {
+			padding-top: 2rem;
+		}
 	}
 }
 
@@ -45,8 +64,11 @@
 	flex: 1 0 100%;
 	padding-left: 8.333333333%;
 	padding-right: 8.333333333%;
-	padding-top: 3rem;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
 	@include breakpoint(medium) {
+		padding-top: 3rem;
+		padding-bottom: 1rem;
 		flex: 1 0 66.6667%;
 		padding-left: calc(((100% - 75rem)/2) + .9375rem);
 	}
@@ -56,12 +78,13 @@
 	background-color: $primary-color;
 	color: $white;
 	flex: 1 0 100%;
-	padding-right: 8.333333333%;
-	padding-left: 8.333333333%;
-	padding-top: 3rem;
+	padding-top: 2rem;
 	@include breakpoint(medium) {
+		padding-top: 2.75rem;
 		flex: 1 0 33.3333%;
-		padding-right: calc(((100% - 75rem)/2) + 15px);
+	}
+	.row {
+		padding-top: 1.25rem;
 	}
 	.main-callout {
 		color: $white
@@ -71,25 +94,64 @@
 .pillar-content {
 	display: flex;
 	align-items: flex-start;
-	justify-content: space-around;
+	justify-content: space-between;
+	flex-flow: row wrap;
+	&.column {
+		padding-left: 0;
+	}
 }
 
 .pillar-icon {
-	flex: 0 1 25%;
+	flex: 1 0 100%;
+	margin-bottom: 1.25rem;
+	@include breakpoint(medium) {
+		flex: 0 1 auto;
+	}
 }
 
 .pillar-copy {
-	flex: 1 0 75%;
+	flex: 1 0 100%;
 	margin: 0 auto;
+	@include breakpoint(medium) {
+		flex: 1 0 80%;
+		max-width: 80%;
+	}
 	p {
-		font-size: 1.125rem;
+		font-size: 1rem;
+		margin-bottom: .5rem;
+		@include breakpoint(medium) {
+			font-size: 1.125rem;
+			margin-bottom: 1.75rem;
+		}
 	}
 }
 
+.event-copy {
+	margin-bottom: 1rem;
+}
+
 .event-content {
-	padding: 0;
+	padding-right: 8.333333333%;
+	padding-left: 8.333333333%;
+	@include breakpoint(medium) {
+		padding-right: calc(((100% - 75rem)/2) + 15px);
+	}
 	p, h5 {
 		font-size: .9375rem;
-		margin: .25rem auto .5rem;
+		margin: 0 auto .5rem;
 	}
+	button {
+		margin: 1rem auto 2rem;
+	}
+}
+
+.event-photo {
+	min-width: 100%;
+}
+
+.bottom-content {
+	max-width: 100%;
+	width: 100vw;
+	padding: 0;
+	margin-bottom: 0;
 }

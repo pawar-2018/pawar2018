@@ -2,7 +2,10 @@
   background-color: $color__background-footer;
   color: #fff;
   bottom: 0;
-  padding: 6.25rem 0;
+  padding: 2rem 0;
+  @include breakpoint(large) {
+    padding: 3.25rem 0;
+  }
 }
 
 .footer__link {
@@ -13,16 +16,23 @@
   }
 }
 
+.footer-nav {
+  margin-bottom: 2rem;
+}
+
 //Footer nav module/components
 .footer-nav__logo {
   max-width: 20rem;
-  margin: .5rem 0 0 -2.5rem;
+  margin: .5rem 0 0 0;
 }
 
 .footer-nav__link {
   display: block;
   color: #fff;
   font-weight: 600;
+  &:not(:first-child) {
+    margin-left: 2.5rem;
+  }
 }
 
 //Footer social module/components
@@ -45,7 +55,8 @@
 
 //Footer paid module/components
 .footer-paid {
-  background: darken($navy-blue, 5);
+  background: $primary-color;
   color: #fff;
   padding: 1.5rem 0 0;
+  text-align: center;
 }
