@@ -33,8 +33,7 @@
     </div>
     <div class="action-content">
       <div class="pillar-wrapper">
-        <h4>Ameya's Four Pillars</h4>
-        <hr />
+        <h4 class="section-title">Ameya's Four Pillars</h4>
         <h1 class="main-callout">
           What's in a New Deal for 2018.
         </h1>
@@ -76,32 +75,44 @@
             </div>
           </div>
         </div>
+        <div class="column column-block pillar-content">
+          <button type="submit">See the Issues</button>
+        </div>
       </div>
       <div class="event-wrapper">
-        <h4>Upcoming Events</h4>
-        <hr />
-        <h1 class="main-callout">Let's talk.</h1>
-        <div class="row small-collpase small-up-1">
-          <div class="column column-block event-content">
-            <p class="event-date">Saturday, March 5th at 11 AM</p>
-            <h5 class="event-header">The Future of Illinois with Gubernatorial Candidate Ameya Pawar</h5>
-            <p class="event-locale">Irish American Heritage Center</p>
-            <p class="event-address">
-              4626 N Knox Ave
-              <br />
-              Chicago IL
-            </p>
+        <div class="event-content">
+          <h4 class="section-title">
+            Upcoming Events
+          </h4>
+          <h1 class="main-callout">Let's talk.</h1>
+          <div class="row small-collpase small-up-1">
+            <div class="column column-block event-copy">
+              <p class="event-date">Saturday, March 5th at 11 AM</p>
+              <h5 class="event-header">The Future of Illinois with Gubernatorial Candidate Ameya Pawar</h5>
+              <p class="event-locale">Irish American Heritage Center</p>
+              <p class="event-address">
+                4626 N Knox Ave
+                <br />
+                Chicago IL
+              </p>
+            </div>
+            <div class="column column-block event-copy">
+              <p class="event-date">Friday, March 7th at 9 PM</p>
+              <h5 class="event-header">The Future of Illinois with Gubernatorial Candidate Ameya Pawar</h5>
+              <p class="event-locale">Irish American Heritage Center</p>
+              <p class="event-address">
+                4626 N Knox Ave
+                <br />
+                Chicago IL
+              </p>
+            </div>
           </div>
-          <div class="column column-block event-content">
-            <p class="event-date">Friday, March 7th at 9 PM</p>
-            <h5 class="event-header">The Future of Illinois with Gubernatorial Candidate Ameya Pawar</h5>
-            <p class="event-locale">Irish American Heritage Center</p>
-            <p class="event-address">
-              4626 N Knox Ave
-              <br />
-              Chicago IL
-            </p>
+          <div class="column column-block event-copy">
+            <button type="submit">See All Events</button>
           </div>
+        </div>
+        <div class="event-photo">
+          <img src="<?php echo get_bloginfo('template_url') ?>/assets/ameya02.png" class="event-photo">
         </div>
       </div>
     </div>
