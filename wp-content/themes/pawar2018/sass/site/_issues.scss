@@ -37,7 +37,7 @@
         font-size: 1.25rem;
     }
     &:hover, &:focus {
-        background-color: #fff;
+        background-color: #f7f7f7;
         color: $burnt-orange;
     }
     &:last-child {
@@ -46,6 +46,11 @@
     &.is-active {
         background: #fff;
     }
+}
+
+.accordion-content {
+    background: #f7f7f7;
+    border: 0;
 }
 
 
