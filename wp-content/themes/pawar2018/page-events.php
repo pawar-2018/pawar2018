@@ -1,6 +1,9 @@
 <?php get_header(); ?>
   <main>
-  	<section class="hero">
+  	<section class="hero" style="background-image: url('<?php echo get_bloginfo('template_url') ?>/assets/events-hero.jpg'); background-size: cover;">
+        <div class="row align-center align-middle">
+            <h1 class="page-title">Events</h1>
+       </div>
   	</section>
     <section class="body">
         <div class="row">
