@@ -25,18 +25,15 @@
 					<li><a href="/meet-ameya">About</a></li>
 					<li><a href="/issues">Issues</a></li>
 					<li><a href="/events">Events</a></li>
-					<li><a href="/contact">Contact</a></li>
-					<li><a href="/get-involved">Join</a></li>
+					<li><a href="/get-involved">Get Involved</a></li>
+					<li><a  href="https://act.myngp.com/Forms/9188561423484586496" target="_blank">Donate</a></li>
 				</ul>
 			</nav>
 		</div>
 		<div class="small-12 large-4 columns">
 			<h6 class="section-title">Newsletter</h6>
 			<h3>Stay in the loop</h3>
-			<form>
-				<input type="text" placeholder="Email Address"></input>
-				<button type="submit">Subscribe</button>
-			</form>
+			<a href="/contact" class="button">Subscribe &rarr;</a>
 		</div>
 		<div class="small-12 large-3 large-offset-1 columns">
 			<h6 class="section-title">Ameya Pawar For Governor</h6>
@@ -49,9 +46,15 @@
 		<p>Paid For By Ameya Pawar For Governor.</p>
 	</div>
 </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script  src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.0/js/foundation.min.js"></script>
-<script src="<?php echo get_bloginfo('template_url') ?>/js/scripts/app.js"></script>
+
 <?php wp_footer(); ?>
+<script
+  src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+  integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc="
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.0/js/foundation.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.0/js/plugins/foundation.responsiveToggle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.0/js/plugins/foundation.responsiveMenu.min.js"></script>
+<script src="<?php echo get_bloginfo('template_url') ?>/js/scripts/app.js"></script>
 </body>
 </html>

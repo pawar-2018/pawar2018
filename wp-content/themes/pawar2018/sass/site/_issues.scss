@@ -13,3 +13,39 @@
         padding: 0 1rem;
     }
 }
+
+
+.issue-accordion {
+    background-color: #f7f7f7;
+    padding: 3rem 1rem;
+}
+
+.accordion-title {
+    background-color: #f7f7f7;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 2px solid $light-blue;
+    text-transform: uppercase;
+    color: $light-blue;
+    font-weight: 700;
+    padding: 1.5rem 1rem;
+    &:before {
+        font-size: 1.25rem;
+    }
+    &:hover, &:focus {
+        background-color: #fff;
+        color: $burnt-orange;
+    }
+    &:last-child {
+        border-bottom: 0;
+    }
+    &.is-active {
+        background: #fff;
+    }
+}
+
+
+:last-child:not(.is-active)>.accordion-title {
+    border-bottom: 0;
+}
