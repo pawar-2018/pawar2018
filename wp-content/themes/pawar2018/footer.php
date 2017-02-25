@@ -1,33 +1,34 @@
-<div class="footer-social">
+<div class="footer-social__container">
 	<div class="row align-center">
-		<div class="social">
-			<a href="/">
+		<div class="footer-social__icons">
+			<a class="footer-social__link" href="/" target="_blank">
 				<img src="<?php echo get_bloginfo('template_url') ?>/assets/facebook.svg">
 			</a>
-			<a href="/">
+			<a class="footer-social__link" href="/" target="_blank">
 				<img src="<?php echo get_bloginfo('template_url') ?>/assets/twitter.svg">
 			</a>
-			<a href="/">
+			<a class="footer-social__link" href="/" target="_blank">
 				<img src="<?php echo get_bloginfo('template_url') ?>/assets/instagram.svg">
 			</a>
-			<a href="/">
+			<a class="footer-social__link" href="/" target="_blank">
 				<img src="<?php echo get_bloginfo('template_url') ?>/assets/youtube.svg">
 			</a>
 		</div>
 	</div>
 </div>
-<footer>
-	<div class="row">
+
+<footer class="footer">
+	<div class="row align-justify">
 		<div class="small-12 large-4 columns">
 			<nav class="footer-nav">
-				<ul>
-					<img class="footer-logo" src="<?php echo get_bloginfo('template_url') ?>/assets/logo.png"/>
-					<li><a href="/meet-ameya">About</a></li>
-					<li><a href="/issues">Issues</a></li>
-					<li><a href="/events">Events</a></li>
-					<li><a href="/get-involved">Get Involved</a></li>
-					<li><a  href="https://act.myngp.com/Forms/9188561423484586496" target="_blank">Donate</a></li>
-				</ul>
+		        <a class="footer-nav__link show-for-large" href="">
+		          <img class="footer-nav__logo" src="<?php echo get_bloginfo('template_url') ?>/assets/logo.png"/>
+		        </a>
+		        <a class="footer-nav__link" href="/meet-ameya">About</a>
+		        <a class="footer-nav__link" href="/issues">Issues</a>
+		        <a class="footer-nav__link" href="/events">Events</a>
+		        <a class="footer-nav__link" href="/get-involved">Get Involved</a>
+		        <a class="footer-nav__link" href="https://act.myngp.com/Forms/9188561423484586496" target="_blank">Donate</a>
 			</nav>
 		</div>
 		<div class="small-12 large-4 columns">
@@ -35,15 +36,16 @@
 			<h3>Stay in the loop</h3>
 			<a href="/contact" class="button">Subscribe &rarr;</a>
 		</div>
-		<div class="small-12 large-3 large-offset-1 columns">
+		<div class="small-12 large-3 columns show-for-large">
 			<h6 class="section-title">Ameya Pawar For Governor</h6>
-			<a href="mailto:info@pawar2018.com">info@pawar2018.com</a>
+			<a class="footer__link" href="mailto:info@pawar2018.com">info@pawar2018.com</a>
 			<p>P.O. Box 577162<br>Chicago, Il 60657</p>
 	</div>
 </footer>
+
 <div class="footer-paid">
 	<div class="row align-center">
-		<p>Paid For By Ameya Pawar For Governor.</p>
+		<p class="column">Paid For By Ameya Pawar For Governor.</p>
 	</div>
 </div>
 

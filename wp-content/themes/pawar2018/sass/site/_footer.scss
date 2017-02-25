@@ -1,42 +1,62 @@
-footer {
-    background-color: $color__background-footer;
-    color: #fff;
-    bottom: 0;
-    padding: 6.25rem 0;
-    a {
-        color: #fff;
-        font-weight: 900;
-        &:hover {
-            color: $burnt-orange;
-        }
-    }
-    nav {
-        ul {
-            list-style: none;
-            .footer-logo {
-                max-width: 20rem;
-                margin: .5rem 0 0 -2.5rem;
-            }
-            li{
-                a{
-                    color: #fff;
-                    font-weight: 600;
-                }
-            }
-        }
-    }
+.footer {
+  background-color: $color__background-footer;
+  color: #fff;
+  bottom: 0;
+  padding: 2rem 0;
+  @include breakpoint(large) {
+    padding: 3.25rem 0;
+  }
 }
 
-.footer-social {
-    background: $light-blue;
-    padding: 2rem 0 1.5rem;
-     div.social a {
-         margin: 0 1rem 0 0;
-    }
+.footer__link {
+  color: #fff;
+  font-weight: 900;
+  &:hover {
+    color: $burnt-orange;
+  }
 }
 
+.footer-nav {
+  margin-bottom: 2rem;
+}
+
+//Footer nav module/components
+.footer-nav__logo {
+  max-width: 20rem;
+  margin: .5rem 0 0 0;
+}
+
+.footer-nav__link {
+  display: block;
+  color: #fff;
+  font-weight: 600;
+  &:not(:first-child) {
+    margin-left: 2.5rem;
+  }
+}
+
+//Footer social module/components
+.footer-social__container {
+  background: $light-blue;
+  padding: 2rem 0 1.5rem;
+}
+
+.footer-social__icons {
+  display: flex;
+}
+
+.footer-social__link {
+  flex: 1 0;
+  display: inline-block;
+  &:not(:last-child) {
+    padding-right: 2rem;
+  }
+}
+
+//Footer paid module/components
 .footer-paid {
-    background: darken($navy-blue, 5);
-    color: #fff;
-    padding: 1.5rem 0 0;
+  background: $primary-color;
+  color: #fff;
+  padding: 1.5rem 0 0;
+  text-align: center;
 }
