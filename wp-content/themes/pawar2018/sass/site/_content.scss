@@ -23,8 +23,8 @@
 	flex-flow: row wrap;
 }
 
-.pillar-content,
-.event-content {
+.pillar-wrapper,
+.event-wrapper {
 	h4 {
   	text-transform: uppercase;
   	font-size: .8125rem;
@@ -35,9 +35,12 @@
   	border-top: $burnt-orange 2px solid;
   	margin: 1.5rem 0;
   }
+	.row {
+		padding-top: 2rem;
+	}
 }
 
-.pillar-content {
+.pillar-wrapper {
 	background-color: #f7f7f7;
 	flex: 1 0 100%;
 	padding-left: 8.333333333%;
@@ -49,7 +52,7 @@
 	}
 }
 
-.event-content {
+.event-wrapper {
 	background-color: $primary-color;
 	color: $white;
 	flex: 1 0 100%;
@@ -62,5 +65,31 @@
 	}
 	.main-callout {
 		color: $white
+	}
+}
+
+.pillar-content {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-around;
+}
+
+.pillar-icon {
+	flex: 0 1 25%;
+}
+
+.pillar-copy {
+	flex: 1 0 75%;
+	margin: 0 auto;
+	p {
+		font-size: 1.125rem;
+	}
+}
+
+.event-content {
+	padding: 0;
+	p, h5 {
+		font-size: .9375rem;
+		margin: .25rem auto .5rem;
 	}
 }
