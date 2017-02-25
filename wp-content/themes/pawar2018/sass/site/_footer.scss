@@ -12,7 +12,8 @@
   color: #fff;
   font-weight: 900;
   &:hover {
-    color: $burnt-orange;
+    color: #fff;
+    text-decoration: underline;
   }
 }
 
@@ -33,6 +34,10 @@
   &:not(:first-child) {
     margin-left: 2.5rem;
   }
+  &:hover {
+      color: #fff;
+      text-decoration: underline;
+  }
 }
 
 //Footer social module/components
@@ -48,8 +53,12 @@
 .footer-social__link {
   flex: 1 0;
   display: inline-block;
+  transition: all .15s ease;
   &:not(:last-child) {
     padding-right: 2rem;
+  }
+  &:hover {
+     opacity: .75;
   }
 }
 

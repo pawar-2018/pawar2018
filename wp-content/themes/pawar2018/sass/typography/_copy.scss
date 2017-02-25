@@ -3,6 +3,14 @@ p {
 	font-size: 1.125rem;
 }
 
+a {
+	color: $light-blue;
+	&:hover {
+		color: darken($light-blue, 10);
+		text-decoration: underline;
+	}
+}
+
 dfn, cite, em, i {
 	font-style: italic;
 }
