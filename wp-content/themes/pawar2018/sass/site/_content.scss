@@ -1,6 +1,7 @@
 .main-content,
 .bottom-content {
 	min-height: 20rem;
+	height: 20rem;
 	font-size: 1.3125rem;
 	margin-bottom: 1.5rem;
 	margin-top: 1.25rem;
@@ -107,6 +108,8 @@
 .pillar-icon {
 	flex: 1 0 100%;
 	margin-bottom: 1.25rem;
+	width: 4.5rem;
+	height: 4.5rem;
 	@include breakpoint(medium) {
 		flex: 0 1 auto;
 	}
