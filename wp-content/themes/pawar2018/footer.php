@@ -1,16 +1,16 @@
 <div class="footer-social__container">
 	<div class="row align-center">
 		<div class="footer-social__icons">
-			<a class="footer-social__link" href="/" target="_blank">
+			<a class="footer-social__link" href="https://www.facebook.com/AmeyaPawarIL/" target="_blank">
 				<img src="<?php echo get_bloginfo('template_url') ?>/assets/facebook.svg">
 			</a>
-			<a class="footer-social__link" href="/" target="_blank">
+			<a class="footer-social__link" href="https://twitter.com/Ameya_Pawar_IL" target="_blank">
 				<img src="<?php echo get_bloginfo('template_url') ?>/assets/twitter.svg">
 			</a>
-			<a class="footer-social__link" href="/" target="_blank">
+			<a class="footer-social__link" href="https://www.instagram.com/ameya.s.pawar/" target="_blank">
 				<img src="<?php echo get_bloginfo('template_url') ?>/assets/instagram.svg">
 			</a>
-			<a class="footer-social__link" href="/" target="_blank">
+			<a class="footer-social__link" href="https://www.youtube.com/user/RenewChicago/videos" target="_blank">
 				<img src="<?php echo get_bloginfo('template_url') ?>/assets/youtube.svg">
 			</a>
 		</div>
