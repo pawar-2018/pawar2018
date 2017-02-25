@@ -44,7 +44,7 @@
             <div class="large-10 small-12 columns">
                 <ul class="accordion" data-accordion data-allow-all-closed="true" data-multi-expand="true">
                   <li class="accordion-item" data-accordion-item>
-                    <a href="#" class="accordion-title is-active">Enviorment</a>
+                    <a href="#" class="accordion-title">Enviorment</a>
                     <div class="accordion-content" data-tab-content>
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                     </div>
