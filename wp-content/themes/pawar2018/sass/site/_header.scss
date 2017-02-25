@@ -61,7 +61,7 @@ header {
 		}
 	}
 	.logo {
-		@include breakpoint(60rem) {
+		@include breakpoint(large) {
 			padding: 0;
     	flex: 0 0 27.5%;
     	max-width: 27.5%;
@@ -74,7 +74,7 @@ header {
 	.logo img {
 		max-width: 15rem;
 		margin-left: 1rem;
-		@include breakpoint(65rem) {
+		@include breakpoint(76rem) {
 			max-width: 20rem;
 			margin-left: 0;
 		}
@@ -82,16 +82,10 @@ header {
 	.social {
     justify-content: space-around;
 		@include breakpoint(60rem) {
-    	margin: 0 0 0 .25rem;
     	justify-content: center;
-    	flex: 0 1 17%;
-    	max-width: 17%;
 		}
 		@include breakpoint(65rem) {
-    	margin: 0 0 0 .25rem;
     	justify-content: space-around;
- 			flex: 0 0 25%;
-    	max-width: 25%;
 		}
 		img {
 			margin-top: 2.5rem;
@@ -116,8 +110,10 @@ header {
 			border-bottom: 2px solid $burnt-orange;
 		}
 	}
-	.logo a {
+	.logo a,
+	.social a{
 		border-bottom: none;
+		padding-bottom: 0;
 	}
 	#top-menu {
 		@include breakpoint(medium down) {

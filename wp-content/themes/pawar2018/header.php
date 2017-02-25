@@ -43,7 +43,7 @@
 				</a>
 			</div>
 			<div class="columns small-order-4">
-				<a href="/page-get-involved.php" <?php echo (basename( $_SERVER['REQUEST_URI'] ) == 'page-get-involved.php') ? ' class="active"' : ''; ?>>
+				<a href="/get-involved" <?php echo esc_url( home_url( '/get-involved' ) ) ?' class="active"' : ''; ?>>
 					Get Involved
 				</a>
 			</div>
