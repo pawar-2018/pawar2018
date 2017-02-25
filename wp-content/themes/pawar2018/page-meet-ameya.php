@@ -1,6 +1,6 @@
 <?php get_header(); ?>
   <main>
-    <section class="hero" style="background-image: url('<?php echo get_bloginfo('template_url') ?>/assets/meet-ameya-hero.jpg'); background-size: cover;">
+    <section class="hero inner-page" style="background-image: url('<?php echo get_bloginfo('template_url') ?>/assets/meet-ameya-hero.jpg'); background-size: cover;">
          <div class="row align-center align-middle">
              <h1 class="page-title">Meet Ameya</h1>
         </div>

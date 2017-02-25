@@ -62,15 +62,18 @@
 .pillar-wrapper {
 	background-color: #f7f7f7;
 	flex: 1 0 100%;
-	padding-left: 8.333333333%;
-	padding-right: 8.333333333%;
+  padding-right: .625rem;
+  padding-left: 7.25%;
 	padding-top: 2rem;
 	padding-bottom: 2rem;
 	@include breakpoint(medium) {
 		padding-top: 3rem;
 		padding-bottom: 1rem;
+  	padding-left: 6.25%;
 		flex: 1 0 66.6667%;
-		padding-left: calc(((100% - 75rem)/2) + .9375rem);
+	}
+	@include breakpoint(large) {
+		padding-left: calc(8.333333333% + .9375rem);
 	}
 }
 

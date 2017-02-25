@@ -76,7 +76,9 @@
           </div>
         </div>
         <div class="column column-block pillar-content">
-          <button type="submit">See the Issues</button>
+          <a href="<?php echo esc_url( home_url( '/issues' )) ?>">
+            <button type="submit">See the Issues</button>
+          </a>
         </div>
       </div>
       <div class="event-wrapper">
@@ -108,7 +110,9 @@
             </div>
           </div>
           <div class="column event-copy">
-            <button type="submit">See All Events</button>
+            <a href="<?php echo esc_url( home_url( '/events' )) ?>">
+              <button type="submit">See All Events</button>
+            </a>
           </div>
         </div>
         <div class="event-photo">
