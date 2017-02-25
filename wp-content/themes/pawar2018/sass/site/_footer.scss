@@ -64,7 +64,7 @@
 
 //Footer paid module/components
 .footer-paid {
-  background: $primary-color;
+  background: darken($primary-color, 5);
   color: #fff;
   padding: 1.5rem 0 0;
   text-align: center;
