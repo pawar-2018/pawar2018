@@ -1,5 +1,6 @@
 .body {
     margin: 6rem 0;
+    display: flex;
     .section-title {
         color: $light-blue;
         text-transform: none;
@@ -11,4 +12,32 @@
             background-color: $burnt-orange;
         }
     }
+}
+
+.wrapper {
+    display: flex;
+}
+
+.main {
+	flex: 1 0 100%;
+	padding-left: 8.333333333%;
+	padding-right: 8.333333333%;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	@include breakpoint(medium) {
+		padding-top: 3rem;
+		padding-bottom: 1rem;
+		flex: 1 0 66.6667%;
+		padding-left: calc(((100% - 75rem)/2) + .9375rem);
+	}
+}
+.sidebar {
+    flex: 1 0 100%;
+	padding-top: 2rem;
+    background: #f7f7f7;
+	@include breakpoint(medium) {
+		padding-top: 8.75rem;
+		flex: 1 0 33.3333%;
+	}
+
 }
