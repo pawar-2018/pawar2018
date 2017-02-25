@@ -20,6 +20,9 @@
     padding: 3rem 1rem;
 }
 
+.accordion {
+    margin: 0 0 3rem 0;
+}
 .accordion-title {
     background-color: #f7f7f7;
     border-top: 0;
@@ -47,5 +50,5 @@
 
 
 :last-child:not(.is-active)>.accordion-title {
-    border-bottom: 0;
+    border-bottom: 2px solid $light-blue;
 }
