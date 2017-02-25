@@ -38,7 +38,7 @@
 	h2 {
 		@include breakpoint(small only) {
 			margin-top: 1.5rem;
-			font-size: .9rem;
+			font-size: 1.25rem;
 			color: $charcoal;
 		}
   	@include breakpoint(21rem) {

@@ -21,11 +21,11 @@
         </div>
       </div>
   	</section>
-    <div class="row main-content align-middle align-justify">
-      <div class="small-12 large-4 columns">
+    <div class="row main-content align-middle align-center">
+      <div class="small-11 large-4 columns">
         <h1 class="main-callout">I’m running for governor to forge a New Deal for Illinois.</h1>
       </div>
-      <div class="small-12 large-8 columns">
+      <div class="small-11 large-8 columns">
         <p class="main-copy">
           President Roosevelt’s New Deal took our country out of depression and laid the foundation for decades of growth and prosperity. We can do the same thing in Illinois by rebuilding our crumbling infrastructure, reinvesting in good-paying jobs, and recommitting to early childhood education and public schools. And we can do it without further burdening the middle class.
         </p>
@@ -86,7 +86,7 @@
           </h4>
           <h1 class="main-callout">Let's talk.</h1>
           <div class="row small-collapse">
-            <div class="column small-8 event-copy">
+            <div class="column small-11 large-8 event-copy">
               <p class="event-date">Saturday, March 5th at 11 AM</p>
               <h5 class="event-header">The Future of Illinois with Gubernatorial Candidate Ameya Pawar</h5>
               <p class="event-locale">Irish American Heritage Center</p>
@@ -96,7 +96,7 @@
                 Chicago IL
               </p>
             </div>
-            <div class="column small-8 event-copy">
+            <div class="column small-11 large-8 event-copy">
               <p class="event-date">Friday, March 7th at 9 PM</p>
               <h5 class="event-header">The Future of Illinois with Gubernatorial Candidate Ameya Pawar</h5>
               <p class="event-locale">Irish American Heritage Center</p>

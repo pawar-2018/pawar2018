@@ -2,7 +2,12 @@
 .bottom-content {
 	min-height: 20rem;
 	font-size: 1.3125rem;
-	padding-bottom: 1rem;
+	margin-bottom: 1.5rem;
+	margin-top: 1.25rem;
+	@include breakpoint(medium) {
+		margin-bottom: 0;
+		margin-top: 0;
+	}
 }
 
 .main-callout,
@@ -59,8 +64,11 @@
 	flex: 1 0 100%;
 	padding-left: 8.333333333%;
 	padding-right: 8.333333333%;
-	padding-top: 3rem;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
 	@include breakpoint(medium) {
+		padding-top: 3rem;
+		padding-bottom: 1rem;
 		flex: 1 0 66.6667%;
 		padding-left: calc(((100% - 75rem)/2) + .9375rem);
 	}
@@ -70,11 +78,13 @@
 	background-color: $primary-color;
 	color: $white;
 	flex: 1 0 100%;
+	padding-top: 2rem;
 	@include breakpoint(medium) {
+		padding-top: 2.75rem;
 		flex: 1 0 33.3333%;
 	}
 	.row {
-		padding-top: 1.25rem
+		padding-top: 1.25rem;
 	}
 	.main-callout {
 		color: $white
@@ -123,7 +133,6 @@
 .event-content {
 	padding-right: 8.333333333%;
 	padding-left: 8.333333333%;
-	padding-top: 3rem;
 	@include breakpoint(medium) {
 		padding-right: calc(((100% - 75rem)/2) + 15px);
 	}
@@ -144,4 +153,5 @@
 	max-width: 100%;
 	width: 100vw;
 	padding: 0;
+	margin-bottom: 0;
 }

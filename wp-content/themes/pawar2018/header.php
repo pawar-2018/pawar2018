@@ -15,8 +15,8 @@
 <body <?php body_class(); ?>>
 
 <header>
-	<div class="row small-collapse large-uncollapse align-justify align-middle">
-		<div class="logo small-10 medium-11 large-3 columns">
+	<div class="row small-collapse align-justify align-middle">
+		<div class="logo small-10 medium-11 large-4 columns">
 			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 				<img src="<?php echo get_bloginfo('template_url') ?>/assets/logo.png">
 			</a>
@@ -25,8 +25,8 @@
 		  <div class="menu-icon" data-toggle="top-menu"></div>
 		  <div class="title-bar-title"></div>
 		</div>
-		<div class="row large-collapse large-9 columns align-middle" id="top-menu">
-			<div class="large-offset-1 small-order-1 columns">
+		<nav class="row large-collapse columns align-middle" id="top-menu">
+			<div class="small-order-1 columns">
 				<a href="/">
 					Meet Ameya
 				</a>
@@ -46,12 +46,12 @@
 					Get Involved
 				</a>
 			</div>
-			<div class="column small-order-5 large-order-6">
+			<div class="columns small-order-5 large-order-6">
 				<a href="/">
 					<button class="small" type="submit">Donate</button>
 				</a>
 			</div>
-			<div class="social small-order-6 large-order-5 large-2 large-offset-2 columns row align-middle align-spaced">
+			<div class="social small-order-6 large-order-5 columns row align-middle">
 				<a href="/">
 					<img src="<?php echo get_bloginfo('template_url') ?>/assets/facebook.svg">
 				</a>
@@ -65,6 +65,6 @@
 					<img src="<?php echo get_bloginfo('template_url') ?>/assets/youtube.svg">
 				</a>
 			</div>
-		</div>
+		</nav>
 	</div>
 </header>
