@@ -34,7 +34,7 @@
 		<div class="small-12 large-4 columns">
 			<h6 class="section-title">Newsletter</h6>
 			<h3>Stay in the loop</h3>
-			<a href="/contact" class="button">Subscribe &rarr;</a>
+			<a href="/newsletter" class="button">Subscribe &rarr;</a>
 		</div>
 		<div class="small-12 large-3 columns show-for-large">
 			<h6 class="section-title">Ameya Pawar For Governor</h6>

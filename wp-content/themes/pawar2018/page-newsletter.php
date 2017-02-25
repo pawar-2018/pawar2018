@@ -4,11 +4,9 @@
   	</section>
     <section class="body">
         <div class="row">
-                <div class="small-12 medium-8 columns">
-                    <h1 class="section-title">Sign up to receive updates</h1>
-                </div>
-
-            <?php //TODO: change CSS to not be blue on blue header ?>
+            <div class="small-12 medium-8 columns">
+                <h1 class="section-title">Sign up to receive updates</h1>
+            </div>
             <script type='text/javascript' src='//d1aqhv4sn5kxtx.cloudfront.net/actiontag/at.js'></script>
             <div class='ngp-form'
                  data-template='oberon'
@@ -20,7 +18,8 @@
                  data-resource-path='https://d1aqhv4sn5kxtx.cloudfront.net/'
                  data-inline-errors='true'
                  data-fastaction-nologin='true'
-                 data-embed='true'></div>
+                 data-embed='true'>
+            </div>
         </div>
     </section>
   </main>

@@ -6,8 +6,13 @@ button, button[type="submit"] {
   font-weight: 600;
   min-width: 10rem;
   padding: .75rem 2rem;
+  transition: all .15s ease;
   &.small {
   	padding: .5rem 1.5rem;
+  }
+  &:hover {
+      text-decoration: none;
+      background: darken($color__background-button, 10);
   }
 }
 
@@ -19,7 +24,12 @@ button, button[type="submit"] {
     font-weight: 600;
     min-width: 10rem;
     padding: .75rem 2rem;
+    transition: all .15s ease;
     &.small {
        padding: .5rem 1.5rem;
+    }
+    &:hover {
+        text-decoration: none;
+        background: darken($color__background-button, 10);
     }
 }
