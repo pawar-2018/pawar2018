@@ -32,7 +32,9 @@
   color: #fff;
   font-weight: 600;
   &:not(:first-child) {
-    margin-left: 2.5rem;
+  @include breakpoint(large) {
+      margin-left: 2.5rem;
+    }
   }
   &:hover {
       color: #fff;

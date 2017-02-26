@@ -1,6 +1,10 @@
 .body {
-    margin: 6rem 0;
+		margin: 2rem 0;
     display: flex;
+    flex-flow: column nowrap;
+		@include breakpoint(large) {
+			margin: 4rem 0;
+		}
     .section-title {
         color: $light-blue;
         text-transform: none;
@@ -12,6 +16,13 @@
             background-color: $burnt-orange;
         }
     }
+
+  .inner-photo {
+  	margin-bottom: 1.5rem;
+  }
+  .bottom-content {
+ 		justify-content: center;
+  }
 }
 
 .wrapper {
