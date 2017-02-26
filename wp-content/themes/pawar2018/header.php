@@ -66,16 +66,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				</a>
 			</div>
 			<div class="social small-order-6 large-order-5 columns row align-middle">
-				<a href="/">
+				<a href="https://www.facebook.com/AmeyaPawarIL/">
 					<img src="<?php echo get_bloginfo('template_url') ?>/assets/facebook.svg">
 				</a>
-				<a href="/">
+				<a href="https://twitter.com/Ameya_Pawar_IL">
 					<img src="<?php echo get_bloginfo('template_url') ?>/assets/twitter.svg">
 				</a>
-				<a href="/">
+				<a href="https://www.instagram.com/ameya.s.pawar/">
 					<img src="<?php echo get_bloginfo('template_url') ?>/assets/instagram.svg">
 				</a>
-				<a href="/">
+				<a href="https://www.youtube.com/user/RenewChicago/videos">
 					<img src="<?php echo get_bloginfo('template_url') ?>/assets/youtube.svg">
 				</a>
 			</div>
