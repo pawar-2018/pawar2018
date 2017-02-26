@@ -2,14 +2,8 @@
 
 ## Getting started (Mac)
 1. Install Docker (www.docker.com)
-2. Clone the repo
-````
-    git clone git@github.com:pawar-2018/pawar2018.git
-````    
-3. Start the docker container
-````
-    docker-compose up -d
-````    
+2. Clone the repo `git clone git@github.com:pawar-2018/pawar2018.git`  
+3. Start the docker container `docker-compose up -d`    
 4. In another terminal tab, `cd` in to your local clone of the repo and run `npm install`.
 5. To start your dev server, run `npm start`. This proxies from localhost:8000, which is where Docker is running, so you do need Docker from step 3 running as well.
 6. If you're just running onto merge conficts or want to make sure you build before pushing (this will be fixed when we get deployment more figured out, sorry, because this will get annoying really fast) you can just run `npm run build`.
