@@ -11,9 +11,8 @@
   				<h2>It‘s time to grab a clipboard, lace up our boots, and work together to restore progressive values in 2018.</h2>
         </div>
       </div>
-      <div class="row align-top">
+      <div class="row align-middle">
         <div class="small-12 medium-7 columns">
-            <br>
 			<h3>Get the latest updates</h3>
 			<a href="/newsletter" class="button">Subscribe</a>
         </div>
@@ -130,10 +129,10 @@
     </div>
     <div class="row bottom-content small-collapse align-middle align-justify">
       <div class="small-12 large-6 columns">
-        <img src="<?php echo get_bloginfo('template_url') ?>/assets/ameya03.png" class="event-photo">
+        <img src="<?php echo get_bloginfo('template_url') ?>/assets/ameya03.png">
       </div>
       <div class="small-12 large-6 columns">
-        <img src="<?php echo get_bloginfo('template_url') ?>/assets/ameya04.png" class="event-photo">
+        <img src="<?php echo get_bloginfo('template_url') ?>/assets/ameya04.png">
       </div>
     </div>
   </div>

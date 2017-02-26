@@ -84,8 +84,9 @@
 	flex: 1 0 100%;
 	padding-top: 2rem;
 	@include breakpoint(medium) {
-		padding-top: 2.75rem;
+		padding-top: 3rem;
 		flex: 1 0 33.3333%;
+		position: relative;
 	}
 	.row {
 		padding-top: 1.25rem;
@@ -172,18 +173,25 @@
 		font-size: .9375rem;
 		margin: 0 auto .5rem;
 	}
-	button {
-		margin: 1rem auto 2rem;
+	a.button {
+		margin: 1rem auto 1.5rem;
 	}
 }
 
 .event-photo {
 	min-width: 100%;
+	@include breakpoint(medium only) {
+		position: absolute;
+		bottom: 0;
+	}
 }
 
 .bottom-content {
 	max-width: 100%;
 	width: 100vw;
 	padding: 0;
-	margin-bottom: 0;
+	margin-bottom: 0; 
+	img {
+		min-width: 100%;
+	}
 }
