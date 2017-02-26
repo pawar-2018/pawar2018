@@ -41,10 +41,9 @@
             </div>
         </div>
     </section>
-    <section>
-        <div class="issue-accordion">
+    <section class="issue-accordion">
         <div class="row align-center">
-            <div class="small-11 medium-10 columns">
+            <div class="small-12 medium-10 columns">
                 <ul class="accordion">
                   <li class="accordion-item">
                     <a href="#" class="accordion-title">JOBS AND PUBLIC WORKS</a>
@@ -130,11 +129,11 @@
                   </li>
                 </ul>
             </div>
+        <div class="row">
+          <a href="/events" class="button">See Ameya</a>
+          <a href="https://act.myngp.com/Forms/9188561423484586496" target="_blank" class="button">Donate</a>
         </div>
-        <div class="row align-center">
-            <a href="/events" class="button">See Ameya</a>&nbsp;&nbsp;&nbsp;
-            <a href="https://act.myngp.com/Forms/9188561423484586496" target="_blank" class="button">Donate</a>
-        </div>
+      </section>
     </div>
 </section>
 <section style="background-image: url('<?php echo get_bloginfo('template_url') ?>/assets/issues-01.jpg'); background-size: cover; height:25.652rem;">

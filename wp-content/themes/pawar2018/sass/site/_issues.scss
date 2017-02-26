@@ -18,6 +18,12 @@
 .issue-accordion {
     background-color: #f7f7f7;
     padding: 3rem 1rem;
+    a.button {
+        margin: .5rem auto;
+        @include breakpoint(20.625rem) {
+            margin: .5rem;
+        }
+    }
 }
 
 .accordion {
@@ -38,7 +44,7 @@
     color: $light-blue;
     font-size: 1.125rem;
     font-weight: 700;
-    padding: 1.5rem 1rem;
+    padding: 1.5rem 1.5rem 1.5rem .5rem;
     &:before {
         font-size: 1.25rem;
     }
