@@ -1,0 +1,15 @@
+[type=color], [type=date], [type=datetime-local], [type=datetime], [type=email], [type=month], [type=number], [type=password], [type=search], [type=tel], [type=text], [type=time], [type=url], [type=week], textarea {
+    border-radius: 0;
+    box-shadow: none;
+}
+
+[type=color]:focus, [type=date]:focus, [type=datetime-local]:focus, [type=datetime]:focus, [type=email]:focus, [type=month]:focus, [type=number]:focus, [type=password]:focus, [type=search]:focus, [type=tel]:focus, [type=text]:focus, [type=time]:focus, [type=url]:focus, [type=week]:focus, textarea:focus {
+    border: 0;
+}
+
+[type=text], [type=password], [type=search], [type=email] {
+    height: auto;
+    margin: 0 0 1rem;
+    padding: .75rem .5rem;
+    border: 0;
+}

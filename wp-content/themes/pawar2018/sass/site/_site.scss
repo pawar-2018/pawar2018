@@ -1,11 +1,10 @@
-// @import "../layout/content-sidebar";
-// @import "../layout/sidebar-content";
-/*--------------------------------------------------------------
-## Posts and pages
---------------------------------------------------------------*/
-@import "primary/posts-and-pages";
-
-/*--------------------------------------------------------------
-## Comments
---------------------------------------------------------------*/
-@import "primary/comments";
+@import "buttons";
+@import "header";
+@import "footer";
+@import "forms";
+@import "hero";
+@import "pages";
+@import "fouc";
+@import "content";
+@import "issues";
+@import "ngp";

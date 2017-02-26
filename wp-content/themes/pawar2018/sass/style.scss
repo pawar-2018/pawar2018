@@ -1,20 +1,10 @@
 /*!
 Theme Name: Pawar2018
-Theme URI: http://underscores.me/
-Author: Automattic
-Author URI: http://automattic.com/
-Description: Hi. I'm a starter theme called <code>_s</code>, or <em>underscores</em>, if you like. I'm a theme meant for hacking so don't use me as a <em>Parent Theme</em>. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
-Version: 1.0.0
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Theme URI: http://github.com/pawar2018/pawar2018/
+Description: A WP theme for Alderman Pawar's 2018 gubernatorial bid.
+Version: 0.7
+
 Text Domain: Pawar2018
-Tags:
-
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
-
-_s is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
-Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
@@ -41,14 +31,75 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Media
 	## Captions
 	## Galleries
---------------------------------------------------------------*/
-@import "variables-site/variables-site";
-@import "mixins/mixins-master";
 
 /*--------------------------------------------------------------
-# Normalize
+# Foundation
 --------------------------------------------------------------*/
-@import "normalize";
+
+/******************************************************************
+	
+Stylesheet: Main Stylesheet
+
+Here's where the magic happens. Here is where you import
+all of your Sass files so they can compile into one
+CSS file. 
+
+******************************************************************/
+
+@import "settings";
+
+// Import Motion-UI from vendor files
+@import "./vendor/motion-ui/motion-ui";
+	@include motion-ui-transitions;
+	@include motion-ui-animations;
+
+// Import foundation.scss from vendor files
+@import "./vendor/foundation/foundation";
+
+// Select the components we want to use
+  @include foundation-global-styles;
+  // @include foundation-grid;
+  @include foundation-flex-grid;
+  @include foundation-flex-classes;
+  @include foundation-typography;
+  @include foundation-forms;
+  @include foundation-button;
+  @include foundation-accordion;
+  @include foundation-accordion-menu;
+  @include foundation-badge;
+  @include foundation-breadcrumbs;
+  // @include foundation-button-group;
+  @include foundation-callout;
+  @include foundation-card;
+  @include foundation-close-button;
+  @include foundation-menu;
+  @include foundation-menu-icon;
+  // @include foundation-drilldown-menu;
+  // @include foundation-dropdown;
+  // @include foundation-dropdown-menu;
+  // @include foundation-responsive-embed;
+  @include foundation-label;
+  @include foundation-media-object;
+  // @include foundation-off-canvas;
+  // @include foundation-orbit;
+  // @include foundation-pagination;
+  @include foundation-progress-bar;
+  @include foundation-slider;
+  @include foundation-sticky;
+  @include foundation-reveal;
+  // @include foundation-switch;
+  // @include foundation-table;
+  // @include foundation-tabs;
+  @include foundation-thumbnail;
+  @include foundation-title-bar;
+  // @include foundation-tooltip;
+  @include foundation-top-bar;
+  @include foundation-visibility-classes;
+  @include foundation-float-classes;
+
+/*--------------------------------------------------------------*/
+@import "variables-site/variables-site";
+@import "mixins/mixins-master";
 
 /*--------------------------------------------------------------
 # Typography
@@ -61,51 +112,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "elements/elements";
 
 /*--------------------------------------------------------------
-# Forms
---------------------------------------------------------------*/
-@import "forms/forms";
-
-/*--------------------------------------------------------------
-# Navigation
---------------------------------------------------------------*/
-@import "navigation/navigation";
-
-/*--------------------------------------------------------------
-# Accessibility
---------------------------------------------------------------*/
-@import "modules/accessibility";
-
-/*--------------------------------------------------------------
-# Alignments
---------------------------------------------------------------*/
-@import "modules/alignments";
-
-/*--------------------------------------------------------------
-# Clearings
---------------------------------------------------------------*/
-@import "modules/clearings";
-
-/*--------------------------------------------------------------
-# Widgets
---------------------------------------------------------------*/
-@import "site/secondary/widgets";
-
-/*--------------------------------------------------------------
-# Content
+# Specific
 --------------------------------------------------------------*/
 @import "site/site";
-
-/*--------------------------------------------------------------
-# Infinite scroll
---------------------------------------------------------------*/
-@import "modules/infinite-scroll";
-
-/*--------------------------------------------------------------
-# Media
---------------------------------------------------------------*/
-@import "media/media";
-
-/*--------------------------------------------------------------
-# Foundation
---------------------------------------------------------------*/
-@import "foundation.min.css";

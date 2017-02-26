@@ -1,5 +1,16 @@
+//This can be rolled into a base SCSS file that applies a very generic design to HTML5 elements
+//TODO: Move into a base SCSS file
 p {
 	margin-bottom: 1.5em;
+	font-size: 1.125rem;
+}
+
+a {
+	color: $light-blue;
+	&:hover {
+		color: darken($light-blue, 10);
+		text-decoration: underline;
+	}
 }
 
 dfn, cite, em, i {

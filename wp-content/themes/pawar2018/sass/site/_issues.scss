@@ -1,0 +1,60 @@
+.feature-issue {
+    padding:1rem;
+    margin: 1rem 0;
+    h6 {
+        text-transform: uppercase;
+    }
+    .issue-icon {
+        float: left;
+    }
+    .issue-summary {
+        float: left;
+        width: 75%;
+        padding: 0 1rem;
+    }
+}
+
+
+.issue-accordion {
+    background-color: #f7f7f7;
+    padding: 3rem 1rem;
+}
+
+.accordion {
+    margin: 0 0 3rem 0;
+}
+.accordion-title {
+    background-color: #f7f7f7;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 2px solid $light-blue;
+    text-transform: uppercase;
+    color: $light-blue;
+    font-size: 1.125rem;
+    font-weight: 700;
+    padding: 1.5rem 1rem;
+    &:before {
+        font-size: 1.25rem;
+    }
+    &:hover, &:focus {
+        background-color: #f7f7f7;
+        color: $burnt-orange;
+    }
+    &:last-child {
+        border-bottom: 0;
+    }
+    &.is-active {
+        background: #fff;
+    }
+}
+
+.accordion-content {
+    background: #f7f7f7;
+    border: 0;
+}
+
+
+:last-child:not(.is-active)>.accordion-title {
+    border-bottom: 2px solid $light-blue;
+}
