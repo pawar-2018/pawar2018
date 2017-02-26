@@ -62,7 +62,7 @@
 
 .header-burger {
   color: #fefefe;
-  padding: 0 2.5rem 0 1rem;
+  padding: 0 1rem 0 1rem;
   background: #233368;
   @include breakpoint(64rem) {
     display: none;
@@ -105,6 +105,13 @@
     width: initial;
     margin: 0;
     padding: 0;
+  }
+  &:hover {
+    color: white;
+    text-decoration: none;
+  }
+  &.active {
+    border-bottom: 2px $burnt-orange solid;
   }
 }
 
