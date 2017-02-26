@@ -120,10 +120,10 @@
     <div class="row main-content align-middle align-center">
       <div class="small-11 large-10 columns">
         <h1 class="main-quote">
-          “Dolore eu fugiat nulla pariatur. Excepteur sint occaecat ispum cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.“
+          "We have the power to use government as a force for good—if we elect people who believe in the power of government to make lives better. That’s why I’m running for Governor.”
         </h1>
         <p class="main-caption">
-          -name-of-person
+          - Ameya Pawar
         </p>
       </div>
     </div>
