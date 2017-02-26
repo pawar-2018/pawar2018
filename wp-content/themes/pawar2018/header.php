@@ -21,64 +21,57 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </head>
 
 <body <?php body_class(); ?>>
+
 <!-- Google Tag Manager (noscript) -->
 <noscript>
 	<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5FX333H"
 	height="0" width="0" style="display:none;visibility:hidden">
 	</iframe>
 </noscript>
-	<!-- End Google Tag Manager (noscript) -->
-<header>
-	<div class="row small-collapse align-justify align-middle">
-		<div class="logo small-10 medium-11 large-4 columns">
-			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-				<img src="<?php echo get_bloginfo('template_url') ?>/assets/logo.png">
-			</a>
+<!-- End Google Tag Manager (noscript) -->
+
+<header class="header">
+	<div class="header__content">
+
+        <a class="header-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+            <img src="<?php echo get_bloginfo('template_url') ?>/assets/logo.png">
+        </a>
+
+		<div class="header-burger">
+		  <div class="header-burger__icon"></div>
 		</div>
-		<div class="title-bar columns" data-responsive-toggle="top-menu" data-hide-for="large">
-		  <div class="menu-icon" data-toggle="top-menu"></div>
-		  <div class="title-bar-title"></div>
-		</div>
-		<nav class="small-12 large-8 row large-collapse columns align-middle" id="top-menu">
-			<div class="small-order-1 columns">
-				<a href="/meet-ameya" <?php if(is_page('meet-ameya')) {?> class="active"<?php } ?> >
-					Meet Ameya
-				</a>
-			</div>
-			<div class="columns small-order-2">
-				<a href="/issues" <?php if(is_page('issues')) {?> class="active"<?php } ?>>
-					Issues
-				</a>
-			</div>
-			<div class="columns small-order-3">
-				<a href="/events" <?php if(is_page('events')) {?> class="active"<?php } ?>>
-				  Events
-				</a>
-			</div>
-			<div class="columns small-order-4">
-				<a href="/get-involved" <?php if(is_page('get-involved')) {?> class="active"<?php } ?>>
-					Get Involved
-				</a>
-			</div>
-			<div class="columns small-order-5 large-order-6">
-				<a href="https://act.myngp.com/Forms/9188561423484586496" target="_blank" class="button">
-					Donate
-				</a>
-			</div>
-			<div class="social small-order-6 large-order-5 columns row align-middle">
-				<a href="https://www.facebook.com/AmeyaPawarIL/">
+
+		<nav class="header-nav">
+            <a class="header-nav__link" href="/meet-ameya" <?php if(is_page('meet-ameya')) {?> class="active"<?php } ?> >
+                Meet Ameya
+            </a>
+            <a class="header-nav__link" href="/issues" <?php if(is_page('issues')) {?> class="active"<?php } ?>>
+                Issues
+            </a>
+			<a class="header-nav__link" href="/events" <?php if(is_page('events')) {?> class="active"<?php } ?>>
+              Events
+            </a>
+			<a class="header-nav__link" href="/get-involved" <?php if(is_page('get-involved')) {?> class="active"<?php } ?>>
+                Get Involved
+            </a>
+			<div class="header-social">
+				<a class="header-social__link" href="https://www.facebook.com/AmeyaPawarIL/">
 					<img src="<?php echo get_bloginfo('template_url') ?>/assets/facebook.svg">
 				</a>
-				<a href="https://twitter.com/Ameya_Pawar_IL">
+				<a class="header-social__link" href="https://twitter.com/Ameya_Pawar_IL">
 					<img src="<?php echo get_bloginfo('template_url') ?>/assets/twitter.svg">
 				</a>
-				<a href="https://www.instagram.com/ameya.s.pawar/">
+				<a class="header-social__link" href="https://www.instagram.com/ameya.s.pawar/">
 					<img src="<?php echo get_bloginfo('template_url') ?>/assets/instagram.svg">
 				</a>
-				<a href="https://www.youtube.com/user/RenewChicago/videos">
+				<a class="header-social__link" href="https://www.youtube.com/user/RenewChicago/videos">
 					<img src="<?php echo get_bloginfo('template_url') ?>/assets/youtube.svg">
 				</a>
 			</div>
+			<a class="header-social__button button" href="https://act.myngp.com/Forms/9188561423484586496" target="_blank">
+                Donate
+            </a>
 		</nav>
+
 	</div>
 </header>

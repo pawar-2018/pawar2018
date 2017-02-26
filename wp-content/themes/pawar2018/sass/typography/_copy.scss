@@ -1,3 +1,5 @@
+//This can be rolled into a base SCSS file that applies a very generic design to HTML5 elements
+//TODO: Move into a base SCSS file
 p {
 	margin-bottom: 1.5em;
 	font-size: 1.125rem;
@@ -8,15 +10,6 @@ a {
 	&:hover {
 		color: darken($light-blue, 10);
 		text-decoration: underline;
-		&.button {
-			border-bottom: none;
-			margin: 0;
-
-		}
-	}
-	&.button {
-		border-bottom: none;
-		margin: 0;
 	}
 }
 
