@@ -8,6 +8,16 @@ a {
 	&:hover {
 		color: darken($light-blue, 10);
 		text-decoration: underline;
+		&.button {
+			border-bottom: none;
+			margin: 0;
+
+		}
+	}
+	&.button {
+		border-bottom: none;
+		margin: 0;
+
 	}
 }
 
