@@ -34,6 +34,24 @@
 with docker-machine ip
 9. Go to http://docker-machine-ip-here:8000
 
+## Setting up Wordpress locally
+
+### Choose the Pawar2018 theme
+
+1. Go to `http://localhost:8000/wp-admin/themes.php`
+2. Choose `Activate` on the `Pawar2018` theme
+
+### Set up permalinks
+
+1. Go to `http://localhost:8000/wp-admin/options-permalink.php`
+2. Choose the `Post name` option
+3. Save Changes
+
+### Importing Content
+
+Currently, the quickest way to get the content is to export an XML copy of the
+staging site's content and import into your local Wordpress.
+
 ## URLS
 
 * Production (master) http://ameyapawar2018.wpengine.com
