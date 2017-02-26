@@ -18,8 +18,8 @@
 </div>
 
 <footer class="footer">
-	<div class="row align-justify">
-		<div class="small-12 large-4 columns">
+	<div class="row align-center">
+		<div class="small-10 large-4 columns">
 			<nav class="footer-nav">
 		        <a class="footer-nav__link show-for-large" href="">
 		          <img class="footer-nav__logo" src="<?php echo get_bloginfo('template_url') ?>/assets/logo.png"/>
@@ -31,12 +31,12 @@
 		        <a class="footer-nav__link" href="https://act.myngp.com/Forms/9188561423484586496" target="_blank">Donate</a>
 			</nav>
 		</div>
-		<div class="small-12 large-4 columns">
+		<div class="small-10 large-4 columns">
 			<h6 class="section-title">Newsletter</h6>
 			<h3>Stay in the loop</h3>
 			<a href="/newsletter" class="button">Subscribe</a>
 		</div>
-		<div class="small-12 large-3 columns show-for-large">
+		<div class="small-10 large-3 columns">
 			<h6 class="section-title">Ameya Pawar For Governor</h6>
 			<a class="footer__link" href="mailto:info@pawar2018.com">info@pawar2018.com</a>
 			<p>P.O. Box 577162<br>Chicago, Il 60657</p>
