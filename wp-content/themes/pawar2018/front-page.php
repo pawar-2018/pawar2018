@@ -13,15 +13,13 @@
       </div>
       <div class="row align-top">
         <div class="small-12 medium-7 columns">
-					<h3>Get the latest updates</h3>
-					<form>
-						<input type="text" placeholder="Email Address"></input>
-						<button type="submit">Subscribe</button>
-					</form>
+            <br>
+			<h3>Get the latest updates</h3>
+			<a href="/newsletter" class="button">Subscribe</a>
         </div>
       </div>
   	</section>
-    <section class="main-content">
+    <section class="main-content row align-middle">
       <div class="row align-middle align-center">
         <div class="small-11 large-4 columns">
           <h1 class="main-callout">I’m running for governor to forge a New Deal for Illinois.</h1>
@@ -78,8 +76,8 @@
           </div>
         </div>
         <div class="column column-block pillar-content">
-          <a href="<?php echo esc_url( home_url( '/issues' )) ?>">
-            <button type="submit">See the Issues</button>
+          <a href="<?php echo esc_url( home_url( '/issues' )) ?>" class="button">
+            See the Issues
           </a>
         </div>
       </div>
@@ -112,8 +110,8 @@
             </div>
           </div>
           <div class="column event-copy">
-            <a href="<?php echo esc_url( home_url( '/events' )) ?>">
-              <button type="submit">See All Events</button>
+            <a href="<?php echo esc_url( home_url( '/events' )) ?>" class="button">
+              See All Events
             </a>
           </div>
         </div>
