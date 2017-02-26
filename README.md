@@ -10,7 +10,9 @@
 ````
     docker-compose up -d
 ````    
-4. Go to http://localhost:8000
+4. In another terminal tab, `cd` in to your local clone of the repo and run `npm install`.
+5. To start your dev server, run `npm start`. This proxies from localhost:8000, which is where Docker is running, so you do need Docker from step 3 running as well.
+6. If you're just running onto merge conficts or want to make sure you build before pushing (this will be fixed when we get deployment more figured out, sorry, because this will get annoying really fast) you can just run `npm run build`.
 
 ## Getting started (Windows)
 1. Install Docker Toolbox on Windows (https://docs.docker.com/toolbox/toolbox_install_windows/)
