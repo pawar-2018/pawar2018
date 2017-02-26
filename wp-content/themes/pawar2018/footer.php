@@ -36,7 +36,7 @@
 			<h3>Stay in the loop</h3>
 			<a href="/newsletter" class="button">Subscribe</a>
 		</div>
-		<div class="large-4 columns show-for-large">
+		<div class="small-11 medium-6 large-4 columns">
 			<h6 class="section-title">Ameya Pawar For Governor</h6>
 			<a class="footer__link" href="mailto:info@pawar2018.com">info@pawar2018.com</a>
 			<p>P.O. Box 577162<br>Chicago, Il 60657</p>
