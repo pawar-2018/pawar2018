@@ -39,7 +39,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		  <div class="menu-icon" data-toggle="top-menu"></div>
 		  <div class="title-bar-title"></div>
 		</div>
-		<nav class="row large-collapse columns align-middle" id="top-menu">
+		<nav class="small-12 large-8 row large-collapse columns align-middle" id="top-menu">
 			<div class="small-order-1 columns">
 				<a href="/meet-ameya" <?php if(is_page('meet-ameya')) {?> class="active"<?php } ?> >
 					Meet Ameya
