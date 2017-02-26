@@ -13,9 +13,16 @@
 	.row:last-child {
 		height: 40%;
 	}
-	.inner-page & {
+	&.inner-page {
+		height: 11rem;
+		@include breakpoint(medium) {
+			height: 17rem;
+		}
 		.row:first-child {
 			height: 100%;
+		}
+		h1 {
+			max-width: 100%;
 		}
 	}
 
