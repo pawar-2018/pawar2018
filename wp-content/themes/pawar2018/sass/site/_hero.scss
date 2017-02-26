@@ -18,6 +18,9 @@
 		@include breakpoint(medium) {
 			height: 17rem;
 		}
+		@include breakpoint(large) {
+			height: 24rem;
+		}
 		.row:first-child {
 			height: 100%;
 		}
