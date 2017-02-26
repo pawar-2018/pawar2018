@@ -12,6 +12,7 @@ button, button[type="submit"] {
   }
   &:hover {
       text-decoration: none;
+      border-bottom: none;
       background: darken($color__background-button, 10);
   }
 }
@@ -30,6 +31,7 @@ button, button[type="submit"] {
     }
     &:hover {
         text-decoration: none;
+        border-bottom: none;
         background: darken($color__background-button, 10);
     }
 }
