@@ -1,135 +1,144 @@
-header {
-	background-color: $color__background-header;
-	padding: 1rem 0;
-	@include breakpoint(medium) {
-		padding: 1.5rem 0;
-	}
-	nav {
-		@include breakpoint(60rem) {
-			flex: 0 0 72.5%;
-    	max-width: 72.5%;
-		}
-		@include breakpoint(65rem) {
-			flex: 0 0 66.66667%;
-    	max-width: 66.66667%;
-    }
-    .columns {
-	    &:nth-child(1) {
-	    	flex: 0 1 15%;
-	    }
-	    &:nth-child(2) {
-	    	flex: 0 1 13%;
-	    }
-	    &:nth-child(3) {
-	    	flex: 0 1 11%;
-	    }
-	    &:nth-child(4) {
-	    	flex: 0 1 17%;
-	    }
-	    &:nth-child(5) {
-				@include breakpoint(60rem) {
-	    		flex: 0 1 25%;
-	    	}
-				@include breakpoint(65rem) {
-		    	flex: 1 1 0px;
-		    }
-	    }
-	  }
-	}
-	button[type="submit"].small {
-		@include breakpoint(60rem) {
-    	padding: .5rem 1rem;
-		}
-		@include breakpoint(65rem) {
-    	padding: .5rem 1.5rem;
-    }
-	}
-	.title-bar {
-		@include breakpoint(small only) {
-			margin-left: 1rem;
-			margin-bottom: .5rem;
-		}
-	}
-	.columns:not(.logo) {
-		@include breakpoint(large) {
-			text-align: center;
-		}
-	}
-	.columns .columns {
-		@include breakpoint(medium down) {
-			padding: 0 0 1rem 2.5rem;
-		}
-	}
-	.logo {
-		@include breakpoint(large) {
-			padding: 0;
-    	flex: 0 0 27.5%;
-    	max-width: 27.5%;
-		}
-		@include breakpoint(65rem) {
-	    padding-right: .9375rem;
-	    padding-left: .9375rem;
-		}
-	}
-	.logo img {
-		max-width: 15rem;
-		margin-left: 1rem;
-		@include breakpoint(76rem) {
-			max-width: 20rem;
-			margin-left: 0;
-		}
-	}
-	.social {
-    justify-content: space-around;
-		@include breakpoint(60rem) {
-    	justify-content: center;
-		}
-		@include breakpoint(65rem) {
-    	justify-content: space-around;
-		}
-		img {
-			margin-top: 2.5rem;
-			width: 1.5rem;
-			height: 1.5rem;
-			transition: all .15s ease;
-			&:hover {
-				opacity: .75;
-			}
-			@include breakpoint(large) {
-    		margin: 0 0 0 .25rem;
-			}
-		}
-	}
-	a {
-		color: white; //todo: color here
-		font-weight: 700;
-		text-decoration: none;
-		padding-bottom: .25rem;
-		&:hover {
-			color: white;
-			border-bottom: 2px solid white;
-			text-decoration: none;
-		}
-		&.active {
-			border-bottom: 2px solid $burnt-orange;
-		}
-		&.button {
-			border-bottom: none;
-			margin: 0;
-		}
-	}
-	.logo a,
-	.social a{
-		border-bottom: none;
-		padding-bottom: 0;
-	}
-	#top-menu {
-		@include breakpoint(medium down) {
-			height: 100vh;
-		}
-	}
+.header {
+  background-color: $color__background-header;
+  padding: 1.5rem 0;
+  @include breakpoint(medium) {
+    padding: 1.5rem 0;
+  }
 }
 
+.header__content {
+  max-width: 75rem;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.header-nav {
+  display: none;
+  flex-flow: column wrap;
+  width: 100%;
+  height: 100vh;
+  padding-right: 2.5rem;
+  padding-left: calc(6% + 1rem);
+  @include breakpoint(40rem) {
+    padding-left: calc(4% + 1rem);
+  }
+  @include breakpoint(64rem) {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: initial;
+    height: initial;
+    padding-left: 0;
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%;
+  }
+}
+
+.header-nav--active {
+  @include breakpoint(64rem down) {
+    display: flex;
+  }
+}
+
+.header-logo {
+  color: white;
+  flex: 0 0 50%;
+  margin-left: 1rem;
+  padding: 0;
+  text-decoration: none;
+  @include breakpoint(40rem) {
+    flex: 0 0 36.25%;
+  }
+  @include breakpoint(64rem) {
+    flex: 0 0 27%;
+    padding-right: 2rem;
+  }
+}
+
+.header-burger {
+  color: #fefefe;
+  padding: 0 2.5rem 0 1rem;
+  background: #233368;
+  @include breakpoint(64rem) {
+    display: none;
+  }
+}
+
+.header-burger__icon {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 16px;
+  cursor: pointer;
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #fefefe;
+    box-shadow:
+      0 7px 0 #fefefe,
+      0 14px 0 #fefefe;
+  }
+}
+
+.header-nav__link {
+  display: block;
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+  text-align: left;
+  padding-top: 0.5rem;
+  padding-bottom: 0.25rem;
+  margin-bottom: 0.25rem;
+  width: 100%;
+  @include breakpoint(64rem) {
+    text-align: center;
+    width: initial;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.header-social {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  order: 2;
+  text-align: center;
+  padding-top: 2.5rem;
+  @include breakpoint(64rem) {
+    padding: 0;
+    justify-content: space-around;
+    order: 0;
+    max-width: 22.5%;
+  }
+}
+
+.header-social__link {
+  display: flex;
+  max-width: 20%;
+  @include breakpoint(64rem) {
+    max-width: 12.5%;
+  }
+}
+
+.header-social__button {
+  margin-top: 2rem;
+  @include breakpoint(64rem) {
+    margin: 0;
+  }
+}
+
+//TODO: Move into a base SCSS file
 /*
  * Let's target IE to respect aspect ratios and sizes for img tags containing SVG files
  *
@@ -141,10 +150,11 @@ header {
   width: 100%;
   height: auto;
 }
+
 /* 2 */
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   img[src$=".svg"] {
     width: 100%;
-		height: auto;
+    height: auto;
   }
 }

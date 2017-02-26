@@ -52,6 +52,6 @@
 <?php wp_footer(); ?>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.0/js/foundation.min.js"></script>
-<script src="<?php echo get_bloginfo('template_url') ?>/js/scripts/app.js"></script>
+<script src="<?php echo get_bloginfo('template_url') ?>/js/scripts/app.js" defer></script>
 </body>
 </html>
