@@ -133,14 +133,6 @@
 	}
 }
 
-.event {
-	margin: 0 0 1rem;
-	padding: 1rem;
-	@include breakpoint(medium) {
-		margin: 0 0 3rem 0;
-	}
-}
-
 .event-date_circle {
 	text-align: center;
 	display: inline-block;
@@ -153,8 +145,11 @@
 	line-height: 1;
 	height: 5rem;
 	width: 5rem;
-	margin: 0 0 2rem 0;
+	margin: 1rem auto;
 	@include breakpoint(medium) {
+		margin: 1rem 0;
+	}
+	@include breakpoint(large) {
 		margin: 0;
 	}
 }
