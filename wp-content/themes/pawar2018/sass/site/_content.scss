@@ -9,6 +9,11 @@
 		margin-bottom: 0;
 		margin-top: 0;
 	}
+	&.row:before,
+	&.row:after {
+	  display: flex !important;
+	  content: " " !important;
+	}
 }
 
 .main-callout,
