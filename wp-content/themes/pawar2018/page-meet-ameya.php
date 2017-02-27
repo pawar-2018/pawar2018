@@ -14,9 +14,7 @@
             </div>
         </div>
         <div class="row small-collapse large-uncollapse align-center">
-            <div class="small-12 columns">
-                <p><img src="<?php echo get_bloginfo('template_url') ?>/assets/meet-ameya-01.jpg"></p>
-            </div>
+            <img src="<?php echo get_bloginfo('template_url') ?>/assets/meet-ameya-01.jpg" class="inner-photo">
         </div>
         <div class="row small-collapse large-uncollapse align-center">
             <div class="small-11 medium-10 columns">

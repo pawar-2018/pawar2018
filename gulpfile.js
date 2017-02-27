@@ -24,7 +24,7 @@ gulp.task('styles', function() {
     .pipe($.sass({outputStyle: 'compressed'
     }).on('error', $.sass.logError))
     .pipe($.postcss([autoprefixer({
-      browsers: ['last 2 versions'],
+      browsers: ['last 2 version'],
       cascade: false
     })]))
     .pipe(gulp.dest(wpPath))

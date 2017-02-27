@@ -41,6 +41,7 @@
 
   @if $base {
     display: flex;
+    display: -webkit-flex;
     flex-flow: row $wrap;
   }
 
