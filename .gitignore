@@ -39,3 +39,6 @@ wp-content/themes/*
 .DS_Store
 node_modules/
 
+# Ignore built files
+wp-content/themes/pawar2018/style.css
+wp-content/themes/pawar2018/style.css.map
