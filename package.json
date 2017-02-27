@@ -20,12 +20,6 @@
   },
   "homepage": "https://github.com/pawar-2018/pawar2018#readme",
   "dependencies": {
-    "gulp": "git+https://github.com/gulpjs/gulp.git#4.0",
-    "gulp-load-plugins": "^1.5.0",
-    "gulp-cssnano": "^2.1.2",
-    "yargs": "^6.6.0"
-  },
-  "devDependencies": {
     "autoprefixer": "^6.4.0",
     "browser-sync": "^2.18.8",
     "gulp": "git+https://github.com/gulpjs/gulp.git#4.0",
@@ -38,6 +32,10 @@
     "gulp-sass": "^2.3.2",
     "gulp-size": "^2.1.0",
     "gulp-sourcemaps": "^1.6.0",
-    "gulp-uglify": "^2.0.0"
+    "gulp-uglify": "^2.0.0",
+    "yargs": "^6.6.0"
+  },
+  "engines": {
+    "node": ">= 5.1.0"
   }
 }
