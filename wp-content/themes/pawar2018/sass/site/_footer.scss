@@ -6,6 +6,11 @@
   @include breakpoint(large) {
     padding: 3.25rem 0;
   }
+  .button {
+    @include breakpoint(small only) {
+      margin-bottom: 2.5rem;
+    }
+  }
 }
 
 .footer__link {
