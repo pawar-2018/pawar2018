@@ -42,3 +42,7 @@ node_modules/
 # Ignore built files
 wp-content/themes/pawar2018/style.css
 wp-content/themes/pawar2018/style.css.map
+wp-content/themes/pawar2018/js/main.min.js.map
+wp-content/themes/pawar2018/js/main.min.js
+
+wp-content/themes/pawar2018/js/main.min.js.map

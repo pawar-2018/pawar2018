@@ -24,16 +24,17 @@
     "browser-sync": "^2.18.8",
     "gulp": "git+https://github.com/gulpjs/gulp.git#4.0",
     "gulp-concat": "^2.6.0",
+    "gulp-cssnano": "^2.1.2",
     "gulp-debug": "^3.1.0",
     "gulp-if": "^2.0.1",
     "gulp-imagemin": "^3.0.2",
     "gulp-load-plugins": "^1.2.4",
     "gulp-postcss": "^6.1.1",
+    "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.3.2",
     "gulp-size": "^2.1.0",
     "gulp-sourcemaps": "^1.6.0",
     "gulp-uglify": "^2.0.0",
-    "gulp-cssnano": "^2.1.2",
     "yargs": "^6.6.0"
   },
   "engines": {
