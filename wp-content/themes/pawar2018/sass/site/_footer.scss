@@ -11,6 +11,11 @@
       margin-bottom: 2.5rem;
     }
   }
+  .row:before,
+  .row:after {
+    display: flex !important;
+    content: " " !important;
+  }
 }
 
 .footer__link {

@@ -14,8 +14,8 @@
             </div>
         </div>
         <div class="row small-collapse large-uncollapse align-center">
-            <div class="small-12 columns">
-                <p><img src="<?php echo get_bloginfo('template_url') ?>/assets/meet-ameya-01.jpg"></p>
+            <div class="small-12 medium-10 columns">
+            <img src="<?php echo get_bloginfo('template_url') ?>/assets/meet-ameya-01.jpg" class="inner-photo">
             </div>
         </div>
         <div class="row small-collapse large-uncollapse align-center">
@@ -24,11 +24,11 @@
                 <p>Growing up, Ameya attended public schools. He went on to earn two master’s degrees from the University of Chicago and one from the Illinois Institute of Technology. In 2014 he co-authored a textbook on emergency management, disaster policy, social justice, and community resiliency with his wife Charna Epstein. The book proposes a new model for understanding the interconnectedness of communities to help emergency managers better prepare. Ameya and Charna have presented their work at conferences across the country. Charna is now the chief operating officer of the Urban Education Institute at the University of Chicago.</p>
             </div>
         </div>
-        <div class="row small-collapse bottom-content">
-            <div class="small-12 large-4 columns">
+        <div class="row small-collapse large-uncollapse bottom-content">
+            <div class="small-12 medium-10 large-5 columns">
                         <img src="<?php echo get_bloginfo('template_url') ?>/assets/meet-ameya-02.jpg" class="inner-photo">
                     </div>
-                    <div class="small-11 large-3 large-offset-1 inner-caption">
+                    <div class="small-11 medium-10 large-4 large-offset-1 inner-caption">
                         <p>Charna and Ameya live in a 100-year-old home in Chicago with a pit bull named Baby and their actual baby girl, Sigalit. In their free time, Charna and Ameya enjoy the outdoors—from Lake Michigan to Shawnee National Forest to Starved Rock State Park to the Mississippi Palisades State Park.</p>
                     <a href="/issues" class="button">See The Issues</a>
                 </div>

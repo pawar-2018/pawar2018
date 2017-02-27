@@ -7,14 +7,14 @@
   	</section>
     <section class="body">
         <div class="row align-center">
-            <div class="small-11 large-4 small-order-2 medium-order-1 columns">
+            <div class="small-11 medium-5 large-4 small-order-2 medium-order-1 columns">
                 <h1 class="section-title">Let's Talk</h1>
                 <p>Looking to host an event?</p>
                 <a href='/get-involved' class="button">Contact Us</a>
             </div>
-            <div class="small-12 large-6  small-order-1 medium-order-2 columns">
+            <div class="small-12 medium-5 large-6 small-order-1 medium-order-2 columns">
                 <div class="event row align-center">
-                    <div class="small-3 medium-12 large-2 columns">
+                    <div class="small-3 medium-10 large-2 columns">
                     <div class="event-date_circle">
                         5<br>March
                     </div>
@@ -31,7 +31,7 @@
                   </div>
               </div>
               <div class="event row align-center">
-                <div class="small-3 medium-12 large-2 columns">
+                <div class="small-3 medium-10 large-2 columns">
                     <div class="event-date_circle">
                         7<br>March
                     </div>

@@ -1,7 +1,5 @@
 .body {
 		margin: 2rem 0;
-    display: flex;
-    flex-flow: column nowrap;
 		@include breakpoint(large) {
 			margin: 3rem 0;
 		}
@@ -19,6 +17,7 @@
 
   .inner-photo {
   	margin-bottom: 1.5rem;
+    min-width: 100%;
   }
   .bottom-content {
  		justify-content: center;
