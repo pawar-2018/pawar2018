@@ -86,25 +86,25 @@
           <h1 class="main-callout">Let's talk.</h1>
           <div class="row small-collapse">
             <div class="column small-11 large-8 event-copy">
-              <p class="event-date">Saturday, March 5th at 11 AM</p>
-              <h5 class="event-header">The Future of Illinois with Gubernatorial Candidate Ameya Pawar</h5>
-              <p class="event-locale">Irish American Heritage Center</p>
-              <p class="event-address">
-                4626 N Knox Ave
-                <br />
-                Chicago IL
-              </p>
-            </div>
+                <p class="event-date">Saturday, March 4th at 1:45PM</p>
+                <h5 class="event-header">Brady Campaign</h5>
+                <p class="event-locale">Simeon Career Academy</p>
+                <p class="event-address">
+                  8147 S Vicennes Ave
+                  <br />
+                  Chicago, IL
+                </p>
+              </div>
             <div class="column small-11 large-8 event-copy">
-              <p class="event-date">Friday, March 7th at 9 PM</p>
-              <h5 class="event-header">The Future of Illinois with Gubernatorial Candidate Ameya Pawar</h5>
-              <p class="event-locale">Irish American Heritage Center</p>
-              <p class="event-address">
-                4626 N Knox Ave
-                <br />
-                Chicago IL
-              </p>
-            </div>
+                <p class="event-date">Sunday, March 5th at 4:30PM</p>
+                <h5 class="event-header">Meet and Greet with Action for a Better Tomorrow</h5>
+                <p class="event-locale">Flossmore Community Church</p>
+                <p class="event-address">
+                  2218 Hutchinson Rd.
+                  <br />
+                  Flossmoor, IL
+                </p>
+              </div>
           </div>
           <div class="column event-copy">
             <a href="<?php echo esc_url( home_url( '/events' )) ?>" class="button">

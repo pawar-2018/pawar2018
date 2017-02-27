@@ -16,34 +16,34 @@
                 <div class="event row align-center">
                     <div class="small-3 medium-10 large-2 columns">
                     <div class="event-date_circle">
-                        5<br>March
+                        4<br>March
                     </div>
                     </div>
                     <div class="small-11 large-7  large-offset-1 columns event-copy">
-                      <p class="event-date">Saturday, March 5th at 11 AM</p>
-                      <h5 class="event-header">The Future of Illinois with Gubernatorial Candidate Ameya Pawar</h5>
-                      <p class="event-locale">Irish American Heritage Center</p>
+                      <p class="event-date">Saturday, March 4th at 1:45PM</p>
+                      <h5 class="event-header">Brady Campaign</h5>
+                      <p class="event-locale">Simeon Career Academy</p>
                       <p class="event-address">
-                        4626 N Knox Ave
+                        8147 S Vicennes Ave
                         <br />
-                        Chicago IL
+                        Chicago, IL
                       </p>
                   </div>
               </div>
               <div class="event row align-center">
                 <div class="small-3 medium-10 large-2 columns">
                     <div class="event-date_circle">
-                        7<br>March
+                        5<br>March
                     </div>
                 </div>
                 <div class="small-11 large-7 large-offset-1 columns event-copy">
-                  <p class="event-date">Friday, March 7th at 9 PM</p>
-                  <h5 class="event-header">The Future of Illinois with Gubernatorial Candidate Ameya Pawar</h5>
-                  <p class="event-locale">Irish American Heritage Center</p>
+                    <p class="event-date">Sunday, March 5th at 4:30PM</p>
+                  <h5 class="event-header">Meet and Greet with Action for a Better Tomorrow</h5>
+                  <p class="event-locale">Flossmore Community Church</p>
                   <p class="event-address">
-                    4626 N Knox Ave
+                    2218 Hutchinson Rd.
                     <br />
-                    Chicago IL
+                    Flossmoor, IL
                   </p>
                 </div>
               </div>
