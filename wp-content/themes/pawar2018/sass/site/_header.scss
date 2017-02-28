@@ -109,10 +109,31 @@
   &:hover {
     color: white;
     text-decoration: none;
+	&:after {
+  	  content: '';
+  	  height: 2px;
+  	  display: block;
+  	  background: #fff;
+  	  width: 100%;
+    }
+  }
+  &:after {
+	  content: '';
+	  height: 2px;
+	  display: block;
+	  background: #fff;
+	  width: 0;
+	  transition: .15s linear;
   }
   &.active {
-    border-bottom: 2px $burnt-orange solid;
-  }
+  	&:after {
+    	  content: '';
+    	  height: 2px;
+    	  display: block;
+    	  background: $burnt-orange;
+    	  width: 100%;
+      }
+    }
 }
 
 .header-social {
@@ -133,8 +154,12 @@
 .header-social__link {
   display: flex;
   max-width: 20%;
+  transition: .15s linear;
   @include breakpoint(64rem) {
     max-width: 12.5%;
+  }
+  &:hover {
+	 opacity: .75;
   }
 }
 

@@ -26,6 +26,7 @@ button, button[type="submit"] {
     min-width: 10rem;
     padding: .875rem 2rem;
     transition: all .15s ease;
+    border-bottom: 0;
     &.small {
        padding: .5rem 1.5rem;
     }

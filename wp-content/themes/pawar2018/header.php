@@ -41,16 +41,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		</div>
 
 		<nav class="header-nav">
-            <a class="header-nav__link" href="/meet-ameya" <?php if(is_page('meet-ameya')) {?> class="active"<?php } ?> >
+            <a class="header-nav__link <?php if(is_page('meet-ameya')) {?> active <?php } ?>" href="/meet-ameya" >
                 Meet Ameya
             </a>
-            <a class="header-nav__link" href="/issues" <?php if(is_page('issues')) {?> class="active"<?php } ?>>
+            <a class="header-nav__link  <?php if(is_page('issues')) {?> active <?php } ?>" href="/issues">
                 Issues
             </a>
-			<a class="header-nav__link" href="/events" <?php if(is_page('events')) {?> class="active"<?php } ?>>
+			<a class="header-nav__link <?php if(is_page('events')) {?> active <?php } ?>" href="/events">
               Events
             </a>
-			<a class="header-nav__link" href="/get-involved" <?php if(is_page('get-involved')) {?> class="active"<?php } ?>>
+			<a class="header-nav__link <?php if(is_page('get-involved')) {?> active <?php } ?>" href="/get-involved">
                 Get Involved
             </a>
 			<div class="header-social">
