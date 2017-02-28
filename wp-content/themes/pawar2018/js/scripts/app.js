@@ -15,11 +15,10 @@
   var accords = document.querySelectorAll('.accordion-item'), i;
 
   for (i = 0; i < accords.length; ++i) {
-    accords[i].addEventListener('click', function(event) {
+    let accordContent = accords[i].querySelector(".accordion-content");
+    let accordTitle = accords[i].querySelector(".accordion-title");
+    accordTitle.addEventListener('click', function(event) {
       event.preventDefault();
-      var accordContent = this.querySelector(".accordion-content");
-      var accordTitle = this.querySelector(".accordion-title");
-
       if(!accordContent.classList.contains('accordion-content--active')) {
         accordContent.classList.add('accordion-content--active');
         accordTitle.classList.add('accordion-title--active');
