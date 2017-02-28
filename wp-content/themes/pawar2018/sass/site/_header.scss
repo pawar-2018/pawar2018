@@ -185,3 +185,9 @@
     width: 100%;
   }
 }
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .footer-social__container img[src$=".svg"] {
+    width: 100%;
+  }
+}
