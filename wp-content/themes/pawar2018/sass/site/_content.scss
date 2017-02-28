@@ -15,8 +15,10 @@
 }
 
 .main-content {
-	min-height: 20rem;
-	height: 20rem;
+	@include breakpoint(large) {
+		min-height: 20rem;
+		height: 20rem;
+	}
 }
 
 .main-callout,
