@@ -1,23 +1,23 @@
 <?php get_header(); ?>
   <main>
-  	<section class="hero">
+    <section class="hero">
       <div class="row align-bottom">
         <div class="small-9 columns">
-  				<h1>A New Deal For Illinois</h1>
+          <h1>A New Deal For Illinois</h1>
         </div>
       </div>
       <div class="row align-middle">
         <div class="small-12 medium-7 columns">
-  				<h2>It‘s time to grab a clipboard, lace up our boots, and work together to restore progressive values in 2018.</h2>
+          <h2>It‘s time to grab a clipboard, lace up our boots, and work together to restore progressive values in 2018.</h2>
         </div>
       </div>
       <div class="row align-middle">
         <div class="small-12 medium-7 columns">
-			<h3>Get the latest updates</h3>
-			<a href="/newsletter" class="button">Subscribe</a>
+      <h3>Get the latest updates</h3>
+      <a href="/newsletter" class="button">Subscribe</a>
         </div>
       </div>
-  	</section>
+    </section>
     <section class="row main-content align-middle align-center">
       <div class="small-11 large-4 columns">
         <h1 class="main-callout">I’m running for governor to forge a New Deal for Illinois.</h1>
@@ -120,7 +120,7 @@
     <div class="row main-content align-middle align-center">
       <div class="small-11 large-10 columns">
         <h1 class="main-quote">
-          "We have the power to use government as a force for good—if we elect people who believe in the power of government to make lives better. That’s why I’m running for Governor.”
+          "We have the power to use government as a force for good—if we elect people who believe in the power of government to improve the lives of people in every community across Illinois.. That’s why I’m running for Governor.”
         </h1>
         <p class="main-caption">
           - Ameya Pawar
