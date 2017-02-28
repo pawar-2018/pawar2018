@@ -1,7 +1,5 @@
 .main-content,
 .bottom-content {
-	min-height: 20rem;
-	height: 100%;
 	font-size: 1.3125rem;
 	margin-bottom: 1.5rem;
 	margin-top: 1.25rem;
@@ -14,6 +12,11 @@
 	  display: flex !important;
 	  content: " " !important;
 	}
+}
+
+.main-content {
+	min-height: 20rem;
+	height: 20rem;
 }
 
 .main-callout,
@@ -76,7 +79,7 @@
 		padding-top: 3rem;
 		padding-bottom: 1rem;
   	padding-left: 6.25%;
-		flex: 1 0 66.6667%;
+		flex: 1 0 0px;
 	}
 	@include breakpoint(large) {
 		padding-left: calc(8.333333333% + .9375rem);
@@ -90,7 +93,7 @@
 	padding-top: 2rem;
 	@include breakpoint(medium) {
 		padding-top: 3rem;
-		flex: 1 0 33.3333%;
+		flex: 0 1 33.3333%;
 		position: relative;
 	}
 	.row {

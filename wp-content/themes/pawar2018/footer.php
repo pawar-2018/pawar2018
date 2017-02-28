@@ -1,19 +1,17 @@
 <div class="footer-social__container">
 	<div class="row align-center">
-		<div class="footer-social__icons">
-			<a class="footer-social__link" href="https://www.facebook.com/AmeyaPawarIL/" target="_blank">
-				<img src="<?php echo get_bloginfo('template_url') ?>/assets/facebook.svg">
-			</a>
-			<a class="footer-social__link" href="https://twitter.com/Ameya_Pawar_IL" target="_blank">
-				<img src="<?php echo get_bloginfo('template_url') ?>/assets/twitter.svg">
-			</a>
-			<a class="footer-social__link" href="https://www.instagram.com/ameya.s.pawar/" target="_blank">
-				<img src="<?php echo get_bloginfo('template_url') ?>/assets/instagram.svg">
-			</a>
-			<a class="footer-social__link" href="https://www.youtube.com/user/RenewChicago/videos" target="_blank">
-				<img src="<?php echo get_bloginfo('template_url') ?>/assets/youtube.svg">
-			</a>
-		</div>
+		<a class="footer-social__link" href="https://www.facebook.com/AmeyaPawarIL/" target="_blank">
+			<img src="<?php echo get_bloginfo('template_url') ?>/assets/facebook.svg">
+		</a>
+		<a class="footer-social__link" href="https://twitter.com/Ameya_Pawar_IL" target="_blank">
+			<img src="<?php echo get_bloginfo('template_url') ?>/assets/twitter.svg">
+		</a>
+		<a class="footer-social__link" href="https://www.instagram.com/ameya.s.pawar/" target="_blank">
+			<img src="<?php echo get_bloginfo('template_url') ?>/assets/instagram.svg">
+		</a>
+		<a class="footer-social__link" href="https://www.youtube.com/user/RenewChicago/videos" target="_blank">
+			<img src="<?php echo get_bloginfo('template_url') ?>/assets/youtube.svg">
+		</a>
 	</div>
 </div>
 
@@ -22,7 +20,7 @@
 		<div class="small-11 medium-3 large-4 columns">
 			<nav class="footer-nav">
 		        <a class="footer-nav__link show-for-large" href="">
-		          <img class="footer-nav__logo" src="<?php echo get_bloginfo('template_url') ?>/assets/logo.png"/>
+		          <img class="footer-nav__logo" src="<?php echo get_bloginfo('template_url') ?>/assets/logo.svg"/>
 		        </a>
 		        <a class="footer-nav__link" href="/meet-ameya">About</a>
 		        <a class="footer-nav__link" href="/issues">Issues</a>
