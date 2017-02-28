@@ -32,8 +32,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <header class="header">
 	<div class="header__content">
 
-        <a class="header-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-            <img src="<?php echo get_bloginfo('template_url') ?>/assets/logo.svg">
+        <a class="header-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" aria-label="Back to the Home Page">
+            <img src="<?php echo get_bloginfo('template_url') ?>/assets/logo.svg" alt="Ameya Pawar 2018 Logo">
         </a>
 
 		<div class="header-burger">
@@ -41,30 +41,30 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		</div>
 
 		<nav class="header-nav">
-            <a class="header-nav__link <?php if(is_page('meet-ameya')) {?> active <?php } ?>" href="/meet-ameya" >
+            <a class="header-nav__link <?php if(is_page('meet-ameya')) {?> active <?php } ?>" href="/meet-ameya" aria-label="Link to Meet Ameya Page">
                 Meet Ameya
             </a>
-            <a class="header-nav__link  <?php if(is_page('issues')) {?> active <?php } ?>" href="/issues">
+            <a class="header-nav__link  <?php if(is_page('issues')) {?> active <?php } ?>" href="/issues" aria-label="Link to Issues Page">
                 Issues
             </a>
-			<a class="header-nav__link <?php if(is_page('events')) {?> active <?php } ?>" href="/events">
+			<a class="header-nav__link <?php if(is_page('events')) {?> active <?php } ?>" href="/events" aria-label="Link to Events Page">
               Events
             </a>
-			<a class="header-nav__link <?php if(is_page('get-involved')) {?> active <?php } ?>" href="/get-involved">
+			<a class="header-nav__link <?php if(is_page('get-involved')) {?> active <?php } ?>" href="/get-involved" aria-label="Link to Get Involved Page">
                 Get Involved
             </a>
 			<div class="header-social">
-				<a class="header-social__link" href="https://www.facebook.com/AmeyaPawarIL/">
-					<img src="<?php echo get_bloginfo('template_url') ?>/assets/facebook.svg">
+				<a class="header-social__link" href="https://www.facebook.com/AmeyaPawarIL/" target="_blank" aria-label="Link to Facebook AmeyaPawarIL">
+					<img src="<?php echo get_bloginfo('template_url') ?>/assets/facebook.svg" alt="Facebook Icon">
 				</a>
-				<a class="header-social__link" href="https://twitter.com/Ameya_Pawar_IL">
-					<img src="<?php echo get_bloginfo('template_url') ?>/assets/twitter.svg">
+				<a class="header-social__link" href="https://twitter.com/Ameya_Pawar_IL" target="_blank" aria-label="Link to Twitter Ameya_Pawar_IL">
+					<img src="<?php echo get_bloginfo('template_url') ?>/assets/twitter.svg" alt="Twitter Icon">
 				</a>
-				<a class="header-social__link" href="https://www.instagram.com/ameya.s.pawar/">
-					<img src="<?php echo get_bloginfo('template_url') ?>/assets/instagram.svg">
+				<a class="header-social__link" href="https://www.instagram.com/ameya.s.pawar/" target="_blank" aria-label="Link to Instagram ameya.s.pawar">
+					<img src="<?php echo get_bloginfo('template_url') ?>/assets/instagram.svg" alt="Instagram Icon">
 				</a>
-				<a class="header-social__link" href="https://www.youtube.com/user/RenewChicago/videos">
-					<img src="<?php echo get_bloginfo('template_url') ?>/assets/youtube.svg">
+				<a class="header-social__link" href="https://www.youtube.com/user/RenewChicago/videos" target="_blank" aria-label="Link to Youtube RenewChicago">
+					<img src="<?php echo get_bloginfo('template_url') ?>/assets/youtube.svg" alt="Youtube Icon">
 				</a>
 			</div>
 			<a class="header-social__button button" href="https://act.myngp.com/Forms/9188561423484586496" target="_blank">

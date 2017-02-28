@@ -1,16 +1,16 @@
 <div class="footer-social__container">
 	<div class="row align-center">
-		<a class="footer-social__link" href="https://www.facebook.com/AmeyaPawarIL/" target="_blank">
-			<img src="<?php echo get_bloginfo('template_url') ?>/assets/facebook.svg">
+		<a class="footer-social__link" href="https://www.facebook.com/AmeyaPawarIL/" target="_blank" aria-label="Link to Facebook AmeyaPawarIL">
+			<img src="<?php echo get_bloginfo('template_url') ?>/assets/facebook.svg" alt="Facebook Icon">
 		</a>
-		<a class="footer-social__link" href="https://twitter.com/Ameya_Pawar_IL" target="_blank">
-			<img src="<?php echo get_bloginfo('template_url') ?>/assets/twitter.svg">
+		<a class="footer-social__link" href="https://twitter.com/Ameya_Pawar_IL" target="_blank" aria-label="Link to Twitter Ameya_Pawar_IL">
+			<img src="<?php echo get_bloginfo('template_url') ?>/assets/twitter.svg" alt="Twitter Icon">
 		</a>
-		<a class="footer-social__link" href="https://www.instagram.com/ameya.s.pawar/" target="_blank">
-			<img src="<?php echo get_bloginfo('template_url') ?>/assets/instagram.svg">
+		<a class="footer-social__link" href="https://www.instagram.com/ameya.s.pawar/" target="_blank" aria-label="Link to Instagram ameya.s.pawar">
+			<img src="<?php echo get_bloginfo('template_url') ?>/assets/instagram.svg" alt="Instagram Icon">
 		</a>
-		<a class="footer-social__link" href="https://www.youtube.com/user/RenewChicago/videos" target="_blank">
-			<img src="<?php echo get_bloginfo('template_url') ?>/assets/youtube.svg">
+		<a class="footer-social__link" href="https://www.youtube.com/user/RenewChicago/videos" target="_blank" aria-label="Link to Youtube RenewChicago">
+			<img src="<?php echo get_bloginfo('template_url') ?>/assets/youtube.svg"  alt="Youtube Icon">
 		</a>
 	</div>
 </div>
@@ -19,8 +19,8 @@
 	<div class="row align-center">
 		<div class="small-11 medium-3 large-4 columns">
 			<nav class="footer-nav">
-		        <a class="footer-nav__link show-for-large" href="">
-		          <img class="footer-nav__logo" src="<?php echo get_bloginfo('template_url') ?>/assets/logo.svg"/>
+		        <a class="footer-nav__link show-for-large" href="<?php echo esc_url( home_url( '/' ) ); ?>" aria-label="Back to the Home Page">
+		          <img class="footer-nav__logo" src="<?php echo get_bloginfo('template_url') ?>/assets/logo.svg"  alt="Ameya Pawar 2018 Logo">/>
 		        </a>
 		        <a class="footer-nav__link" href="/meet-ameya">About</a>
 		        <a class="footer-nav__link" href="/issues">Issues</a>
