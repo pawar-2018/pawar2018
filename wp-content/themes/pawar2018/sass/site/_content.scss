@@ -15,7 +15,7 @@
 }
 
 .main-content {
-	@include breakpoint(medium) {
+	@include breakpoint(large) {
 		min-height: 20rem;
 		height: 20rem;
 	}
