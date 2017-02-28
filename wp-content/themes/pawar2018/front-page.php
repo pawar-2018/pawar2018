@@ -113,7 +113,7 @@
           </div>
         </div>
         <div class="event-photo">
-          <img src="<?php echo get_bloginfo('template_url') ?>/assets/ameya02.png" class="event-photo" alt="Ameya Pawar with Microphone">
+          <img src="<?php echo get_bloginfo('template_url') ?>/assets/ameya02.jpg" class="event-photo" alt="Ameya Pawar with Microphone">
         </div>
       </div>
     </section>
@@ -129,10 +129,10 @@
     </div>
     <div class="row bottom-content small-collapse align-middle align-justify">
       <div class="small-12 large-6 columns">
-        <img src="<?php echo get_bloginfo('template_url') ?>/assets/ameya03.png" alt="Ameya Pawar with Schoolchildren">
+        <img src="<?php echo get_bloginfo('template_url') ?>/assets/ameya03.jpg" alt="Ameya Pawar with Schoolchildren">
       </div>
       <div class="small-12 large-6 columns">
-        <img src="<?php echo get_bloginfo('template_url') ?>/assets/ameya04.png" alt="Ameya Pawar in front of a construction site">
+        <img src="<?php echo get_bloginfo('template_url') ?>/assets/ameya04.jpg" alt="Ameya Pawar in front of a construction site">
       </div>
     </div>
   </div>
