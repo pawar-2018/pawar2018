@@ -26,9 +26,6 @@
         </div>
         <div class="row small-collapse large-uncollapse bottom-content">
             <div class="small-12 medium-10 large-5 columns">
-                        <img src="<?php echo get_bloginfo('template_url') ?>/assets/meet-ameya-02.jpg" class="inner-photo" alt="Ameya Pawar at the Women's March with his Wife, Charna">
-                    </div>
-                    <div class="small-11 medium-10 large-4 inner-caption">
                         <p>Charna and Ameya live in a 100-year-old home in Chicago with a pit bull named Baby and their actual baby girl, Sigalit. In their free time, Charna and Ameya enjoy the outdoors—from Lake Michigan to Shawnee National Forest to Starved Rock State Park to the Mississippi Palisades State Park.</p>
                     <a href="/issues" class="button">See The Issues</a>
                 </div>
