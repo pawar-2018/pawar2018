@@ -18,7 +18,7 @@
         </div>
       </div>
     </section>
-    <section class="row main-content align-middle align-center">
+    <section class="row align-middle align-center">
       <div class="small-11 large-4 columns">
         <h1 class="main-callout">I’m running for governor to forge a New Deal for Illinois.</h1>
       </div>
