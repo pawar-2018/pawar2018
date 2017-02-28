@@ -36,7 +36,7 @@
         </h1>
         <div class="row small-up-1">
           <div class="column column-block pillar-content">
-            <img src="<?php echo get_bloginfo('template_url') ?>/assets/school.svg" class="pillar-icon">
+            <img src="<?php echo get_bloginfo('template_url') ?>/assets/school.svg" class="pillar-icon" alt="School Icon">
             <div class="pillar-copy">
               <h4 class="pillar-header">Education</h4>
               <p>
@@ -45,7 +45,7 @@
             </div>
           </div>
           <div class="column column-block pillar-content">
-            <img src="<?php echo get_bloginfo('template_url') ?>/assets/family.svg" class="pillar-icon">
+            <img src="<?php echo get_bloginfo('template_url') ?>/assets/family.svg" class="pillar-icon" alt="Family Icon">
             <div class="pillar-copy">
               <h4 class="pillar-header">Childcare</h4>
               <p>
@@ -54,7 +54,7 @@
             </div>
           </div>
           <div class="column column-block pillar-content">
-            <img src="<?php echo get_bloginfo('template_url') ?>/assets/bridge.svg" class="pillar-icon">
+            <img src="<?php echo get_bloginfo('template_url') ?>/assets/bridge.svg" class="pillar-icon" alt="Bridge Icon">
             <div class="pillar-copy">
               <h4 class="pillar-header">Jobs & Infrastructure</h4>
               <p>
@@ -63,7 +63,7 @@
             </div>
           </div>
           <div class="column column-block pillar-content">
-            <img src="<?php echo get_bloginfo('template_url') ?>/assets/hammer.svg" class="pillar-icon">
+            <img src="<?php echo get_bloginfo('template_url') ?>/assets/hammer.svg" class="pillar-icon" alt="Gavel Icon">
             <div class="pillar-copy">
               <h4 class="pillar-header">criminal justice reform</h4>
               <p>
@@ -113,7 +113,7 @@
           </div>
         </div>
         <div class="event-photo">
-          <img src="<?php echo get_bloginfo('template_url') ?>/assets/ameya02.png" class="event-photo">
+          <img src="<?php echo get_bloginfo('template_url') ?>/assets/ameya02.png" class="event-photo" alt="Ameya Pawar with Microphone">
         </div>
       </div>
     </section>
@@ -129,10 +129,10 @@
     </div>
     <div class="row bottom-content small-collapse align-middle align-justify">
       <div class="small-12 large-6 columns">
-        <img src="<?php echo get_bloginfo('template_url') ?>/assets/ameya03.png">
+        <img src="<?php echo get_bloginfo('template_url') ?>/assets/ameya03.png" alt="Ameya Pawar with Schoolchildren">
       </div>
       <div class="small-12 large-6 columns">
-        <img src="<?php echo get_bloginfo('template_url') ?>/assets/ameya04.png">
+        <img src="<?php echo get_bloginfo('template_url') ?>/assets/ameya04.png" alt="Ameya Pawar in front of a construction site">
       </div>
     </div>
   </div>
