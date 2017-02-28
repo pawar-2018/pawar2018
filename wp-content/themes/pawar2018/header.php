@@ -34,7 +34,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	<div class="header__content">
 
         <a class="header-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-            <img src="<?php echo get_bloginfo('template_url') ?>/assets/logo.png">
+            <img src="<?php echo get_bloginfo('template_url') ?>/assets/logo.svg">
         </a>
 
 		<div class="header-burger">

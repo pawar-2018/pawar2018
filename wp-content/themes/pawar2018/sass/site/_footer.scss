@@ -58,17 +58,12 @@
   padding: 2rem 0 1.5rem;
 }
 
-.footer-social__icons {
-  display: flex;
-}
-
 .footer-social__link {
-  flex: 1 0;
+  flex: 1 0 15%;
   display: inline-block;
   transition: all .15s ease;
-  &:not(:last-child) {
-    padding-right: 2rem;
-  }
+  max-width: 2.75rem;
+  margin: 0 1rem;
   &:hover {
      opacity: .75;
   }

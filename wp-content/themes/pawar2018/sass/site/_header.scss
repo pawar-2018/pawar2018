@@ -51,12 +51,15 @@
   margin-left: 1rem;
   padding: 0;
   text-decoration: none;
+  max-width: 19.875rem;
   @include breakpoint(40rem) {
     flex: 0 0 36.25%;
+    max-width: 14.5rem;
   }
   @include breakpoint(64rem) {
     flex: 0 0 27%;
     padding-right: 2rem;
+    max-width: 18.25rem;
   }
 }
 
@@ -170,23 +173,15 @@
   }
 }
 
-//TODO: Move into a base SCSS file
-/*
- * Let's target IE to respect aspect ratios and sizes for img tags containing SVG files
- *
- * [1] IE9
- * [2] IE10+
- */
-/* 1 */
-.ie9 img[src$=".svg"] {
-  width: 100%;
-  height: auto;
+/* IE is the worst */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  header img[src$=".svg"] {
+    width: 100%;
+  }
 }
 
-/* 2 */
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-  img[src$=".svg"] {
+  footer img[src$=".svg"] {
     width: 100%;
-    height: auto;
   }
 }
