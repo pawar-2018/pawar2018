@@ -120,7 +120,7 @@
     <div class="row align-middle align-center">
       <div class="small-11 large-10 columns">
         <h1 class="main-quote">
-          "We have the power to use government as a force for good—if we elect people who believe in the power of government to improve the lives of people in every community across Illinois.. That’s why I’m running for Governor.”
+          "We have the power to use government as a force for good—if we elect people who believe in the power of government to improve the lives of people in every community across Illinois. That’s why I’m running for Governor.”
         </h1>
         <p class="main-caption">
           - Ameya Pawar
