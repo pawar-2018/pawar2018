@@ -60,3 +60,6 @@ staging site's content and import into your local Wordpress.
 * Add coding standards
 * Add integration standards
 * Add git strategy
+
+## Built by some really awesome people
+* [@micada](https://github.com/micada)
