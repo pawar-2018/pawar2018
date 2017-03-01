@@ -20,7 +20,7 @@
 		<div class="small-11 medium-3 large-4 columns">
 			<nav class="footer-nav">
 		        <a class="footer-nav__link show-for-large" href="<?php echo esc_url( home_url( '/' ) ); ?>" aria-label="Back to the Home Page">
-		          <img class="footer-nav__logo" src="<?php echo get_bloginfo('template_url') ?>/assets/logo.svg"  alt="Ameya Pawar 2018 Logo">/>
+		          <img class="footer-nav__logo" src="<?php echo get_bloginfo('template_url') ?>/assets/logo.svg"  alt="Ameya Pawar 2018 Logo">
 		        </a>
 		        <a class="footer-nav__link" href="/meet-ameya">About</a>
 		        <a class="footer-nav__link" href="/issues">Issues</a>
