@@ -109,17 +109,25 @@
     margin: 0;
     padding: 0;
   }
+
   &:hover {
     color: white;
     text-decoration: none;
-	&:after {
-  	  content: '';
-  	  height: 2px;
-  	  display: block;
-  	  background: #fff;
-  	  width: 100%;
+
+    // Don't include the underline created by the :after element
+    // for any smaller breakpoints due to a Safari issue
+    // see: https://css-tricks.com/annoying-mobile-double-tap-link-issue/
+    @include breakpoint(medium) {
+      &:after {
+        content: '';
+        height: 2px;
+        display: block;
+        background: #fff;
+        width: 100%;
+      }
     }
   }
+
   &:after {
 	  content: '';
 	  height: 2px;
