@@ -22,13 +22,12 @@
             <div class="small-11 medium-10 columns">
                 <p>Ameya has led efforts to pass several pieces of progressive legislation focusing on social justice, workers’ rights, and government reforms. Highlights include the Chicago paid sick leave ordinance, the creation of an independent budget office, the passage of one the nation’s strongest anti-wage theft ordinances, and the preservation of affordable housing.</p>
                 <p>Growing up, Ameya attended public schools. He went on to earn two master’s degrees from the University of Chicago and one from the Illinois Institute of Technology. In 2014 he co-authored a textbook on emergency management, disaster policy, social justice, and community resiliency with his wife Charna Epstein. The book proposes a new model for understanding the interconnectedness of communities to help emergency managers better prepare. Ameya and Charna have presented their work at conferences across the country. Charna is the chief operating officer of the Urban Education Institute at the University of Chicago.</p>
+                <p>Charna and Ameya live in a 100-year-old home in Chicago with a pit bull named Baby and their actual baby girl, Sigalit. In their free time, Charna and Ameya enjoy the outdoors—from Lake Michigan to Shawnee National Forest to Starved Rock State Park to the Mississippi Palisades State Park.</p>
+
             </div>
         </div>
-        <div class="row small-collapse large-uncollapse bottom-content">
-            <div class="small-11 medium-10 columns">
-                <p>Charna and Ameya live in a 100-year-old home in Chicago with a pit bull named Baby and their actual baby girl, Sigalit. In their free time, Charna and Ameya enjoy the outdoors—from Lake Michigan to Shawnee National Forest to Starved Rock State Park to the Mississippi Palisades State Park.</p>
+        <div class="row align-center">
                 <a href="/issues" class="button">See The Issues</a>
-            </div>
         </div>
           </div>
         </div>

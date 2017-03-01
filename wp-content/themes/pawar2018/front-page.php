@@ -97,8 +97,8 @@
               </div>
             <div class="column small-11 large-8 event-copy">
                 <p class="event-date">Sunday, March 5th at 4:30PM</p>
-                <h5 class="event-header">Meet and Greet with Action for a Better Tomorrow</h5>
-                <p class="event-locale">Flossmore Community Church</p>
+                <h5 class="event-header">Meet & Greet with Action for a Better Tomorrow - South Suburbs</h5>
+                <p class="event-locale">Flossmoor Community Church</p>
                 <p class="event-address">
                   2218 Hutchinson Rd.
                   <br />
