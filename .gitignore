@@ -15,6 +15,7 @@
 # Ignore everything in the root except the "wp-content" directory.
 /*
 !README.md
+!.github
 !.gitignore
 !wp-content/
 !gulpfile.js
