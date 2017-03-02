@@ -42,13 +42,13 @@
   color: #fff;
   font-weight: 600;
   &:not(:first-child) {
-  @include breakpoint(large) {
+    @include breakpoint(large) {
       margin-left: 2.5rem;
     }
   }
   &:hover {
-      color: #fff;
-      text-decoration: underline;
+    color: #fff;
+    text-decoration: underline;
   }
 }
 
@@ -65,7 +65,7 @@
   max-width: 2.75rem;
   margin: 0 1rem;
   &:hover {
-     opacity: .75;
+    opacity: .75;
   }
 }
 

@@ -1,0 +1,80 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after { /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+  box-sizing: inherit;
+}
+
+body {
+  background: $color__background-body; /* Fallback for when there is no custom background color defined. */
+}
+
+blockquote, q {
+  quotes: "" "";
+
+  &:before,
+  &:after {
+    content: "";
+  }
+}
+
+hr {
+  background-color: $color__background-hr;
+  border: 0;
+  height: 1px;
+  margin-bottom: 1.5em;
+}
+
+@import "lists";
+
+img {
+  height: auto; /* Make sure images are scaled correctly. */
+  max-width: 100%; /* Adhere to container width. */
+}
+
+figure {
+  margin: 1em 0; /* Extra wide images within figure tags don't overflow the content area. */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  clear: both;
+  font-family: $font__heading;
+  font-weight: 900;
+}
+
+button, button[type="submit"] {
+  cursor: pointer;
+  background: $color__background-button;
+  border-radius: 40px;
+  color: $white;
+  font-weight: 600;
+  min-width: 10rem;
+  padding: .875rem 2rem;
+  transition: all .15s ease;
+
+  &:hover {
+    text-decoration: none;
+    border-bottom: none;
+    background: darken($color__background-button, 10);
+  }
+
+}
+
+[type=color], [type=date], [type=datetime-local], [type=datetime], [type=email], [type=month], [type=number], [type=password], [type=search], [type=tel], [type=text], [type=time], [type=url], [type=week], textarea {
+  border-radius: 0;
+  box-shadow: none;
+}
+
+[type=color]:focus, [type=date]:focus, [type=datetime-local]:focus, [type=datetime]:focus, [type=email]:focus, [type=month]:focus, [type=number]:focus, [type=password]:focus, [type=search]:focus, [type=tel]:focus, [type=text]:focus, [type=time]:focus, [type=url]:focus, [type=week]:focus, textarea:focus {
+  border: 0;
+}
+
+[type=text], [type=password], [type=search], [type=email] {
+  height: auto;
+  margin: 0 0 1rem;
+  padding: .75rem .5rem;
+  border: 0;
+}
