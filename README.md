@@ -62,4 +62,5 @@ staging site's content and import into your local Wordpress.
 * Add git strategy
 
 ## Built by some really awesome people
+* [@mephraim](https://github.com/mephraim)
 * [@micada](https://github.com/micada)
