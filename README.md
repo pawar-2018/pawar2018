@@ -64,3 +64,4 @@ staging site's content and import into your local Wordpress.
 ## Built by some really awesome people
 * [@mephraim](https://github.com/mephraim)
 * [@micada](https://github.com/micada)
+* [@vwampage](https://github.com/vwampage)
