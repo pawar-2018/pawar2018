@@ -37,7 +37,7 @@
                     </div>
                 </div>
                 <div class="small-11 large-7 large-offset-1 columns event-copy">
-                    <p class="event-date">Sunday, March 5th at 4:30PM</p>
+                  <p class="event-date">Sunday, March 5th at 4:30PM</p>
                   <h5 class="event-header">Meet & Greet with Action for a Better Tomorrow - South Suburbs</h5>
                   <p class="event-locale">Flossmoor Community Church</p>
                   <p class="event-address">
@@ -47,6 +47,39 @@
                   </p>
                 </div>
               </div>
+              <?php $args = array( 'post_type' => 'events', 'posts_per_page' => -1 ); ?>
+              <?php $loop = new WP_Query( $args ); ?>
+              <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+              <div class="event row align-center">
+                <div class="small-3 medium-10 large-2 columns">
+                    <div class="event-date_circle">
+                        <?php $date = get_field('start_date');
+                          $day = date("j", strtotime($date));
+                          $month = date("F", strtotime($date));
+                        ?>
+                        <?php echo $day; ?><br><?php echo $month; ?>
+                  </div>
+                </div>
+                <div class="small-11 large-7 large-offset-1 columns event-copy">
+                    <a href="<?php the_field('link'); ?>">
+                        <p class="event-date">
+                            <?php the_field('start_date'); ?>
+                        at
+                            <?php the_field('start_time'); ?>
+                        </p>
+                        <h5 class="event-title">
+                            <?php the_title();?>
+                        </h5>
+                        <p class="event-locale">
+                            <?php the_field('location');?>
+                        </p>
+                        <p class="event-address">
+                        <?php the_field('address');?>
+                        </p>
+                    </a>
+                </div>
+            </div>
+             <?php endwhile; ?>
           </div>
         </div>
     </div>
