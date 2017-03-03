@@ -65,3 +65,4 @@ staging site's content and import into your local Wordpress.
 * [@mephraim](https://github.com/mephraim)
 * [@micada](https://github.com/micada)
 * [@vwampage](https://github.com/vwampage)
+* [@peterbinks](https://github.com/peterbinks)
