@@ -1,12 +1,6 @@
 .main-content,
 .bottom-content {
   font-size: 1.3125rem;
-  margin-bottom: 1.5rem;
-  margin-top: 1.25rem;
-  @include breakpoint(medium) {
-    margin-bottom: 0;
-    margin-top: 0;
-  }
   &.row:before,
   &.row:after {
     display: flex !important;
@@ -15,9 +9,9 @@
 }
 
 .main-content {
+  margin: 2rem auto;
   @include breakpoint(large) {
-    min-height: 20rem;
-    height: 20rem;
+    margin: 3.75rem auto;
   }
 }
 
@@ -196,6 +190,10 @@
   width: 100vw;
   padding: 0;
   margin-bottom: 0;
+  margin-top: 1.25rem;
+  @include breakpoint(medium) {
+    margin-top: 0;
+  }
   img {
     min-width: 100%;
   }
