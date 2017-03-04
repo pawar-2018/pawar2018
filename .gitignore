@@ -23,6 +23,7 @@
 # Ignore everything in the "wp-content" directory, except the "plugins"
 # and "themes" directories.
 wp-content/*
+!wp-content/plugins/
 !wp-content/mu-plugins/
 !wp-content/themes/
 
@@ -34,7 +35,8 @@ wp-content/mu-plugins/*
 !wp-content/mu-plugins/wordpress-importer
 !wp-content/mu-plugins/wordpress-seo
 !wp-content/mu-plugins/load.php
-# !wp-content/plugins/my-directory-plugin/
+#!wp-content/plugins/my-directory-plugin/
+
 
 # Ignore everything in the "themes" directory, except the themes you
 # specify (see the commented-out example for a hint on how to do this.)
