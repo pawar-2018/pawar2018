@@ -72,7 +72,7 @@
             </div>
           </div>
         </div>
-        <div class="column column-block pillar-content">
+        <div class="pillar-button">
           <a href="<?php echo esc_url( home_url( '/issues' )) ?>" class="button">
             See the Issues
           </a>

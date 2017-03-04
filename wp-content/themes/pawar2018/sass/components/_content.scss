@@ -11,7 +11,7 @@
 .main-content {
   margin: 2rem auto;
   @include breakpoint(large) {
-    margin: 3.75rem auto;
+    margin: 6.25rem auto;
   }
 }
 
@@ -32,12 +32,12 @@
 }
 
 .main-quote {
-  margin-top: 2.5rem;
+  margin-top: 8.125rem;
 }
 
 .main-caption {
   font-style: italic; //todo: see about font specification here
-  margin: 0 0 2rem;
+  margin: 0 0 8.125rem;
 }
 
 .main-copy {
@@ -71,14 +71,19 @@
   padding-left: 7.25%;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  @include breakpoint(medium) {
-    padding-top: 3rem;
+  @include breakpoint(large) {
+    padding-top: 6.25rem;
     padding-bottom: 1rem;
     padding-left: 6.25%;
     flex: 1 0 0px;
   }
   @include breakpoint(large) {
     padding-left: calc(8.333333333% + .9375rem);
+  }
+  .main-callout {
+    @include breakpoint(large) {
+      padding-bottom: 5rem;
+    }
   }
 }
 
@@ -87,8 +92,8 @@
   color: $white;
   flex: 1 0 100%;
   padding-top: 2rem;
-  @include breakpoint(medium) {
-    padding-top: 3rem;
+  @include breakpoint(large) {
+    padding-top: 6.25rem;
     flex: 0 1 33.3333%;
     position: relative;
   }
@@ -96,7 +101,10 @@
     padding-top: 1.25rem;
   }
   .main-callout {
-    color: $white
+    color: $white;
+    @include breakpoint(large) {
+      padding-bottom: 5rem;
+    }
   }
 }
 
@@ -105,6 +113,11 @@
   align-items: flex-start;
   justify-content: space-between;
   flex-flow: row wrap;
+  &:not(:last-child) {
+    @include breakpoint(large) {
+      padding-bottom: 5rem;
+    }
+  }
   &.column {
     padding-left: 0;
   }
@@ -129,12 +142,16 @@
   }
   p {
     font-size: 1rem;
-    margin-bottom: .5rem;
-    @include breakpoint(medium) {
+    @include breakpoint(large) {
       font-size: 1.125rem;
-      margin-bottom: 1.75rem;
+      padding-right: 25%;
     }
   }
+}
+
+.pillar-button {
+  margin-top: 3.75rem;
+  margin-bottom: 5rem;
 }
 
 .event-date_circle {
@@ -160,6 +177,10 @@
 
 .event-copy {
   margin-bottom: 1rem;
+  @include breakpoint(large) {
+    margin: 0;
+    margin-bottom: 3.75rem;
+  }
 }
 
 .event-content {
@@ -179,7 +200,7 @@
 
 .event-photo {
   min-width: 100%;
-  @include breakpoint(medium only) {
+  @include breakpoint(medium) {
     position: absolute;
     bottom: 0;
   }
