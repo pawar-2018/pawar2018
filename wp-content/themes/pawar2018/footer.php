@@ -30,9 +30,11 @@
 			</nav>
 		</div>
 		<div class="small-11 medium-5 large-4 columns">
-			<h6 class="section-title">Newsletter</h6>
-			<h3 class="footer-newsletter">Stay in the loop</h3>
-			<a href="/newsletter" class="button">Subscribe</a>
+			<div class="footer-signup">
+				<h6 class="section-title">Newsletter</h6>
+				<h3 class="footer-newsletter">Stay in the loop.</h3>
+				<a href="/newsletter" class="button">Subscribe</a>
+			</div>
 		</div>
 		<div class="small-11 medium-4 large-4 columns">
 			<div class="footer-info">

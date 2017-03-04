@@ -7,6 +7,7 @@
     padding: 3.25rem 0;
   }
   .button {
+    max-width: 40%;
     @include breakpoint(small only) {
       margin-bottom: 2.5rem;
     }
@@ -35,7 +36,8 @@
   font-size: .9375rem;
 }
 
-.footer-info * {
+.footer-info *,
+.footer-signup * {
   font-size: .8125rem;
   display: block;
 }
