@@ -1,3 +1,4 @@
+//Generic styles for hardcoded pages that are acting like templates
 .body {
   margin: 2rem 0;
   @include breakpoint(large) {
@@ -39,17 +40,6 @@
     flex: 1 0 66.6667%;
     padding-left: calc(((100% - 75rem) / 2) + .9375rem);
   }
-}
-
-.sidebar {
-  flex: 1 0 100%;
-  padding-top: 2rem;
-  background: #f7f7f7;
-  @include breakpoint(medium) {
-    padding-top: 4rem;
-    flex: 1 0 33.3333%;
-  }
-
 }
 
 .event-request {
