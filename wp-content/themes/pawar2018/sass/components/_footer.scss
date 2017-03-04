@@ -16,6 +16,9 @@
     display: flex !important;
     content: " " !important;
   }
+  .section-title {
+    font-size: .6875rem;
+  }
 }
 
 .footer__link {
@@ -29,6 +32,17 @@
 
 .footer-nav {
   margin-bottom: 2rem;
+  font-size: .9375rem;
+}
+
+.footer-info * {
+  font-size: .8125rem;
+  display: block;
+}
+
+.footer-newsletter {
+  font-size: 1.3125rem;
+  margin-top: .5rem;
 }
 
 //Footer nav module/components
@@ -43,7 +57,7 @@
   font-weight: 600;
   &:not(:first-child) {
     @include breakpoint(large) {
-      margin-left: 2.5rem;
+      margin-left: 1.85rem;
     }
   }
   &:hover {
