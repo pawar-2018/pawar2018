@@ -166,6 +166,9 @@
 
 .event-copy {
   margin-bottom: 1rem;
+  a {
+      color: $color__text-screen;
+  }
 }
 
 .event-content {
