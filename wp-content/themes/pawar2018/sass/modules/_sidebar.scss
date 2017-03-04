@@ -1,0 +1,9 @@
+.sidebar {
+  flex: 1 0 100%;
+  padding-top: 2rem;
+  background: #f7f7f7;
+  @include breakpoint(medium) {
+    padding-top: 4rem;
+    flex: 1 0 33.3333%;
+  }
+}
