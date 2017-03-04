@@ -1,3 +1,4 @@
+=======
 # This is a template .gitignore file for git-managed WordPress projects.
 #
 # Fact: you don't want WordPress core files, or your server-specific
@@ -13,8 +14,11 @@
 
 # Ignore everything in the root except the "wp-content" directory.
 /*
+!README.md
+!.github
 !.gitignore
 !wp-content/
+!gulpfile.js
 
 # Ignore everything in the "wp-content" directory, except the "plugins"
 # and "themes" directories.
@@ -32,3 +36,15 @@ wp-content/plugins/*
 # specify (see the commented-out example for a hint on how to do this.)
 wp-content/themes/*
 !wp-content/themes/pawar2018
+
+.DS_Store
+node_modules/
+
+# Ignore built files
+wp-content/themes/pawar2018/style.css
+wp-content/themes/pawar2018/style.css.map
+wp-content/themes/pawar2018/js/main.min.js.map
+wp-content/themes/pawar2018/js/main.min.js
+
+wp-content/themes/pawar2018/js/main.min.js.map
+wp-content/themes/pawar2018/assets/

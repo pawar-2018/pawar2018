@@ -1,0 +1,11 @@
+@include breakpoint(medium down) {
+  #top-menu {
+    display: none;
+  }
+}
+
+@include breakpoint(large) {
+  .title-bar {
+    display: none;
+  }
+}
