@@ -108,7 +108,29 @@
           </div>
           <div class="column event-copy">
             <a href="<?php echo esc_url( home_url( '/events' )) ?>" class="button">
-              See All Events
+              See All
+              <?php
+                  $today = date('Ymd');
+                  $args = array(
+                  'post_type' => 'events',
+                  'posts_per_page' => -1,
+                  'meta_key' => 'start_date',
+                  'orderby' => 'meta_value_num',
+                  'order' => 'ASC',
+                  'meta_query'  => array(
+                    array(
+                        'key' => 'start_date',
+                        'type' => 'NUMERIC',
+                        'value' => $today,
+                        'compare' => '>=', // Greater than or equal to value
+                            )
+                        ),
+                    );
+                    $my_query = new WP_Query($args);
+                    $count = $my_query->post_count;
+                    echo $count;
+               ?>
+              Events
             </a>
           </div>
         </div>
