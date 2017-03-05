@@ -72,7 +72,7 @@
             </div>
           </div>
         </div>
-        <div class="column column-block pillar-content">
+        <div class="pillar-button">
           <a href="<?php echo esc_url( home_url( '/issues' )) ?>" class="button">
             See the Issues
           </a>
@@ -86,16 +86,6 @@
           <h1 class="main-callout">Let's talk.</h1>
           <div class="row small-collapse">
             <div class="column small-11 large-8 event-copy">
-                <p class="event-date">Saturday, March 4th at 1:45PM</p>
-                <h5 class="event-header">Brady Campaign</h5>
-                <p class="event-locale">Simeon Career Academy</p>
-                <p class="event-address">
-                  8147 S Vicennes Ave
-                  <br />
-                  Chicago, IL
-                </p>
-              </div>
-            <div class="column small-11 large-8 event-copy">
                 <p class="event-date">Sunday, March 5th at 4:30PM</p>
                 <h5 class="event-header">Meet & Greet with Action for a Better Tomorrow - South Suburbs</h5>
                 <p class="event-locale">Flossmoor Community Church</p>
@@ -103,6 +93,16 @@
                   2218 Hutchinson Rd.
                   <br />
                   Flossmoor, IL
+                </p>
+              </div>
+            <div class="column small-11 large-8 event-copy">
+                <p class="event-date">Monday, March 6th at 7PM</p>
+                <h5 class="event-header">First Mondays: What's Next for Illinois? w/ Ald. Ameya Pawar</h5>
+                <p class="event-locale">Heartland Cafe</p>
+                <p class="event-address">
+                  7000 N Glenwood Ave
+                  <br />
+                  Chicago, IL
                 </p>
               </div>
           </div>
