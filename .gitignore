@@ -24,19 +24,13 @@
 # and "themes" directories.
 wp-content/*
 !wp-content/plugins/
-!wp-content/mu-plugins/
 !wp-content/themes/
 
 # Ignore everything in the "plugins" directory, except the plugins you
 # specify (see the commented-out examples for hints on how to do this.)
-wp-content/mu-plugins/*
-!wp-content/mu-plugins/advanced-custom-fields-pro
-!wp-content/mu-plugins/custom-post-type-ui
-!wp-content/mu-plugins/wordpress-importer
-!wp-content/mu-plugins/wordpress-seo
-!wp-content/mu-plugins/load.php
-#!wp-content/plugins/my-directory-plugin/
-
+wp-content/plugins/*
+# !wp-content/plugins/my-single-file-plugin.php
+# !wp-content/plugins/my-directory-plugin/
 
 # Ignore everything in the "themes" directory, except the themes you
 # specify (see the commented-out example for a hint on how to do this.)
