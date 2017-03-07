@@ -85,26 +85,44 @@
           </h4>
           <h1 class="main-callout">Let's talk.</h1>
           <div class="row small-collapse">
-            <div class="column small-11 large-8 event-copy">
-                <p class="event-date">Sunday, March 5th at 4:30PM</p>
-                <h5 class="event-header">Meet & Greet with Action for a Better Tomorrow - South Suburbs</h5>
-                <p class="event-locale">Flossmoor Community Church</p>
-                <p class="event-address">
-                  2218 Hutchinson Rd.
-                  <br />
-                  Flossmoor, IL
-                </p>
+             <?php
+                $today = date('Ymd');
+                $args = array(
+                'post_type' => 'events',
+                'posts_per_page' => 2,
+                'meta_key' => 'start_date',
+                'orderby' => 'meta_value_num',
+                'order' => 'ASC',
+                'meta_query'  => array(
+                      array(
+                          'key' => 'start_date',
+                          'type' => 'NUMERIC',
+                          'value' => $today,
+                          'compare' => '>=', // Greater than or equal to value
+                          )
+                      ),
+                  );
+
+              ?>
+              <?php $loop = new WP_Query( $args ); ?>
+              <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+              <div class="column small-11 large-8 event-copy">
+                <?php if (get_field('link')) : ?>
+                <a href="<?php the_field('link'); ?>">
+                <?php endif; ?>
+                    <p class="event-date">
+                        <?php the_field('start_date'); ?> at <?php the_field('start_time'); ?>
+                    </p>
+                    <h5 class="event-title">
+                        <?php the_title();?>
+                    </h5>
+                    <p class="event-locale"><?php the_field('location');?></p>
+                    <span class="event-address"><?php the_field('address');?></span>
+                <?php if (get_field('link')) : ?>
+                </a>
+                <?php endif; ?>
               </div>
-            <div class="column small-11 large-8 event-copy">
-                <p class="event-date">Monday, March 6th at 7PM</p>
-                <h5 class="event-header">First Mondays: What's Next for Illinois? w/ Ald. Ameya Pawar</h5>
-                <p class="event-locale">Heartland Cafe</p>
-                <p class="event-address">
-                  7000 N Glenwood Ave
-                  <br />
-                  Chicago, IL
-                </p>
-              </div>
+             <?php endwhile; ?>
           </div>
           <div class="column event-copy">
             <a href="<?php echo esc_url( home_url( '/events' )) ?>" class="button">
