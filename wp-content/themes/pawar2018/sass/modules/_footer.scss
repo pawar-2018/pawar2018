@@ -4,7 +4,7 @@
   bottom: 0;
   padding: 2rem 0;
   @include breakpoint(large) {
-    padding: 3.25rem 0;
+    padding: 6.25rem 0;
   }
   .button {
     max-width: 40%;
@@ -32,7 +32,6 @@
 }
 
 .footer-nav {
-  margin-bottom: 2rem;
   font-size: .9375rem;
 }
 
@@ -44,7 +43,7 @@
 
 .footer-newsletter {
   font-size: 1.3125rem;
-  margin-top: .5rem;
+  margin: .5rem 0 1rem;
 }
 
 //Footer nav module/components
