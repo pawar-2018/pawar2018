@@ -8,7 +8,7 @@
 	<section class="body">
 		<div class="row align-center">
 			<div class="small-11 medium-5 large-4 small-order-2 medium-order-1 columns">
-				<h1 class="section-title">Let's Talk</h1>
+				<h1 class="section-title">Let's Talk.</h1>
 				<p>Looking to host an event?</p>
 				<a href='/get-involved' class="button">Contact Us</a>
 			</div>
