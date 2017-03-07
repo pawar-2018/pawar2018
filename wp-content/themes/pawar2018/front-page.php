@@ -98,7 +98,7 @@
                           'key' => 'start_date',
                           'type' => 'NUMERIC',
                           'value' => $today,
-                          'compare' => '>=', // Greater than or equal to value
+                          'compare' => '>=',
                           )
                       ),
                   );
