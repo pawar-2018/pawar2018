@@ -24,6 +24,7 @@
 # and "themes" directories.
 wp-content/*
 !wp-content/plugins/
+!wp-content/mu-plugins/
 !wp-content/themes/
 
 # Ignore everything in the "plugins" directory, except the plugins you
