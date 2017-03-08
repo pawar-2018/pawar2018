@@ -2,12 +2,12 @@
   <main>
     <section class="hero">
       <div class="row align-bottom">
-        <div class="small-11 large-12 columns">
+        <div class="small-11 large-9 columns">
           <h1>A New Deal For Illinois</h1>
         </div>
       </div>
       <div class="row align-middle">
-        <div class="small-11 large-12 columns">
+        <div class="small-11 large-7 columns">
           <h2>It‘s time to grab a clipboard, lace up our boots, and work together to restore progressive values in 2018.</h2>
         </div>
       </div>
