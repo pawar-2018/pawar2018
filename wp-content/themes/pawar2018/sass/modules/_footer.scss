@@ -4,9 +4,10 @@
   bottom: 0;
   padding: 2rem 0;
   @include breakpoint(large) {
-    padding: 3.25rem 0;
+    padding: 6.25rem 0;
   }
   .button {
+    max-width: 40%;
     @include breakpoint(small only) {
       margin-bottom: 2.5rem;
     }
@@ -15,6 +16,9 @@
   .row:after {
     display: flex !important;
     content: " " !important;
+  }
+  .section-title {
+    font-size: .6875rem;
   }
 }
 
@@ -28,7 +32,18 @@
 }
 
 .footer-nav {
-  margin-bottom: 2rem;
+  font-size: .9375rem;
+}
+
+.footer-info *,
+.footer-signup * {
+  font-size: .8125rem;
+  display: block;
+}
+
+.footer-newsletter {
+  font-size: 1.3125rem;
+  margin: .5rem 0 1rem;
 }
 
 //Footer nav module/components
@@ -43,7 +58,7 @@
   font-weight: 600;
   &:not(:first-child) {
     @include breakpoint(large) {
-      margin-left: 2.5rem;
+      margin-left: 1.85rem;
     }
   }
   &:hover {
