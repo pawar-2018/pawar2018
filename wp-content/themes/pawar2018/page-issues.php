@@ -136,7 +136,8 @@
       </section>
     </div>
 </section>
-<section style="background-image: url('<?php echo get_bloginfo('template_url') ?>/assets/issues-01.jpg'); background-size: cover; height:25.652rem;">
+<section class="bottom-content">
+  <img src="<?php echo get_bloginfo('template_url') ?>/assets/issues-01.jpg">
 </section>
 </main>
 <?php get_footer(); ?>
