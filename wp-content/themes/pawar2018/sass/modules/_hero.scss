@@ -13,6 +13,20 @@
   .row:last-child {
     height: 40%;
   }
+  .row {
+    justify-content: center;
+    @include breakpoint(medium) {
+      justify-content: space-between;
+    }
+    > * {
+      @include breakpoint(medium) {
+        max-width: 58%;
+      }
+      @include breakpoint(large) {
+        max-width: 70%;
+      }
+    }
+  }
   &.inner-page {
     height: 11rem;
     @include breakpoint(medium) {
@@ -54,6 +68,7 @@
   }
 
   h2 {
+    font-family: $font__main;
     @include breakpoint(small only) {
       margin-top: 1.5rem;
       font-size: 1.25rem;
