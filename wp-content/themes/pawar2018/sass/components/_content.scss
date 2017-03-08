@@ -92,10 +92,10 @@
   color: $white;
   flex: 1 0 100%;
   padding-top: 2rem;
+  position: relative;
   @include breakpoint(large) {
     padding-top: 4.25rem;
     flex: 0 1 33.3333%;
-    position: relative;
   }
   .row {
     padding-top: 1.25rem;
