@@ -96,6 +96,7 @@
   @include breakpoint(large) {
     padding-top: 4.25rem;
     flex: 0 1 33.3333%;
+    min-height: 62.5rem;
   }
   .row {
     padding-top: 1.25rem;
@@ -204,9 +205,12 @@
 .event-photo {
   min-width: 100%;
   position: relative;
-  @include breakpoint(large) {
+  @include breakpoint(medium) {
     position: absolute;
     bottom: 0;
+  }
+  @include breakpoint(91.625rem) {
+    position: relative;
   }
 }
 
