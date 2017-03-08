@@ -25,6 +25,10 @@
   }
 }
 
+.issue-accordion + .bottom-content {
+  margin-top: 0;
+}
+
 .accordion {
   margin: 0 0 3rem 0;
 }
