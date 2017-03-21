@@ -2,23 +2,23 @@
   <main>
     <section class="hero">
       <div class="row align-bottom">
-        <div class="small-9 columns">
+        <div class="small-11 large-9 columns">
           <h1>A New Deal For Illinois</h1>
         </div>
       </div>
       <div class="row align-middle">
-        <div class="small-12 medium-7 columns">
+        <div class="small-11 large-7 columns">
           <h2>It‘s time to grab a clipboard, lace up our boots, and work together to restore progressive values in 2018.</h2>
         </div>
       </div>
       <div class="row align-middle">
-        <div class="small-12 medium-7 columns">
-      <h3>Get the latest updates</h3>
-      <a href="/newsletter" class="button">Subscribe</a>
+        <div class="small-11 columns">
+          <h3>Get the latest updates</h3>
+          <a href="/newsletter" class="button">Subscribe</a>
         </div>
       </div>
     </section>
-    <section class="row main-content align-middle align-center">
+    <section class="row main-content align-center">
       <div class="small-11 large-4 columns">
         <h1 class="main-callout">I’m running for governor to forge a New Deal for Illinois.</h1>
       </div>
@@ -72,7 +72,7 @@
             </div>
           </div>
         </div>
-        <div class="column column-block pillar-content">
+        <div class="pillar-button">
           <a href="<?php echo esc_url( home_url( '/issues' )) ?>" class="button">
             See the Issues
           </a>
@@ -85,30 +85,70 @@
           </h4>
           <h1 class="main-callout">Let's talk.</h1>
           <div class="row small-collapse">
-            <div class="column small-11 large-8 event-copy">
-                <p class="event-date">Saturday, March 4th at 1:45PM</p>
-                <h5 class="event-header">Brady Campaign</h5>
-                <p class="event-locale">Simeon Career Academy</p>
-                <p class="event-address">
-                  8147 S Vicennes Ave
-                  <br />
-                  Chicago, IL
-                </p>
+             <?php
+                $today = date('Ymd');
+                $args = array(
+                'post_type' => 'events',
+                'posts_per_page' => 2,
+                'meta_key' => 'start_date',
+                'orderby' => 'meta_value_num',
+                'order' => 'ASC',
+                'meta_query'  => array(
+                      array(
+                          'key' => 'start_date',
+                          'type' => 'NUMERIC',
+                          'value' => $today,
+                          'compare' => '>=',
+                          )
+                      ),
+                  );
+
+              ?>
+              <?php $loop = new WP_Query( $args ); ?>
+              <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+              <div class="column small-11 large-8 event-copy">
+                <?php if (get_field('link')) : ?>
+                <a href="<?php the_field('link'); ?>">
+                <?php endif; ?>
+                    <p class="event-date">
+                        <?php the_field('start_date'); ?> at <?php the_field('start_time'); ?>
+                    </p>
+                    <h5 class="event-title">
+                        <?php the_title();?>
+                    </h5>
+                    <p class="event-locale"><?php the_field('location');?></p>
+                    <span class="event-address"><?php the_field('address');?></span>
+                <?php if (get_field('link')) : ?>
+                </a>
+                <?php endif; ?>
               </div>
-            <div class="column small-11 large-8 event-copy">
-                <p class="event-date">Sunday, March 5th at 4:30PM</p>
-                <h5 class="event-header">Meet & Greet with Action for a Better Tomorrow - South Suburbs</h5>
-                <p class="event-locale">Flossmoor Community Church</p>
-                <p class="event-address">
-                  2218 Hutchinson Rd.
-                  <br />
-                  Flossmoor, IL
-                </p>
-              </div>
+             <?php endwhile; ?>
           </div>
           <div class="column event-copy">
             <a href="<?php echo esc_url( home_url( '/events' )) ?>" class="button">
-              See All Events
+              See All
+              <?php
+                  $today = date('Ymd');
+                  $args = array(
+                  'post_type' => 'events',
+                  'posts_per_page' => -1,
+                  'meta_key' => 'start_date',
+                  'orderby' => 'meta_value_num',
+                  'order' => 'ASC',
+                  'meta_query'  => array(
+                    array(
+                        'key' => 'start_date',
+                        'type' => 'NUMERIC',
+                        'value' => $today,
+                        'compare' => '>=', // Greater than or equal to value
+                            )
+                        ),
+                    );
+                    $my_query = new WP_Query($args);
+                    $count = $my_query->post_count;
+                    echo $count;
+               ?>
+              Events
             </a>
           </div>
         </div>

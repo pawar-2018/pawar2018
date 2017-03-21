@@ -115,21 +115,29 @@ CSS file.
 //Complex elements that use classes for styling for specific visual design patterns
 @import "components/headings";
 @import "components/buttons";
-@import "components/header";
-@import "components/hero";
 @import "components/fouc";
 @import "components/content";
-@import "components/footer";
 
 /*--------------------------------------------------------------
 # Modules
 --------------------------------------------------------------*/
 //Collection of components with more complex interactions between them that redefine the visual/interactive design
+@import "modules/header";
+@import "modules/hero";
+@import "modules/sidebar";
+@import "modules/footer";
 
 /*--------------------------------------------------------------
 # Templates
 --------------------------------------------------------------*/
-//
+//Collection of elements, components, modules, etc that create a layout for a template
 @import "templates/pages";
-@import "templates/issues";
-@import "templates/ngp";
+
+/*--------------------------------------------------------------
+# Pages
+--------------------------------------------------------------*/
+//Very specific styles for a unique page
+//There's a conceptual issue with how templates and pages are defined that will be resolved
+//In wordpress this might not be needed
+@import "pages/issues";
+@import "pages/ngp";
