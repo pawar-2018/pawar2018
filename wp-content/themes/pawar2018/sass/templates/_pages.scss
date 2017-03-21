@@ -1,0 +1,50 @@
+//Generic styles for hardcoded pages that are acting like templates
+.body {
+  margin: 2rem 0;
+  @include breakpoint(large) {
+    margin: 3rem 0;
+  }
+  .section-title {
+    color: $light-blue;
+    text-transform: none;
+    &:after {
+      content: "";
+      display: block;
+      height: 5px;
+      width: 6rem;
+      background-color: $burnt-orange;
+    }
+  }
+
+  .inner-photo {
+    margin-bottom: 1.5rem;
+    min-width: 100%;
+  }
+  .bottom-content {
+    justify-content: center;
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.main {
+  flex: 1 0 100%;
+  padding-left: 8.333333333%;
+  padding-right: 8.333333333%;
+  padding-bottom: 2rem;
+  @include breakpoint(medium) {
+    padding-bottom: 1rem;
+    flex: 1 0 66.6667%;
+    padding-left: calc(((100% - 75rem) / 2) + .9375rem);
+  }
+}
+
+.event-request {
+  background: #f7f7f7;
+  p {
+    text-align: center;
+  }
+}

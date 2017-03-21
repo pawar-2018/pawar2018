@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "./node_modules/.bin/run-s -c clean-css build-css",
-    "build-css": "./node_modules/.bin/node-sass --output-style compressed wp-content/themes/pawar2018/sass/style.scss wp-content/themes/pawar2018/style.css",
-    "watch": "node-sass -w --output-style compressed wp-content/themes/pawar2018/sass/style.scss wp-content/themes/pawar2018/style.css",
-    "clean-css": "rm wp-content/themes/pawar2018/style.css"
+    "build": "gulp",
+    "watch": "gulp serve",
+    "start": "gulp serve",
+    "deploy": "gulp --production"
   },
   "repository": {
     "type": "git",
@@ -20,8 +20,24 @@
   },
   "homepage": "https://github.com/pawar-2018/pawar2018#readme",
   "dependencies": {
-    "foundation-sites": "^6.3.0",
-    "node-sass": "^4.5.0",
-    "npm-run-all": "^4.0.1"
+    "autoprefixer": "^6.4.0",
+    "browser-sync": "^2.18.8",
+    "gulp": "git+https://github.com/gulpjs/gulp.git#4.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-debug": "^3.1.0",
+    "gulp-if": "^2.0.1",
+    "gulp-imagemin": "^3.0.2",
+    "gulp-load-plugins": "^1.2.4",
+    "gulp-postcss": "^6.1.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-size": "^2.1.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^2.0.0",
+    "yargs": "^6.6.0"
+  },
+  "engines": {
+    "node": ">= 5.1.0"
   }
 }

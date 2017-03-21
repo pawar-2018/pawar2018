@@ -1,0 +1,199 @@
+.header {
+  background-color: $color__background-header;
+  padding: 1.5rem 0;
+  @include breakpoint(medium) {
+    padding: 1.5rem 0;
+  }
+}
+
+.header__content {
+  max-width: 75rem;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.header-nav {
+  display: none;
+  flex-flow: column wrap;
+  width: 100%;
+  height: 100vh;
+  padding-right: 2.5rem;
+  padding-left: calc(6% + 1rem);
+  @include breakpoint(40rem) {
+    padding-left: calc(4% + 1rem);
+  }
+  @include breakpoint(64rem) {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: initial;
+    height: initial;
+    padding-left: 0;
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%;
+  }
+}
+
+.header-nav--active {
+  @include breakpoint(64rem down) {
+    display: flex;
+  }
+}
+
+.header-logo {
+  color: white;
+  flex: 0 0 50%;
+  margin-left: 1rem;
+  padding: 0;
+  text-decoration: none;
+  max-width: 19.875rem;
+  @include breakpoint(40rem) {
+    flex: 0 0 36.25%;
+    max-width: 14.5rem;
+  }
+  @include breakpoint(64rem) {
+    flex: 0 0 27%;
+    padding-right: 2rem;
+    max-width: 18.25rem;
+  }
+}
+
+.header-burger {
+  color: #fefefe;
+  padding: 0 1rem 0 1rem;
+  @include breakpoint(64rem) {
+    display: none;
+  }
+}
+
+.header-burger__icon {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 16px;
+  cursor: pointer;
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #fefefe;
+    box-shadow: 0 7px 0 #fefefe,
+    0 14px 0 #fefefe;
+  }
+}
+
+.header-nav__link {
+  display: block;
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+  text-align: left;
+  padding-top: 0.5rem;
+  padding-bottom: 0.25rem;
+  margin-bottom: 0.25rem;
+  width: 100%;
+  @include breakpoint(64rem) {
+    text-align: center;
+    width: initial;
+    margin: 0;
+    padding: 0;
+  }
+
+  &:hover {
+    color: white;
+    text-decoration: none;
+
+    // Don't include the underline created by the :after element
+    // for any smaller breakpoints due to a Safari issue
+    // see: https://css-tricks.com/annoying-mobile-double-tap-link-issue/
+    @include breakpoint(medium) {
+      &:after {
+        content: '';
+        height: 2px;
+        display: block;
+        background: #fff;
+        width: 100%;
+      }
+    }
+  }
+
+  &:after {
+    content: '';
+    height: 2px;
+    display: block;
+    background: #fff;
+    width: 0;
+    transition: .15s linear;
+  }
+  &.active {
+    &:after {
+      content: '';
+      height: 2px;
+      display: block;
+      background: $burnt-orange;
+      width: 100%;
+    }
+  }
+}
+
+.header-social {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  order: 2;
+  text-align: center;
+  padding-top: 2.5rem;
+  @include breakpoint(64rem) {
+    padding: 0;
+    justify-content: space-around;
+    order: 0;
+    max-width: 22.5%;
+  }
+}
+
+.header-social__link {
+  display: flex;
+  max-width: 20%;
+  transition: .15s linear;
+  @include breakpoint(64rem) {
+    max-width: 12.5%;
+  }
+  &:hover {
+    opacity: .75;
+  }
+}
+
+.header-social__button {
+  margin-top: 2rem;
+  @include breakpoint(64rem) {
+    margin: 0;
+  }
+}
+
+/* IE is the worst */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  header img[src$=".svg"] {
+    width: 100%;
+  }
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  footer img[src$=".svg"] {
+    width: 100%;
+  }
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .footer-social__container img[src$=".svg"] {
+    width: 100%;
+  }
+}

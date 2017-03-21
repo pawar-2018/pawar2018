@@ -1,0 +1,49 @@
+//Color palette
+//Warm colors
+$burnt-orange: #F3795D;
+//Cool colors
+$light-blue: #0079A0;
+$navy-blue: #233368;
+$navy-blue-dk: #222b46;
+//Color Values
+$charcoal: #414141;
+$white: #ffffff;
+
+//Color backgrounds
+$color__background-body: $white;
+$color__background-screen: $navy-blue;
+$color__background-hr: #ccc;
+$color__background-header: $navy-blue-dk;
+$color__background-footer: $navy-blue;
+$color__background-button: $light-blue;
+$color__background-pre: #eee;
+$color__background-ins: #fff9c0;
+
+//Color text
+$color__text-screen: $charcoal;
+$color__text-input: #666;
+$color__text-input-focus: #111;
+$color__link: $light-blue;
+$color__link-visited: darken($light-blue, 10);
+$color__link-hover: darken($light-blue, 10);
+$color__text-main: $charcoal;
+
+//Color border
+$color__border-button: #ccc #ccc #bbb;
+$color__border-button-hover: #ccc #bbb #aaa;
+$color__border-button-focus: #aaa #bbb #bbb;
+$color__border-input: #ccc;
+$color__border-abbr: #666;
+
+//Structures
+$size__site-main: 100%;
+$size__site-sidebar: 25%;
+
+//Typography
+$font__main: "Open Sans", sans-serif;
+$font__heading: "Montserrat", sans-serif;
+$font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+$font__pre: "Courier 10 Pitch", Courier, monospace;
+$font__line-height-body: 1.5;
+$font__line-height-pre: 1.6;
+$font__size: 16px;
