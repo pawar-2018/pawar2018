@@ -57,7 +57,7 @@ staging site's content and import into your local Wordpress.
 
 ## GIT Strategy
 For this project, we will follow the [GitHub Standard Fork & Pull Request Workflow]
-(https://gist.github.com/Chaser324/ce0505fbed06b947d962). All work should be done on branches in a developers fork. 
+(https://gist.github.com/Chaser324/ce0505fbed06b947d962). All work should be done on branches in a developers fork. Note that we do our work on the "dev" branch, rather than "master"
 
 
 ## Built by some really awesome people
@@ -67,6 +67,7 @@ For this project, we will follow the [GitHub Standard Fork & Pull Request Workfl
 * [@brianmontanaweb](https://github.com/brianmontanaweb)
 * [@peterbinks](https://github.com/peterbinks)
 * [@john-telford] (https://github.com/john-telford)
+* [@gensym] (https://github.com/gensym)
 
 ## README TODOS
 
