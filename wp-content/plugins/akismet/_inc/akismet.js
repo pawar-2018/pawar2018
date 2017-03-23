@@ -3,6 +3,17 @@ jQuery( function ( $ ) {
 	var mshotSecondTryTimer = null
 	var mshotThirdTryTimer = null
 	
+	$( 'a.activate-option' ).click( function(){
+		var link = $( this );
+		if ( link.hasClass( 'clicked' ) ) {
+			link.removeClass( 'clicked' );
+		}
+		else {
+			link.addClass( 'clicked' );
+		}
+		$( '.toggle-have-key' ).slideToggle( 'slow', function() {});
+		return false;
+	});
 	$('.akismet-status').each(function () {
 		var thisId = $(this).attr('commentid');
 		$(this).prependTo('#comment-' + thisId + ' .column-comment');
@@ -151,24 +162,13 @@ jQuery( function ( $ ) {
 	} );
 
 	$('.checkforspam:not(.button-disabled)').click( function(e) {
-		e.preventDefault();
-
 		$('.checkforspam:not(.button-disabled)').addClass('button-disabled');
-		$('.checkforspam-spinner').addClass( 'spinner' ).addClass( 'is-active' );
-
-		// Update the label on the "Check for Spam" button to use the active "Checking for Spam" language.
-		$( '.checkforspam .akismet-label' ).text( $( '.checkforspam' ).data( 'active-label' ) );
-
+		$('.checkforspam-spinner').addClass( 'spinner' );
 		akismet_check_for_spam(0, 100);
+		e.preventDefault();
 	});
 
-	var spam_count = 0;
-	var recheck_count = 0;
-
 	function akismet_check_for_spam(offset, limit) {
-		// Update the progress counter on the "Check for Spam" button.
-		$( '.checkforspam-progress' ).text( $( '.checkforspam' ).data( 'progress-label-format' ).replace( '%1$s', offset ) );
-
 		$.post(
 			ajaxurl,
 			{
@@ -177,11 +177,8 @@ jQuery( function ( $ ) {
 				'limit': limit
 			},
 			function(result) {
-				recheck_count += result.counts.processed;
-				spam_count += result.counts.spam;
-				
 				if (result.counts.processed < limit) {
-					window.location.href = $( '.checkforspam' ).data( 'success-url' ).replace( '__recheck_count__', recheck_count ).replace( '__spam_count__', spam_count );
+					window.location.reload();
 				}
 				else {
 					// Account for comments that were caught as spam and moved out of the queue.
@@ -189,10 +186,6 @@ jQuery( function ( $ ) {
 				}
 			}
 		);
-	}
-	
-	if ( "start_recheck" in WPAkismet && WPAkismet.start_recheck ) {
-		$( '.checkforspam' ).click();
 	}
 });
 // URL encode plugin

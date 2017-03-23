@@ -137,3 +137,44 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+/*
+ $new_role = add_role('event_team_lead',
+            'Event Team Lead',
+            array(
+                'read' => true,
+                'edit_posts' => false,
+                'delete_posts' => false,
+                'publish_posts' => false,
+                'upload_files' => true,
+            )
+        );
+		if ( null !== $new_role ) {
+		    echo 'Yay! New role created!';
+		}
+		else {
+		    echo 'Oh... the basic_contributor role already exists.';
+		}
+
+function pawar_add_role_caps() {
+    // Add the roles you'd like to administer the custom post types
+    $roles = array('event_team_lead','editor','administrator');
+    // Loop through each role and assign capabilities
+    foreach($roles as $the_role) {
+
+         $role = get_role($the_role);
+
+                 $role->add_cap( 'read' );
+                 $role->add_cap( 'read_event');
+                 $role->add_cap( 'read_private_event' );
+                 $role->add_cap( 'edit_event' );
+                 $role->add_cap( 'edit_others_event' );
+                 $role->add_cap( 'edit_published_event' );
+				 $role->add_cap( 'publish_event' );
+                 $role->add_cap( 'delete_others_event' );
+                 $role->add_cap( 'delete_private_event' );
+                 $role->add_cap( 'delete_published_event' );
+
+    }
+}
+*/ 
