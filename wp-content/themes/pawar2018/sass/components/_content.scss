@@ -178,6 +178,9 @@
 
 .event-copy {
   margin-bottom: 1rem;
+  &a {
+      color: #fff;
+  }
   @include breakpoint(large) {
     margin-bottom: 2rem;
     &:first-child {

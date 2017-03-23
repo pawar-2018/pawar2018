@@ -19,17 +19,17 @@
               'post_type' => 'events',
               'posts_per_page' => -1,
               'meta_key' => 'start_date',
-              'orderby' => 'meta_value_num',
+              'orderby' => 'meta_value',
               'order' => 'ASC',
               'meta_query'  => array(
-                array(
-                    'key' => 'start_date',
-                    'type' => 'NUMERIC',
-                    'value' => $today,
-                    'compare' => '>=', // Greater than or equal to value
-                    )
-                ),
-            );
+                    array(
+                        'key' => 'start_date',
+                        'type' => 'NUMERIC',
+                        'value' => $today,
+                        'compare' => '>=', // Greater than or equal to value
+                        )
+                    ),
+                );
 
               ?>
               <?php $loop = new WP_Query( $args ); ?>
