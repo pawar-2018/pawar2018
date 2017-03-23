@@ -127,6 +127,20 @@
                        <p>As governor, Ameya will lead a comprehensive analysis of our neighboring states and best practices across the country to advance a plan to reform our systems of taxation in Illinois. As the 5th largest economy in the country, we have the resources to support the needs of our state. It will just need a bigger commitment from the most fortunate among us.</p>
                     </div>
                   </li>
+                  <li class="accordion-item">
+                    <a href="#" class="accordion-title">EQUAL RIGHTS</a>
+                    <div class="accordion-content">
+                       <p>Everyone deserves equal rights, regardless of who one loves or one’s gender identity. As Governor, Ameya will not tolerate discrimination of any kind in Illinois. That's why Ameya supports the full inclusion of our lesbian, gay, bisexual, and transgender (LGBT) neighbors, friends, and family members. Ameya will protect and honor marriage equality and transgender rights as well as deploy anti-bullying campaigns. He will vigorously uphold all laws to protect the LGBT community from discrimination and will strengthen Illinois’ commitment to equal rights for all people.</p>
+                    </div>
+                  </li>
+                  <li class="accordion-item">
+                    <a href="#" class="accordion-title">IMMIGRATION</a>
+                    <div class="accordion-content">
+                       <p>We are a nation of immigrants. Ameya's father grew up in India with no running water or electricity, doing homework by candlelight. Ameya’s parents came to Illinois reach for the American Dream. They found it. That's why Ameya knows first-hand that welcoming immigrants is a core American value—and a critical part of growing our economy. Illinois is home to more than 1.8 million immigrants, and over 21% of Illinois business owners are foreign-born. Ameya believes we cannot sit by and let politicians divide us, pitting one community against the next. While Bruce Rauner remains silent in the face of Donald Trump’s Muslim ban, Ameya and his family strongly reject and will resist it. Ameya will continue to stand up for the rights of immigrants and remind people of the ways they contribute to our state and country.</p>
+
+                       <p>Ameya also supports the settlement of refugees in Illinois. People fleeing war zones and oppression need our help. Yet Rauner, like Trump, has rejected refugees coming in from Syria. Refugees cross deserts and oceans in search of freedom, and Illinois should stand ready to give them the opportunity to pursue a brighter future. In addition, Ameya supports the Illinois TRUST Act. Ameya calls on Governor Rauner to voice his support to protect our immigrant families, friends, and neighbors by working to pass the bill.</p>
+                    </div>
+                  </li>
                 </ul>
             </div>
         <div class="row">

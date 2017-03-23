@@ -205,7 +205,7 @@
 .event-photo {
   min-width: 100%;
   position: relative;
-  @include breakpoint(medium) {
+  @include breakpoint(large) {
     position: absolute;
     bottom: 0;
   }

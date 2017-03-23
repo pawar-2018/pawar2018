@@ -6,7 +6,8 @@
 3. Start the docker container `docker-compose up -d`    
 4. In another terminal tab, `cd` in to your local clone of the repo and run `npm install`.
 5. To start your dev server, run `npm start`. This proxies from localhost:8000, which is where Docker is running, so you do need Docker from step 3 running as well.
-6. If you're just running onto merge conficts or want to make sure you build before pushing (this will be fixed when we get deployment more figured out, sorry, because this will get annoying really fast) you can just run `npm run build`.
+6. You might need to restart your vms (docker-compose restart) if you are getting a pawar2018 not found error
+7. If you're just running onto merge conficts or want to make sure you build before pushing (this will be fixed when we get deployment more figured out, sorry, because this will get annoying really fast) you can just run `npm run build`.
 
 ## Getting started (Windows)
 1. Install Docker Toolbox on Windows (https://docs.docker.com/toolbox/toolbox_install_windows/)
@@ -54,12 +55,10 @@ staging site's content and import into your local Wordpress.
 * Staging (dev) http://ameyapawar2018.staging.wpengine.com
 * Localhost http://localhost:8000
 
-## README TODOS
+## GIT Strategy
+For this project, we will follow the [GitHub Standard Fork & Pull Request Workflow]
+(https://gist.github.com/Chaser324/ce0505fbed06b947d962). All work should be done on branches in a developers fork. Note that we do our work on the "dev" branch, rather than "master"
 
-* Update dev setup instructions
-* Add coding standards
-* Add integration standards
-* Add git strategy
 
 ## Built by some really awesome people
 * [@mephraim](https://github.com/mephraim)
@@ -67,3 +66,12 @@ staging site's content and import into your local Wordpress.
 * [@vwampage](https://github.com/vwampage)
 * [@brianmontanaweb](https://github.com/brianmontanaweb)
 * [@peterbinks](https://github.com/peterbinks)
+* [@john-telford] (https://github.com/john-telford)
+* [@gensym] (https://github.com/gensym)
+
+## README TODOS
+
+* Update dev setup instructions
+* Add coding standards
+* Add integration standards
+* Add git strategy
