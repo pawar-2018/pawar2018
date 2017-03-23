@@ -159,7 +159,6 @@
                       <p> Ameya believes working families must have universal access to early care and education as part of his New Deal for Illinois. His childcare program will expand subsidies to working families. Returns on this investment will not only benefit children directly but also create thousands of jobs for qualified professionals, serving as an economic stimulus to families and communities throughout our state.</p>
                     </div>
                   </li>
-
                 </ul>
             </div>
         <div class="row">
