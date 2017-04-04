@@ -11,7 +11,13 @@
 .main-content {
   margin: 2rem auto;
   @include breakpoint(large) {
-    margin: 6.25rem auto;
+    margin: 4.25rem auto;
+  }
+  .main-callout {
+    @include breakpoint(large) {
+      padding-bottom: 1rem;
+      font-size: 2.5rem;
+    }
   }
 }
 

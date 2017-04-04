@@ -18,11 +18,14 @@
         </div>
       </div>
     </section>
-    <section class="row main-content align-center">
-      <div class="small-11 large-4 columns">
+    <section class="row main-content align-center align-middle">
+        <div class="small-11 large-6 columns">
+          <div class="flex-video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/6zJcdCEpfDw" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+      <div class="small-11 large-6 columns">
         <h1 class="main-callout">I’m running for governor to forge a New Deal for Illinois.</h1>
-      </div>
-      <div class="small-11 large-8 columns">
         <p class="main-copy">
           President Roosevelt’s New Deal took our country out of depression and laid the foundation for decades of growth and prosperity. We can do the same thing in Illinois by rebuilding our crumbling infrastructure, reinvesting in good-paying jobs, and recommitting to early childhood education and public schools. And we can do it without further burdening the middle class.
         </p>
