@@ -21,7 +21,7 @@
     <section class="row main-content align-center align-middle">
         <div class="small-11 large-6 columns">
           <div class="flex-video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/6zJcdCEpfDw" frameborder="0" allowfullscreen></iframe>
+            <iframe width="1280" height="720" src="https://www.youtube.com/embed/0QN_PvW9nQw?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
           </div>
         </div>
       <div class="small-11 large-6 columns">
