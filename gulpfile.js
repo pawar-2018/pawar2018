@@ -54,6 +54,12 @@ gulp.task('serve', function() {
   gulp.watch(wpPath + 'images/*.{svg,png,jpg,gif}',  gulp.series('images')).on('change', browserSync.reload);
 });
 
+gulp.task('start', gulp.series(
+  'styles',
+  // 'scripts',
+  'images',
+  'serve'));
+
 gulp.task('default', gulp.series(
   'styles',
   // 'scripts',

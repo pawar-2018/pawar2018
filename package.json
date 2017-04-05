@@ -6,7 +6,7 @@
   "scripts": {
     "build": "gulp",
     "watch": "gulp serve",
-    "start": "gulp serve",
+    "start": "gulp start",
     "deploy": "gulp --production"
   },
   "repository": {
