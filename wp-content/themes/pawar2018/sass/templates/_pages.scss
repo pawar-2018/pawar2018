@@ -4,9 +4,11 @@
   @include breakpoint(large) {
     margin: 3rem 0;
   }
+
   .section-title {
     color: $light-blue;
     text-transform: none;
+
     &:after {
       content: "";
       display: block;
@@ -20,6 +22,7 @@
     margin-bottom: 1.5rem;
     min-width: 100%;
   }
+
   .bottom-content {
     justify-content: center;
   }
@@ -44,6 +47,7 @@
 
 .event-request {
   background: #f7f7f7;
+  
   p {
     text-align: center;
   }
