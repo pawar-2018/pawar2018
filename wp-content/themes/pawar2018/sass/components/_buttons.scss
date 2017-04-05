@@ -1,18 +1,21 @@
 .button {
-    cursor: pointer;
-    background: $color__background-button;
-    border-radius: 40px;
-    color: $white;
-    font-weight: 600;
-    min-width: 10rem;
-    padding: .875rem 2rem;
-    transition: all .15s ease;
-    border-bottom: 0;
+  cursor: pointer;
+  background: $color__background-button;
+  border-radius: 1.5rem;
+  color: $white;
+  font-weight: 600;
+  min-width: 10rem;
+  padding: 0.875rem 2rem;
+  transition: all .15s ease;
+  border-bottom: 0;
 
-    &:hover {
-        text-decoration: none;
-        border-bottom: none;
-        background: darken($color__background-button, 10);
-    }
+  &:hover {
+    text-decoration: none;
+    background: darken($color__background-button, 10);
+  }
 
+  &:focus {
+    background: darken($color__background-button, 15);
+    outline: none;
+  }
 }

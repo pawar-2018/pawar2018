@@ -1,12 +1,15 @@
 .feature-issue {
   padding: 1rem;
   margin: 1rem 0;
+
   h6 {
     text-transform: uppercase;
   }
+
   .issue-icon {
     float: left;
   }
+
   .issue-summary {
     float: left;
     width: 75%;
@@ -17,6 +20,7 @@
 .issue-accordion {
   background-color: #f7f7f7;
   padding: 3rem 1rem;
+
   a.button {
     margin: .5rem auto;
     @include breakpoint(20.625rem) {
@@ -48,16 +52,20 @@
   font-size: 1.125rem;
   font-weight: 700;
   padding: 1.5rem 1.5rem 1.5rem .5rem;
+
   &:before {
     font-size: 1.25rem;
   }
+
   &:hover, &:focus {
     background-color: #f7f7f7;
     color: $burnt-orange;
   }
+
   &:last-child {
     border-bottom: 0;
   }
+
   &.accordion-title--active {
     background: #fff;
   }
