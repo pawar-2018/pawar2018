@@ -20,7 +20,7 @@
     </section>
     <section class="row main-content align-center align-middle">
         <div class="small-11 large-6 columns">
-          <div class="flex-video">
+          <div class="flex-video widescreen">
             <iframe width="1280" height="720" src="https://www.youtube.com/embed/0QN_PvW9nQw?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
           </div>
         </div>
