@@ -6,32 +6,29 @@
     </div>
   </section>
   <section class="body">
+    <?php
+
+      $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+      $args = array(
+        'post_type' => 'press-releases',
+        'posts_per_page' => 5,
+        'meta_key' => 'date',
+        'orderby' => 'meta_value_num',
+        'paged' => $paged,
+        'order' => 'DESC') ?>
+    <?php $loop = new WP_Query( $args ); ?>
+    <?php while ($loop->have_posts() ) : $loop->the_post(); ?>
     <div class="row align-center">
-      <div class="press-release mall-11 medium-11 large-11 small-order-2 medium-order-1 columns">
-        <h1 class="press-release__title section-title">Post One</h1>
-        <h6 class="press-release__date">March 4, 2017</h6>
-        <p>Lorem Lorem ipsum dolor sit amet, consectetuer adipiscing elit.  Donec hendrerit tempor tellus.  Donec pretium posuere tellus.  Proin quam nisl, tincidunt et, mattis eget, convallis nec, purus.  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.  Nulla posuere.  Donec vitae dolor.  Nullam tristique diam non turpis.  Cras placerat accumsan nulla.  Nullam rutrum.  Nam vestibulum accumsan nisl.
-
-</p>
+      <div class="press-release small-11 medium-11 large-11 small-order-2 medium-order-1 columns">
+        <h1 class="press-release__title section-title"><?php the_title();?></h1>
+        <h6 class="press-release__date"><?php the_field('date'); ?></h6>
+        <p><?php the_field('content'); ?></p>
       </div>
     </div>
-    <div class="press-release row align-center">
-      <div class="small-11 medium-11 large-11 small-order-2 medium-order-1 columns">
-        <h1 class="press-release__title section-title">Post Two</h1>
-        <h6 class="press-release__date">March 1, 2017</h6>
-        <p>Lorem Lorem ipsum dolor sit amet, consectetuer adipiscing elit.  Donec hendrerit tempor tellus.  Donec pretium posuere tellus.  Proin quam nisl, tincidunt et, mattis eget, convallis nec, purus.  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.  Nulla posuere.  Donec vitae dolor.  Nullam tristique diam non turpis.  Cras placerat accumsan nulla.  Nullam rutrum.  Nam vestibulum accumsan nisl.
+    <?php endwhile; ?>
 
-        </p>
-      </div>
-    </div>
-    <div class="press-release row align-center">
-      <div class="small-11 medium-11 large-11 small-order-2 medium-order-1 columns">
-        <h1 class="press-release__title section-title">Post Three</h1>
-        <h6 class="press-release__date">February 27, 2017</h6>
-        <p>Lorem Lorem ipsum dolor sit amet, consectetuer adipiscing elit.  Donec hendrerit tempor tellus.  Donec pretium posuere tellus.  Proin quam nisl, tincidunt et, mattis eget, convallis nec, purus.  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.  Nulla posuere.  Donec vitae dolor.  Nullam tristique diam non turpis.  Cras placerat accumsan nulla.  Nullam rutrum.  Nam vestibulum accumsan nisl.
-
-        </p>
-      </div>
+<div class="pagination-button row align-center">
+      <?php echo get_next_posts_link( 'See More', $loop->max_num_pages ); ?>
     </div>
   </section>
 </main>

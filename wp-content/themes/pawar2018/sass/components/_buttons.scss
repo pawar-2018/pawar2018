@@ -19,3 +19,23 @@
     outline: none;
   }
 }
+
+.pagination-button>a {
+    cursor: pointer;
+    background: $color__background-button;
+    border-radius: 40px;
+    color: $white;
+    font-weight: 600;
+    font-size: .9rem;
+    min-width: 10rem;
+    padding: .875rem 3rem;
+    transition: all .15s ease;
+    border-bottom: 0;
+
+    &:hover {
+        text-decoration: none;
+        border-bottom: none;
+        background: darken($color__background-button, 10);
+    }
+
+}
