@@ -26,6 +26,7 @@
 		        <a class="footer-nav__link" href="/issues">Issues</a>
 		        <a class="footer-nav__link" href="/events">Events</a>
 		        <a class="footer-nav__link" href="/get-involved">Get Involved</a>
+		        <a class="footer-nav__link" href="/press-releases">Press Releases</a>
 		        <a class="footer-nav__link" href="https://act.myngp.com/Forms/9188561423484586496" target="_blank">Donate</a>
 			</nav>
 		</div>
