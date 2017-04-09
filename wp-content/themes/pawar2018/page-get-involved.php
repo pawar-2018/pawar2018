@@ -16,7 +16,13 @@
         </div>
       </div>
     </div>
-    <?php the_field('sidebar_content'); ?>
+    <aside class="sidebar" role="complementary">
+      <div class="row align-center">
+        <div class="small-12 medium-8 columns">
+          <?php the_field('sidebar_content'); ?>
+        </div>
+      </div>
+    </aside>
   </section>
 </main>
 

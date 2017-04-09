@@ -20,7 +20,13 @@ get_header(); ?>
         </div>
       </div>
     </div>
-    <?php get_sidebar(); ?>
+    <aside class="sidebar" role="complementary">
+      <div class="row align-center">
+        <div class="small-12 medium-8 columns">
+          <?php the_field('sidebar_content'); ?>
+        </div>
+      </div>
+    </aside>
   </section>
 </main>
 
