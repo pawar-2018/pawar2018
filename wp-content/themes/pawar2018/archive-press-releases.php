@@ -21,7 +21,14 @@
     <div class="row align-center">
       <div class="press-release small-11 medium-11 large-11 small-order-2 medium-order-1 columns">
         <h1 class="press-release__title section-title"><?php the_title();?></h1>
-        <h6 class="press-release__date"><?php the_field('date'); ?></h6>
+        <h6 class="press-release__date">
+          <?php $date = get_field('date');
+            $day = date("jS", strtotime($date));
+            $month = date("F", strtotime($date));
+            $year = date("Y", strtotime($date));
+          ?>
+          <?php echo $month; ?> <?php echo $day; ?>, <?php echo $year; ?>
+        </h6>
         <p><?php the_field('content'); ?></p>
       </div>
     </div>
