@@ -16,7 +16,7 @@
         </div>
       </div>
     </div>
-    <?php get_sidebar(); ?>
+    <?php the_field('sidebar_content'); ?>
   </section>
 </main>
 
