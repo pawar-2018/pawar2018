@@ -1,4 +1,8 @@
-<?php get_header(); ?>
+<?php
+/*
+Template name: Sidebar Template (NGP VAN Embed)
+ */
+get_header(); ?>
 
 <main>
   <section class="hero inner-page" style="background-image: url('<?php the_field('hero_image'); ?>');">
