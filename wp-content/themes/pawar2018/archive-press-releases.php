@@ -33,7 +33,7 @@
           ?>
           <?php echo $month; ?> <?php echo $day; ?>, <?php echo $year; ?>
         </h6>
-        <p><?php the_content( 'Continue reading ' . get_the_title() );) ?></p>
+        <p><?php the_content( 'Continue reading ' . get_the_title() ) ?></p>
       </div>
     </div>
     <?php endwhile; ?>
