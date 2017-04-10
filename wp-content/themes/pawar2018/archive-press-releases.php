@@ -2,7 +2,7 @@
 <main>
   <section class="hero inner-page" style="background-image: url('<?php echo get_bloginfo('template_url') ?>/assets/press-releases-hero.jpg'); background-size: cover;">
     <div class="row align-center align-middle">
-      <h1 class="page-title"><?php the_title(); ?></h1>
+      <h1 class="page-title">Press Releases</h1>
     </div>
   </section>
   <section class="body">
