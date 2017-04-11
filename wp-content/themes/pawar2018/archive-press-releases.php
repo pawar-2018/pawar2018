@@ -30,6 +30,10 @@
             <?php the_date('F jS, Y'); ?>
           </h6>
           <p><?php the_content( 'Continue reading ' . get_the_title() ) ?></p>
+          <?php
+          // clean up after the query and pagination
+          wp_reset_postdata();
+          ?>
           <?php endwhile; ?>
         </div>
       </div>
