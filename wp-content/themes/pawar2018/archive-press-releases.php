@@ -27,12 +27,7 @@
             </a>
           </h1>
           <h6 class="press-release__date">
-            <?php $date = get_field('date');
-              $day = date("jS", strtotime($date));
-              $month = date("F", strtotime($date));
-              $year = date("Y", strtotime($date));
-            ?>
-            <?php echo $month; ?> <?php echo $day; ?>, <?php echo $year; ?>
+            <?php the_date('F jS, Y'); ?>
           </h6>
           <p><?php the_content( 'Continue reading ' . get_the_title() ) ?></p>
           <?php endwhile; ?>
