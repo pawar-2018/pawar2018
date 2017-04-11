@@ -7,7 +7,9 @@
   </section>
   <section class="wrapper">
     <div class="main body">
-      <?php
+      <div class="row align-center">
+        <div class="press-release small-11 medium-11 large-11 small-order-2 medium-order-1 columns">
+        <?php
 
         $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
         $args = array(
@@ -19,8 +21,6 @@
           'order' => 'DESC') ?>
       <?php $loop = new WP_Query( $args ); ?>
       <?php while ($loop->have_posts() ) : $loop->the_post(); ?>
-      <div class="row align-center">
-        <div class="press-release small-11 medium-11 large-11 small-order-2 medium-order-1 columns">
           <h1 class="press-release__title section-title">
             <a href="<?php the_permalink(); ?>">
               <?php the_title();?>
@@ -35,9 +35,9 @@
             <?php echo $month; ?> <?php echo $day; ?>, <?php echo $year; ?>
           </h6>
           <p><?php the_content( 'Continue reading ' . get_the_title() ) ?></p>
+          <?php endwhile; ?>
         </div>
       </div>
-      <?php endwhile; ?>
       <div class="pagination-button row align-center">
         <?php echo get_next_posts_link( 'See More', $loop->max_num_pages ); ?>
       </div>
