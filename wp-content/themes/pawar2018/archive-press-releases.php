@@ -27,7 +27,7 @@
           <h6 class="press-release__date">
             <?php the_date('F jS, Y'); ?>
           </h6>
-          <p><br/><?php the_content( 'Read More...') ?></p>
+          <p><?php the_content( 'Read More...') ?></p>
           <?php
           // clean up after the query and pagination
           wp_reset_postdata();
