@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <main>
-  <section class="hero inner-page" style="background-image: url('<?php echo get_bloginfo('template_url') ?>/assets/press-releases-hero.jpg'); background-size: cover; background-position-y: 28%;">
+  <section class="hero inner-page" style="background-image: url('<?php echo get_bloginfo('template_url') ?>/assets/ameya-pawar-in-studio.jpg'); background-size: cover; background-position: 0 65%;">
     <div class="row align-center align-middle">
       <h1 class="page-title">Press Releases</h1>
     </div>
