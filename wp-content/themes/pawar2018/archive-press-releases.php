@@ -15,8 +15,6 @@
         $args = array(
           'post_type' => 'press-releases',
           'posts_per_page' => 5,
-          'meta_key' => 'date',
-          'orderby' => 'meta_value_num',
           'paged' => $paged,
           'order' => 'DESC') ?>
       <?php $loop = new WP_Query( $args ); ?>
