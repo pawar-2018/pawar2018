@@ -1,6 +1,7 @@
 .main-content,
 .bottom-content {
   font-size: 1.3125rem;
+
   &.row:before,
   &.row:after {
     display: flex !important;
@@ -11,7 +12,14 @@
 .main-content {
   margin: 2rem auto;
   @include breakpoint(large) {
-    margin: 6.25rem auto;
+    margin: 4.25rem auto;
+  }
+
+  .main-callout {
+    @include breakpoint(large) {
+      padding-bottom: 1rem;
+      font-size: 2.5rem;
+    }
   }
 }
 
@@ -56,6 +64,7 @@
     font-size: .8125rem;
     font-family: $font__heading;
   }
+
   .row {
     padding-top: 1rem;
     @include breakpoint(medium) {
@@ -80,6 +89,7 @@
   @include breakpoint(large) {
     padding-left: calc(8.333333333% + .9375rem);
   }
+
   .main-callout {
     @include breakpoint(large) {
       padding-bottom: 1.6rem;
@@ -98,9 +108,11 @@
     flex: 0 1 33.3333%;
     min-height: 62.5rem;
   }
+
   .row {
     padding-top: 1.25rem;
   }
+
   .main-callout {
     color: $white;
     @include breakpoint(large) {
@@ -114,11 +126,13 @@
   align-items: flex-start;
   justify-content: space-between;
   flex-flow: row wrap;
+
   &:not(:last-child) {
     @include breakpoint(large) {
       padding-bottom: 3rem;
     }
   }
+
   &.column {
     padding-left: 0;
   }
@@ -141,6 +155,7 @@
     flex: 1 0 80%;
     max-width: 80%;
   }
+
   p {
     font-size: 1rem;
     @include breakpoint(large) {
@@ -178,11 +193,13 @@
 
 .event-copy {
   margin-bottom: 1rem;
+
   &a {
-      color: #fff;
+    color: #fff;
   }
   @include breakpoint(large) {
     margin-bottom: 2rem;
+
     &:first-child {
       margin: 0;
       margin-bottom: 2.5rem;
@@ -196,10 +213,12 @@
   @include breakpoint(medium) {
     padding-right: calc(((100% - 75rem) / 2) + 15px);
   }
+
   p, h5 {
     font-size: .9375rem;
     margin: 0 auto .5rem;
   }
+
   a.button {
     margin: .5rem auto 1.5rem;
   }
@@ -226,6 +245,7 @@
   @include breakpoint(medium) {
     margin-top: 0;
   }
+
   img {
     min-width: 100%;
   }

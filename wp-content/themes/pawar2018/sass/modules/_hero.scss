@@ -9,15 +9,18 @@
     background-size: cover; // todo: move to row? Look at new mocks
     height: 32.5rem;
   }
+
   .row:first-child,
   .row:last-child {
     height: 40%;
   }
+
   .row {
     justify-content: center;
     @include breakpoint(medium) {
       justify-content: space-between;
     }
+
     > * {
       @include breakpoint(medium) {
         max-width: 58%;
@@ -27,6 +30,7 @@
       }
     }
   }
+
   &.inner-page {
     height: 11rem;
     @include breakpoint(medium) {
@@ -35,9 +39,11 @@
     @include breakpoint(large) {
       height: 32.5rem;
     }
+
     .row:first-child {
       height: 100%;
     }
+
     h1 {
       max-width: 100%;
       margin: 0 auto;
