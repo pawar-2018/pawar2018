@@ -21,16 +21,16 @@ get_header(); ?>
         <div class="row align-center">
           <?php
 
-          $bottom_button = get_field('bottom_button');
-
-          if ($bottom_button !== 'no button') {
-              echo '<a href="' . $button_1_link . '" class="button">' . $button_1_text . '</a>';
+          if (get_field('bottom_button') !== 'no button') {
+              echo '<a href="' . get_field('button_1_link') . '" class="button">' . get_field('button_1_text') . '</a>';
           }
-          if ($bottom_button == 'two buttons') {
-              echo '<a href="' . $button_2_link . '" class="button">' . $button_2_text . '</a>';
+          ?>
+          <?php
+          if (get_field('bottom_button') == 'two buttons') {
+              echo '<a href="' . get_field('button_2_link') . '" class="button">' . get_field('button_2_text') . '</a>';
           }
+          ?>
 
-          <?php endif; ?>
       </div>
     </div>
   </section>
