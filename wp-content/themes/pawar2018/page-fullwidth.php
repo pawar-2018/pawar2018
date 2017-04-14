@@ -13,7 +13,7 @@ get_header(); ?>
   <section class="wrapper">
     <div class="main body">
       <div class="row align-center">
-        <div class="small-12 columns">
+        <div class="small-11 medium-10 columns">
           <h1 class="section-title"><?php echo the_field('inner_section_title'); ?></h1>
           <?php the_content(); ?>
         </div>
