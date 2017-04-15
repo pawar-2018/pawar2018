@@ -7,7 +7,7 @@
   min-width: 10rem;
   padding: 0.875rem 2rem;
   transition: all .15s ease;
-  border-bottom: 0;
+  border-bottom: 0
 
   &:hover {
     text-decoration: none;
@@ -38,4 +38,11 @@
         background: darken($color__background-button, 10);
     }
 
+}
+
+.row > .button {
+  margin-bottom: 1rem;
+  @include breakpoint(medium) {
+    margin-bottom: 3rem;
+  }
 }
