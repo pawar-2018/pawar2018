@@ -17,6 +17,13 @@
   for (i = 0; i < accords.length; ++i) {
     let accordContent = accords[i].querySelector(".accordion-content");
     let accordTitle = accords[i].querySelector(".accordion-title");
+    if (window.location.hash) {
+      var hash = window.location.hash.substring(1);
+      if (hash === accordTitle.innerText.toLowerCase().split(' ').join('-')) {
+        accordContent.classList.add('accordion-content--active');
+        accordTitle.classList.add('accordion-title--active');
+      }
+    }
     accordTitle.addEventListener('click', function(event) {
       event.preventDefault();
       if(!accordContent.classList.contains('accordion-content--active')) {
