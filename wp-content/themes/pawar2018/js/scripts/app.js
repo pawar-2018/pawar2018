@@ -17,9 +17,9 @@
   for (i = 0; i < accords.length; ++i) {
     let accordContent = accords[i].querySelector(".accordion-content");
     let accordTitle = accords[i].querySelector(".accordion-title");
+    let hash = window.location.hash.substring(1);
     if (window.location.hash) {
-      var hash = window.location.hash.substring(1);
-      if (hash === accordTitle.innerText.toLowerCase().split(' ').join('-')) {
+      if (hash === accordTitle.getAttribute('name')) {
         accordContent.classList.add('accordion-content--active');
         accordTitle.classList.add('accordion-title--active');
       }

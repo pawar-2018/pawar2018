@@ -56,7 +56,7 @@ get_header(); ?>
             <?php $loop = new WP_Query( $args ); ?>
             <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
               <li class="accordion-item">
-                <a href="#" name="<?php global $post; $post_slug=$post->post_name; echo $post_slug; ?>" class="accordion-title"><?php the_title();?></a>
+                <a href="#<?php global $post; $post_slug=$post->post_name; echo $post_slug; ?>" name="<?php global $post; $post_slug=$post->post_name; echo $post_slug; ?>" class="accordion-title"><?php the_title();?></a>
                 <div class="accordion-content">
                   <p><?php the_content() ?></p>
                 </div>
