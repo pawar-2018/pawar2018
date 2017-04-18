@@ -12,26 +12,32 @@
 ## Getting started (Windows)
 1. Install Docker Toolbox on Windows (https://docs.docker.com/toolbox/toolbox_install_windows/), you'll need Python installed
 2. Clone the repo
-````
+```
     git clone git@github.com:pawar-2018/pawar2018.git
-````
+```
 3. Start the docker container with Docker Quickstart Terminal
-  1. You might need to change the volumes for Wordpress to:
-       ```- /wp-content/themes/pawar2018:/var/www/html/wp-content/themes/pawar2018```
+  1. You will need to change the volumes for Wordpress in `docker-compose.yml` to:
+       ```
+       volumes:
+         - /wp-content/themes/pawar2018:/var/www/html/wp-content/themes/pawar2018
+       ```
   2. Navigate in the CL to your local file path where `docker-compose.yml` is located
-````
+```
     docker-compose up -d
-````
+```
 4. Open Oracle VM and look for your Docker VM(default)
 5. Right click docker VM(default) and select Settings > Shared Folders
 6. Mount the location where you clone the repo into by adding a shared folder
     Folder Path EX: C:\github\username\pawar2018\wp-content
     Folder Name EX: wp-content
 7. You might need to restart the VM if it doesn't mount the folder path
-8. Once you see the files in the VM console(double click the VM for console), fetch your IP in the Docker terminal
+8. Verify the files in the VM console(double click the VM for console)
+9. The VM terminal will have the path `root@default:~` navigate with `cd ..` to the root and `cd wp-content/themes/` check the for the folder `pawar2018` with `ls`
+10. Fetch your IP in the Docker terminal
 with docker-machine ip
-9. Go to http://docker-machine-ip-here:8000
-10. `npm run build` in terminal, this will run the script for gulp to compile Sass/SCSS
+11. Go to http://docker-machine-ip-here:8000
+12. Run `npm install` in the repo's root directory through terminal where `package.json` exists
+13. `npm run build` in terminal, this will run the script for gulp to compile Sass/SCSS
 
 ## Setting up Wordpress locally
 
