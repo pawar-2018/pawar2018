@@ -28,7 +28,7 @@ get_header(); ?>
             <?php $loop = new WP_Query( $args ); ?>
             <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
               <div class="feature-issue small-12 medium-10 large-5">
-                  <img src="<?php echo get_field('pillar_icon') ?>" class="issue-icon" alt="School Icon">
+                  <img src="<?php echo get_field('pillar_icon') ?>" class="issue-icon" alt="<?php echo get_field('pillar_icon_alt') ?>">
                   <div class="issue-summary">
                     <h6><?php the_title();?></h6>
                     <p><?php the_content() ?></p>
