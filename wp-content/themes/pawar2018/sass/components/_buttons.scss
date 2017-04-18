@@ -39,3 +39,10 @@
     }
 
 }
+
+.row > .button {
+  margin-bottom: 1rem;
+  @include breakpoint(medium) {
+    margin-bottom: 3rem;
+  }
+}
