@@ -34,10 +34,7 @@ get_header(); ?>
                     <p><?php the_content() ?></p>
                   </div>
               </div>
-              <?php
-              // clean up after the query and pagination
-              wp_reset_postdata();
-              ?>
+              <?php wp_reset_postdata(); ?>
             <?php endwhile; ?>
           <?php endif; ?>
         </div>
@@ -54,9 +51,12 @@ get_header(); ?>
               'orderby' => 'title',
               'order' => 'ASC') ?>
             <?php $loop = new WP_Query( $args ); ?>
-            <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+            <?php while ( $loop->have_posts() ) :
+              $loop->the_post();
+              global $post;
+              $post_slug = $post->post_name;?>
               <li class="accordion-item">
-                <a href="#<?php global $post; $post_slug=$post->post_name; echo $post_slug; ?>" name="<?php global $post; $post_slug=$post->post_name; echo $post_slug; ?>" class="accordion-title"><?php the_title();?></a>
+                <a href="#<?php echo $post_slug; ?>" name="<?php echo $post_slug; ?>" class="accordion-title"><?php the_title();?></a>
                 <div class="accordion-content">
                   <p><?php the_content() ?></p>
                 </div>
