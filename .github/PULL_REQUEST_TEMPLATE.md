@@ -2,7 +2,7 @@
 
 # How should the reviewer test this pull request?
 
-# Include the Basecamp todo for this PR, if there is one.
+# Include the Trello todo for this PR, if there is one.
 
 # Include any screenshots that will help explain this PR.
 
