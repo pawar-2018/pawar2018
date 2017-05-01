@@ -1,4 +1,13 @@
-<?php get_header(); ?>
+<?php
+/*
+Template name: Homepage Template
+ */
+get_header(); ?>  <?php
+
+  if (get_field('has_banner')) {
+    echo '<div class="promo-banner"><h1 class="banner-headline">' . get_field('banner_headline') . '</h1></div>';
+  }
+  ?>
   <main>
     <section class="hero">
       <div class="row align-bottom">
