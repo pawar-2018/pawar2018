@@ -1,9 +1,10 @@
-<div class="promo-banner">
-  <h1 class="banner-headline">
-    June 15th Town Hall
-  </h1>
-</div>
 <?php get_header(); ?>
+  <div class="promo-banner">
+    <h1 class="banner-headline">
+      Join Ameya at the June 15th Virtual Town Hall.
+      <a href="watchparty.pawar2018.com" target="_blank">RSVP Now</a>
+    </h1>
+  </div>
   <main>
     <section class="hero">
       <div class="row align-bottom">
