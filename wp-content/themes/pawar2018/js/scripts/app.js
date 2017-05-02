@@ -1,6 +1,6 @@
 (function() {
 
-  document.querySelector('.header-burger').addEventListener('click', function(event) {
+  document.querySelector('.header-burger__icon').addEventListener('click', function(event) {
     var headerNav = document.querySelector('.header-nav');
 
     if(!this.classList.contains('header-burger--active')) {

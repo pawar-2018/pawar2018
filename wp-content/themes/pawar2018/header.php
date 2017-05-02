@@ -5,7 +5,7 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
 <link rel="icon" href="<?php echo get_bloginfo('template_url') ?>/assets/favicon.ico" type="image/x-icon" />
 <!-- Google Tag Manager -->
@@ -37,8 +37,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <img src="<?php echo get_bloginfo('template_url') ?>/assets/logo.svg" alt="Ameya Pawar 2018 Logo">
         </a>
 
-		<div class="header-burger">
-		  <div class="header-burger__icon"></div>
+		<div class="header-burger__icon">
+      <span class="line line-top"></span>
+      <span class="line line-middle"></span>
+      <span class="line line-bottom"></span>
 		</div>
 
 		<nav class="header-nav">
