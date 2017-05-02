@@ -9,11 +9,15 @@
   font-weight: 700;
   font-size: 1rem;
   line-height: 1rem;
-  padding: 1.15rem;
   text-align: center;
   margin: auto;
+  padding: .75rem .5rem 1rem;
+  @include breakpoint(40rem) {
+    padding: 1.15rem 0 1rem;
+  }
   a {
     color: inherit;
     font-weight: inherit;
+    text-decoration: underline;
   }
 }
