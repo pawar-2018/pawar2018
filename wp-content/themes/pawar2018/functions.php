@@ -177,7 +177,7 @@ function pawar_add_role_caps() {
 
     }
 }
-*/ 
+*/
 
 add_action( 'pre_get_posts',  'set_posts_per_page'  );
 function set_posts_per_page( $query ) {
