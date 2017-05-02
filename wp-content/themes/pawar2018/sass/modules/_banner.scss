@@ -1,0 +1,19 @@
+.promo-banner {
+  background-color: $secondary-color;
+  width: 100%;
+  height: 3.5rem;
+}
+
+.banner-headline {
+  color: $white;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1rem;
+  padding: 1.15rem;
+  text-align: center;
+  margin: auto;
+  a {
+    color: inherit;
+    font-weight: inherit;
+  }
+}
