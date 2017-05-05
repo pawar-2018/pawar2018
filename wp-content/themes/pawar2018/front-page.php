@@ -1,7 +1,7 @@
 <?php get_header(); ?>
   <div class="promo-banner">
     <h1 class="banner-headline">
-      Join Ameya at the June 15th Virtual Town Hall.
+      Join Ameya at the June 15th Live Town Hall.
       <a href="http://watchparty.pawar2018.com" target="_blank">RSVP Now</a>
     </h1>
   </div>
