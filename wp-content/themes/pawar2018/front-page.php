@@ -2,7 +2,7 @@
   <div class="promo-banner">
     <h1 class="banner-headline">
       Join Ameya at the June 15th Virtual Town Hall.
-      <a href="watchparty.pawar2018.com" target="_blank">RSVP Now</a>
+      <a href="http://watchparty.pawar2018.com" target="_blank">RSVP Now</a>
     </h1>
   </div>
   <main>
