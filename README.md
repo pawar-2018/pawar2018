@@ -20,7 +20,7 @@
   1. You will need to change the volumes for Wordpress in `docker-compose.yml` to:
        ```
        volumes:
-         - /wp-content/themes/pawar2018:/var/www/html/wp-content/themes/pawar2018
+         - /wp-content:/var/www/html/wp-content
        ```
   2. Navigate in the CL to your local file path where `docker-compose.yml` is located
 ```
