@@ -21,6 +21,7 @@
   "homepage": "https://github.com/pawar-2018/pawar2018#readme",
   "dependencies": {
     "autoprefixer": "^6.4.0",
+    "babel-preset-env": "^1.4.0",
     "browser-sync": "^2.18.8",
     "gulp": "git+https://github.com/gulpjs/gulp.git#4.0",
     "gulp-babel": "^6.1.2",
