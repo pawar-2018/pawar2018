@@ -16,8 +16,8 @@
   var hash = window.location.hash.substring(1);
 
   for (i = 0; i < accords.length; ++i) {
-    var accordContent = accords[i].querySelector(".accordion-content");
-    var accordTitle = accords[i].querySelector(".accordion-title");
+    let accordContent = accords[i].querySelector(".accordion-content");
+    let accordTitle = accords[i].querySelector(".accordion-title");
     if (window.location.hash) {
       if (hash === accordTitle.getAttribute('name')) {
         accordContent.classList.add('accordion-content--active');
