@@ -25,7 +25,7 @@
             </a>
           </h1>
           <h6 class="press-release__date">
-            <?php the_date('F jS, Y'); ?>
+            <?php the_date('F j, Y'); ?>
           </h6>
           <p><?php the_content( 'Read more...') ?></p>
           <?php
