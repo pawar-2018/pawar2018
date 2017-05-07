@@ -7,13 +7,22 @@
   }
 
   .issue-icon {
-    float: left;
+    display: block;
+    margin: 0 auto 2rem;
+
+    @include breakpoint(medium) {
+      float: left;
+      margin: 0;
+    }
   }
 
   .issue-summary {
-    float: left;
-    width: 75%;
     padding: 0 1rem;
+
+    @include breakpoint(medium) {
+      float: left;
+      width: 75%;
+    }
   }
 }
 
