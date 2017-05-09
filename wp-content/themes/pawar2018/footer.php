@@ -6,7 +6,7 @@
 		<a class="footer-social__link" href="https://twitter.com/Ameya_Pawar_IL" target="_blank" aria-label="Link to Twitter Ameya_Pawar_IL">
 			<img src="<?php echo get_bloginfo('template_url') ?>/assets/twitter.svg" alt="Twitter Icon">
 		</a>
-		<a class="footer-social__link" href="https://www.instagram.com/ameya.s.pawar/" target="_blank" aria-label="Link to Instagram ameya.s.pawar">
+		<a class="footer-social__link" href="https://www.instagram.com/ameya_pawar_IL" target="_blank" aria-label="Link to Instagram ameya.s.pawar">
 			<img src="<?php echo get_bloginfo('template_url') ?>/assets/instagram.svg" alt="Instagram Icon">
 		</a>
 		<a class="footer-social__link" href="https://www.youtube.com/user/RenewChicago/videos" target="_blank" aria-label="Link to Youtube RenewChicago">
@@ -53,6 +53,6 @@
 </div>
 
 <?php wp_footer(); ?>
-<script src="<?php echo get_bloginfo('template_url') ?>/js/scripts/app.js" defer></script>
+<script src="<?php echo get_bloginfo('template_url') ?>/js/main.min.js" defer></script>
 </body>
 </html>

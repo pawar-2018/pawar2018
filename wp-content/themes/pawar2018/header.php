@@ -5,7 +5,7 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
 <link rel="icon" href="<?php echo get_bloginfo('template_url') ?>/assets/favicon.ico" type="image/x-icon" />
 <!-- Google Tag Manager -->
@@ -37,8 +37,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <img src="<?php echo get_bloginfo('template_url') ?>/assets/logo.svg" alt="Ameya Pawar 2018 Logo">
         </a>
 
-		<div class="header-burger">
-		  <div class="header-burger__icon"></div>
+		<div class="header-burger__icon">
+      <span class="line line-top"></span>
+      <span class="line line-middle"></span>
+      <span class="line line-bottom"></span>
 		</div>
 
 		<nav class="header-nav">
@@ -61,7 +63,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				<a class="header-social__link" href="https://twitter.com/Ameya_Pawar_IL" target="_blank" aria-label="Link to Twitter Ameya_Pawar_IL">
 					<img src="<?php echo get_bloginfo('template_url') ?>/assets/twitter.svg" alt="Twitter Icon">
 				</a>
-				<a class="header-social__link" href="https://www.instagram.com/ameya.s.pawar/" target="_blank" aria-label="Link to Instagram ameya.s.pawar">
+				<a class="header-social__link" href="https://www.instagram.com/ameya_pawar_IL" target="_blank" aria-label="Link to Instagram ameya.s.pawar">
 					<img src="<?php echo get_bloginfo('template_url') ?>/assets/instagram.svg" alt="Instagram Icon">
 				</a>
 				<a class="header-social__link" href="https://www.youtube.com/user/RenewChicago/videos" target="_blank" aria-label="Link to Youtube RenewChicago">
