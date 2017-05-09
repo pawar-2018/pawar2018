@@ -193,10 +193,6 @@
 
 .event-copy {
   margin-bottom: 1rem;
-
-  &a {
-    color: #fff;
-  }
   @include breakpoint(large) {
     margin-bottom: 2rem;
 
@@ -205,6 +201,30 @@
       margin-bottom: 2.5rem;
     }
   }
+  &:hover {
+      a {
+          color: $burnt-orange;
+      }
+  }
+  a {
+      text-decoration: none;
+  }
+}
+
+body.home {
+    event-copy {
+      a {
+        color: #fff;
+        &:hover {
+            text-decoration: none;
+        }
+      }
+      &:hover {
+          a {
+              color: $burnt-orange;
+          }
+      }
+    }
 }
 
 .event-content {
