@@ -27,6 +27,7 @@
 		        <a class="footer-nav__link" href="/events">Events</a>
 		        <a class="footer-nav__link" href="/get-involved">Get Involved</a>
 		        <a class="footer-nav__link" href="/press-releases">Press Releases</a>
+		        <a class="footer-nav__link" href="/privacy-policy">Privacy Policy</a>
 		        <a class="footer-nav__link" href="/donate">Donate</a>
 			</nav>
 		</div>
