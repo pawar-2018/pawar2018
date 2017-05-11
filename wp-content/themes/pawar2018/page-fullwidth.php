@@ -62,7 +62,6 @@ get_header(); ?>
                 </div>
               </li>
               <?php
-              // clean up after the query and pagination
               wp_reset_postdata();
               ?>
               <?php endwhile; ?>
