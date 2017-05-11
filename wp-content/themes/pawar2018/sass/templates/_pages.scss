@@ -39,7 +39,6 @@
   padding-right: 8.333333333%;
   @include breakpoint(medium) {
     flex: 1 0 66.6667%;
-    padding-left: calc(((100% - 75rem) / 2) + .9375rem);
   }
 }
 

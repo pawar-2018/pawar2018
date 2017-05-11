@@ -27,7 +27,8 @@
 		        <a class="footer-nav__link" href="/events">Events</a>
 		        <a class="footer-nav__link" href="/get-involved">Get Involved</a>
 		        <a class="footer-nav__link" href="/press-releases">Press Releases</a>
-		        <a class="footer-nav__link" href="https://act.myngp.com/Forms/9188561423484586496" target="_blank">Donate</a>
+		        <a class="footer-nav__link" href="/privacy-policy">Privacy Policy</a>
+		        <a class="footer-nav__link" href="/donate">Donate</a>
 			</nav>
 		</div>
 		<div class="small-11 medium-5 large-4 columns">
@@ -46,11 +47,7 @@
 	</div>
 </footer>
 
-<div class="footer-paid">
-	<div class="row align-center">
-		<p class="column">Paid For By Ameya Pawar For Governor.</p>
-	</div>
-</div>
+<?php get_template_part('template-parts/footer', 'paid'); ?>
 
 <?php wp_footer(); ?>
 <script src="<?php echo get_bloginfo('template_url') ?>/js/main.min.js" defer></script>

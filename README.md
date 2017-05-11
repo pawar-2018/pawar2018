@@ -2,13 +2,14 @@
 
 ## Getting started (Mac)
 1. Install Docker (www.docker.com)
-2. Clone the repo `git clone git@github.com:pawar-2018/pawar2018.git`
-3. Start the docker container `docker-compose up -d`
-4. In another terminal tab, `cd` in to your local clone of the repo and run `npm install`.
-5. To start your dev server, run `npm start`. This proxies from localhost:8000, which is where Docker is running, so you do need Docker from step 3 running as well.
-6. You might need to restart your vms (docker-compose restart) if you are getting a pawar2018 not found error
-7. If you're just running onto merge conficts or want to make sure you build before pushing (this will be fixed when we get deployment more figured out, sorry, because this will get annoying really fast) you can just run `npm run build`.
-8. Go through the Wordpress Installation and then head to "Setting up Wordpress Locally"
+2. Install the latest version of Node - currently 6.10.3 (https://nodejs.org/en/download/package-manager) or update your version - if `node -v` comes back as <6 (http://stackoverflow.com/questions/8191459/how-do-i-update-node-js)
+3. Clone the repo `git clone git@github.com:pawar-2018/pawar2018.git`
+4. Start the docker container `docker-compose up -d`
+5. In another terminal tab, `cd` in to your local clone of the repo and run `npm install`.
+6. To start your dev server, run `npm start`. This proxies from localhost:8000, which is where Docker is running, so you do need Docker from step 3 running as well.
+7. You might need to restart your vms (docker-compose restart) if you are getting a pawar2018 not found error
+8. If you're just running onto merge conficts or want to make sure you build before pushing (this will be fixed when we get deployment more figured out, sorry, because this will get annoying really fast) you can just run `npm run build`.
+9. Go through the Wordpress Installation and then head to "Setting up Wordpress Locally"
 
 ## Getting started (Windows)
 1. Install Docker Toolbox on Windows (https://docs.docker.com/toolbox/toolbox_install_windows/), you'll need Python installed
@@ -84,6 +85,16 @@ This next part is going to be pretty hit or miss. We have to figure out how to i
 For this project, we will follow the [GitHub Standard Fork & Pull Request Workflow]
 (https://gist.github.com/Chaser324/ce0505fbed06b947d962). All work should be done on branches in a developers fork. Note that we do our work on the "dev" branch, rather than "master"
 
+## Trello Strategy
+For Project Tracking and Dev Task management we use Trello. You can find all the relevant tasks in the [Pawar2018 #webdev trello board](https://trello.com/b/EYKvsCSi/webdev). Tasks move from left to right as they move from idea to deployed. We attach members to cards to indicate ownership over the tasks. We have a handful of labels we use regularly, including "priority" and "external request." If you have questions about either the process or any current tasks, ask Mica or Jordan in slack please!
+* New tasks created by either Dev Team members or requests from other teams (email, social, etc) come into the "Inbox" list.
+* Engineering and Product leads (Mica and Jordan) review the requests on a weekly basis and sort them into either "Coming Soon" or "Backlog."
+* "Backlog" tasks are ones that we would like to get to but are not on the immediate roadmap. This might be because they are not a priority or because they are not fully fleshed out.
+* "Coming Soon" is a list of the tasks we would like to accomplish shortly, which usually means the next 2 weeks. These tasks should have enough detail so that anyone with a local environment can add themesevles to the task and begin working on them.
+* Tasks that are being worked on should be in the "In Progress" list. This helps the leads understand what is being worked on and if any tasks have become stale.
+* Once you are ready for a review (for example on a PR for the wordpress site) pull the card over to the "Review" list and let everyone know in the #webdev slack channel.
+* Once your task is reviewed, Mica or another lead will move it into Staging and move it into Done once we do our weekly deploy.
+* We also have one more list for "Blocked" tasks. These are tasks that we have started on or are ready to move on but we are waiting on an external team like Copy or Design.
 
 ## Built by some really awesome people
 * [@mephraim](https://github.com/mephraim)
