@@ -2,13 +2,14 @@
 
 ## Getting started (Mac)
 1. Install Docker (www.docker.com)
-2. Clone the repo `git clone git@github.com:pawar-2018/pawar2018.git`
-3. Start the docker container `docker-compose up -d`
-4. In another terminal tab, `cd` in to your local clone of the repo and run `npm install`.
-5. To start your dev server, run `npm start`. This proxies from localhost:8000, which is where Docker is running, so you do need Docker from step 3 running as well.
-6. You might need to restart your vms (docker-compose restart) if you are getting a pawar2018 not found error
-7. If you're just running onto merge conficts or want to make sure you build before pushing (this will be fixed when we get deployment more figured out, sorry, because this will get annoying really fast) you can just run `npm run build`.
-8. Go through the Wordpress Installation and then head to "Setting up Wordpress Locally"
+2. Install the latest version of Node - currently 6.10.3 (https://nodejs.org/en/download/package-manager) or update your version - if `node -v` comes back as <6 (http://stackoverflow.com/questions/8191459/how-do-i-update-node-js)
+3. Clone the repo `git clone git@github.com:pawar-2018/pawar2018.git`
+4. Start the docker container `docker-compose up -d`
+5. In another terminal tab, `cd` in to your local clone of the repo and run `npm install`.
+6. To start your dev server, run `npm start`. This proxies from localhost:8000, which is where Docker is running, so you do need Docker from step 3 running as well.
+7. You might need to restart your vms (docker-compose restart) if you are getting a pawar2018 not found error
+8. If you're just running onto merge conficts or want to make sure you build before pushing (this will be fixed when we get deployment more figured out, sorry, because this will get annoying really fast) you can just run `npm run build`.
+9. Go through the Wordpress Installation and then head to "Setting up Wordpress Locally"
 
 ## Getting started (Windows)
 1. Install Docker Toolbox on Windows (https://docs.docker.com/toolbox/toolbox_install_windows/), you'll need Python installed

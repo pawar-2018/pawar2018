@@ -131,6 +131,7 @@
                 </a>
                 <?php endif; ?>
               </div>
+              <?php wp_reset_postdata(); ?>
              <?php endwhile; ?>
           </div>
           <div class="column event-copy">
