@@ -77,6 +77,10 @@
 
   &.accordion-title--active {
     background: #fff;
+
+    &:before {
+      content: "-"
+    }
   }
 }
 
