@@ -19,4 +19,5 @@
 	<div class="entry-content">
 		<?php the_content(); ?>
 	</div><!-- .entry-content -->
+    <a href="/new-deal-journal">&larr; Back to the journal</a>
 </article><!-- #post-## -->
