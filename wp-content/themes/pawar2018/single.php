@@ -1,13 +1,15 @@
 <?php get_header(); ?>
 <main>
 	<section>
-		<div class="row">
-			<?php
-			/* Start the Loop */
-			while ( have_posts() ) : the_post();
-				get_template_part( 'template-parts/content-post', get_post_format() );
+		<div class="row align-center">
+			<div class="small-8 columns">
+				<?php
+				/* Start the Loop */
+				while ( have_posts() ) : the_post();
+					get_template_part( 'template-parts/content-post', get_post_format() );
 
-			endwhile; ?>
+				endwhile; ?>
+			</div>
 		</div>
 	</section>
 </main><!-- #main -->

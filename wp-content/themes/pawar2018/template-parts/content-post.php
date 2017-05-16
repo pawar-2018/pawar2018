@@ -10,9 +10,9 @@
 		endif;
 
 		if ( 'post' === get_post_type() ) : ?>
-		<div class="entry-meta">
-			<?php _pawar2018_posted_on(); ?>
-		</div><!-- .entry-meta -->
+        <h6 class="entre-date">
+          <?php the_date('F j, Y'); ?>
+        </h6>
 		<?php
 		endif; ?>
 	</header><!-- .entry-header -->
