@@ -3,7 +3,6 @@
   text-transform: uppercase;
   font-weight: 900;
   margin: 0 0 1rem 0;
-  font-size: 2.25rem;
   &:after {
     content: "";
     display: block;
@@ -40,4 +39,13 @@
   input {
     max-width: 17rem;
   }
+}
+
+.page-title {
+    text-align: center;
+    display: block;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin: 3rem auto 2rem 0;
+    font-size: 2.25rem;
 }

@@ -4,9 +4,9 @@
     <header class="entry-header">
 		<?php
 		if ( is_single() ) :
-			the_title( '<h1 class="section-title">', '</h1>' );
+			the_title( '<h2 class="post-title">', '</h2>' );
 		else :
-			the_title( '<h1 class="section-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+			the_title( '<h2 class="post-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 		endif;
 
 		if ( 'post' === get_post_type() ) : ?>
