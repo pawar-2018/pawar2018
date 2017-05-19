@@ -1,0 +1,136 @@
+/*------------------------------------*\
+    STYLE ONE
+\*------------------------------------*/
+/**
+ * Circle with white logo on coloured
+ * background, white border. Dark grey
+ * container.
+ */
+
+/**
+ * Update variables below to control
+ * padding and other variables.
+ */
+
+$include-media-queries:    true;
+$icon-spacing:             12px;
+$wrapper-padding:          6px;
+$icon-size:                24px;
+$base-font-size:           16px;
+$animation-speed:          0.25s;
+
+/**
+ * Generated CSS must be combined with
+ * ssbp-base in order to display correctly.
+ * Allows for smaller file size when
+ * combining multiple themes.
+ */
+
+@import '../modules/vars';
+@import '../modules/mixins';
+
+@keyframes ripple-out {
+	100% {
+		visibility: visible;
+		top: -1em;
+		right: -1em;
+		bottom: -1em;
+		left: -1em;
+		opacity: 0;
+	}
+}
+
+.ssbp--theme-1 {
+	.ssbp-container {
+// 		background-color: $grey;
+// 		background-color: rgba($dark-grey, 0.8);
+		padding: $wrapper-padding;
+	}
+
+	.ssbp-list {
+		li {
+			margin-left: $icon-spacing;
+		}
+	}
+
+	.ssbp-btn {
+		@include square;
+		position: relative;
+// 		border: 1px solid #fff;
+		border-radius: 50%;
+		color: #fff;
+		transition: $animation-speed;
+		&:hover, &:focus, &:active {
+			background-color: #fff;
+			z-index: 10;
+		}
+		&:visited { //overide theme 2012
+			color: #fff;
+		}
+		&:before {
+			transition: transform $animation-speed;
+		}
+		&:active:before {
+			transform: scale(1.2);
+		}
+		&:after {
+			content: '';
+			visibility: hidden;
+			position: absolute;
+			border: 1px solid #fff;
+			border-radius: 50%;
+			top: -1px;
+			right: -1px;
+			bottom: -1px;
+			left: -1px;
+			pointer-events: none;
+			animation-duration: $animation-speed*2;
+		}
+		&:hover:after {
+			animation-name: ripple-out;
+		}
+	}
+
+	// Increase spacing between icons slightly if individual counts showing
+	&[data-ssbp-counts="true"] .ssbp-list li {
+		margin-left: $icon-spacing*1.1;
+		&:first-of-type { margin-left: 0; }
+	}
+
+	// This loop creates the specific social network styling for each .ssbp-btn using the $social-networks list in _vars.scss
+	@each $social-network, $color in $social-networks {
+		.ssbp-#{$social-network} {
+			background-color: $color;
+			&:hover, &:focus, &:active {
+				color: $color;
+				border-color: $color;
+			}
+			+ .ssbp-each-share {
+				background-color: $color;
+			}
+		}
+	}
+
+	// Per network share count
+	.ssbp-each-share {
+		position: absolute;
+		top: 0;
+		left: 100%;
+		z-index: 11;
+		margin-left: -$icon-size/2;
+		padding: 2px;
+		border-radius: 6px;
+		font-size: 10px;
+		color: #FFF;
+	}
+
+	&.ssbp--fixed-right .ssbp-each-share {
+		left: auto;
+		right: 100%;
+		margin-left: 0;
+		margin-right: -$icon-size/2;
+	}
+	.ssbp-toggle-switch {
+		@extend %ssbp-toggle-switch--light;
+	}
+}

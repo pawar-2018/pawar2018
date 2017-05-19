@@ -1,0 +1,95 @@
+/*------------------------------------*\
+    STYLE FOUR
+\*------------------------------------*/
+/**
+ * Circle with white logo on coloured
+ * background
+ */
+
+/**
+ * Update variables below to include media
+ * queries (responsive version), control
+ * padding and other variables.
+ */
+
+$include-media-queries:    true;
+$icon-spacing:             12px;
+$wrapper-padding:          8px;
+$icon-size:                32px;
+$base-font-size:           16px;
+$animation-speed:          0.25s;
+
+/**
+ * Generated CSS must be combined with
+ * ssbp-base in order to display correctly.
+ * Allows for smaller file size when
+ * combining multiple themes.
+ */
+
+@import '../modules/vars';
+@import '../modules/mixins';
+
+.ssbp--theme-4 {
+	&[class*="ssbp--fixed"] {
+		.ssbp-container {
+			background-color: rgba(255, 255, 255, 0.8);
+			padding: $wrapper-padding;
+		}
+	}
+
+	.ssbp-btn {
+		@include square;
+		border-radius: 7.5px; // http://stackoverflow.com/questions/2105289/iphone-app-icons-exact-radius. width = 3em = 48px. 48 / 6.4 = 7.5px
+		color: #fff;
+		transition: background-color $animation-speed;
+		box-shadow: inset 0 -1.5em 2em rgba(255,255,255,0.1);
+		border-bottom: 0;
+		&:hover, &:focus, &:active{
+			box-shadow: inset 0 -1.5em 2em rgba(255,255,255,0.1), inset 0 0 3.5em rgba(0,0,0,0.33);
+		}
+		&:hover, &:focus, &:active, &:visited { //overide theme 2013/2012
+			color: #fff;
+		}
+	}
+
+	.ssbp-list {
+		li {
+			margin-left: $icon-spacing;
+		}
+	}
+
+	// This loop creates the specific social network styling for each .ssbp-btn using the $social-networks list in _vars.scss
+	@each $social-network, $color in $social-networks {
+		.ssbp-#{$social-network} {
+			background-color: $color;
+		}
+	}
+
+	// Per network share count
+	.ssbp-each-share {
+		position: absolute;
+		bottom: 100%;
+		right: 0;
+		z-index: 11;
+		min-width: 1.25em;
+		margin-right: -6px;
+		margin-bottom: -8px;
+		padding: 2px 4px;
+		border-radius: 8px;
+		background-color: $share-count;
+		font-size: 10px;
+		color: #FFF;
+		text-align: center;
+	}
+
+	&.ssbp--fixed-right .ssbp-each-share {
+		left: auto;
+		right: 100%;
+		margin-left: 0;
+		margin-right: -$icon-size/2;
+	}
+
+	.ssbp-toggle-switch {
+		@extend %ssbp-toggle-switch--light;
+	}
+}
