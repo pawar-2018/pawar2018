@@ -64,7 +64,6 @@
               </div>
             </div>
             <?php
-            // clean up after the query and pagination
             wp_reset_postdata();
             ?>
           <?php endwhile; ?>
@@ -138,7 +137,7 @@
                         'key' => 'start_date',
                         'type' => 'NUMERIC',
                         'value' => $today,
-                        'compare' => '>=', // Greater than or equal to value
+                        'compare' => '>=',
                             )
                         ),
                     );
