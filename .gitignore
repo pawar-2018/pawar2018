@@ -19,6 +19,8 @@
 !.gitignore
 !wp-content/
 !gulpfile.js
+!.babelrc
+!Dockerfile
 
 # Ignore everything in the "wp-content" directory, except the "plugins"
 # and "themes" directories.

@@ -6,7 +6,7 @@
 		<a class="footer-social__link" href="https://twitter.com/Ameya_Pawar_IL" target="_blank" aria-label="Link to Twitter Ameya_Pawar_IL">
 			<img src="<?php echo get_bloginfo('template_url') ?>/assets/twitter.svg" alt="Twitter Icon">
 		</a>
-		<a class="footer-social__link" href="https://www.instagram.com/ameya.s.pawar/" target="_blank" aria-label="Link to Instagram ameya.s.pawar">
+		<a class="footer-social__link" href="https://www.instagram.com/ameya_pawar_IL" target="_blank" aria-label="Link to Instagram ameya.s.pawar">
 			<img src="<?php echo get_bloginfo('template_url') ?>/assets/instagram.svg" alt="Instagram Icon">
 		</a>
 		<a class="footer-social__link" href="https://www.youtube.com/user/RenewChicago/videos" target="_blank" aria-label="Link to Youtube RenewChicago">
@@ -27,7 +27,8 @@
 		        <a class="footer-nav__link" href="/events">Events</a>
 		        <a class="footer-nav__link" href="/get-involved">Get Involved</a>
 		        <a class="footer-nav__link" href="/press-releases">Press Releases</a>
-		        <a class="footer-nav__link" href="https://act.myngp.com/Forms/9188561423484586496" target="_blank">Donate</a>
+		        <a class="footer-nav__link" href="/privacy-policy">Privacy Policy</a>
+		        <a class="footer-nav__link" href="/donate">Donate</a>
 			</nav>
 		</div>
 		<div class="small-11 medium-5 large-4 columns">
@@ -46,13 +47,9 @@
 	</div>
 </footer>
 
-<div class="footer-paid">
-	<div class="row align-center">
-		<p class="column">Paid For By Ameya Pawar For Governor.</p>
-	</div>
-</div>
+<?php get_template_part('template-parts/footer', 'paid'); ?>
 
 <?php wp_footer(); ?>
-<script src="<?php echo get_bloginfo('template_url') ?>/js/scripts/app.js" defer></script>
+<script src="<?php echo get_bloginfo('template_url') ?>/js/main.min.js" defer></script>
 </body>
 </html>

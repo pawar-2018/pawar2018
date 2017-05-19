@@ -114,6 +114,7 @@ CSS file.
 @import "modules/hero";
 @import "modules/sidebar";
 @import "modules/footer";
+@import "modules/banner";
 
 /*--------------------------------------------------------------
 # Templates
@@ -129,3 +130,4 @@ CSS file.
 //In wordpress this might not be needed
 @import "pages/issues";
 @import "pages/ngp";
+@import "pages/privacy";

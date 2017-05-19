@@ -15,8 +15,7 @@ get_header(); ?>
       <div class="row align-center">
         <div class="small-12 medium-12 columns">
           <h1 class="section-title"><?php echo the_field('inner_section_title'); ?></h1>
-          <?php the_field('ngp_van_js_embed'); ?>
-          <?php the_field('ngp_van_div_embed'); ?>
+          <?php the_content(); ?>
         </div>
       </div>
     </div>

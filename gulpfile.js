@@ -24,7 +24,6 @@ gulp.task('styles', function() {
     .pipe($.sass({outputStyle: 'compressed'
     }).on('error', $.sass.logError))
     .pipe($.postcss([autoprefixer({
-      browsers: ['last 2 version'],
       cascade: false
     })]))
     .pipe($.cssnano())
@@ -33,15 +32,16 @@ gulp.task('styles', function() {
     .pipe($.size({title: 'styles'}));
 });
 
-// gulp.task('scripts', function() {
-//   return gulp.src(wpPath + 'js/scripts/*.js')
-//     .pipe($.if(!PRODUCTION, $.sourcemaps.init()))
-//     .pipe($.concat('main.min.js'))
-//     .pipe($.uglify({preserveComments: 'some'}))
-//     .pipe($.if(!PRODUCTION, $.sourcemaps.write('.')))
-//     .pipe(gulp.dest(wpPath + 'js'))
-//     .pipe($.size({title: 'scripts'}));
-// });
+gulp.task('scripts', function() {
+  return gulp.src(wpPath + 'js/scripts/*.js')
+    .pipe($.if(!PRODUCTION, $.sourcemaps.init()))
+    .pipe($.babel())
+    .pipe($.concat('main.min.js'))
+    // .pipe($.uglify({preserveComments: 'some'}))
+    .pipe($.if(!PRODUCTION, $.sourcemaps.write('.')))
+    .pipe(gulp.dest(wpPath + 'js'))
+    .pipe($.size({title: 'scripts'}));
+});
 
 gulp.task('serve', function() {
 
@@ -56,11 +56,11 @@ gulp.task('serve', function() {
 
 gulp.task('start', gulp.series(
   'styles',
-  // 'scripts',
+  'scripts',
   'images',
   'serve'));
 
 gulp.task('default', gulp.series(
   'styles',
-  // 'scripts',
+  'scripts',
   'images'));

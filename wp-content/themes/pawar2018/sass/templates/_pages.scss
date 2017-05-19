@@ -2,7 +2,7 @@
 .body {
   margin: 2rem 0;
   @include breakpoint(large) {
-    margin: 3rem 0;
+    margin: 3rem 0 0;
   }
 
   .section-title {
@@ -37,16 +37,13 @@
   flex: 1 0 100%;
   padding-left: 8.333333333%;
   padding-right: 8.333333333%;
-  padding-bottom: 2rem;
   @include breakpoint(medium) {
-    padding-bottom: 1rem;
     flex: 1 0 66.6667%;
-    padding-left: calc(((100% - 75rem) / 2) + .9375rem);
   }
 }
 
 .event-request {
-  background: #f7f7f7;
+  background: $extra-light-gray;
   p {
     text-align: center;
   }

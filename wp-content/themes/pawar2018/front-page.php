@@ -1,4 +1,10 @@
 <?php get_header(); ?>
+  <div class="promo-banner">
+    <h1 class="banner-headline">
+      Join Ameya at the June 15th Virtual Town Hall.
+      <a href="http://watchparty.pawar2018.com" target="_blank">RSVP Now</a>
+    </h1>
+  </div>
   <main>
     <section class="hero" style="background-image: url('<?php the_field('hero_image'); ?>');">
       <div class="row align-bottom">
@@ -113,6 +119,7 @@
                 </a>
                 <?php endif; ?>
               </div>
+              <?php wp_reset_postdata(); ?>
              <?php endwhile; ?>
           </div>
           <div class="column event-copy">
