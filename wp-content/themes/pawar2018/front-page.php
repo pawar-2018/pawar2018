@@ -1,4 +1,8 @@
-<?php get_header(); ?>
+<?php
+/*
+Template name: Front Page Template
+ */
+get_header(); ?>
   <div class="promo-banner">
     <h1 class="banner-headline">
       Join Ameya at the June 15th Virtual Town Hall.
@@ -40,8 +44,7 @@
       </div>
       <div class="small-11 large-8 columns">
       <?php endif; ?>
-        <?php get_field('has_video') ? echo '' : echo '<h1 class="main-callout">' . get_field('main-callout') . '</h1>';
-        ?>
+        <?php echo (get_field('has_video')?'':'<h1 class="main-callout">'. get_field('main-callout').'</h1>');?>
         <p class="main-copy">
           <?php the_field('callout_copy'); ?>
         </p>
@@ -169,7 +172,7 @@
         <img src="<?php echo get_field('bottom_first_photo') ?>" alt="<?php echo get_field('bottom_first_photo_alt') ?>">
       </div>
       <div class="small-12 large-6 columns">
-        <img src="<?php echo get_field('bottom_second_photo') ?>" alt="?php echo get_field('bottom_second_photo_alt') ?>">
+        <img src="<?php echo get_field('bottom_second_photo') ?>" alt="<?php echo get_field('bottom_second_photo_alt') ?>">
       </div>
     </div>
   </div>
