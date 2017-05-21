@@ -37,7 +37,7 @@
 
                   <p class="event-date">
                     <?php
-                    echo date_format($date, 'l, F d \a\t h:i a'); 
+                    echo date_format($date, 'l, F d \a\t h:i a');
                     ?>
                   </p>
 

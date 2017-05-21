@@ -1,6 +1,7 @@
 <?php get_header(); ?>
 <main>
-  <section class="hero inner-page" style="background-image: url('<?php echo get_bloginfo('template_url') ?>/assets/events-hero.jpg'); background-size: cover;">
+  <section class="hero inner-page"
+           style="background-image: url('<?php echo get_bloginfo('template_url') ?>/assets/events-hero.jpg'); background-size: cover;">
     <div class="row align-center align-middle">
       <h1 class="page-title">Events</h1>
     </div>
@@ -21,7 +22,7 @@
           'meta_key' => 'start_date',
           'orderby' => 'meta_value',
           'order' => 'ASC',
-          'meta_query'  => array(
+          'meta_query' => array(
             array(
               'key' => 'start_date',
               'type' => 'NUMERIC',
@@ -32,8 +33,8 @@
         );
 
         ?>
-        <?php $loop = new WP_Query( $args ); ?>
-        <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+        <?php $loop = new WP_Query($args); ?>
+        <?php while ($loop->have_posts()) : $loop->the_post(); ?>
           <div class="event row align-center">
             <div class="small-3 medium-10 large-2 columns">
               <div class="event-date_circle">
@@ -52,10 +53,10 @@
                   <?php the_field('start_date'); ?> at <?php the_field('start_time'); ?>
                 </p>
                 <h5 class="event-title">
-                  <?php the_title();?>
+                  <?php the_title(); ?>
                 </h5>
-                <p class="event-locale"><?php the_field('location');?></p>
-                <span class="event-address"><?php the_field('address');?></span>
+                <p class="event-locale"><?php the_field('location'); ?></p>
+                <span class="event-address"><?php the_field('address'); ?></span>
                 <?php if (get_field('link')) : ?>
               </a>
             <?php endif; ?>
@@ -64,7 +65,6 @@
           <?php wp_reset_postdata(); ?>
         <?php endwhile; ?>
       </div>
-    </div>
     </div>
   </section>
 </main>
