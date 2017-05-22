@@ -44,7 +44,8 @@ function _pawar2018_setup() {
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
-		'menu-1' => esc_html__( 'Primary', 'Pawar2018' ),
+	    'header-menu' => __( 'Header Menu' ),
+	    'footer-menu' => __( 'Footer Menu' )
 	) );
 
 	/*
@@ -140,6 +141,11 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+/**
+ * Header and footer menu customizations
+ */
+require get_template_directory() . '/inc/menus.php';
 
 /*
  $new_role = add_role('event_team_lead',
