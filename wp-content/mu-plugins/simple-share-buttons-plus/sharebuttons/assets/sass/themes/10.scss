@@ -1,0 +1,148 @@
+/*------------------------------------*\
+    STYLE TEN
+\*------------------------------------*/
+/**
+ * Large rectangle with white logo on coloured
+ * backgroun. With URL input
+ */
+
+/**
+ * Update variables below to include media
+ * queries (responsive version), control
+ * padding and other variables.
+ */
+
+$include-media-queries:    true;
+$icon-spacing:             0;
+$wrapper-padding:          0;
+$icon-size:                24px;
+$base-font-size:           16px;
+$animation-speed:          0.25s;
+
+/**
+ * Generated CSS must be combined with
+ * ssbp-base in order to display correctly.
+ * Allows for smaller file size when
+ * combining multiple themes.
+ */
+
+@import '../modules/vars';
+@import '../modules/mixins';
+
+.ssbp--theme-10 {
+	overflow: hidden;
+
+	.ssbp-list li {
+		margin: 0 !important;
+	}
+
+	.ssbp-btn {
+		display: block;
+		padding: 0.5em 1em;
+		color: #fff;
+		text-shadow: -1px -1px rgba(0,0,0,0.2);
+		transition: background-color $animation-speed;
+		border-bottom: 0;
+		&:before { vertical-align: middle; }
+		&:active { box-shadow: inset 0 0 0.5em rgba(0,0,0,0.33); }
+		&:hover, &:focus, &:active, &:visited { //overide theme 2013/2012
+			color: #fff;
+		}
+	}
+
+	// The input and total share count are visible in this theme
+	/*  <div class="ssbp-input-url-div">
+			<input class="ssbp-input-url" type="text" value="https://simplesharebuttons.com">
+		</div>
+		<span class="ssbp-total-shares"><b>2.5k</b></span> */
+
+	&.ssbp--centred {
+		.ssbp-input-url-div {
+			position: relative;
+			display: block;
+			padding: 10px;
+/*
+			&:after {
+				font-family: 'ssbp';
+				content: "\e611";
+				font-size: 22px;
+				position: absolute;
+				top: 50%;
+				left: 35px;
+				margin-top: -.5em;
+				color: $dark-grey;
+			}
+*/
+		}
+
+		.ssbp-input-url {
+			width: 100%;
+			max-width: 200px;
+			border: 1px solid #DDD;
+			padding: 8px 8px 8px 8px;
+			font-size: 20px;
+			font-weight: 400;
+			line-height: 1;
+			color: #B3B3B3;
+			border-radius: 4px;
+			box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+		}
+
+		.ssbp-total-shares {
+			display: block;
+			line-height: 1;
+			b {
+				font-size: 70px;
+				color: #4582EC;
+			}
+			&:after {
+				content: 'Shares';
+				display: block;
+				font-family: 'Lato',sans-serif;
+				font-weight: 700;
+				font-size: 30px;
+				text-transform: uppercase;
+				color: #B3B3B3;
+			}
+		}
+
+		@include media-query(lap-and-up) {
+			.ssbp-input-url-div {
+				float: right;
+				width: 50%;
+				padding: 35px 20px;
+				text-align: left;
+			}
+			.ssbp-total-shares {
+				width: 50%;
+				text-align: right;
+			}
+		}
+	}
+
+	// This loop creates the specific social network styling for each .ssbp-btn using the $social-networks list in _vars.scss
+	@each $social-network, $color in $social-networks {
+		.ssbp-#{$social-network} {
+			background-color: $color;
+			&:hover, &:focus, &:active, + .ssbp-each-share {
+				background-color: darken($color, 10%);
+			}
+		}
+	}
+
+	// Per network share count
+	.ssbp-each-share {
+		padding: 2px;
+		font-size: 10px;
+		text-align: center;
+		color: #FFF;
+	}
+
+	.ssbp-toggle-switch {
+		@extend %ssbp-toggle-switch--dark;
+	}
+
+	&.ssbp--centred {
+		@extend %ssbp--centred-full;
+	}
+}

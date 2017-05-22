@@ -1,0 +1,108 @@
+/*------------------------------------*\
+	MIXINS
+\*------------------------------------*/
+/**
+ * Button shapes (square, rectangular etc)
+ */
+ @mixin square {
+	width: 3em;
+	height: 3em;
+	line-height: 3em;
+}
+
+@mixin rectangle {
+	width: 4em;
+	height: 3em;
+	line-height: 3em;
+}
+
+@mixin font-styling {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 12px;
+}
+/**
+ * Variants for themes
+ */
+
+// Toggle switch dark
+%ssbp-toggle-switch--dark {
+	background: $grey;
+	background: rgba($dark-grey, 0.8);
+	border-radius: 0;
+	color: #fff;
+	&:active,
+	&:hover,
+	&:focus { // overwriting theme 2013
+		background: $grey;
+		background: rgba($dark-grey, 0.9);		
+	}
+}
+// Toggle switch light
+%ssbp-toggle-switch--light {
+	background: #fff;
+	background: rgba(255,255,255,0.8);
+	color: $dark-grey;
+	border-radius: 0;
+	&:active,
+	&:hover,
+	&:focus { // overwriting theme 2013 using bg on purpose
+		background: #fff;
+		background: rgba(255,255,255,0.9);		
+	}
+}
+%ssbp--centred-full {
+	.ssbp-list {
+		display: table;
+		table-layout: fixed;
+		width: 100%;
+		li {
+			display: inline-block !important;
+			margin: 0 $icon-spacing !important;
+			display: table-cell !important;
+			width: auto;
+			height: auto;
+		}
+	}
+	.ssbp-btn {
+		display: block;
+		width: auto;
+	}
+}
+/**
+ * Media query mixin from Inuit
+ *
+ * Options are:
+ *
+ * palm
+ * lap
+ * lap-and-up
+ * portable
+ * desk
+ * desk-wide
+ *
+ * Use like:
+ *
+ * `@include media-query(palm){ [styles here] }`
+ *
+*/
+$palm-end:              $lap-start - 1px;
+$lap-end:               $desk-start - 1px;
+
+@mixin media-query($media-query) {
+	@if $media-query == palm {
+		@media only screen and (max-width: $palm-end) { @content; }
+	} @else if $media-query == lap {
+		@media only screen and (min-width: $lap-start) and (max-width: $lap-end) { @content; }
+	} @else if $media-query == lap-and-up {
+		@media only screen and (min-width: $lap-start) { @content; }
+	} @else if $media-query == portable {
+		@media only screen and (max-width: $lap-end) { @content; }
+	} @else if $media-query == desk {
+		@media only screen and (min-width: $desk-start) { @content; }
+	} @else if $media-query == desk-wide {
+		@media only screen and (min-width: $desk-wide-start) { @content; }
+	} @else {
+		@content;
+	}
+}

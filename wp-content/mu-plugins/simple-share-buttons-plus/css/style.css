@@ -1,0 +1,228 @@
+﻿.ssbp-admin-wrap {
+	background-color: #fff!important;
+	margin-left:-20px;
+	font-size: 16px;
+	line-height: 1.42857143;
+	color: #333333;
+	font-family: "Raleway","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.container {
+	width: 100%;
+}
+
+.ssbp-float-right-btn {
+	float:right;
+	margin: 20px 0 0 20px;
+}
+
+.ortsh-row td {
+	line-height: 2.5!important;
+}
+
+.btn-paginate {
+	width:115px;
+}
+
+.margin-top--md {
+	margin-top: 45px;
+}
+
+.ssbp-float-right-btn-other {
+	float:right;
+	margin: 10px 0 0 20px;
+}
+
+.ssbp-form-wrap {
+	padding: 20px;
+}
+
+.ssbp-admin-wrap .tab-pane {
+	padding-top:15px;
+}
+
+.ssbp-loading {
+	font-size: 45px;
+	color:#4582ec;
+}
+
+.tab-pane .input-div {
+	margin-bottom: 15px;
+}
+
+#ssbpsort2 {
+	width: 100%;
+}
+
+.ssbp-logo-img {
+	width: 165px;
+	height: 47px;
+}
+.ssbp-admin-wrap .navbar {
+	border-radius: 0;
+}
+.ssbp-admin-wrap .modal-dialog {
+	margin-top: 60px;
+}
+.ssbp-btn-inactive {
+	margin-top: 12px;
+}
+
+.ssbp-admin-wrap .btn a:hover {
+	text-decoration: none !important;
+}
+
+.ssbp-admin-wrap .bootstrap-filestyle {
+	width: 100%;
+}
+
+.ssbp-admin-wrap .form-control:not(textarea) {
+	height: 40px !important;
+}
+
+.ssbp-admin-wrap .badge {
+	font-size: inherit;
+}
+
+.ssbp-delete-share {
+	cursor: pointer;
+}
+
+.ssbp-top-shares thead {
+	background-color: #fff;
+}
+
+.checkbox-inline {
+	padding-left:0;
+	font-size:14px;
+}
+
+.ssbp-video-container {
+	margin-top:15px;
+	margin-bottom: 15px;
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+
+.ssbp-video-container iframe,
+.ssbp-video-container object,
+.ssbp-video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 95%;
+    height: 100%;
+}
+
+.ssbp-wrap .ssbp-list {
+	min-height: 55px;
+	min-width: 200px;
+}
+
+.ssbp-include-list {
+	border: 1px dashed #ADADAD;
+}
+
+#ssbpsort2 li {
+	margin-top: 6px;
+}
+
+.ssbp-well-instruction {
+	text-align: center;
+	color: #ADADAD;
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+.ssbp-admin-wrap .code-font {
+	font-family:Menlo,Monaco,Consolas,"Courier New",monospace !important;
+	font-size: 12px;
+}
+
+.ssbp--theme-4 .ssbp-list li {
+  margin-left: 5px;
+}
+
+.ssbp--theme-4 .ssbp-btn {
+  width: 2.5em;
+  height: 2.5em;
+  line-height: 2.5em;
+}
+
+.ssbp-btn:before {
+	font-size: 18px;
+}
+
+.ssbp-btn-save-success {
+	display: none;
+}
+
+.ssbp-btn-save, .ssbp-btn-save-success {
+	width:65px;
+	border-radius: 5px 0 0 5px;
+	position: fixed;
+	z-index: 10;
+	right: 0;
+  	top: 130px;
+}
+
+.ssbp-btn-thank-you {
+	margin-top: -10px;
+}
+
+.ssbg-flag-small {
+  width: 32px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.ssbp-admin-wrap footer {
+	margin-top: 40px;
+	padding: 20px 0 15px 0;
+	border-top: 1px solid #dddddd;
+}
+
+.geoip-flags {
+	max-height:350px;
+	overflow: scroll;
+	text-align: center;
+}
+
+.geoip-flags table {
+	width: 100%;
+	text-align: center;
+}
+
+.ssbg-top-five tr td {
+	padding:5px;
+	width: 100%;
+}
+
+.flag-container {
+	margin:0 auto;
+    width: 205px;
+    position:relative;
+    text-align: right;
+}
+.flag-shares {
+	padding:0 5px 0 5px;
+    float: right;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    color:#fff;
+    background-color:#272727;
+    opacity: 0.9;
+}
+.flag-text {
+	display: block;
+	font-weight: bold;
+	font-size: 1.2em;
+	margin-top: -8px;
+}
+.flag-country {
+	text-transform: uppercase;
+	font-size: 1em;
+}

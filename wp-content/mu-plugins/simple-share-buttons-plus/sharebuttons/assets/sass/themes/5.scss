@@ -1,0 +1,73 @@
+/*------------------------------------*\
+    STYLE FIVE
+\*------------------------------------*/
+/**
+ * Rectangle 'button' style with white
+ * logo on coloured background
+ */
+
+/**
+ * Update variables below to include media
+ * queries (responsive version), control
+ * padding and other variables.
+ */
+
+$include-media-queries:    true;
+$icon-spacing:             0;
+$wrapper-padding:          0;
+$icon-size:                24px;
+$base-font-size:           16px;
+$animation-speed:          0.25s;
+
+/**
+ * Generated CSS must be combined with
+ * ssbp-base in order to display correctly.
+ * Allows for smaller file size when
+ * combining multiple themes.
+ */
+
+@import '../modules/vars';
+@import '../modules/mixins';
+
+.ssbp--theme-5 {
+	.ssbp-btn {
+		@include rectangle;
+		margin-bottom: 8px;
+		color: #fff;
+		transition: $animation-speed;
+		border-bottom: 0;
+		&:active {
+			transform: translateY(4px);
+		}
+		&:hover, &:focus, &:active, &:visited { //overide theme 2013/2012
+			color: #fff;
+		}
+	}
+
+	&.ssbp--stacked .ssbp-list li { margin-top: 0; }
+
+	// This loop creates the specific social network styling for each .ssbp-btn using the $social-networks list in _vars.scss
+	@each $social-network, $color in $social-networks {
+		.ssbp-#{$social-network} {
+			background-color: $color;
+			box-shadow: 0 8px 0 darken($color, 10%), 0 10px 12px rgba(0,0,0,0.33);
+			&:active {
+				box-shadow: 0 4px 0 darken($color, 10%), 0 5px 6px rgba(0,0,0,0.33);
+			}
+		}
+	}
+
+	// Per network share count
+	.ssbp-each-share {
+		padding-top: 3px;
+		text-align: center;
+		font-size: 12px;
+	}
+
+	.ssbp-toggle-switch {
+		@extend %ssbp-toggle-switch--light;
+	}
+	&.ssbp--centred {
+		@extend %ssbp--centred-full;
+	}
+}
