@@ -61,10 +61,10 @@
               </a>
             <?php endif; ?>
             </div>
-          </div>
+          <?php endwhile; ?>
           <?php wp_reset_postdata(); ?>
-        <?php endwhile; ?>
-      </div>
+         </div>
+        </div>
     </div>
   </section>
 </main>

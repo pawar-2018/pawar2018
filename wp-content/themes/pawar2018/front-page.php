@@ -131,8 +131,8 @@
                 </a>
                 <?php endif; ?>
               </div>
-              <?php wp_reset_postdata(); ?>
              <?php endwhile; ?>
+            <?php wp_reset_postdata(); ?>
           </div>
           <div class="column event-copy">
             <a href="<?php echo esc_url( home_url( '/events' )) ?>" class="button">
