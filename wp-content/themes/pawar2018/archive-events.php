@@ -61,8 +61,8 @@
                     <?php endif; ?>
                 </div>
             </div>
-            <?php wp_reset_postdata(); ?>
           <?php endwhile; ?>
+          <?php wp_reset_postdata(); ?>
          </div>
         </div>
     </div>
