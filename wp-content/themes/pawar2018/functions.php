@@ -106,16 +106,20 @@ add_action( 'widgets_init', '_pawar2018_widgets_init' );
  * Enqueue scripts and styles.
  */
 
-function add_defer_attribute($tag, $handle) {
-    if ( '_pawar2018-script' !== $handle )
-        return $tag;
-    return str_replace( ' src', ' defer src', $tag );
+function theme_scripts(){
+  function add_defer_attribute($tag, $handle) {
+      if ( '_pawar2018-script' !== $handle )
+          return $tag;
+      return str_replace( ' src', ' defer src', $tag );
+  }
+
+  add_filter('script_loader_tag', 'add_defer_attribute', 10, 2);
+  wp_register_script('_pawar2018-script', get_template_directory_uri() . '/js/main.min.js', array(), rand(), true);
+  wp_enqueue_script('_pawar2018-script');
+  wp_enqueue_style('_pawar2018-style', get_stylesheet_uri(), array(), rand());
 }
 
-add_filter('script_loader_tag', 'add_defer_attribute', 10, 2);
-wp_register_script('_pawar2018-script', get_template_directory_uri() . '/js/main.min.js', array(), rand(), true);
-wp_enqueue_style('_pawar2018-style', get_stylesheet_uri(), array(), rand());
-wp_enqueue_script('_pawar2018-script');
+add_action( 'wp_enqueue_scripts', 'theme_scripts' );
 
 /**
  * Implement the Custom Header feature.
