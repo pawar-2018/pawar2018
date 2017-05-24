@@ -10,7 +10,7 @@ get_header(); ?>
     </h1>
   </div>
   <main>
-    <section class="hero" style="background-image: url('<?php the_field('hero_image'); ?>');">
+    <section class="hero" style="background-image: url(<?php the_field('main_hero_image'); ?>);">
       <div class="row align-bottom">
         <div class="small-11 large-9 columns">
           <h1><?php the_field('hero_headline'); ?></h1>
@@ -44,7 +44,7 @@ get_header(); ?>
       </div>
       <div class="small-11 large-8 columns">
       <?php endif; ?>
-        <?php echo (get_field('has_video')?'':'<h1 class="main-callout">'. get_field('main-callout').'</h1>');?>
+        <?php echo (get_field('has_video')?'<h1 class="main-callout">'. get_field('main_callout').'</h1>':'');?>
         <p class="main-copy">
           <?php the_field('callout_copy'); ?>
         </p>
@@ -57,7 +57,7 @@ get_header(); ?>
           <?php the_field('pillar_subheadline'); ?>
         </h1>
         <div class="row small-up-1">
-          <?php $loop = new WP_Query( $args ); ?>
+          <?php $loop = new WP_Query(); ?>
           <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
             <div class="column column-block pillar-content">
               <img src="<?php echo get_field('pillar_icon') ?>" class="issue-icon" alt="<?php echo get_field('pillar_alt') ?>">
@@ -66,10 +66,8 @@ get_header(); ?>
                 <p><?php the_content() ?></p>
               </div>
             </div>
-            <?php
-            wp_reset_postdata();
-            ?>
           <?php endwhile; ?>
+            <?php wp_reset_postdata(); ?>
         </div>
         <div class="pillar-button">
           <a href="<?php the_field('pillar_button_link'); ?>" class="button">
@@ -84,71 +82,54 @@ get_header(); ?>
           </h4>
           <h1 class="main-callout"><?php the_field('event_subheadline'); ?></h1>
           <div class="row small-collapse">
-             <?php
-                $today = date('Ymd');
-                $args = array(
-                'post_type' => 'events',
-                'posts_per_page' => 2,
-                'meta_key' => 'start_date',
-                'orderby' => 'meta_value_num',
-                'order' => 'ASC',
-                'meta_query'  => array(
-                      array(
-                          'key' => 'start_date',
-                          'type' => 'NUMERIC',
-                          'value' => $today,
-                          'compare' => '>=',
-                          )
-                      ),
-                  );
 
-              ?>
-              <?php $loop = new WP_Query( $args ); ?>
-              <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
-              <div class="column small-11 large-8 event-copy">
-                <?php if (get_field('link')) : ?>
-                <a href="<?php the_field('link'); ?>">
-                <?php endif; ?>
-                    <p class="event-date">
-                        <?php the_field('start_date'); ?> at <?php the_field('start_time'); ?>
-                    </p>
-                    <h5 class="event-title">
+            <?php $events = new Eventbrite_Query(
+              apply_filters('eventbrite_query_args', array(
+                'limit' => 2
+              )
+            ));
+            if ($events->have_posts()) :
+              while ($events->have_posts()) :
+                $events->the_post(); ?>
+                  <div class="column small-11 large-8 event-copy">
+                    <?php get_field('link') ?>
+                    <a href="<?php the_field('link'); ?>">
+                      <p class="event-date">
+                        <?php
+                        echo date_format($date, 'l, F d \a\t h:i a');
+                        ?>
+                      </p>
+                      <h5 class="event-title">
                         <?php the_title();?>
-                    </h5>
-                    <p class="event-locale"><?php the_field('location');?></p>
-                    <span class="event-address"><?php the_field('address');?></span>
-                <?php if (get_field('link')) : ?>
-                </a>
-                <?php endif; ?>
-              </div>
-             <?php endwhile; ?>
-            <?php wp_reset_postdata(); ?>
+                      </h5>
+                      <p class="event-locale">
+                        <?= eventbrite_event_venue()->name; ?>
+                      </p>
+                      <span class="event-address">
+                        <?= eventbrite_event_venue()->address->localized_multi_line_address_display[0]; ?>
+                        <br/>
+                        <?= eventbrite_event_venue()->address->localized_multi_line_address_display[1]; ?>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              <?php endwhile;
+              // Previous/next post navigation.
+              eventbrite_paging_nav($events);
+
+            else :
+              // If no content, include the "No posts found" template.
+              get_template_part('content', 'none');
+
+            endif;
+
+            // Return $post to its rightful owner.
+            wp_reset_postdata();
+            ?>
           </div>
           <div class="column event-copy">
             <a href="<?php echo esc_url( home_url( '/events' )) ?>" class="button">
-              See All
-              <?php
-                  $today = date('Ymd');
-                  $args = array(
-                  'post_type' => 'events',
-                  'posts_per_page' => -1,
-                  'meta_key' => 'start_date',
-                  'orderby' => 'meta_value_num',
-                  'order' => 'ASC',
-                  'meta_query'  => array(
-                    array(
-                        'key' => 'start_date',
-                        'type' => 'NUMERIC',
-                        'value' => $today,
-                        'compare' => '>=',
-                            )
-                        ),
-                    );
-                    $my_query = new WP_Query($args);
-                    $count = $my_query->post_count;
-                    echo $count;
-               ?>
-              Events
+              See All Events
             </a>
           </div>
         </div>
