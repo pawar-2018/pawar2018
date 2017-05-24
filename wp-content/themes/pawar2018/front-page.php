@@ -57,7 +57,12 @@ get_header(); ?>
           <?php the_field('pillar_subheadline'); ?>
         </h1>
         <div class="row small-up-1">
-          <?php $loop = new WP_Query(); ?>
+          <?php
+            $args = array(
+            'post_type' => 'pillars',
+            'orderby' => 'meta_value',
+            'order' => 'ASC') ?>
+          <?php $loop = new WP_Query($args); ?>
           <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
             <div class="column column-block pillar-content">
               <img src="<?php echo get_field('pillar_icon') ?>" class="issue-icon" alt="<?php echo get_field('pillar_alt') ?>">
