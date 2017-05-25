@@ -1,4 +1,8 @@
-<?php get_header(); ?>
+<?php
+/*
+Template name: Front Page Template
+ */
+get_header(); ?>
   <div class="promo-banner">
     <h1 class="banner-headline">
       Join Ameya at the June 15th Virtual Town Hall.
@@ -6,183 +10,161 @@
     </h1>
   </div>
   <main>
-    <section class="hero">
+    <section class="hero" style="background-image: url(<?php the_field('main_hero_image'); ?>);">
       <div class="row align-bottom">
         <div class="small-11 large-9 columns">
-          <h1>A New Deal For Illinois</h1>
+          <h1><?php the_field('hero_headline'); ?></h1>
         </div>
       </div>
       <div class="row align-middle">
         <div class="small-11 large-7 columns">
-          <h2>It‘s time to grab a clipboard, lace up our boots, and work together to restore progressive values in 2018.</h2>
+          <h2><?php the_field('hero_subheadline'); ?></h2>
         </div>
       </div>
       <div class="row align-middle">
         <div class="small-11 columns">
-          <h3>Get the latest updates</h3>
-          <a href="/newsletter" class="button">Subscribe</a>
+          <h3><?php the_field('hero_cta'); ?></h3>
+          <a href="<?php the_field('hero_button_link'); ?>" class="button">
+            <?php the_field('hero_button_text'); ?>
+          </a>
         </div>
       </div>
     </section>
     <section class="row main-content align-center align-middle">
+      <?php if (get_field('has_video')) : ?>
         <div class="small-11 large-6 columns">
           <div class="flex-video widescreen">
-            <iframe width="500" height="282" src="https://www.youtube.com/embed/0QN_PvW9nQw?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+            <?php the_field('featured_video'); ?>
           </div>
         </div>
       <div class="small-11 large-6 columns">
-        <h1 class="main-callout">I’m running for governor to forge a New Deal for Illinois.</h1>
+      <?php else: ?>
+      <div class="small-11 large-4 columns">
+        <h1 class="main-callout"><?php the_field('main_callout'); ?></h1>
+      </div>
+      <div class="small-11 large-8 columns">
+      <?php endif; ?>
+        <?php echo (get_field('has_video')?'<h1 class="main-callout">'. get_field('main_callout').'</h1>':'');?>
         <p class="main-copy">
-          President Roosevelt’s New Deal took our country out of depression and laid the foundation for decades of growth and prosperity. We can do the same thing in Illinois by rebuilding our crumbling infrastructure, reinvesting in good-paying jobs, and recommitting to early childhood education and public schools. And we can do it without further burdening the middle class.
+          <?php the_field('callout_copy'); ?>
         </p>
       </div>
     </section>
     <section class="action-content">
       <div class="pillar-wrapper">
-        <h4 class="section-title">Ameya's Four Pillars</h4>
+        <h4 class="section-title"><?php the_field('pillar_headline'); ?></h4>
         <h1 class="main-callout">
-          What's in a New Deal for 2018.
+          <?php the_field('pillar_subheadline'); ?>
         </h1>
         <div class="row small-up-1">
-          <div class="column column-block pillar-content">
-            <img src="<?php echo get_bloginfo('template_url') ?>/assets/school.svg" class="pillar-icon" alt="School Icon">
-            <div class="pillar-copy">
-              <h4 class="pillar-header">Education</h4>
-              <p>
-                Increase funding to all public schools by eliminating corporate tax loopholes and make millionaires pay their fair share.
-              </p>
+          <?php
+            $args = array(
+            'post_type' => 'pillars',
+            'orderby' => 'meta_value',
+            'order' => 'ASC') ?>
+          <?php $loop = new WP_Query($args); ?>
+          <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+            <div class="column column-block pillar-content">
+              <img src="<?php echo get_field('pillar_icon') ?>" class="issue-icon" alt="<?php echo get_field('pillar_alt') ?>">
+              <div class="pillar-copy">
+                <h4 class="pillar-header"><?php the_title();?></h4>
+                  <?php the_content() ?>
+              </div>
             </div>
-          </div>
-          <div class="column column-block pillar-content">
-            <img src="<?php echo get_bloginfo('template_url') ?>/assets/family.svg" class="pillar-icon" alt="Family Icon">
-            <div class="pillar-copy">
-              <h4 class="pillar-header">Childcare</h4>
-              <p>
-                Provide universal access to childcare and support working families with paid sick leave, fair scheduling practices, parental leave, and a living wage.
-              </p>
-            </div>
-          </div>
-          <div class="column column-block pillar-content">
-            <img src="<?php echo get_bloginfo('template_url') ?>/assets/bridge.svg" class="pillar-icon" alt="Bridge Icon">
-            <div class="pillar-copy">
-              <h4 class="pillar-header">Jobs & Infrastructure</h4>
-              <p>
-                Create tens of thousands of new middle-class jobs with a New Deal infrastructure program.
-              </p>
-            </div>
-          </div>
-          <div class="column column-block pillar-content">
-            <img src="<?php echo get_bloginfo('template_url') ?>/assets/hammer.svg" class="pillar-icon" alt="Gavel Icon">
-            <div class="pillar-copy">
-              <h4 class="pillar-header">criminal justice reform</h4>
-              <p>
-                Pass criminal justice reform and refocus resources from prisons to diversion programs, job training and placement, and social and mental health services.
-              </p>
-            </div>
-          </div>
+          <?php endwhile; ?>
+            <?php wp_reset_postdata(); ?>
         </div>
         <div class="pillar-button">
-          <a href="<?php echo esc_url( home_url( '/issues' )) ?>" class="button">
-            See the Issues
+          <a href="<?php the_field('pillar_button_link'); ?>" class="button">
+            <?php the_field('pillar_button_text'); ?>
           </a>
         </div>
       </div>
       <div class="event-wrapper">
         <div class="event-content">
           <h4 class="section-title">
-            Upcoming Events
+            <?php the_field('event_headline'); ?>
           </h4>
-          <h1 class="main-callout">Let's talk.</h1>
+          <h1 class="main-callout"><?php the_field('event_subheadline'); ?></h1>
           <div class="row small-collapse">
-             <?php
-                $today = date('Ymd');
-                $args = array(
-                'post_type' => 'events',
-                'posts_per_page' => 2,
-                'meta_key' => 'start_date',
-                'orderby' => 'meta_value_num',
-                'order' => 'ASC',
-                'meta_query'  => array(
-                      array(
-                          'key' => 'start_date',
-                          'type' => 'NUMERIC',
-                          'value' => $today,
-                          'compare' => '>=',
-                          )
-                      ),
-                  );
-
-              ?>
-              <?php $loop = new WP_Query( $args ); ?>
-              <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
-              <div class="column small-11 large-8 event-copy">
-                <?php if (get_field('link')) : ?>
-                <a href="<?php the_field('link'); ?>">
-                <?php endif; ?>
-                    <p class="event-date">
-                        <?php the_field('start_date'); ?> at <?php the_field('start_time'); ?>
-                    </p>
-                    <h5 class="event-title">
+          <?php
+          // eventbrite doesn't work locally :(
+          if (class_exists(Eventbrite_Query)) : ?>
+            <?php $events = new Eventbrite_Query(
+              apply_filters('eventbrite_query_args', array(
+                'limit' => 2
+              )
+            ));
+            if ($events->have_posts()) :
+              while ($events->have_posts()) :
+                $events->the_post(); ?>
+                  <div class="column small-11 large-8 event-copy">
+                    <a href="<?php the_field('link'); ?>">
+                      <p class="event-date">
+                        <?php
+                        echo date_format($date, 'l, F d \a\t h:i a');
+                        ?>
+                      </p>
+                      <h5 class="event-title">
                         <?php the_title();?>
-                    </h5>
-                    <p class="event-locale"><?php the_field('location');?></p>
-                    <span class="event-address"><?php the_field('address');?></span>
-                <?php if (get_field('link')) : ?>
-                </a>
-                <?php endif; ?>
-              </div>
-             <?php endwhile; ?>
-            <?php wp_reset_postdata(); ?>
+                      </h5>
+                      <p class="event-locale">
+                        <?= eventbrite_event_venue()->name; ?>
+                      </p>
+                      <span class="event-address">
+                        <?php echo eventbrite_event_venue()->address->localized_multi_line_address_display[0]; ?>
+                        <br/>
+                        <?php echo eventbrite_event_venue()->address->localized_multi_line_address_display[1]; ?>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              <?php endwhile;
+              // Previous/next post navigation.
+              eventbrite_paging_nav($events);
+
+            else :
+              // If no content, include the "No posts found" template.
+              get_template_part('content', 'none');
+
+            endif;
+
+            // Return $post to its rightful owner.
+            wp_reset_postdata();
+          else :
+              // maybe something more informative here?
+              get_template_part('content', 'none');
+          endif;
+
+            ?>
           </div>
           <div class="column event-copy">
             <a href="<?php echo esc_url( home_url( '/events' )) ?>" class="button">
-              See All
-              <?php
-                  $today = date('Ymd');
-                  $args = array(
-                  'post_type' => 'events',
-                  'posts_per_page' => -1,
-                  'meta_key' => 'start_date',
-                  'orderby' => 'meta_value_num',
-                  'order' => 'ASC',
-                  'meta_query'  => array(
-                    array(
-                        'key' => 'start_date',
-                        'type' => 'NUMERIC',
-                        'value' => $today,
-                        'compare' => '>=', // Greater than or equal to value
-                            )
-                        ),
-                    );
-                    $my_query = new WP_Query($args);
-                    $count = $my_query->post_count;
-                    echo $count;
-               ?>
-              Events
+              See All Events
             </a>
           </div>
         </div>
         <div class="event-photo">
-          <img src="<?php echo get_bloginfo('template_url') ?>/assets/ameya02.jpg" class="event-photo" alt="Ameya Pawar with Microphone">
+          <img src="<?php echo get_field('event_photo') ?>" class="event-photo" alt="<?php echo get_field('event_photo_alt') ?>">
         </div>
       </div>
     </section>
     <div class="row align-middle align-center">
       <div class="small-11 large-10 columns">
         <h1 class="main-quote">
-          "We have the power to use government as a force for good—if we elect people who believe in the power of government to improve the lives of people in every community across Illinois. That’s why I’m running for Governor.”
+          <?php the_field('main_quote'); ?>
         </h1>
         <p class="main-caption">
-          - Ameya Pawar
+          <?php the_field('quote_caption'); ?>
         </p>
       </div>
     </div>
     <div class="row bottom-content small-collapse align-middle align-justify">
       <div class="small-12 large-6 columns">
-        <img src="<?php echo get_bloginfo('template_url') ?>/assets/ameya03.jpg" alt="Ameya Pawar with Schoolchildren">
+        <img src="<?php echo get_field('bottom_first_photo') ?>" alt="<?php echo get_field('bottom_first_photo_alt') ?>">
       </div>
       <div class="small-12 large-6 columns">
-        <img src="<?php echo get_bloginfo('template_url') ?>/assets/ameya04.jpg" alt="Ameya Pawar in front of a construction site">
+        <img src="<?php echo get_field('bottom_second_photo') ?>" alt="<?php echo get_field('bottom_second_photo_alt') ?>">
       </div>
     </div>
   </div>
