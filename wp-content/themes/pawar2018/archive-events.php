@@ -32,7 +32,7 @@
                 </div>
               </div>
               <div id="event-<?php the_ID(); ?>" class="small-11 large-7 large-offset-1 columns event-copy">
-                <a href="<?php the_field('link'); ?>">
+                <a href="<?= eventbrite_event_eb_url(); ?>">
 
                   <p class="event-date">
                     <?php
