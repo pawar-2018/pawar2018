@@ -116,7 +116,6 @@ get_header(); ?>
                       </span>
                     </a>
                   </div>
-                </div>
               <?php endwhile;
 
             else :
