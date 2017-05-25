@@ -32,7 +32,6 @@
                 </div>
               </div>
               <div id="event-<?php the_ID(); ?>" class="small-11 large-7 large-offset-1 columns event-copy">
-                <?php get_field('link') ?>
                 <a href="<?php the_field('link'); ?>">
 
                   <p class="event-date">
@@ -46,8 +45,8 @@
                   </h5>
 
                   <p class="event-locale"><?= eventbrite_event_venue()->name; ?></p>
-                  <p><?= eventbrite_event_venue()->address->localized_multi_line_address_display[0]; ?></p>
-                  <p><?= eventbrite_event_venue()->address->localized_multi_line_address_display[1]; ?></p>
+                  <p><?php echo eventbrite_event_venue()->address->localized_multi_line_address_display[0]; ?></p>
+                  <p><?php echo eventbrite_event_venue()->address->localized_multi_line_address_display[1]; ?></p>
 
                   <footer class="entry-footer">
                     <?php eventbrite_edit_post_link(__('Edit', 'eventbrite_api'), '<span class="edit-link">', '</span>'); ?>

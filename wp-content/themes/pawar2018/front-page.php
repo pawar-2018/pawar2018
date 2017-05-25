@@ -68,7 +68,7 @@ get_header(); ?>
               <img src="<?php echo get_field('pillar_icon') ?>" class="issue-icon" alt="<?php echo get_field('pillar_alt') ?>">
               <div class="pillar-copy">
                 <h4 class="pillar-header"><?php the_title();?></h4>
-                <p><?php the_content() ?></p>
+                  <?php the_content() ?>
               </div>
             </div>
           <?php endwhile; ?>
@@ -87,7 +87,9 @@ get_header(); ?>
           </h4>
           <h1 class="main-callout"><?php the_field('event_subheadline'); ?></h1>
           <div class="row small-collapse">
-
+          <?php
+          // eventbrite doesn't work locally :(
+          if (class_exists(Eventbrite_Query)) : ?>
             <?php $events = new Eventbrite_Query(
               apply_filters('eventbrite_query_args', array(
                 'limit' => 2
@@ -97,7 +99,6 @@ get_header(); ?>
               while ($events->have_posts()) :
                 $events->the_post(); ?>
                   <div class="column small-11 large-8 event-copy">
-                    <?php get_field('link') ?>
                     <a href="<?php the_field('link'); ?>">
                       <p class="event-date">
                         <?php
@@ -111,9 +112,9 @@ get_header(); ?>
                         <?= eventbrite_event_venue()->name; ?>
                       </p>
                       <span class="event-address">
-                        <?= eventbrite_event_venue()->address->localized_multi_line_address_display[0]; ?>
+                        <?php echo eventbrite_event_venue()->address->localized_multi_line_address_display[0]; ?>
                         <br/>
-                        <?= eventbrite_event_venue()->address->localized_multi_line_address_display[1]; ?>
+                        <?php echo eventbrite_event_venue()->address->localized_multi_line_address_display[1]; ?>
                       </span>
                     </a>
                   </div>
@@ -130,6 +131,11 @@ get_header(); ?>
 
             // Return $post to its rightful owner.
             wp_reset_postdata();
+          else :
+              // maybe something more informative here?
+              get_template_part('content', 'none');
+          endif;
+
             ?>
           </div>
           <div class="column event-copy">
