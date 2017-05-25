@@ -87,9 +87,7 @@ get_header(); ?>
           </h4>
           <h1 class="main-callout"><?php the_field('event_subheadline'); ?></h1>
           <div class="row small-collapse">
-          <?php
-          // eventbrite doesn't work locally :(
-          if (class_exists(Eventbrite_Query)) : ?>
+
             <?php $events = new Eventbrite_Query(
               apply_filters('eventbrite_query_args', array(
                 'limit' => 2
@@ -102,14 +100,14 @@ get_header(); ?>
                     <a href="<?php the_field('link'); ?>">
                       <p class="event-date">
                         <?php
-                        echo date_format($date, 'l, F d \a\t h:i a');
+                        echo date_format(date_create(eventbrite_event_start()->local), 'l, F d \a\t h:i a');
                         ?>
                       </p>
                       <h5 class="event-title">
                         <?php the_title();?>
                       </h5>
                       <p class="event-locale">
-                        <?= eventbrite_event_venue()->name; ?>
+                        <?php echo eventbrite_event_venue()->name; ?>
                       </p>
                       <span class="event-address">
                         <?php echo eventbrite_event_venue()->address->localized_multi_line_address_display[0]; ?>
@@ -120,8 +118,6 @@ get_header(); ?>
                   </div>
                 </div>
               <?php endwhile;
-              // Previous/next post navigation.
-              eventbrite_paging_nav($events);
 
             else :
               // If no content, include the "No posts found" template.
@@ -131,11 +127,6 @@ get_header(); ?>
 
             // Return $post to its rightful owner.
             wp_reset_postdata();
-          else :
-              // maybe something more informative here?
-              get_template_part('content', 'none');
-          endif;
-
             ?>
           </div>
           <div class="column event-copy">
