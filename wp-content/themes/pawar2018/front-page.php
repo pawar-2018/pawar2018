@@ -97,7 +97,7 @@ get_header(); ?>
               while ($events->have_posts()) :
                 $events->the_post(); ?>
                   <div class="column small-11 large-8 event-copy">
-                    <a href="<?php the_field('link'); ?>">
+                    <a href="<?= eventbrite_event_eb_url(); ?>">
                       <p class="event-date">
                         <?php
                         echo date_format(date_create(eventbrite_event_start()->local), 'l, F d \a\t h:i a');
