@@ -22,13 +22,14 @@
 		        <a class="footer-nav__link show-for-large" href="<?php echo esc_url( home_url( '/' ) ); ?>" aria-label="Back to the Home Page">
 		          <img class="footer-nav__logo" src="<?php echo get_bloginfo('template_url') ?>/assets/logo.svg"  alt="Ameya Pawar 2018 Logo">
 		        </a>
-		        <a class="footer-nav__link" href="/meet-ameya">About</a>
-		        <a class="footer-nav__link" href="/issues">Issues</a>
-		        <a class="footer-nav__link" href="/events">Events</a>
-		        <a class="footer-nav__link" href="/get-involved">Get Involved</a>
-		        <a class="footer-nav__link" href="/press-releases">Press Releases</a>
-		        <a class="footer-nav__link" href="/privacy-policy">Privacy Policy</a>
-		        <a class="footer-nav__link" href="/donate">Donate</a>
+		        <?php 
+					$footer_menu_items = get_items_by_location('footer-menu');
+					foreach ($footer_menu_items as $item) {
+						$classes = implode(' ', $item->classes);
+						$classes .= ' footer-nav__link';
+						echo "<a class=\"{$classes}\" href=\"{$item->url}\">{$item->title}</a>";
+					}
+				?>
 			</nav>
 		</div>
 		<div class="small-11 medium-5 large-4 columns">
@@ -50,6 +51,5 @@
 <?php get_template_part('template-parts/footer', 'paid'); ?>
 
 <?php wp_footer(); ?>
-<script src="<?php echo get_bloginfo('template_url') ?>/js/main.min.js" defer></script>
 </body>
 </html>
