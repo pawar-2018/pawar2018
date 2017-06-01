@@ -61,8 +61,7 @@ with docker-machine ip
 
 ### Importing Content
 
-Currently, the quickest way to get the content is to export an XML copy of the
-staging site's content and import into your local Wordpress. It sucks. We know. We're working on it.
+Currently, the quickest way to get the content is to use the Migrate DB plugin.  To import the content from the stag
 
 1. Get Mica or John to give you a Staging Login. They can be Slacked.
 2. Once logged in, click on CPT UI on the left hand side and then Import/Export Post Types.
@@ -70,10 +69,19 @@ staging site's content and import into your local Wordpress. It sucks. We know. 
 4. Go back to your local version of Wordpress at http://localhost:3000 and click on CPT UI
 5. Paste that into Import Post Types and then Import. If there is an error here, it's fine, just tap in #webdev and we can see what's up.
 
-This next part is going to be pretty hit or miss. We have to figure out how to import the larger-than-the-max staging XML file.
+Next, you'll want to import the database from staging into your dev environment.  To do this:
 
-1. Go to staging, and under Tools on the left there, choose Export. If you download All Content, and the file is larger than 2MB, then we'll have to grab only what you need. That is: Pages, Field Groups, Fields, Events, Issues, and Pillars. You might need Press Releases if you're working on something for that section, but not in general.
-2. Go back to your local, Tools > Import. You will sadly have to upload these one at a time. Again, this blows and we're working to fix it. If there is an error here, it's fine, just tap in #webdev and we can see what's up.
+1. On the **staging** website, log in as an admin, click "Tools" and then "Migrate DB" 
+2. Go to the "Settings" tab and copy the URL and copy all of the text in "Connection Info"
+3. In the WP Admin interface on your **local** setup, click "Plugins" and activate the "Github Updater" and "WP DB Sync" plugins
+4. After the plugins are active, click "Tools" and then you'll see a new "Migrate DB" tool on your local environment
+5. Select the "Settings" tab and paste the URL/token that you copied from staging
+6. Go back to the "Migrate" tab, and select the "Pull" radio button
+7. Scroll down to the bottom of the "Migrate" window and then click "Migrate DB"
+
+A window will launch that will show the progress of the import.  Once it's completed
+you should see the settings reflected locally.  Your username/password on the local
+dev environment will change to what it was on the staging server.
 
 ## URLS
 
