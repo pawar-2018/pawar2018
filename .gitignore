@@ -36,6 +36,7 @@ wp-content/plugins/*
 !wp-content/plugins/github-updater
 !wp-content/plugins/wp-sync-db
 !wp-content/plugins/polylang-pro
+!wp-content/plugins/location-nav-menu-for-acf
 # !wp-content/plugins/my-directory-plugin/
 
 # Ignore everything in the "themes" directory, except the themes you
