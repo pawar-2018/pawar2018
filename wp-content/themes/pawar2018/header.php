@@ -12,9 +12,9 @@
 		</div>
 
 		<nav class="header-nav">
-            <?php
-        $header_menu_items = get_items_by_location('header-menu');
-        foreach ($header_menu_items as $item) {
+            <?php 
+				$header_menu_items = get_items_by_location('header-menu');
+				foreach ($header_menu_items as $item) {
 					$classes = implode(' ', $item->classes);
 					$classes .= ' header-nav__link';
 					if(is_page($item->title) || is_post_type_archive( $item->object )) {
@@ -39,14 +39,10 @@
 					<img src="<?php echo get_bloginfo('template_url') ?>/assets/youtube.svg" alt="Youtube Icon">
 				</a>
 			</div>
-      <?php
-        $header_menu_items = get_items_by_location('header-menu');
-        foreach ($header_menu_items as $item) {
-          if ($item->title === "Shop") {
-            echo "<a href=" . get_field( 'donate_button_link', $item->ID ) . " class='header-social__button button'>" .  get_field( 'donate_button_text', $item->ID ) . "</a>";
-          }
-        }
-      ?>
+
+			<a class="header-social__button button" href="/donate">
+                Donate
+            </a>
 		</nav>
 
 	</div>
