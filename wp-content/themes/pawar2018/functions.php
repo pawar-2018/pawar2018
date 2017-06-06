@@ -44,8 +44,9 @@ function _pawar2018_setup() {
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
-	    'header-menu' => __( 'Header Menu' ),
-	    'footer-menu' => __( 'Footer Menu' )
+	    'header-menu'   => __( 'Header Menu' ),
+	    'footer-menu'   => __( 'Footer Menu' ),
+	    'donate-button' => __( 'Donate Button' )
 	) );
 
 	/*
