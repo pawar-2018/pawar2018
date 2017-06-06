@@ -3,12 +3,14 @@
 Template name: Front Page Template
  */
 get_header(); ?>
+  <?php if (get_field('has_banner_headline')) : ?>
   <div class="promo-banner">
     <h1 class="banner-headline">
-      Join Ameya at the June 15th Virtual Town Hall.
-      <a href="http://watchparty.pawar2018.com" target="_blank">RSVP Now</a>
+      <?php the_field('banner_headline'); ?>
+      <a href="<?php the_field('banner_headline_link'); ?>" target="_blank"><?php the_field('banner_headline_link_text'); ?></a>
     </h1>
   </div>
+  <?php endif; ?>
   <main>
     <section class="hero" style="background-image: url(<?php the_field('main_hero_image'); ?>);">
       <div class="row align-bottom">
@@ -74,11 +76,13 @@ get_header(); ?>
           <?php endwhile; ?>
             <?php wp_reset_postdata(); ?>
         </div>
+        <?php if (get_field('has_pillar_button')) : ?>
         <div class="pillar-button">
           <a href="<?php the_field('pillar_button_link'); ?>" class="button">
             <?php the_field('pillar_button_text'); ?>
           </a>
         </div>
+        <?php endif; ?>
       </div>
       <div class="event-wrapper">
         <div class="event-content">
