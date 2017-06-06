@@ -20,14 +20,16 @@
 		<div class="small-11 medium-3 large-4 columns">
 			<nav class="footer-nav">
 		        <a class="footer-nav__link show-for-large" href="<?php echo esc_url( home_url( '/' ) ); ?>" aria-label="Back to the Home Page">
-		          <img class="footer-nav__logo" src="<?php echo get_bloginfo('template_url') ?>/assets/logo.svg"  alt="Ameya Pawar 2018 Logo">
+		          <img class="footer-nav__logo" src="<?php echo get_bloginfo('template_url') ?>/assets/logo.<?php echo pll_current_language(); ?>.svg"  alt="Ameya Pawar 2018 Logo">
 		        </a>
 		        <?php 
 					$footer_menu_items = get_items_by_location('footer-menu');
-					foreach ($footer_menu_items as $item) {
-						$classes = implode(' ', $item->classes);
-						$classes .= ' footer-nav__link';
-						echo "<a class=\"{$classes}\" href=\"{$item->url}\">{$item->title}</a>";
+					if($footer_menu_items) {
+						foreach ($footer_menu_items as $item) {
+							$classes = implode(' ', $item->classes);
+							$classes .= ' footer-nav__link';
+							echo "<a class=\"{$classes}\" href=\"{$item->url}\">{$item->title}</a>";
+						}
 					}
 				?>
 			</nav>
