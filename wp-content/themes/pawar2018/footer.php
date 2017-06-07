@@ -20,9 +20,9 @@
 		<div class="small-11 medium-3 large-4 columns">
 			<nav class="footer-nav">
 		        <a class="footer-nav__link show-for-large" href="<?php echo esc_url( home_url( '/' ) ); ?>" aria-label="Back to the Home Page">
-		          <img class="footer-nav__logo" src="<?php echo get_bloginfo('template_url') ?>/assets/logo.svg"  alt="Ameya Pawar 2018 Logo">
+		          <img class="footer-nav__logo" src="<?php echo get_bloginfo('template_url') ?>/assets/logo.svg"  alt="Ameya Pawar 2018 Logo" />
 		        </a>
-		        <?php 
+		        <?php
 					$footer_menu_items = get_items_by_location('footer-menu');
 					foreach ($footer_menu_items as $item) {
 						$classes = implode(' ', $item->classes);
@@ -44,8 +44,9 @@
 				<h6 class="section-title">Ameya Pawar For Governor</h6>
 				<a class="footer__link" href="mailto:info@pawar2018.com">info@pawar2018.com</a>
 				<p>P.O. Box 577162<br>Chicago, Il 60657</p>
-		</div>
-	</div>
+		  </div>
+	   </div>
+  </div>
 </footer>
 
 <?php get_template_part('template-parts/footer', 'paid'); ?>
