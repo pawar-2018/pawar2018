@@ -104,7 +104,7 @@ get_header(); ?>
                     <a href="<?= eventbrite_event_eb_url(); ?>">
                       <p class="event-date">
                         <?php
-                        echo date_format(date_create(eventbrite_event_start()->local), 'l, F d \a\t h:i a');
+                        echo date_i18n( 'l, F d \a\t h:i a', strtotime(eventbrite_event_start()->local) );
                         ?>
                       </p>
                       <h5 class="event-title">
