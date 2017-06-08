@@ -36,7 +36,7 @@
 
                   <p class="event-date">
                     <?php
-                    echo date_i18n( 'l, F d \a\t h:i a', strtotime(eventbrite_event_start()->local) );
+                    echo date_i18n( pll__('l, F d \a\t h:i a'), strtotime(eventbrite_event_start()->local) );
                     ?>
                   </p>
 
