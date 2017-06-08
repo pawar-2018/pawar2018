@@ -42,7 +42,6 @@ function _pawar2018_setup() {
 	 */
 	add_theme_support( 'post-thumbnails' );
 
-	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 	    'header-menu'   => __( 'Header Menu' ),
 	    'footer-menu'   => __( 'Footer Menu' ),
@@ -69,6 +68,9 @@ function _pawar2018_setup() {
 
 	// Add theme support for selective refresh for widgets.
 	add_theme_support( 'customize-selective-refresh-widgets' );
+
+	// Register string to be translated in admin UI
+	pll_register_string( 'Eventbrite date format', 'l, F d \a\t h:i a'); 
 }
 endif;
 add_action( 'after_setup_theme', '_pawar2018_setup' );
