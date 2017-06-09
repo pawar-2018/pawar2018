@@ -1,0 +1,104 @@
+/*------------------------------------*\
+    STYLE TWO
+\*------------------------------------*/
+/**
+ * Square with white logo on coloured
+ * background
+ */
+
+/**
+ * Update variables below to include media
+ * queries (responsive version), control
+ * padding and other variables.
+ */
+
+$include-media-queries:    true;
+$icon-spacing:             0;
+$wrapper-padding:          0;
+$icon-size:                24px;
+$base-font-size:           16px;
+$animation-speed:          0.25s;
+
+/**
+ * Generated CSS must be combined with
+ * ssbp-base in order to display correctly.
+ * Allows for smaller file size when
+ * combining multiple themes.
+ */
+
+@import '../modules/vars';
+@import '../modules/mixins';
+
+.ssbp--theme-2 {
+	.ssbp-list li {
+		overflow: hidden;
+		margin: 0 !important;
+	}
+
+	.ssbp-btn {
+		@include square;
+		position: relative;
+		color: #fff;
+		transition: $animation-speed;
+		border-bottom: 0;
+		&:before {
+			transition: $animation-speed;
+			// transform: scale(0.85); // disabled until jiggle can be stopped
+		}
+		+ .ssbp-each-share {
+			position: absolute;
+			z-index: 10;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			transform: translateY(0);
+			transition: $animation-speed;
+		}
+		&:hover, &:focus, &:active, &:visited { //overide theme 2013/2012
+			z-index: 10;
+			color: #fff; //overide theme 2013
+			&:before {
+				transform: none !important;
+			}
+			+ .ssbp-each-share {
+				transform: translateY(100%);
+			}
+		}
+		&:active {
+			transform: scale(1.2);
+		}
+	}
+
+	// Tweak styling of buttons when counts are showing
+	&[data-ssbp-counts="true"] .ssbp-btn {
+		&:before {
+			transform: translateY(-0.25em) scale(0.75);
+		}
+	}
+
+	// This loop creates the specific social network styling for each .ssbp-btn using the $social-networks list in _vars.scss
+	@each $social-network, $color in $social-networks {
+		.ssbp-#{$social-network} {
+			background-color: $color;
+			&:hover, &:focus, &:active {
+				background-color: darken($color, 10%);
+			}
+		}
+	}
+
+	// Per network share count
+	.ssbp-each-share {
+		padding: 2px;
+		background-color: rgba(0,0,0,.1);
+		font-size: 10px;
+		text-align: center;
+		color: #FFF;
+	}
+
+	.ssbp-toggle-switch {
+		@extend %ssbp-toggle-switch--dark;
+	}
+	&.ssbp--centred {
+		@extend %ssbp--centred-full;
+	}
+}

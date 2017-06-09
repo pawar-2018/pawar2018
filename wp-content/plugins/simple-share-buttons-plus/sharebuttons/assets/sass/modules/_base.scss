@@ -1,0 +1,259 @@
+/*------------------------------------*\
+    BASE
+\*------------------------------------*/
+/**
+ * Base styling for all SSB themes
+ */
+@media print {
+    .ssbp-wrap {
+        display: none !important;
+    }
+}
+
+@include media-query(lap-and-up) {
+	// Nested/chained selectors for increased specificity
+	.ssbp-li--whatsapp,
+	.ssbp-li--facebook-messenger {
+		display:none !important;
+	}
+}
+
+ .ssbp-wrap *,
+ .ssbp-wrap *:before,
+ .ssbp-wrap *:after {
+	box-sizing: border-box;
+}
+
+// Hidden elements (over-ridden by classes below or specific theme stylesheets)
+.ssbp-input-url-div, .ssbp-total-shares, .ssbp-each-share, .ssbp-toggle-switch, .ssbp-text {
+	display: none;
+}
+
+// Styles nested within .ssbp-wrap class so theme-specific styling can be more easily over-ridden
+.ssbp-wrap {
+	position: relative;
+	display: inline-block;
+	padding: $wrapper-padding;
+	font-size: 0; // In case whitespace somehow makes it into the markup
+	color: $dark-grey;
+
+	/**
+	 * Default display of inline-block 'shrink-wraps' the icons.
+	 * This class will centre the icons in the space available
+	 * (i.e. the full width of its parent container).
+	 */
+	&.ssbp--centred {
+		display: block;
+		text-align: center;
+	}
+
+	&.ssbp--aligned-right {
+		display: block;
+		text-align: right;
+		.ssbp-container {
+			display: inline-block;
+		}
+	}
+
+	.ssbp-container,
+	.ssbp-toggle-switch {
+		font-size: $base-font-size;
+	}
+
+	/* List item/icon styling */
+	.ssbp-list {
+		list-style: none;
+		display: inline-block;
+		vertical-align: middle;
+		margin: 0;
+		padding: 0;
+		li {
+			position: relative; // Individual share count icons positioned relative to this
+			display: inline-block;
+			vertical-align: top;
+			&:first-of-type { margin-left: 0; }
+		}
+	}
+
+	.ssbp-btn {
+		display: inline-block;
+		text-align: center;
+		text-decoration: none;
+		font-family: sans-serif;
+	}
+
+	// Optional classes to control variant layouts
+	&.ssbp--stacked {
+		.ssbp-list li {
+			display: block;
+			margin-top: $icon-spacing/2;
+			margin-left: 0 !important; // We need to explicitly over-ride l/r margins when stacking icons
+			margin-right: 0 !important;
+			&:first-of-type { margin-top: 0; }
+		}
+	}
+
+	/**
+	 * .ssbp--fixed-left is treated as the 'default' fixed
+	 * style as it's the most common (relevant for transforms)
+	 */
+	&[class*="ssbp--fixed"] {
+		position: fixed;
+		z-index: 99999; // general override for themes with fixed high indexed elements
+		.ssbp-container {
+			transition: $animation-speed; // only fixed styles should slide in
+		}
+	}
+
+	&.ssbp--fixed-top,
+	&.ssbp--fixed-bottom {
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	&.ssbp--fixed-left,
+	&.ssbp--fixed-right {
+		@extend .ssbp--stacked;
+		top: 25%;
+	}
+
+	&.ssbp--fixed-top { top: 0; }
+	&.ssbp--fixed-bottom { bottom: 0; }
+	&.ssbp--fixed-left { left: 0; }
+	&.ssbp--fixed-right { right: 0; }
+
+	// Show share count (per button)
+	&[data-ssbp-counts="true"] {
+		.ssbp-each-share {
+			display: block;
+			pointer-events: none;
+		}
+	}
+
+	// Show total share count
+	&[data-ssbp-total-counts="true"] {
+		.ssbp-total-shares {
+			display: inline-block;
+			padding: 0 .5em;
+			text-align: center;
+			font-size: 14px;
+			line-height: 2;
+		}
+		&.ssbp--fixed-left,
+		&.ssbp--fixed-right,
+		&.ssbp--stacked {
+			.ssbp-total-shares {
+				display: block;
+				padding: 0;
+			}
+		}
+	}
+
+} // .ssbp-wrap
+
+// Toggle switch
+.ssbp-toggle-switch {
+	position: absolute;
+	padding: 0;
+	border: 0;
+	background: transparent;
+	text-align: center;
+	cursor: pointer;
+	transition: $animation-speed;
+	display: none;
+	//[data-ssbp-toggle="true"][class*="ssbp--fixed"] & { display: inline-block; } //only on fixed styles
+	@extend .ssbp-chevron-down;
+	&:active,
+	&:hover,
+	&:focus {
+		padding: 0;
+		border: 0;
+	}
+}
+.ssbp--fixed-left,
+.ssbp--fixed-right {
+	.ssbp-toggle-switch {
+		left: 0;
+		bottom: 100%;
+		width: 100%;
+	}
+}
+.ssbp--fixed-left{
+	.ssbp-toggle-switch {
+		@extend .ssbp-chevron-left;
+	}
+}
+.ssbp--fixed-right {
+	.ssbp-toggle-switch {
+		@extend .ssbp-chevron-right;
+	}
+}
+
+.ssbp--fixed-top,
+.ssbp--fixed-bottom {
+	.ssbp-toggle-switch {
+		left: 100%;
+		bottom: 0;
+		height: 100%;
+	}
+}
+
+/**
+ * Toggle chevrons need to change based on which side
+ * the buttons are fixed
+ */
+.ssbp--show-toggle {
+	&.ssbp--fixed-top {
+		.ssbp-toggle-switch:before {
+			transform: rotate(90deg);
+		}
+	}
+	&.ssbp--fixed-bottom {
+		.ssbp-toggle-switch:before {
+			transform: rotate(-90deg);
+		}
+	}
+	&.ssbp--fixed-right {
+		.ssbp-toggle-switch:before {
+			transform: rotate(180deg);
+		}
+	}
+}
+
+.ssbp--state-hidden {
+	.ssbp-toggle-switch {
+		@extend .ssbp-chevron-up;
+	}
+	.ssbp-each-share {
+		opacity: 0; // These might overflow the container, so need to ensure they are hidden
+	}
+	.ssbp-container {
+		transform: translateX(-100%);
+	}
+	&.ssbp--fixed-top {
+		.ssbp-container {
+			transform: translateY(-100%);
+		}
+	}
+	&.ssbp--fixed-bottom {
+		.ssbp-container {
+			transform: translateY(100%);
+		}
+	}
+	&.ssbp--fixed-left {
+		.ssbp-container {
+			transform: translateX(-100%);
+		}
+		.ssbp-toggle-switch {
+			@extend .ssbp-chevron-right	;
+		}
+	}
+	&.ssbp--fixed-right {
+		.ssbp-container {
+			transform: translateX(100%);
+		}
+		.ssbp-toggle-switch {
+			@extend .ssbp-chevron-left;
+		}
+	}
+}
