@@ -1,0 +1,82 @@
+/*------------------------------------*\
+    STYLE NINE
+\*------------------------------------*/
+/**
+ * Square with coloured logo on white
+ * background. Coloured border-bottom
+ */
+
+/**
+ * Update variables below to include media
+ * queries (responsive version), control
+ * padding and other variables.
+ */
+
+$include-media-queries:    true;
+$icon-spacing:             6px;
+$wrapper-padding:          6px;
+$icon-size:                24px;
+$base-font-size:           16px;
+$animation-speed:          0.25s;
+
+/**
+ * Generated CSS must be combined with
+ * ssbp-base in order to display correctly.
+ * Allows for smaller file size when
+ * combining multiple themes.
+ */
+
+@import '../modules/vars';
+@import '../modules/mixins';
+
+.ssbp--theme-9 {
+	.ssbp-list {
+		li {
+			margin-left: $icon-spacing;
+		}
+	}
+
+	.ssbp-btn {
+		display: block;
+		padding: .5em 1em;
+		&:hover, &:focus, &:active {
+			opacity: .66;
+		}
+	}
+
+	// This loop creates the specific social network styling for each .ssbp-btn using the $social-networks list in _vars.scss
+	@each $social-network, $color in $social-networks {
+		.ssbp-#{$social-network} {
+			border-bottom: 5px solid $color;
+			color: $color;
+			&:hover, &:focus, &:active {
+				border-bottom: 5px solid $color;	
+			}
+			&:hover, &:focus, &:active, &:visited { //overide theme 2013/2012
+				color: $color;
+			}
+			+ .ssbp-each-share {
+				color: $color;
+			}
+		}
+	}
+
+	// // Per network share count
+	.ssbp-each-share {
+		padding-top: 3px;
+		text-align: center;
+		font-size: 12px;
+		&:before {
+			content: "(";
+		}
+		&:after {
+			content: ")";
+		}
+	}
+	.ssbp-toggle-switch {
+		@extend %ssbp-toggle-switch--light;
+	}
+	&.ssbp--centred {
+		@extend %ssbp--centred-full;	
+	}
+}

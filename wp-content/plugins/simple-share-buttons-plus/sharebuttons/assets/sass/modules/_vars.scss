@@ -1,0 +1,73 @@
+/*------------------------------------*\
+    VARS
+\*------------------------------------*/
+/**
+ * SSB's default variables. These can be
+ * over-ridden to customise button styling
+ */
+
+// iOS-style red notification
+$share-count:         #F22121;
+
+// Social colours
+$buffer-color:      		#272727;
+$diggit-color:      		#14589E;
+$email-color:       		#787878;
+$ellipsis-color:       		#4582EC;
+$facebook-color:    		#3b5998;
+$facebook_save-color:  		#3b5998;
+$facebook-messenger-color:  #0084FF;
+$flattr-color:      		#f67C1A;
+$google-color:      		#DC4E41;
+$linkedin-color:    		#007bb6;
+$pinterest-color:   		#ce1a19;
+$print-color:     			#1F6B43;
+$reddit-color:      		#FF4500;
+$simplesharebuttons-color: 	#4582ec;
+$stumbleupon-color: 		#EB4924;
+$tumblr-color:      		#2C4762;
+$twitter-color:     		#00a9f1;
+$vk-color:       			#45668E;
+$whatsapp-color:    		#34AF23;
+$yummly-color:      		#E16120;
+$xing-color:        		#026466;
+
+$social-networks: (
+	buffer:     		$buffer-color,
+	diggit:      		$diggit-color,
+	email:      		$email-color,
+	ellipsis:      		$ellipsis-color,
+	facebook:      		$facebook-color,
+	facebook_save: 		$facebook_save-color,
+	facebook-messenger: $facebook-messenger-color,
+	flattr:      		$flattr-color,
+	google:        		$google-color,
+	linkedin:      		$linkedin-color,
+	pinterest:     		$pinterest-color,
+	print:       		$print-color,
+	reddit:       		$reddit-color,
+	simplesharebuttons: $simplesharebuttons-color,
+	stumbleupon:    	$stumbleupon-color,
+	tumblr:       		$tumblr-color,
+	twitter:       		$twitter-color,
+	vk:       			$vk-color,
+	whatsapp:       	$whatsapp-color,
+	yummly:       		$yummly-color,
+	xing:       		$xing-color
+);
+
+// UI colors
+$grey:                     #4C4C4C;
+$dark-grey:                #272727;
+
+// These variables should be over-ridden in specific theme files as needed
+$icon-spacing:             12px !default;
+$wrapper-padding:          0px !default;
+$icon-size:                24px !default;
+$base-font-size:           16px !default; // Some padding etc. uses ems, relative to this
+$animation-speed:          0.25s !default;
+
+// These govern the widths used by any media queries, see _mixins.scss
+$lap-start:                481px !default;
+$desk-start:               1024px !default;
+$desk-wide-start:          1200px !default;
