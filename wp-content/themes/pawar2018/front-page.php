@@ -104,7 +104,7 @@ get_header(); ?>
                     <a href="<?= eventbrite_event_eb_url(); ?>">
                       <p class="event-date">
                         <?php
-                        echo date_format(date_create(eventbrite_event_start()->local), 'l, F d \a\t h:i a');
+                        echo date_i18n( pll__('l, F d \a\t h:i a'), strtotime(eventbrite_event_start()->local) );
                         ?>
                       </p>
                       <h5 class="event-title">
@@ -134,7 +134,7 @@ get_header(); ?>
           </div>
           <div class="column event-copy">
             <a href="<?php echo esc_url( home_url( '/events' )) ?>" class="button">
-              See All Events
+              <?php echo get_field('event_button') ?>
             </a>
           </div>
         </div>
