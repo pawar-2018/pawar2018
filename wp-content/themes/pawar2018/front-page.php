@@ -134,7 +134,7 @@ get_header(); ?>
           </div>
           <div class="column event-copy">
             <a href="<?php echo esc_url( home_url( '/events' )) ?>" class="button">
-              See All Events
+              <?php echo get_field('event_button') ?>
             </a>
           </div>
         </div>

@@ -70,7 +70,13 @@ function _pawar2018_setup() {
 	add_theme_support( 'customize-selective-refresh-widgets' );
 
 	// Register string to be translated in admin UI
-	pll_register_string( 'Eventbrite date format', 'l, F d \a\t h:i a'); 
+	pll_register_string( 'Eventbrite date format', 'l, F d \a\t h:i a');
+	pll_register_string( 'Signup title', 'Newsletter', 'Footer');
+	pll_register_string( 'Signup text', 'Stay in the loop.', 'Footer');
+	pll_register_string( 'Signup button', 'Subscribe', 'Footer');
+	pll_register_string( 'Signup URL', '/newsletter', 'Footer');
+	pll_register_string( 'Organization', 'Ameya Pawar for Governor', 'Footer');
+	pll_register_string( 'Disclaimer', 'Paid For By Ameya Pawar For Governor.', 'Footer');
 }
 endif;
 add_action( 'after_setup_theme', '_pawar2018_setup' );
