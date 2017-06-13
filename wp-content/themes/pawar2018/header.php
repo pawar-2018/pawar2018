@@ -54,7 +54,7 @@
 			?>
 
 			<div class="header-language">
-				<?php pll_the_languages( array( 'dropdown' => 1, 'display_names_as' => 'slug' ) ); ?>
+				<?php if (function_exists('pll_the_languages')) pll_the_languages( array( 'dropdown' => 1, 'display_names_as' => 'slug' ) ); ?>
 			</div>
 			
 		</nav>
