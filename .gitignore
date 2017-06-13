@@ -33,6 +33,7 @@ wp-content/*
 # specify (see the commented-out examples for hints on how to do this.)
 wp-content/plugins/*
 !wp-content/plugins/members
+!wp-content/plugins/simple-share-buttons-plus
 !wp-content/plugins/github-updater
 !wp-content/plugins/wp-sync-db
 !wp-content/plugins/polylang-pro
