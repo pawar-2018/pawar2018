@@ -52,6 +52,11 @@
 					}					
 				}
 			?>
+
+			<div class="header-language">
+				<?php pll_the_languages( array( 'dropdown' => 1, 'display_names_as' => 'slug' ) ); ?>
+			</div>
+			
 		</nav>
 
 	</div>
