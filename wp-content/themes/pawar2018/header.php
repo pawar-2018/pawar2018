@@ -14,14 +14,16 @@
 		<nav class="header-nav">
             <?php 
 				$header_menu_items = get_items_by_location('header-menu');
-				foreach ($header_menu_items as $item) {
-					$classes = implode(' ', $item->classes);
-					$classes .= ' header-nav__link';
-					if(is_page($item->title) || is_post_type_archive( $item->object )) {
-						$classes .= ' active';
-					}
+				if($header_menu_items) {
+					foreach ($header_menu_items as $item) {
+						$classes = implode(' ', $item->classes);
+						$classes .= ' header-nav__link';
+						if(is_page($item->title) || is_post_type_archive( $item->object )) {
+							$classes .= ' active';
+						}
 
-					echo "<a class=\"{$classes}\" href=\"{$item->url}\" aria-label=\"Link to {$item->title} Page\">{$item->title}</a>";
+						echo "<a class=\"{$classes}\" href=\"{$item->url}\" aria-label=\"Link to {$item->title} Page\">{$item->title}</a>";
+					}
 				}
 			?>
 
@@ -40,9 +42,21 @@
 				</a>
 			</div>
 
-			<a class="header-social__button button" href="/donate">
-                Donate
-            </a>
+			<?php 
+				$donate_button_items = get_items_by_location('donate-button');
+				if($donate_button_items) {
+					foreach ($donate_button_items as $item) {
+						$classes = implode(' ', $item->classes);
+						$classes .= ' header-social__button button';
+						echo "<a class=\"{$classes}\" href=\"{$item->url}\">{$item->title}</a>";
+					}					
+				}
+			?>
+
+			<div class="header-language">
+				<?php pll_the_languages( array( 'dropdown' => 1, 'display_names_as' => 'slug' ) ); ?>
+			</div>
+			
 		</nav>
 
 	</div>
