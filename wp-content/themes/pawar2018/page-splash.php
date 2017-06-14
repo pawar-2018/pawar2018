@@ -18,6 +18,7 @@ Template name: Splash Template
           <?php the_content(); ?>
         </div>
       </div>
+      <?php if (get_field('has_social_buttons')) : ?>
         <div class="row align-middle social">
           <div class="small-10 large-6 columns">
             <div class="splash-social">
@@ -39,6 +40,7 @@ Template name: Splash Template
             </div>
           </div>
         </div>
+      <?php endif; ?>
     </div>
   </section>
 </main>
