@@ -1,0 +1,19 @@
+.splash {
+  height: 100vh;
+  background-size: 100%;
+  background-position: -25% 50%;
+  .content {
+    height: 100vh;
+    .columns:first-child {
+      align-self: flex-start;
+      margin-top: 10vh;
+    }
+    .columns:last-child {
+      align-self: flex-start;
+      margin-top: 20vh;
+    }
+    img {
+      width: 100%;
+    }
+  }
+}
