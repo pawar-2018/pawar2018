@@ -14,13 +14,13 @@ Template name: Splash Template
           <img src="<?php the_field('splash_logo'); ?>" alt="Ameya Pawar 2018 Logo">
         </a>
         </div>
-        <div class="small-10 large-6 columns">
+        <div class="small-12 large-6 columns">
           <?php the_content(); ?>
         </div>
       </div>
       <?php if (get_field('has_social_buttons')) : ?>
         <div class="row align-middle social">
-          <div class="small-10 large-6 columns">
+          <div class="small-11 large-6 columns">
             <div class="splash-social">
               <a class="splash-social__link" href="https://www.facebook.com/AmeyaPawarIL/" target="_blank" aria-label="Link to Facebook AmeyaPawarIL">
                 <img src="<?php echo get_bloginfo('template_url') ?>/assets/facebook.svg" alt="Facebook Icon">
