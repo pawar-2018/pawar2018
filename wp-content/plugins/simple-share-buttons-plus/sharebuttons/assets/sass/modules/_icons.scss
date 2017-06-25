@@ -1,0 +1,184 @@
+/*------------------------------------*\
+    ICONS
+\*------------------------------------*/
+/**
+ * The SSB icon font family
+ */
+
+/*
+
+commented out but kept @font-face intentionally
+SSBP uses the snippet below but creates a full URL based on each individual install
+and adds it all at the start of a custom CSS file
+
+@font-face {
+	font-family: 'ssbp';
+	src:url('fonts/ssbp.eot?1xwfh1');
+	src:url('fonts/ssbp.eot?#iefix1xwfh1') format('embedded-opentype'),
+		url('fonts/ssbp.woff2?1xwfh1') format('woff2'),
+		url('fonts/ssbp.ttf?1xwfh1') format('truetype'),
+		url('fonts/ssbp.woff?1xwfh1') format('woff'),
+		url('fonts/ssbp.svg?1xwfh1#ssbp') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+*/
+
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+.ssbp-spinner:before {
+    font-family: 'ssbp';
+    content: "\e614";
+}
+.ssbp-spinner {
+    -webkit-animation: spin 2s infinite linear; /* Safari 4+ */
+    -moz-animation:    spin 2s infinite linear; /* Fx 5+ */
+    -o-animation:      spin 2s infinite linear; /* Opera 12+ */
+    animation:         spin 2s infinite linear; /* IE 10+, Fx 29+ */
+    display: inline-block;
+}
+
+.ssbp-btn:before, .ssbp-toggle-switch:before {
+	display: inline-block; // This allows us to apply transforms on the generated content
+	font-family: 'ssbp';
+	speak: none;
+	font-size: $icon-size;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+}
+
+.ssbp-arrow-right:before {
+	content: "\e612";
+}
+
+.ssbp-arrow-left:before {
+	content: "\e613";
+}
+
+.ssbp-arrow-down:before {
+	content: "\e619";
+}
+
+.ssbp-arrow-up:before {
+	content: "\e61a";
+}
+
+.ssbp-chevron-down:before {
+	content: "\e618";
+}
+
+.ssbp-chevron-up:before {
+	content: "\e615";
+}
+
+.ssbp-chevron-right:before {
+	content: "\e616";
+}
+
+.ssbp-chevron-left:before {
+	content: "\e617";
+}
+
+.ssbp-simplesharebuttons:before {
+	content: "\e611";
+}
+
+.ssbp-yummly:before {
+	content: "\e60b";
+}
+
+.ssbp-whatsapp:before {
+	content: "\e60f";
+}
+
+.ssbp-diggit:before {
+	content: "\e60c";
+}
+
+.ssbp-buffer:before {
+	content: "\e60d";
+}
+
+.ssbp-close:before {
+	content: "\e614";
+}
+
+.ssbp-twitter:before {
+	content: "\e605";
+}
+
+.ssbp-reddit:before {
+	content: "\e606";
+}
+
+.ssbp-flattr:before {
+	content: "\e607";
+}
+
+.ssbp-tumblr:before {
+	content: "\e608";
+}
+
+.ssbp-linkedin:before {
+	content: "\e609";
+}
+
+.ssbp-google:before {
+	content: "\e60a";
+}
+
+.ssbp-xing:before {
+	content: "\e610";
+}
+
+.ssbp-facebook:before {
+	content: "\e60e";
+}
+
+.ssbp-facebook_save:before {
+	content: "\e900";
+}
+
+.ssbp-facebook-messenger:before {
+	content: "\e611";
+}
+
+.ssbp-vk:before {
+	content: "\e600";
+}
+
+.ssbp-stumbleupon:before {
+	content: "\e601";
+}
+
+.ssbp-print:before {
+	content: "\e602";
+}
+
+.ssbp-pinterest:before {
+	content: "\e603";
+}
+
+.ssbp-email:before {
+	content: "\e604";
+}
+
+.ssbp-ellipsis:before {
+    content: "\e612";
+}
+
+.ssbp-x:before {
+    content: "\e613";
+}

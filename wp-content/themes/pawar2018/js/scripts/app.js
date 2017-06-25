@@ -35,5 +35,12 @@
     })
   }
 
+  window.onload = function init() {
+    var vidDefer = document.getElementById('featured-video');
+    if (vidDefer && vidDefer.hasAttribute('data-src')) {
+      vidDefer.setAttribute('src',vidDefer.getAttribute('data-src'));
+    }
+  }
+
 })();
 

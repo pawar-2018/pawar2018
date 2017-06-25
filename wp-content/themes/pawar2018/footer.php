@@ -22,7 +22,7 @@
 		        <a class="footer-nav__link show-for-large" href="<?php echo esc_url( home_url( '/' ) ); ?>" aria-label="Back to the Home Page">
 		          <img class="footer-nav__logo" src="<?php echo get_bloginfo('template_url') ?>/assets/logo.<?php if(function_exists('pll_current_language')) echo pll_current_language(); ?>.svg"  alt="Ameya Pawar 2018 Logo">
 		        </a>
-		        <?php 
+		        <?php
 					$footer_menu_items = get_items_by_location('footer-menu');
 					if($footer_menu_items) {
 						foreach ($footer_menu_items as $item) {
@@ -46,8 +46,9 @@
 				<h6 class="section-title"><?php if(function_exists('pll_e')) pll_e('Ameya Pawar for Governor'); ?></h6>
 				<a class="footer__link" href="mailto:info@pawar2018.com">info@pawar2018.com</a>
 				<p>P.O. Box 577162<br>Chicago, Il 60657</p>
-		</div>
-	</div>
+		  </div>
+	   </div>
+  </div>
 </footer>
 
 <?php get_template_part('template-parts/footer', 'paid'); ?>

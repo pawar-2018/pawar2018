@@ -1,0 +1,97 @@
+/*------------------------------------*\
+    STYLE SIX
+\*------------------------------------*/
+/**
+ * Circle with coloured logo on white
+ * background, coloured border
+ */
+
+/**
+ * Update variables below to include media
+ * queries (responsive version), control
+ * padding and other variables.
+ */
+
+$include-media-queries:    true;
+$icon-spacing:             12px;
+$wrapper-padding:          6px;
+$icon-size:                24px;
+$base-font-size:           16px;
+$animation-speed:          0.25s;
+
+/**
+ * Generated CSS must be combined with
+ * ssbp-base in order to display correctly.
+ * Allows for smaller file size when
+ * combining multiple themes.
+ */
+
+@import '../modules/vars';
+@import '../modules/mixins';
+
+.ssbp--theme-6 {
+	&[class*="ssbp--fixed"] {
+		.ssbp-container {
+			background-color: rgba(255, 255, 255, 0.8);
+			padding: $wrapper-padding;
+		}
+	}
+
+	.ssbp-btn {
+		@include square;
+		border: 2px solid #fff;
+		border-radius: 50%;
+		background-color: #fff;
+		transition: $animation-speed;
+		&:hover, &:focus, &:active {
+			color: #fff;
+		}
+	}
+
+	.ssbp-list {
+		li {
+			margin-left: $icon-spacing;
+		}
+	}
+
+	// This loop creates the specific social network styling for each .ssbp-btn using the $social-networks list in _vars.scss
+	@each $social-network, $color in $social-networks {
+		.ssbp-#{$social-network} {
+			border-color: $color;
+			color: $color;
+			&:hover, &:focus, &:active {
+				background-color: $color;
+			}
+			+ .ssbp-each-share {
+				color: $color;
+				border-color: $color;
+			}
+		}
+	}
+
+	// Per network share count
+	.ssbp-each-share {
+		position: absolute;
+		top: 0;
+		left: 100%;
+		z-index: 11;
+		margin-left: -$icon-size/2;
+		padding: 2px;
+		border: 1px solid #fff;
+		background-color: #fff;
+		border-radius: 6px;
+		font-size: 10px;
+		color: #FFF;
+	}
+
+	&.ssbp--fixed-right .ssbp-each-share {
+		left: auto;
+		right: 100%;
+		margin-left: 0;
+		margin-right: -$icon-size/2;
+	}
+	
+	.ssbp-toggle-switch {
+		@extend %ssbp-toggle-switch--light;
+	}
+}

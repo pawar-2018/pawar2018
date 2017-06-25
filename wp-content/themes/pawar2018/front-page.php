@@ -162,6 +162,5 @@ get_header(); ?>
         <img src="<?php echo get_field('bottom_second_photo') ?>" alt="<?php echo get_field('bottom_second_photo_alt') ?>">
       </div>
     </div>
-  </div>
   </main>
 <?php get_footer(); ?>
