@@ -92,12 +92,13 @@ get_header(); ?>
           <h1 class="main-callout"><?php the_field('event_subheadline'); ?></h1>
           <div class="row small-collapse">
 
-            <?php $events = new Eventbrite_Query(
-              apply_filters('eventbrite_query_args', array(
-                'limit' => 2
-              )
-            ));
-            if ($events->have_posts()) :
+            <?php 
+            // $events = new Eventbrite_Query(
+            //   apply_filters('eventbrite_query_args', array(
+            //     'limit' => 2
+            //   )
+            // ));
+            if (false) :
               while ($events->have_posts()) :
                 $events->the_post(); ?>
                   <div class="column small-11 large-8 event-copy">
