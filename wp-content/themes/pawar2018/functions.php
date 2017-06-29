@@ -71,7 +71,12 @@ function _pawar2018_setup() {
 
 	// Register string to be translated in admin UI
 	if ( function_exists( 'pll_register_string' ) ) {
-		pll_register_string( 'Eventbrite date format', 'l, F d \a\t h:i a');
+		pll_register_string( 'Events title', 'Events', 'Events');
+		pll_register_string( 'Events CTA title', "Let's Talk", 'Events');
+		pll_register_string( 'Events CTA text', 'Looking to host an event?', 'Events');
+		pll_register_string( 'Events CTA button', 'Contact Us', 'Events');
+		pll_register_string( 'Events CTA URL', '/get-involved', 'Events');
+		pll_register_string( 'Eventbrite date format', 'l, F d \a\t h:i a', 'Events');
 		pll_register_string( 'Signup title', 'Newsletter', 'Footer');
 		pll_register_string( 'Signup text', 'Stay in the loop.', 'Footer');
 		pll_register_string( 'Signup button', 'Subscribe', 'Footer');
