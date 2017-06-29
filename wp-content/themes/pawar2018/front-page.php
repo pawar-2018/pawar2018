@@ -93,9 +93,9 @@ get_header(); ?>
           <div class="row small-collapse">
 
             <?php $events = new Eventbrite_Query(
-              apply_filters('eventbrite_query_args', array(
-                'limit' => 2
-              )
+               apply_filters('eventbrite_query_args', array(
+                 'limit' => 2
+               )
             ));
             if ($events->have_posts()) :
               while ($events->have_posts()) :
@@ -134,7 +134,7 @@ get_header(); ?>
             ?>
           </div>
           <div class="column event-copy">
-            <a href="<?php echo esc_url( home_url( '/events' )) ?>" class="button">
+            <a href="<?php echo esc_url( home_url( get_field('event_slug') )) ?>" class="button">
               <?php echo get_field('event_button') ?>
             </a>
           </div>
