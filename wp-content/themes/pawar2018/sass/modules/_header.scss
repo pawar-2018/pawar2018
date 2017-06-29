@@ -217,28 +217,28 @@
 }
 
 .header-language {
-  display: none;
-  // display: flex;
-  // position: absolute;
-  // right: 3.75rem;
-  // top: 2rem;
-  // @include breakpoint(40rem) {
-  //   top: 1.75rem;
-  // }
-  // @include breakpoint(64rem) {
-  //   position: relative;
-  //   top: 0.5rem;
-  //   right: auto;
-  // }
-  // select {
-  //   padding: 0.25rem;
-  //   font-size: 0.75rem;
-  //   height: auto;
-  //   width: auto;
-  //   background: transparent;
-  //   color: white;
-  //   text-transform: uppercase;
-  // }
+//   display: none;
+  display: flex;
+  position: absolute;
+  right: 3.75rem;
+  top: 2rem;
+  @include breakpoint(40rem) {
+    top: 1.75rem;
+  }
+  @include breakpoint(64rem) {
+    position: relative;
+    top: 0.5rem;
+    right: auto;
+  }
+  select {
+    padding: 0.25rem;
+    font-size: 0.75rem;
+    height: auto;
+    width: auto;
+    background: transparent;
+    color: white;
+    text-transform: uppercase;
+  }
 }
 
 /* IE is the worst */
