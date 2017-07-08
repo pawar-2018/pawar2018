@@ -28,7 +28,7 @@
               <div class="small-3 medium-10 large-2 columns">
                 <div class="event-date_circle">
                   <?php $date = date_create(eventbrite_event_start()->local); ?>
-                  <?php echo date_format($date, 'd'); ?><br><?php echo date_format($date, 'F');; ?>
+                  <?php echo date_format($date, 'd'); ?><br><?php echo date_i18n('F', $date->getTimestamp()); ?>
                 </div>
               </div>
               <div id="event-<?php the_ID(); ?>" class="small-11 large-7 large-offset-1 columns event-copy">
