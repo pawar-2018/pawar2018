@@ -48,6 +48,7 @@ get_header(); ?>
             <?php
               $args = array(
               'post_type' => 'issues',
+              'posts_per_page' => 15,
               'orderby' => 'title',
               'order' => 'ASC') ?>
             <?php $loop = new WP_Query( $args ); ?>
