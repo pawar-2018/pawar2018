@@ -63,6 +63,10 @@
     text-transform: uppercase;
     font-size: .8125rem;
     font-family: $font__heading;
+    margin-top: .5rem;
+    @include breakpoint(medium) {
+      margin-top: 0;
+    }
   }
 
   .row {
