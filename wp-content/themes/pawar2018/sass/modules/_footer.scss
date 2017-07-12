@@ -37,6 +37,9 @@
 
 .footer-nav {
   font-size: .9375rem;
+  @include breakpoint(small only) {
+    margin-bottom: 2.5rem;
+  }
 }
 
 .footer-info *,

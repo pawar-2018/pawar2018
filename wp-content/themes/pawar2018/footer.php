@@ -20,28 +20,30 @@
 		<div class="small-11 medium-3 large-4 columns">
 			<nav class="footer-nav">
 		        <a class="footer-nav__link show-for-large" href="<?php echo esc_url( home_url( '/' ) ); ?>" aria-label="Back to the Home Page">
-		          <img class="footer-nav__logo" src="<?php echo get_bloginfo('template_url') ?>/assets/logo.svg"  alt="Ameya Pawar 2018 Logo" />
+		          <img class="footer-nav__logo" src="<?php echo get_bloginfo('template_url') ?>/assets/logo.<?php if(function_exists('pll_current_language')) echo pll_current_language(); ?>.svg"  alt="Ameya Pawar 2018 Logo">
 		        </a>
 		        <?php
 					$footer_menu_items = get_items_by_location('footer-menu');
-					foreach ($footer_menu_items as $item) {
-						$classes = implode(' ', $item->classes);
-						$classes .= ' footer-nav__link';
-						echo "<a class=\"{$classes}\" href=\"{$item->url}\">{$item->title}</a>";
+					if($footer_menu_items) {
+						foreach ($footer_menu_items as $item) {
+							$classes = implode(' ', $item->classes);
+							$classes .= ' footer-nav__link';
+							echo "<a class=\"{$classes}\" href=\"{$item->url}\">{$item->title}</a>";
+						}
 					}
 				?>
 			</nav>
 		</div>
 		<div class="small-11 medium-5 large-4 columns">
 			<div class="footer-signup">
-				<h6 class="section-title">Newsletter</h6>
-				<h3 class="footer-newsletter">Stay in the loop.</h3>
-				<a href="/newsletter" class="button">Subscribe</a>
+				<h6 class="section-title"><?php if(function_exists('pll_e')) pll_e('Newsletter'); ?></h6>
+				<h3 class="footer-newsletter"><?php if(function_exists('pll_e')) pll_e('Stay in the loop.'); ?></h3>
+				<a href="<?php if(function_exists('pll_e')) pll_e('/newsletter') ?>" class="button"><?php if(function_exists('pll_e')) pll_e('Subscribe'); ?></a>
 			</div>
 		</div>
 		<div class="small-11 medium-4 large-4 columns">
 			<div class="footer-info">
-				<h6 class="section-title">Ameya Pawar For Governor</h6>
+				<h6 class="section-title"><?php if(function_exists('pll_e')) pll_e('Ameya Pawar for Governor'); ?></h6>
 				<a class="footer__link" href="mailto:info@pawar2018.com">info@pawar2018.com</a>
 				<p>P.O. Box 577162<br>Chicago, Il 60657</p>
 		  </div>

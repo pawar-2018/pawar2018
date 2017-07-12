@@ -1,0 +1,57 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Polylang Pro\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2017-02-09 14:57:21+0000\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=2; plural=n > 1\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+"X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;dngettext:2,3;"
+"__:1;_e:1;_c:1;_n:1,2;_n_noop:1,2;_nc:1,2;__ngettext:1,2;__ngettext_noop:1,2;"
+"_x:1,2c;_ex:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;_n_js:1,2;_nx_js:1,2,3c;"
+"esc_attr__:1;esc_html__:1;esc_attr_e:1;esc_html_e:1;esc_attr_x:1,2c;"
+"esc_html_x:1,2c;comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
+
+
+#: ../modules/active-languages.php:87
+msgid "Activate this language"
+msgstr ""
+
+#: ../modules/active-languages.php:93
+msgid "Deactivate this language"
+msgstr ""
+
+#: ../modules/duplicate.php:21
+msgid "Activate the content duplication"
+msgstr ""
+
+#: ../modules/duplicate.php:22
+msgid "Deactivate the content duplication"
+msgstr ""
+
+#: modules/media/settings-media.php:21
+msgid "Activate languages and translations for media. Provides options for multilingual media management."
+msgstr ""
+
+#: modules/media/settings-media.php:35
+msgid "Automatically duplicate media in all languages when uploading a new file."
+msgstr ""
+
+#: modules/sync/sync-post-button.php:20
+msgid "Synchronize this post"
+msgstr ""
+
+#: modules/sync/sync-post-button.php:21
+msgid "Don't synchronize this post"
+msgstr ""
+
+#: ../modules/translate-slugs/translate-slugs-model.php:442
+msgid "URL slugs"
+msgstr ""

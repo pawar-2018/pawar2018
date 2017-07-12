@@ -1,0 +1,58 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Polylang Pro\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-04-27 21:30+0300\n"
+"PO-Revision-Date: 2016-04-27 21:35+0300\n"
+"Language-Team: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;"
+"dngettext:2,3;__:1;_e:1;_c:1;_n:1,2;_n_noop:1,2;_nc:1,2;__ngettext:1,2;"
+"__ngettext_noop:1,2;_x:1,2c;_ex:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;"
+"_n_js:1,2;_nx_js:1,2,3c;esc_attr__:1;esc_html__:1;esc_attr_e:1;"
+"esc_html_e:1;esc_attr_x:1,2c;esc_html_x:1,2c;comments_number_link:2,3;"
+"t:1;st:1;trans:1;transChoice:1,2\n"
+"X-Generator: Poedit 1.8.7\n"
+"Last-Translator: Teemu Suoranta <teemu.suoranta@aucor.fi>\n"
+"Language: fi\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../modules/duplicate.php:97
+msgid "Deactivate the content duplication"
+msgstr "Poista käytöstä sisällön kopiointi"
+
+#: ../modules/duplicate.php:97
+msgid "Activate the content duplication"
+msgstr "Ota käyttöön sisällön kopiointi"
+
+#: ../modules/active-languages.php:84
+msgid "Activate this language"
+msgstr "Ota tämä kieli käyttöön"
+
+#: ../modules/active-languages.php:90
+msgid "Deactivate this language"
+msgstr "Poista tämä kieli käytöstä"
+
+#: ../modules/translate-slugs/translate-slugs-model.php:440
+msgid "URL slugs"
+msgstr "Polkutunnukset"
+
+#: ../modules/media/settings-advanced-media.php:20
+msgid ""
+"Activate languages and translations for media. Provides options for "
+"multilingual media management."
+msgstr ""
+"Aktivoi kielet ja käännökset medialle. Tarjoaa vaihtoehtoja monikielisen "
+"median hallintaan."
+
+#: ../modules/media/settings-advanced-media.php:34
+msgid ""
+"Automatically duplicate media in all languages when uploading a new file."
+msgstr ""
+"Kopioi media automaattisesti kaikille kielille kun uusi tiedosto "
+"ladataan."

@@ -42,10 +42,10 @@ function _pawar2018_setup() {
 	 */
 	add_theme_support( 'post-thumbnails' );
 
-	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
-	    'header-menu' => __( 'Header Menu' ),
-	    'footer-menu' => __( 'Footer Menu' )
+	    'header-menu'   => __( 'Header Menu' ),
+	    'footer-menu'   => __( 'Footer Menu' ),
+	    'donate-button' => __( 'Donate Button' )
 	) );
 
 	/*
@@ -68,6 +68,22 @@ function _pawar2018_setup() {
 
 	// Add theme support for selective refresh for widgets.
 	add_theme_support( 'customize-selective-refresh-widgets' );
+
+	// Register string to be translated in admin UI
+	if ( function_exists( 'pll_register_string' ) ) {
+		pll_register_string( 'Events title', 'Events', 'Events');
+		pll_register_string( 'Events CTA title', "Let's Talk", 'Events');
+		pll_register_string( 'Events CTA text', 'Looking to host an event?', 'Events');
+		pll_register_string( 'Events CTA button', 'Contact Us', 'Events');
+		pll_register_string( 'Events CTA URL', '/get-involved', 'Events');
+		pll_register_string( 'Eventbrite date format', 'l, F d \a\t h:i a', 'Events');
+		pll_register_string( 'Signup title', 'Newsletter', 'Footer');
+		pll_register_string( 'Signup text', 'Stay in the loop.', 'Footer');
+		pll_register_string( 'Signup button', 'Subscribe', 'Footer');
+		pll_register_string( 'Signup URL', '/newsletter', 'Footer');
+		pll_register_string( 'Organization', 'Ameya Pawar for Governor', 'Footer');
+		pll_register_string( 'Disclaimer', 'Paid For By Ameya Pawar For Governor.', 'Footer');
+	}
 }
 endif;
 add_action( 'after_setup_theme', '_pawar2018_setup' );

@@ -1,6 +1,7 @@
 .header {
   background-color: $color__background-header;
   padding: 1.5rem 0;
+  position: relative;
   @include breakpoint(medium) {
     padding: 1.5rem 0;
   }
@@ -36,8 +37,8 @@
     width: initial;
     height: initial;
     padding-left: 0;
-    flex: 0 0 66.66667%;
-    max-width: 66.66667%;
+    flex: 0 0 75%;
+    max-width: 75%;
   }
 }
 
@@ -61,7 +62,7 @@
   @include breakpoint(64rem) {
     flex: 0 0 27%;
     padding-right: 2rem;
-    max-width: 18.25rem;
+    max-width: 17.75rem;
   }
 }
 
@@ -123,6 +124,7 @@
 .header-nav__link {
   display: block;
   color: white;
+  font-size: .9375rem;
   font-weight: 700;
   text-decoration: none;
   text-align: left;
@@ -212,6 +214,31 @@
   &:hover {
     text-decoration: none;
     background: darken($burnt-orange, 10);
+  }
+}
+
+.header-language {
+//   display: none;
+  display: flex;
+  position: absolute;
+  right: 3.75rem;
+  top: 2rem;
+  @include breakpoint(40rem) {
+    top: 1.75rem;
+  }
+  @include breakpoint(64rem) {
+    position: relative;
+    top: 0.5rem;
+    right: auto;
+  }
+  select {
+    padding: 0.25rem;
+    font-size: 0.75rem;
+    height: auto;
+    width: auto;
+    background: transparent;
+    color: white;
+    text-transform: uppercase;
   }
 }
 

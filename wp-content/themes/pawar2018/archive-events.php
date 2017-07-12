@@ -4,15 +4,15 @@
   <section class="hero inner-page"
            style="background-image: url('<?php echo get_bloginfo('template_url') ?>/assets/events-hero.jpg'); background-size: cover;">
     <div class="row align-center align-middle">
-      <h1 class="page-title">Events</h1>
+      <h1 class="page-title"><?php if(function_exists('pll_e')) pll_e('Events'); ?></h1>
     </div>
   </section>
   <section class="body">
     <div class="row align-center">
       <div class="small-11 medium-5 large-4 small-order-2 medium-order-1 columns">
-        <h1 class="section-title">Let's Talk</h1>
-        <p>Looking to host an event?</p>
-        <a href='/get-involved' class="button">Contact Us</a>
+        <h1 class="section-title"><?php if(function_exists('pll_e')) pll_e("Let's Talk"); ?></h1>
+        <p><?php if(function_exists('pll_e')) pll_e('Looking to host an event?'); ?></p>
+        <a href="<?php if(function_exists('pll_e')) pll_e('/get-involved'); ?>" class="button"><?php if(function_exists('pll_e')) pll_e('Contact Us'); ?></a>
       </div>
       <div class="small-12 medium-5 large-6 small-order-1 medium-order-2 columns">
 
@@ -28,7 +28,7 @@
               <div class="small-3 medium-10 large-2 columns">
                 <div class="event-date_circle">
                   <?php $date = date_create(eventbrite_event_start()->local); ?>
-                  <?php echo date_format($date, 'd'); ?><br><?php echo date_format($date, 'F');; ?>
+                  <?php echo date_format($date, 'd'); ?><br><?php echo date_i18n('F', $date->getTimestamp()); ?>
                 </div>
               </div>
               <div id="event-<?php the_ID(); ?>" class="small-11 large-7 large-offset-1 columns event-copy">
@@ -36,7 +36,8 @@
 
                   <p class="event-date">
                     <?php
-                    echo date_format($date, 'l, F d \a\t h:i a');
+                      $formatString = function_exists('pll_e') ? pll__('l, F d \a\t h:i a') : 'l, F d \a\t h:i a';
+                      echo date_i18n( $formatString, strtotime(eventbrite_event_start()->local) );
                     ?>
                   </p>
 

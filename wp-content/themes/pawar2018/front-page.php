@@ -3,12 +3,14 @@
 Template name: Front Page Template
  */
 get_header(); ?>
+  <?php if (get_field('has_banner_headline')) : ?>
   <div class="promo-banner">
     <h1 class="banner-headline">
-      Join Ameya at the June 15th Virtual Town Hall.
-      <a href="http://watchparty.pawar2018.com" target="_blank">RSVP Now</a>
+      <?php the_field('banner_headline'); ?>
+      <a href="<?php the_field('banner_headline_link'); ?>" target="_blank"><?php the_field('banner_headline_link_text'); ?></a>
     </h1>
   </div>
+  <?php endif; ?>
   <main>
     <section class="hero" style="background-image: url(<?php the_field('main_hero_image'); ?>);">
       <div class="row align-bottom">
@@ -74,11 +76,13 @@ get_header(); ?>
           <?php endwhile; ?>
             <?php wp_reset_postdata(); ?>
         </div>
+        <?php if (get_field('has_pillar_button')) : ?>
         <div class="pillar-button">
           <a href="<?php the_field('pillar_button_link'); ?>" class="button">
             <?php the_field('pillar_button_text'); ?>
           </a>
         </div>
+        <?php endif; ?>
       </div>
       <div class="event-wrapper">
         <div class="event-content">
@@ -89,9 +93,9 @@ get_header(); ?>
           <div class="row small-collapse">
 
             <?php $events = new Eventbrite_Query(
-              apply_filters('eventbrite_query_args', array(
-                'limit' => 2
-              )
+               apply_filters('eventbrite_query_args', array(
+                 'limit' => 2
+               )
             ));
             if ($events->have_posts()) :
               while ($events->have_posts()) :
@@ -100,7 +104,8 @@ get_header(); ?>
                     <a href="<?= eventbrite_event_eb_url(); ?>">
                       <p class="event-date">
                         <?php
-                        echo date_format(date_create(eventbrite_event_start()->local), 'l, F d \a\t h:i a');
+                          $formatString = function_exists('pll_e') ? pll__('l, F d \a\t h:i a') : 'l, F d \a\t h:i a';
+                          echo date_i18n( $formatString, strtotime(eventbrite_event_start()->local) );
                         ?>
                       </p>
                       <h5 class="event-title">
@@ -129,8 +134,8 @@ get_header(); ?>
             ?>
           </div>
           <div class="column event-copy">
-            <a href="<?php echo esc_url( home_url( '/events' )) ?>" class="button">
-              See All Events
+            <a href="<?php echo esc_url( home_url( get_field('event_slug') )) ?>" class="button">
+              <?php echo get_field('event_button') ?>
             </a>
           </div>
         </div>
