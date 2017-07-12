@@ -11,7 +11,12 @@
     background-color: $burnt-orange;
     margin: 1rem 0 0 0;
   }
-
+  & .press-release__title {
+    font-size: 1.5rem;
+    @include breakpoint(medium) {
+      font-size: 2.25rem;
+    }
+  }
 }
 
 .hero {

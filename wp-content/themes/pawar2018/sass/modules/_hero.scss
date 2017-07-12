@@ -1,11 +1,10 @@
 .hero {
-  background-position: top center;
-  background-size: contain;
+  background-position: top right;
+  background-size: cover;
   background-repeat: no-repeat;
   background-color: $extra-light-gray;
   @include breakpoint(medium) {
     background-color: $primary-color;
-    background-size: cover; // todo: move to row? Look at new mocks
     height: 32.5rem;
   }
 
