@@ -5,19 +5,6 @@
     margin: 3rem 0 0;
   }
 
-  .section-title {
-    color: $light-blue;
-    text-transform: none;
-
-    &:after {
-      content: "";
-      display: block;
-      height: 5px;
-      width: 6rem;
-      background-color: $burnt-orange;
-    }
-  }
-
   .inner-photo {
     margin-bottom: 1.5rem;
     min-width: 100%;
