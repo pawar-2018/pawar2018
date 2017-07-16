@@ -2,9 +2,8 @@
   background-position: top right;
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: $extra-light-gray;
+  background-color: $primary-color;
   @include breakpoint(medium) {
-    background-color: $primary-color;
     height: 32.5rem;
   }
 
@@ -30,7 +29,7 @@
   }
 
   &.inner-page {
-    height: 11rem;
+    height: 10rem;
     @include breakpoint(medium) {
       height: 17rem;
     }
