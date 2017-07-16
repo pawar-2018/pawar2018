@@ -4,7 +4,7 @@ Template name: Two Column Template
  */
 get_header(); ?>
 
-<main>
+<main class="special-event">
   <section class="hero inner-page" style="background-image: url('<?php the_field('hero_image'); ?>');">
   </section>
   <section class="wrapper">
@@ -31,7 +31,7 @@ get_header(); ?>
             while ($events->have_posts()) :
               $events->the_post(); ?>
 
-              <div class="row align-justify special-event" id="event-<?php the_ID(); ?>">
+              <div class="row align-justify" id="event-<?php the_ID(); ?>">
                 <div class="small-12 large-4 xlarge-3 columns">
                   <a href="<?= eventbrite_event_eb_url(); ?>">
                     <h6 class="special-event___date">
