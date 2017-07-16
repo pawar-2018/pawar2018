@@ -4,7 +4,7 @@
   background-repeat: no-repeat;
   background-color: $primary-color;
   @include breakpoint(medium) {
-    height: 32rem;
+    height: 32.5rem;
   }
 
   .row:first-child,
@@ -28,13 +28,18 @@
     }
   }
 
+  .special-event & {
+    background-size: contain;
+    background-position: 50% 0;
+  }
+
   &.inner-page {
     height: 10rem;
     @include breakpoint(medium) {
       height: 17rem;
     }
     @include breakpoint(large) {
-      height: 32.5rem;
+      height: 32rem;
     }
 
     .row:first-child {
@@ -45,11 +50,6 @@
       max-width: 100%;
       margin: 0 auto;
     }
-  }
-
-  & .special-event {
-    background-size: contain;
-    background-position: 50% 0;
   }
 
   h1 {
