@@ -18,7 +18,10 @@
 
         <?php
         // Set up and call our Eventbrite query.
-        $events = new Eventbrite_Query(apply_filters('eventbrite_query_args', array()));
+        $events = new Eventbrite_Query(apply_filters('eventbrite_query_args', array(
+          'nopaging' => true,
+          'organizer_id' => 13080157631
+          )));
 
         if ($events->have_posts()) :
           while ($events->have_posts()) :
@@ -36,18 +39,16 @@
 
                   <p class="event-date">
                     <?php
-                      $formatString = function_exists('pll_e') ? pll__('l, F d \a\t h:i a') : 'l, F d \a\t h:i a';
+                      $formatString = function_exists('pll_e') ? pll__('l, F d \a\t g:i a') : 'l, F d \a\t g:i a';
                       echo date_i18n( $formatString, strtotime(eventbrite_event_start()->local) );
                     ?>
                   </p>
 
-                  <h5 class="event-title">
-                    <?php the_title(sprintf('<h5 class="event-title">', esc_url(get_permalink())), '</h5>'); ?>
-                  </h5>
+                  <?php the_title(sprintf('<h5 class="event-title">', esc_url(get_permalink())), '</h5>'); ?>
 
-                  <p class="event-locale"><?= eventbrite_event_venue()->name; ?></p>
-                  <p><?php echo eventbrite_event_venue()->address->localized_multi_line_address_display[0]; ?></p>
-                  <p><?php echo eventbrite_event_venue()->address->localized_multi_line_address_display[1]; ?></p>
+                  <p class="event-locale"><?= eventbrite_event_venue()->name; ?><br/>
+                  <?php echo eventbrite_event_venue()->address->localized_multi_line_address_display[0]; ?><br/>
+                  <?php echo eventbrite_event_venue()->address->localized_multi_line_address_display[1]; ?></p>
 
                   <footer class="entry-footer">
                     <?php eventbrite_edit_post_link(__('Edit', 'eventbrite_api'), '<span class="edit-link">', '</span>'); ?>
@@ -57,9 +58,6 @@
             </div>
 
           <?php endwhile;
-
-          // Previous/next post navigation.
-          eventbrite_paging_nav($events);
 
         else :
           // If no content, include the "No posts found" template.
