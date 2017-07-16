@@ -45,8 +45,7 @@ get_header(); ?>
                     <?php the_title(sprintf('<h5 class="special-event___title">', esc_url(get_permalink())), '</h5>'); ?>
 
                     <p class="special-event___locale"><?php echo eventbrite_event_venue()->name; ?><br/>
-                    <?php echo eventbrite_event_venue()->address->localized_multi_line_address_display[1]; ?><br/>
-                     <?php echo eventbrite_event_format()->name; ?></p>
+                    <?php echo eventbrite_event_venue()->address->localized_multi_line_address_display[1]; ?></p>
 
                     <footer class="entry-footer">
                       <?php eventbrite_edit_post_link(__('Edit', 'eventbrite_api'), '<span class="edit-link">', '</span>'); ?>
