@@ -13,6 +13,6 @@ License: GPL v2 or newer <https://www.gnu.org/licenses/gpl.txt>
  * Reduce the default cache time from one day to one hour.
  */
 function eventbrite_api_cache_one_hour() {
-	return MINUTE_IN_SECONDS;
+	return HOUR_IN_SECONDS;
 }
 add_filter( 'eventbrite_cache_expiry', 'eventbrite_api_cache_one_hour' );
