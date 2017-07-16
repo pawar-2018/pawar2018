@@ -23,8 +23,7 @@ get_header(); ?>
           <?php
           $events = new Eventbrite_Query(apply_filters('eventbrite_query_args', array(
             'nopaging' => true,
-            'limit' => 19,
-            'post__not_in' => [36212166565],
+            'category_id' => 112,
             'organizer_id' => 13080157631
           )));
 
