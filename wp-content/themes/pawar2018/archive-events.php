@@ -1,4 +1,8 @@
-<?php get_header(); ?>
+<?php 
+/*
+Template name: Eventbrite Events
+ */
+get_header(); ?>
 
 <main>
   <section class="hero inner-page"
@@ -17,6 +21,7 @@
       <div class="small-12 medium-5 large-6 small-order-1 medium-order-2 columns">
 
         <?php
+        error_log('archive');
         // Set up and call our Eventbrite query.
         $events = new Eventbrite_Query(apply_filters('eventbrite_query_args', array(
           'nopaging' => true,
