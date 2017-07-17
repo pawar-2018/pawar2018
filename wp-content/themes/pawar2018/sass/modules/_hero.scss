@@ -81,7 +81,7 @@
     @include breakpoint(small only) {
       margin-top: 1.5rem;
       font-size: 1.25rem;
-      color: $charcoal;
+      color: $white;
     }
     @include breakpoint(21rem) {
       margin-top: 2rem;
