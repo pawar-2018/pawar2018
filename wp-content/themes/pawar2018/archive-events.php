@@ -24,7 +24,6 @@ get_header(); ?>
         error_log('archive');
         // Set up and call our Eventbrite query.
         $events = new Eventbrite_Query(apply_filters('eventbrite_query_args', array(
-          'nopaging' => true,
           'organizer_id' => 13080157631
           )));
 
