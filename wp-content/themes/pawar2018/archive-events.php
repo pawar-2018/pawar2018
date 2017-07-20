@@ -24,7 +24,6 @@ get_header(); ?>
         error_log('archive');
         // Set up and call our Eventbrite query.
         $events = new Eventbrite_Query(apply_filters('eventbrite_query_args', array(
-          'nopaging' => true,
           'organizer_id' => 13080157631
           )));
 
@@ -36,7 +35,7 @@ get_header(); ?>
               <div class="small-3 medium-10 large-2 columns">
                 <div class="event-date_circle">
                   <?php $date = date_create(eventbrite_event_start()->local); ?>
-                  <?php echo date_format($date, 'd'); ?><br><?php echo date_i18n('F', $date->getTimestamp()); ?>
+                  <?php echo date_format($date, 'd'); ?><br><?php echo date_i18n('M', $date->getTimestamp()); ?>
                 </div>
               </div>
               <div id="event-<?php the_ID(); ?>" class="small-11 large-7 large-offset-1 columns event-copy">
