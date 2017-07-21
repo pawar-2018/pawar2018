@@ -76,7 +76,7 @@ function _pawar2018_setup() {
 		pll_register_string( 'Events CTA text', 'Looking to host an event?', 'Events');
 		pll_register_string( 'Events CTA button', 'Contact Us', 'Events');
 		pll_register_string( 'Events CTA URL', '/get-involved', 'Events');
-		pll_register_string( 'Eventbrite date format', 'l, F d \a\t h:i a', 'Events');
+		pll_register_string( 'Eventbrite date format', 'l, F d \a\t g:i a', 'Events');
 		pll_register_string( 'Signup title', 'Newsletter', 'Footer');
 		pll_register_string( 'Signup text', 'Stay in the loop.', 'Footer');
 		pll_register_string( 'Signup button', 'Subscribe', 'Footer');
