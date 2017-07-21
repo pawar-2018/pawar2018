@@ -104,7 +104,7 @@ get_header(); ?>
                     <a href="<?= eventbrite_event_eb_url(); ?>">
                       <p class="event-date">
                         <?php
-                          $formatString = function_exists('pll_e') ? pll__('l, F d \a\t h:i a') : 'l, F d \a\t h:i a';
+                          $formatString = function_exists('pll__') ? pll__('l, F d \a\t g:i a') : 'l, F d \a\t g:i a';
                           echo date_i18n( $formatString, strtotime(eventbrite_event_start()->local) );
                         ?>
                       </p>
