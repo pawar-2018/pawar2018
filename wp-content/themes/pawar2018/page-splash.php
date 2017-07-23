@@ -14,7 +14,7 @@ Template name: Splash Template
           <img src="<?php the_field('splash_logo'); ?>" alt="Ameya Pawar 2018 Logo">
         </a>
         </div>
-        <div class="small-12 medium-8 large-6 columns">
+        <div class="small-11 medium-8 large-6 columns">
           <?php the_content(); ?>
         </div>
       </div>
