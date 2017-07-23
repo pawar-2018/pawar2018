@@ -5,7 +5,7 @@
 
 .splash {
   background-size: 125%;
-  background-position: left -5%;
+  background-position: left -35%;
   background-repeat: no-repeat;
   width: 100%;
   height: 100%;
@@ -61,7 +61,7 @@
 
   .at-text.LastName {
     right: 0 !important;
-    width: 100% !important;
+    width: 90% !important;
     @include breakpoint(medium) {
       width: 50% !important;
     }
@@ -93,7 +93,7 @@
   }
 
   .at-text.FirstName {
-    width: 100% !important;
+    width: 90% !important;
     left: 0 !important;
     @include breakpoint(medium) {
       width: 45% !important;
@@ -133,6 +133,7 @@
   .at-paid-for-by {
    border: 0 !important;
    color: #fff !important;
+   font-size: .875rem !important;
   }
 
   footer > * {
@@ -145,7 +146,10 @@
   }
 
   .at-banner {
-    padding: 1rem 1.5rem !important;
+    padding: 1rem .5rem 0 !important;
+    @include breakpoint(medium) {
+      padding: 1rem 1.5rem !important;
+    }
   }
 
   .multistep-footer {
@@ -167,6 +171,10 @@
   .at-title {
     padding: 0 1.5rem !important;
     line-height: 1.25 !important;
+    font-size: 1.25rem !important;
+    @include breakpoint(medium) {
+      font-size: 1.5rem !important;
+    }
   }
 
   .at-form {
