@@ -73,7 +73,9 @@ body.home {
   @include breakpoint(medium) {
     padding-right: calc(((100% - 75rem) / 2) + 15px);
   }
-
+  .section-title {
+    color:white;
+  }
   p, h5 {
     font-size: .9375rem;
     margin: 0 auto .5rem;
