@@ -62,7 +62,7 @@
   .at-text.LastName {
     right: 0 !important;
     width: 90% !important;
-    @include breakpoint(xlarge) {
+    @include breakpoint(medium) {
       width: 50% !important;
     }
   }
@@ -70,7 +70,7 @@
   .at-row-solo.EmailAddress {
     right: 0 !important;
     width: 100% !important;
-    @include breakpoint(xlarge) {
+    @include breakpoint(medium) {
       width: 54% !important;
     }
   }
@@ -78,7 +78,7 @@
   .at-row-solo.PostalCode {
     left: 0 !important;
     width: 100% !important;
-    @include breakpoint(xlarge) {
+    @include breakpoint(medium) {
       width: 49% !important;
     }
   }
@@ -87,7 +87,7 @@
     top: 40% !important;
     position: absolute !important;
     flex: 1 0 100% !important;
-    @include breakpoint(xlarge) {
+    @include breakpoint(medium) {
       flex: 0 1 50% !important;
     }
   }
@@ -95,7 +95,7 @@
   .at-text.FirstName {
     width: 90% !important;
     left: 0 !important;
-    @include breakpoint(xlarge) {
+    @include breakpoint(medium) {
       width: 45% !important;
     }
   }
@@ -183,8 +183,8 @@
 
   .at-fields {
     position: relative !important;
-    height: 10rem !important;
-    @include breakpoint(xlarge) {
+    height: 20rem !important;
+    @include breakpoint(medium) {
       height: 10rem !important;
     }
   }
@@ -199,7 +199,7 @@
   .at-text.LastName {
     position: relative !important;
     flex: 1 0 100% !important;
-    @include breakpoint(xlarge) {
+    @include breakpoint(medium) {
       position: absolute !important;
       flex: 1 0 50% !important;
     }

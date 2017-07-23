@@ -9,12 +9,12 @@ Template name: Splash Template
   <section class="wrapper">
     <div class=" main">
       <div class="row align-justify align-middle content">
-        <div class="small-10 large-4 columns">
+        <div class="small-10 medium-4 large-4 columns">
         <a href="<?php the_field('splash_link'); ?>" target="_blank">
           <img src="<?php the_field('splash_logo'); ?>" alt="Ameya Pawar 2018 Logo">
         </a>
         </div>
-        <div class="small-12 large-6 columns">
+        <div class="small-12 medium-8 large-6 columns">
           <?php the_content(); ?>
         </div>
       </div>
