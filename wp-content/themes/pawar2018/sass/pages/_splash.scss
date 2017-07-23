@@ -17,9 +17,6 @@
     background-size: 135%;
     background-position: 100% 10%;
   }
-  @include breakpoint(xlarge) {
-    background-size: 125%;
-  }
   .main {
     height: 100vh;
     padding: 0;
@@ -51,6 +48,7 @@
       }
     }
   }
+
   .social {
     justify-content: space-around;
     @include breakpoint(large) {
@@ -125,23 +123,14 @@
     padding-top: 0 !important;
   }
 
-  .returnToWebsite a {
-    color: #fff !important;
-  }
-
   .at-paid-for-by {
    border: 0 !important;
    color: #fff !important;
    font-size: .875rem !important;
   }
 
-  footer > * {
-    margin: 1rem auto 0 !important;
-  }
-
-  .poweredby a {
-   border: 0 !important;
-   color: #0079a0 !important;
+  footer {
+    display: none;
   }
 
   .at-banner {
@@ -149,11 +138,6 @@
     @include breakpoint(medium) {
       padding: 1rem 1.5rem !important;
     }
-  }
-
-  .multistep-footer {
-    background: transparent !important;
-    padding-bottom: 1rem;
   }
 
   div.ngp-form {
@@ -168,12 +152,18 @@
   }
 
   .at-title {
-    padding: 0 1.5rem !important;
+    padding: 0 1.5rem 1rem !important;
     line-height: 1.25 !important;
     font-size: 1.25rem !important;
     @include breakpoint(medium) {
       font-size: 1.5rem !important;
     }
+  }
+
+  .at-markup p {
+    line-height: 1.5rem;
+    text-align: center;
+    margin-bottom: 0;
   }
 
   .at-form {
