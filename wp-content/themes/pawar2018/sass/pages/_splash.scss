@@ -59,7 +59,7 @@
   .at-text.LastName {
     right: 0 !important;
     width: 90% !important;
-    @include breakpoint(medium) {
+    @include breakpoint(large) {
       width: 50% !important;
     }
   }
@@ -67,7 +67,7 @@
   .at-row-solo.EmailAddress {
     right: 0 !important;
     width: 100% !important;
-    @include breakpoint(medium) {
+    @include breakpoint(large) {
       width: 54% !important;
     }
   }
@@ -75,24 +75,27 @@
   .at-row-solo.PostalCode {
     left: 0 !important;
     width: 100% !important;
-    @include breakpoint(medium) {
+    @include breakpoint(large) {
       width: 49% !important;
     }
   }
 
   .at-row-solo {
     flex: 1 0 auto !important;
-    @include breakpoint(medium) {
+    @include breakpoint(large) {
       flex: 0 1 50% !important;
       top: 40% !important;
       position: absolute !important;
+    }
+    &.at-row-full{
+      top: 85% !important;
     }
   }
 
   .at-text.FirstName {
     width: 90% !important;
     left: 0 !important;
-    @include breakpoint(medium) {
+    @include breakpoint(large) {
       width: 45% !important;
     }
   }
@@ -135,7 +138,7 @@
 
   .at-banner {
     padding: 1rem .5rem 0 !important;
-    @include breakpoint(medium) {
+    @include breakpoint(large) {
       padding: 1rem 1.5rem !important;
     }
   }
@@ -155,15 +158,30 @@
     padding: 0 1.5rem 1rem !important;
     line-height: 1.25 !important;
     font-size: 1.25rem !important;
-    @include breakpoint(medium) {
+    @include breakpoint(large) {
       font-size: 1.5rem !important;
     }
   }
 
   .at-markup p {
     line-height: 1.5rem;
-    text-align: center;
     margin-bottom: 0;
+  }
+
+  .content.thankYou {
+    padding: 1rem 1rem .25rem;
+    @include breakpoint(large) {
+      padding: 2rem 2rem .5rem;
+    }
+    .contributions p {
+      color: #fff;
+      font-size: 1.25rem;
+      text-align: center;
+      margin: 0 auto;
+      @include breakpoint(large) {
+        font-size: 1.5rem;
+      }
+    }
   }
 
   .at-form {
@@ -181,7 +199,7 @@
   .at-fields {
     position: relative !important;
     height: 20rem !important;
-    @include breakpoint(medium) {
+    @include breakpoint(large) {
       height: 10rem !important;
     }
   }
@@ -195,7 +213,7 @@
   .at-text.FirstName,
   .at-text.LastName {
     flex: 1 0 auto !important;
-    @include breakpoint(medium) {
+    @include breakpoint(large) {
       position: absolute !important;
       flex: 1 0 50% !important;
     }
