@@ -8,7 +8,7 @@
   <section class="wrapper">
     <div class="main body">
       <div class="row align-center">
-        <div class="press-release small-11 medium-11 large-11 small-order-2 medium-order-1 columns">
+        <div class="press-release small-12 medium-11 large-11 small-order-2 medium-order-1 columns">
         <?php
 
         $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;

@@ -3,15 +3,46 @@
   text-transform: uppercase;
   font-weight: 900;
   margin: 0 0 1rem 0;
+  color: $light-blue;
+  text-transform: none;
   &:after {
     content: "";
     display: block;
-    height: 2px;
+    height: 5px;
     width: 6rem;
     background-color: $burnt-orange;
     margin: 1rem 0 0 0;
   }
+  &.press-release__title {
+    font-size: 1.5rem;
+    @include breakpoint(medium) {
+      font-size: 2.25rem;
+    }
+  }
+  &.special-event__title {
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+    @include breakpoint(large) {
+      font-size: 2.25rem;
+      margin-top: 1.5rem;
+    }
+    &:after {
+      margin: 1rem auto;
+    }
+  }
+}
 
+.section-subtitle {
+  &.special-event__title {
+    text-align: center;
+    margin: 1rem auto;
+    font-size: 1.25rem;
+    @include breakpoint(large) {
+      font-size: 2rem;
+      margin: 1rem auto 3rem;
+    }
+  }
 }
 
 .hero {
@@ -42,10 +73,10 @@
 }
 
 .page-title {
-    text-align: center;
-    display: block;
-    text-transform: uppercase;
-    font-weight: 900;
-    margin: 3rem auto 2rem 0;
-    font-size: 2.25rem;
+  text-align: center;
+  display: block;
+  text-transform: uppercase;
+  font-weight: 900;
+  margin: 3rem auto 2rem 0;
+  font-size: 2.25rem;
 }

@@ -1,11 +1,9 @@
 .hero {
-  background-position: top center;
-  background-size: contain;
+  background-position: top right;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-color: $extra-light-gray;
+  background-color: $primary-color;
   @include breakpoint(medium) {
-    background-color: $primary-color;
-    background-size: cover; // todo: move to row? Look at new mocks
     height: 32.5rem;
   }
 
@@ -30,13 +28,18 @@
     }
   }
 
+  .special-event & {
+    background-size: contain;
+    background-position: 50% 0;
+  }
+
   &.inner-page {
-    height: 11rem;
+    height: 10rem;
     @include breakpoint(medium) {
       height: 17rem;
     }
     @include breakpoint(large) {
-      height: 32.5rem;
+      height: 32rem;
     }
 
     .row:first-child {
@@ -78,7 +81,7 @@
     @include breakpoint(small only) {
       margin-top: 1.5rem;
       font-size: 1.25rem;
-      color: $charcoal;
+      color: $white;
     }
     @include breakpoint(21rem) {
       margin-top: 2rem;

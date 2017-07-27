@@ -10,7 +10,7 @@
     <div class="main body">
       <div class="row align-center">
         <div class="small-12 medium-12 columns">
-          <h1 class="section-title"><?php echo the_title(); ?></h1>
+          <h1 class="press-release__title section-title"><?php echo the_title(); ?></h1>
           <h6 class="press-release__date"><?php the_time( get_option( 'date_format' ) ); ?></h6>
           <?php the_content(); ?>
         </div>

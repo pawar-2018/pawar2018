@@ -37,8 +37,8 @@
     width: initial;
     height: initial;
     padding-left: 0;
-    flex: 0 0 75%;
-    max-width: 75%;
+    flex: 0 0 73%;
+    max-width: 73%;
   }
 }
 
@@ -59,8 +59,8 @@
     flex: 0 0 36.25%;
     max-width: 14.5rem;
   }
-  @include breakpoint(64rem) {
-    flex: 0 0 27%;
+  @include breakpoint(75rem) {
+    flex: 0 0 25.5%;
     padding-right: 2rem;
     max-width: 17.75rem;
   }
