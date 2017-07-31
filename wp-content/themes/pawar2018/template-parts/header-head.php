@@ -24,6 +24,7 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
   ga('create', 'UA-91277709-1', 'auto');
+  ga('require', 'GTM-P23T88H');
   ga('require', 'GTM-K2Q3NHQ');
 
 </script>
