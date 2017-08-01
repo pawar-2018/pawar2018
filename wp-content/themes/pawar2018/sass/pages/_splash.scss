@@ -1,14 +1,15 @@
-.page-template-page-splash {
-  background-color: black;
+.page-template-page-splash,
+.page-template-page-splashleft {
+  background-color: #233368;
   overflow-x: hidden;
 }
 
 .splash {
-  background-size: 125%;
-  background-position: right -20%;
+  background-size: cover;
+  background-position: 50% 0;
   background-repeat: no-repeat;
   width: 100%;
-  height: 100%;
+  min-height: 100vh;
   @include breakpoint(medium) {
     background-size: 150%;
     background-position: 100% 0%;
@@ -18,25 +19,31 @@
     background-position: 100% 10%;
   }
   .main {
-    height: 100vh;
     padding: 0;
     @include breakpoint(medium) {
       padding-left: 8.333333333%;
       padding-right: 8.333333333%;
     }
   }
+  &.splash-left {
+    background-size: cover;
+    background-position: 80%;
+    @include breakpoint(medium) {
+      background-position: 50% 0;
+    }
+    @include breakpoint(large) {
+      background-size: cover;
+    }
+  }
   .content {
     .columns:first-child {
       align-self: flex-start;
-      margin-top: 2.5%;
-      margin-top: 2.5vh;
+      margin: 2.5% 0;
+      margin: 2.5vh 0;
       text-align: center;
       @include breakpoint(large) {
-        margin-top: 10%;
-        margin-top: 10vh;
-      }
-      img {
-        width: 1%;
+        margin: 10% 0;
+        margin: 10vh 0;
       }
     }
     .columns:last-child {
@@ -56,47 +63,25 @@
     }
   }
 
-  .at-text.LastName {
-    right: 0 !important;
-    width: 90% !important;
+  .at-row.FirstName,
+  .at-row.LastName {
+    flex: 0 1 50%!important;
     @include breakpoint(large) {
-      width: 50% !important;
-    }
-  }
-
-  .at-row-solo.EmailAddress {
-    right: 0 !important;
-    width: 100% !important;
-    @include breakpoint(large) {
-      width: 54% !important;
+      flex: 1 0 auto !important;
     }
   }
 
   .at-row-solo.PostalCode {
-    left: 0 !important;
-    width: 100% !important;
+    flex: 0 1 50%!important;
     @include breakpoint(large) {
-      width: 49% !important;
+      flex: 1 0 auto !important;
     }
   }
 
-  .at-row-solo {
-    flex: 1 0 auto !important;
+  .at-row-solo.EmailAddress {
+    flex: 1 0 100% !important;
     @include breakpoint(large) {
-      flex: 0 1 50% !important;
-      top: 40% !important;
-      position: absolute !important;
-    }
-    &.at-row-full{
-      top: 85% !important;
-    }
-  }
-
-  .at-text.FirstName {
-    width: 90% !important;
-    left: 0 !important;
-    @include breakpoint(large) {
-      width: 45% !important;
+      flex: 1 0 auto !important;
     }
   }
 
@@ -188,6 +173,13 @@
     background-color: rgba(34,43,70,.75) !important;
   }
 
+  .at-fieldset .ContactInformation {
+    min-height: 20rem !important;
+    @include breakpoint(large) {
+      min-height: 10rem !important;
+    }
+  }
+
   .at-legend {
     display: none !important;
   }
@@ -197,25 +189,27 @@
   }
 
   .at-fields {
-    position: relative !important;
-    height: 20rem !important;
-    @include breakpoint(large) {
-      height: 10rem !important;
+    display: flex!important;
+    flex-flow: row wrap!important;
+    justify-content: space-between!important;
+  }
+
+  .at-row.FirstName.LastName {
+    display: flex !important;
+    flex-flow: row wrap !important;
+    flex: 1 0 100%!important;
+    @include breakpoint(medium) {
+      flex-flow: row nowrap !important;
     }
   }
 
-  .at-row.FirstName {
-    position: relative !important;
-    display: flex !important;
-    flex-flow: row wrap !important;
-  }
-
   .at-text.FirstName,
-  .at-text.LastName {
+  .at-text.LastName,
+  .at-text.PostalCode,
+  .at-text.EmailAddress {
     flex: 1 0 auto !important;
-    @include breakpoint(large) {
-      position: absolute !important;
-      flex: 1 0 50% !important;
+    @include breakpoint(medium) {
+      min-width: 10.5rem;
     }
   }
 }
