@@ -5,7 +5,7 @@ Template name: Splash Template (Left)
 ?>
 <?php get_template_part('template-parts/header', 'head'); ?>
 
-<main class="splash" style="background-image: url('<?php the_field('splash_image'); ?>');">
+<main class="splash splash-left" style="background-image: url('<?php the_field('splash_image'); ?>');">
   <section class="wrapper">
     <div class=" main">
       <div class="row align-center align-middle content">

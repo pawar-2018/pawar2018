@@ -1,11 +1,12 @@
-.page-template-page-splash {
-  background-color: black;
+.page-template-page-splash,
+.page-template-page-splashleft {
+  background-color: #233368;
   overflow-x: hidden;
 }
 
 .splash {
-  background-size: 125%;
-  background-position: right -20%;
+  background-size: cover;
+  background-position: 50% 0;
   background-repeat: no-repeat;
   width: 100%;
   height: 100%;
@@ -18,11 +19,21 @@
     background-position: 100% 10%;
   }
   .main {
-    height: 100vh;
     padding: 0;
     @include breakpoint(medium) {
       padding-left: 8.333333333%;
       padding-right: 8.333333333%;
+    }
+  }
+  &.splash-left {
+    background-size: cover;
+    background-position: 80%;
+    @include breakpoint(medium) {
+      background-position: 50% 0;
+    }
+    @include breakpoint(large) {
+      background-size: 135%;
+      background-position: 100% 10%;
     }
   }
   .content {
