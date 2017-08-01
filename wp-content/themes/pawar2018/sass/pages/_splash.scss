@@ -56,47 +56,25 @@
     }
   }
 
-  .at-text.LastName {
-    right: 0 !important;
-    width: 90% !important;
+  .at-row.FirstName,
+  .at-row.LastName {
+    flex: 0 1 50%!important;
     @include breakpoint(large) {
-      width: 50% !important;
-    }
-  }
-
-  .at-row-solo.EmailAddress {
-    right: 0 !important;
-    width: 100% !important;
-    @include breakpoint(large) {
-      width: 54% !important;
+      flex: 1 0 auto !important;
     }
   }
 
   .at-row-solo.PostalCode {
-    left: 0 !important;
-    width: 100% !important;
+    flex: 0 1 50%!important;
     @include breakpoint(large) {
-      width: 49% !important;
+      flex: 1 0 auto !important;
     }
   }
 
-  .at-row-solo {
-    flex: 1 0 auto !important;
+  .at-row-solo.EmailAddress {
+    flex: 1 0 100% !important;
     @include breakpoint(large) {
-      flex: 0 1 50% !important;
-      top: 40% !important;
-      position: absolute !important;
-    }
-    &.at-row-full{
-      top: 85% !important;
-    }
-  }
-
-  .at-text.FirstName {
-    width: 90% !important;
-    left: 0 !important;
-    @include breakpoint(large) {
-      width: 45% !important;
+      flex: 1 0 auto !important;
     }
   }
 
@@ -188,6 +166,13 @@
     background-color: rgba(34,43,70,.75) !important;
   }
 
+  .at-fieldset .ContactInformation {
+    min-height: 20rem !important;
+    @include breakpoint(large) {
+      min-height: 10rem !important;
+    }
+  }
+
   .at-legend {
     display: none !important;
   }
@@ -197,25 +182,27 @@
   }
 
   .at-fields {
-    position: relative !important;
-    height: 20rem !important;
-    @include breakpoint(large) {
-      height: 10rem !important;
+    display: flex!important;
+    flex-flow: row wrap!important;
+    justify-content: space-between!important;
+  }
+
+  .at-row.FirstName.LastName {
+    display: flex !important;
+    flex-flow: row wrap !important;
+    flex: 1 0 100%!important;
+    @include breakpoint(medium) {
+      flex-flow: row nowrap !important;
     }
   }
 
-  .at-row.FirstName {
-    position: relative !important;
-    display: flex !important;
-    flex-flow: row wrap !important;
-  }
-
   .at-text.FirstName,
-  .at-text.LastName {
+  .at-text.LastName,
+  .at-text.PostalCode,
+  .at-text.EmailAddress {
     flex: 1 0 auto !important;
-    @include breakpoint(large) {
-      position: absolute !important;
-      flex: 1 0 50% !important;
+    @include breakpoint(medium) {
+      min-width: 10.5rem;
     }
   }
 }
