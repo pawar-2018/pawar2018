@@ -1,0 +1,35 @@
+main.ndj {
+    background: #f7f7f7;
+    article.post {
+        display: flex;
+        background: #fff;
+        .feature-image {
+            max-width: 30%;
+        }
+        @include flex-grid-size(12);
+        .article-inner {
+            padding: 4rem;
+        }
+        &:first-child {
+            @include flex-grid-size(12);
+            flex-direction: column;
+            .feature-image {
+                max-width: 100%;
+            }
+        }
+        &:nth-child(2) {
+            @include flex-grid-column(6,10);
+            flex-direction: column;
+            .feature-image {
+                max-width: 100%;
+            }
+        }
+        &:nth-child(3) {
+            @include flex-grid-column(6,10);
+            flex-direction: column;
+            .feature-image {
+                max-width: 100%;
+            }
+        }
+    }
+}
