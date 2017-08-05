@@ -2,13 +2,17 @@ main.ndj {
     background: #f7f7f7;
     article.post {
         display: flex;
-        background: #fff;
+        h2.post-title {
+            margin: 0 0 .75rem 0;
+        }
         .feature-image {
             max-width: 30%;
         }
         @include flex-grid-size(12);
         .article-inner {
-            padding: 4rem;
+            padding: 2rem 3rem;
+            background: #fff;
+            width: 100%;
         }
         &:first-child {
             @include flex-grid-size(12);
@@ -18,7 +22,7 @@ main.ndj {
             }
         }
         &:nth-child(2) {
-            @include flex-grid-column(6,10);
+            @include flex-grid-column(6,20);
             flex-direction: column;
             .feature-image {
                 max-width: 100%;
@@ -31,5 +35,35 @@ main.ndj {
                 max-width: 100%;
             }
         }
+    }
+}
+
+ul.post-categories {
+    list-style: none;
+    margin: 0 0 .75rem 0;
+    li {
+        a {
+            font-size: 1rem;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: $charcoal;
+            &:hover {
+                text-decoration: none;
+                color: $navy-blue;
+            }
+        }
+    }
+}
+
+.tags a {
+    text-transform: uppercase;
+    font-size: .75rem;
+    font-weight: 600;
+    padding: 8px 12px;
+    border: 1px solid $light-blue;
+    &:hover {
+        text-decoration: none;
+        border-color: $navy-blue;
+        color: $navy-blue;
     }
 }
