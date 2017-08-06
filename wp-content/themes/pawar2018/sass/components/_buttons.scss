@@ -47,11 +47,22 @@
   }
 }
 
+.social-share-btns {
+    display: inline-block;
+    width: 100%;
+    margin: 1rem 0 2rem 0;
+}
+
 .social-btn {
     background: $light-blue;
     color: #fff;
     padding: 10px 35px;
     border-radius: 35px;
+    display: inline-block;
+    margin: 0 0 0 1rem;
+    &:first-of-type {
+        margin: 0;
+    }
     &:hover {
         text-decoration: none;
         color: #fff;
@@ -61,6 +72,12 @@
         background: $twitter-blue;
         &:hover {
             background: darken($twitter-blue, 10);
+        }
+    }
+    &.fb {
+        background: $fb-blue;
+        &:hover {
+            background: darken($fb-blue, 10);
         }
     }
 }
