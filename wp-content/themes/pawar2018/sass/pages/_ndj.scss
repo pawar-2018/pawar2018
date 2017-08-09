@@ -67,3 +67,24 @@ ul.post-categories {
         color: $navy-blue;
     }
 }
+
+.related-section {
+    width: 100%;
+    border-top: 1px solid #ddd;
+    padding: 3rem 0;
+    background: #f7f7f7;
+    article.post {
+        display: flex;
+        h2.post-title {
+            margin: 0 0 .75rem 0;
+        }
+        .feature-image {
+            max-width: 30%;
+        }
+        .article-inner {
+            padding: 2rem 3rem;
+            background: #fff;
+            width: 100%;
+        }
+    }
+}

@@ -44,6 +44,7 @@ function _pawar2018_setup() {
 
 	register_nav_menus( array(
 	    'header-menu'   => __( 'Header Menu' ),
+		'ndj-menu'   => __( 'NDJ Menu' ),
 	    'footer-menu'   => __( 'Footer Menu' ),
 	    'donate-button' => __( 'Donate Button' )
 	) );
