@@ -28,7 +28,7 @@
 									<?php the_post_thumbnail(); ?>
 								</aside>
 								<div class="article-inner">
-									<a href="<?php the_permalink(); ?>"><h2><?php the_excerpt(); ?></h2></a>
+									<a href="<?php the_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
 								</div>
 							</article>
 						</div>
