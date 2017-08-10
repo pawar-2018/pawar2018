@@ -44,6 +44,7 @@ function _pawar2018_setup() {
 
 	register_nav_menus( array(
 	    'header-menu'   => __( 'Header Menu' ),
+		'ndj-menu'   => __( 'NDJ Menu' ),
 	    'footer-menu'   => __( 'Footer Menu' ),
 	    'donate-button' => __( 'Donate Button' )
 	) );
@@ -231,3 +232,13 @@ function set_posts_per_page( $query ) {
 
     return $query;
 }
+
+function wpdocs_custom_excerpt_length( $length ) {
+    return 20;
+}
+add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
+
+function custom_excerpt_more( $more ) {
+	return '...';
+}
+add_filter( 'excerpt_more', 'custom_excerpt_more' );
