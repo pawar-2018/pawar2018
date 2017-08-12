@@ -117,3 +117,23 @@ ul.post-categories {
         z-index: 5;
     }
 }
+
+.paginate_links {
+    margin: 3rem 0;
+}
+
+ul.page-numbers{
+    list-style: none;
+    text-align: center;
+    font-weight: 700;
+    li {
+        display: inline-block;
+        a {
+            border-radius: 3px;
+            padding: 5px 8px;
+            &:hover {
+                background: #fff;
+            }
+        }
+    }
+}
