@@ -31,8 +31,10 @@
         				<?php if ( have_posts() ) : ?>
         					<?php while ( have_posts() ) : the_post(); ?>
                             <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-                                <aside class="feature-image" style="background-image: url('<?php the_post_thumbnail_url(); ?>');" >
+                                <?php if(has_post_thumbnail()): ?>
+                                <aside class="feature-image" style="background-image: url('<?php the_post_thumbnail_url(); ?>'); background-size: cover; background-position: center center;" >
                                 </aside>
+                                <?php endif ?>
                                 <div class="article-inner">
                                     <?php the_category(); ?>
                                     <header class="entry-header">
