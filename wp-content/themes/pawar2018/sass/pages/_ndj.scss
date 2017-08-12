@@ -88,3 +88,25 @@ ul.post-categories {
         }
     }
 }
+
+.post_tags {
+    position: relative;
+    select {
+        display: inline-block;
+        width: auto;
+        border: 0;
+        background: transparent;
+        color: $light-blue;
+        &:focus {
+            outline: 0;
+        }
+    }
+    &:after {
+        content:"\f078";
+        font-family:'FontAwesome';
+        position: absolute;
+        top: 13px;
+        right: 10px;
+        z-index: 5;
+    }
+}
