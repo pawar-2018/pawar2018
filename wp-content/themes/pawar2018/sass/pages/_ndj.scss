@@ -2,13 +2,15 @@ main.ndj {
     background: #f7f7f7;
     article.post {
         display: flex;
+        @include flex-grid-size(12);
         h2.post-title {
             margin: 0 0 .75rem 0;
         }
         .feature-image {
-            max-width: 30%;
+            max-width: 100%;
+            width: 100%;
+            display: block;
         }
-        @include flex-grid-size(12);
         .article-inner {
             padding: .5rem 1rem;
             background: #fff;
@@ -27,11 +29,26 @@ main.ndj {
                 background: #fff;
                 width: 100%;
             }
+            .feature-image {
+                max-width: 45%;
+                width: 45%;
+                display: block;
+            }
+            &:nth-child(1) {
+                flex-direction: column;
+                .feature-image {
+                    max-width: 100%;
+                    width: 100%;
+                    display: block;
+                }
+            }
             &:nth-child(2) {
                 @include flex-grid-column(6,20);
                 flex-direction: column;
                 .feature-image {
                     max-width: 100%;
+                    width: 100%;
+                    display: block;
                 }
             }
             &:nth-child(3) {
@@ -39,6 +56,8 @@ main.ndj {
                 flex-direction: column;
                 .feature-image {
                     max-width: 100%;
+                    width: 100%;
+                    display: block;
                 }
             }
         }
