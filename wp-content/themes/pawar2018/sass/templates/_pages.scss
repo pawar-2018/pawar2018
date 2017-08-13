@@ -22,10 +22,12 @@
 
 .main {
   flex: 1 0 100%;
-  padding-left: 8.333333333%;
-  padding-right: 8.333333333%;
+  padding-left: 3.333333333%;
+  padding-right: 3.333333333%;
   @include breakpoint(medium) {
     flex: 1 0 66.6667%;
+    padding-left: 8.333333333%;
+    padding-right: 8.333333333%;
   }
 }
 

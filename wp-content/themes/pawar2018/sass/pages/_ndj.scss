@@ -10,7 +10,7 @@ main.ndj {
         }
         @include flex-grid-size(12);
         .article-inner {
-            padding: 2rem 3rem;
+            padding: .5rem 1rem;
             background: #fff;
             width: 100%;
         }
@@ -22,6 +22,11 @@ main.ndj {
             }
         }
         @include breakpoint(medium) {
+            .article-inner {
+                padding: 2rem 3rem;
+                background: #fff;
+                width: 100%;
+            }
             &:nth-child(2) {
                 @include flex-grid-column(6,20);
                 flex-direction: column;
@@ -62,6 +67,7 @@ ul.post-categories {
     font-size: .75rem;
     font-weight: 600;
     padding: 8px 12px;
+    margin: .5rem 0;
     border: 1px solid $light-blue;
     white-space: nowrap;
     display: inline-block;
@@ -79,6 +85,10 @@ ul.post-categories {
     background: #f7f7f7;
     article.post {
         display: flex;
+        margin: 1rem 0;
+        @include breakpoint(medium) {
+            margin: 3rem 0;
+        }
         h2.post-title {
             margin: 0 0 .75rem 0;
         }
@@ -102,6 +112,7 @@ ul.post-categories {
     select {
         display: inline-block;
         width: auto;
+        max-width: 75%;
         border: 0;
         background: transparent;
         color: $light-blue;
