@@ -2,11 +2,14 @@ main.ndj {
     background: #f7f7f7;
     article.post {
         display: flex;
+        flex-direction: column;
+        margin: 1rem 0;
         @include flex-grid-size(12);
         h2.post-title {
             margin: 0 0 .75rem 0;
         }
         .feature-image {
+            height: 300px;
             max-width: 100%;
             width: 100%;
             display: block;
@@ -16,22 +19,18 @@ main.ndj {
             background: #fff;
             width: 100%;
         }
-        &:first-child {
-            @include flex-grid-size(12);
-            flex-direction: column;
-            .feature-image {
-                max-width: 100%;
-            }
-        }
         @include breakpoint(medium) {
+            flex-direction:row;
+            margin: 3rem 0;
             .article-inner {
                 padding: 2rem 3rem;
                 background: #fff;
                 width: 100%;
             }
             .feature-image {
-                max-width: 45%;
-                width: 45%;
+                max-width: 100%;
+                width: 100%;
+                height: 100%;
                 display: block;
             }
             &:nth-child(1) {
@@ -39,6 +38,7 @@ main.ndj {
                 .feature-image {
                     max-width: 100%;
                     width: 100%;
+                    height: 450px;
                     display: block;
                 }
             }
@@ -48,6 +48,7 @@ main.ndj {
                 .feature-image {
                     max-width: 100%;
                     width: 100%;
+                    height: 350px;
                     display: block;
                 }
             }
@@ -57,6 +58,23 @@ main.ndj {
                 .feature-image {
                     max-width: 100%;
                     width: 100%;
+                    height: 350px;
+                    display: block;
+                }
+            }
+        }
+
+        @include breakpoint(large){
+            .feature-image {
+                max-width: 100%;
+                width: 100%;
+                height: 100%;
+            }
+            &:nth-child(1) {
+                .feature-image {
+                    max-width: 100%;
+                    width: 100%;
+                    height: 750px;
                     display: block;
                 }
             }
@@ -102,26 +120,6 @@ ul.post-categories {
     border-top: 1px solid #ddd;
     padding: 3rem 0;
     background: #f7f7f7;
-    article.post {
-        display: flex;
-        margin: 1rem 0;
-        @include breakpoint(medium) {
-            margin: 3rem 0;
-        }
-        h2.post-title {
-            margin: 0 0 .75rem 0;
-        }
-        .feature-image {
-            max-width: 45%;
-            width: 45%;
-            display: inline-block;
-        }
-        .article-inner {
-            padding: 2rem 3rem;
-            background: #fff;
-            width: 100%;
-        }
-    }
 }
 
 .post_tags {
