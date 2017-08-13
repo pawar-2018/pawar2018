@@ -1,6 +1,6 @@
 <?php
 /*
-Template name: Two Column Template
+Template name: Two Column Tour Template
  */
 get_header(); ?>
 
