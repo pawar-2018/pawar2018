@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <main class="ndj">
-    <section class="hero inner-page" style="background-image: url('<?php the_field('hero_image', 298); ?>');">
+    <section class="hero inner-page" style="background-image: url('<?php the_field('hero_image', 298); ?>'); background-position: center center;">
     </section>
     <section class="wrapper">
       <div class="main body">
