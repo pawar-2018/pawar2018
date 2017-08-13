@@ -31,10 +31,8 @@
         				<?php if ( have_posts() ) : ?>
         					<?php while ( have_posts() ) : the_post(); ?>
                             <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-                                <?php if(has_post_thumbnail()): ?>
-                                <aside class="feature-image" style="background-image: url('<?php the_post_thumbnail_url(); ?>'); background-size: cover; background-position: center center;" >
+                                <aside class="feature-image" style="background-image: url('<?php the_post_thumbnail_url(); ?>');" >
                                 </aside>
-                                <?php endif ?>
                                 <div class="article-inner">
                                     <?php the_category(); ?>
                                     <header class="entry-header">
@@ -60,21 +58,6 @@
                             </article><!-- #post-## -->
         				<?php endwhile; ?>
         				<?php endif; ?>
-                        <div class="paginate_links small-12 columns">
-                            <?php
-                            global $wp_query;
-
-                            $big = 999999999; // need an unlikely integer
-
-                            echo paginate_links( array(
-                            	'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
-                            	'format' => '?paged=%#%',
-                            	'current' => max( 1, get_query_var('paged') ),
-                            	'total' => $wp_query->max_num_pages,
-                                'type' => 'list'
-                            ) );
-                            ?>
-                        </div>
                     </div>
 			   </div>
             </div>
