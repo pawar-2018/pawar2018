@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <main class="ndj">
-    <section class="hero inner-page" style="background-image: url('<?php the_field('hero_image', 298); ?>');">
+    <section class="hero inner-page" style="background-image: url('<?php the_field('hero_image', 298); ?>'); background-position: center center;">
     </section>
     <section class="wrapper">
       <div class="main body">
@@ -26,7 +26,7 @@
             </div>
           </div>
 			<div class="row align-center">
-                <div class="press-release small-11 medium-11 large-11 small-order-2 medium-order-1 columns">
+                <div class="press-release small-12 medium-12 large-12 columns">
                     <div class="row">
         				<?php if ( have_posts() ) : ?>
         					<?php while ( have_posts() ) : the_post(); ?>

@@ -21,18 +21,20 @@ main.ndj {
                 max-width: 100%;
             }
         }
-        &:nth-child(2) {
-            @include flex-grid-column(6,20);
-            flex-direction: column;
-            .feature-image {
-                max-width: 100%;
+        @include breakpoint(medium) {
+            &:nth-child(2) {
+                @include flex-grid-column(6,20);
+                flex-direction: column;
+                .feature-image {
+                    max-width: 100%;
+                }
             }
-        }
-        &:nth-child(3) {
-            @include flex-grid-column(6,10);
-            flex-direction: column;
-            .feature-image {
-                max-width: 100%;
+            &:nth-child(3) {
+                @include flex-grid-column(6,10);
+                flex-direction: column;
+                .feature-image {
+                    max-width: 100%;
+                }
             }
         }
     }
@@ -61,6 +63,8 @@ ul.post-categories {
     font-weight: 600;
     padding: 8px 12px;
     border: 1px solid $light-blue;
+    white-space: nowrap;
+    display: inline-block;
     &:hover {
         text-decoration: none;
         border-color: $navy-blue;
