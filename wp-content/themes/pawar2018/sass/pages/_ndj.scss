@@ -1,0 +1,171 @@
+main.ndj {
+    background: #f7f7f7;
+    article.post {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem 0;
+        @include flex-grid-size(12);
+        h2.post-title {
+            margin: 0 0 .75rem 0;
+        }
+        .feature-image {
+            height: 300px;
+            max-width: 100%;
+            width: 100%;
+            display: block;
+        }
+        .article-inner {
+            padding: .5rem 1rem;
+            background: #fff;
+            width: 100%;
+        }
+        @include breakpoint(medium) {
+            flex-direction:row;
+            margin: 3rem 0;
+            .article-inner {
+                padding: 2rem 3rem;
+                background: #fff;
+                width: 100%;
+            }
+            .feature-image {
+                max-width: 100%;
+                width: 100%;
+                height: 100%;
+                display: block;
+            }
+            &:nth-child(1) {
+                flex-direction: column;
+                .feature-image {
+                    max-width: 100%;
+                    width: 100%;
+                    height: 450px;
+                    display: block;
+                }
+            }
+            &:nth-child(2) {
+                @include flex-grid-column(6,20);
+                flex-direction: column;
+                .feature-image {
+                    max-width: 100%;
+                    width: 100%;
+                    height: 350px;
+                    display: block;
+                }
+            }
+            &:nth-child(3) {
+                @include flex-grid-column(6,10);
+                flex-direction: column;
+                .feature-image {
+                    max-width: 100%;
+                    width: 100%;
+                    height: 350px;
+                    display: block;
+                }
+            }
+        }
+
+        @include breakpoint(large){
+            .feature-image {
+                max-width: 100%;
+                width: 100%;
+                height: 100%;
+            }
+            &:nth-child(1) {
+                .feature-image {
+                    max-width: 100%;
+                    width: 100%;
+                    height: 750px;
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+ul.post-categories {
+    list-style: none;
+    margin: 0 0 .75rem 0;
+    li {
+        a {
+            font-size: 1rem;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: $charcoal;
+            &:hover {
+                text-decoration: none;
+                color: $navy-blue;
+            }
+        }
+    }
+}
+
+.tags a {
+    text-transform: uppercase;
+    font-size: .75rem;
+    font-weight: 600;
+    padding: 8px 12px;
+    margin: .5rem 0;
+    border: 1px solid $light-blue;
+    white-space: nowrap;
+    display: inline-block;
+    &:hover {
+        text-decoration: none;
+        border-color: $navy-blue;
+        color: $navy-blue;
+    }
+}
+
+.related-section {
+    width: 100%;
+    border-top: 1px solid #ddd;
+    padding: 3rem 0;
+    background: #f7f7f7;
+}
+
+.post_tags {
+    position: relative;
+    display: inline-block;
+    font-weight: 700;
+    select {
+        display: inline-block;
+        width: auto;
+        max-width: 75%;
+        border: 0;
+        background: transparent;
+        color: $light-blue;
+        z-index: 10;
+        font-weight: 700;
+        &:focus {
+            outline: 0;
+        }
+    }
+    &:after {
+        content:"\f078";
+        font-family:'FontAwesome';
+        position: absolute;
+        color: $light-blue;
+        top: 10px;
+        right: 8px;
+        z-index: 5;
+    }
+}
+
+.paginate_links {
+    margin: 3rem 0;
+}
+
+ul.page-numbers{
+    list-style: none;
+    text-align: center;
+    font-weight: 700;
+    li {
+        display: inline-block;
+        a {
+            border-radius: 3px;
+            padding: 5px 8px;
+            &:hover {
+                background: #fff;
+            }
+        }
+    }
+}

@@ -13,8 +13,13 @@
         <h6 class="entre-date">
           <?php the_date('F j, Y'); ?>
         </h6>
-		<?php
-		endif; ?>
+        <!--
+        <div class="social-share-btns">
+            <a class="social-btn twitter" target="_blank" href="https://twitter.com/share?url=<?php echo(the_permalink());?>&via=ameya_pawar_il&text=<?php echo(the_title()); ?>">Tweet
+            </a>
+        </div>
+        -->
+		<?php endif; ?>
 	</header><!-- .entry-header -->
 	<div class="entry-content">
 		<?php the_content(); ?>
