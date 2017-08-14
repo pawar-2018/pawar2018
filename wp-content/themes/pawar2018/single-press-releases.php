@@ -22,6 +22,11 @@
           <p><strong>Contact: Tom Elliott</strong><br/>
           773-819-0503<br/>
           <a href="mailto:media@pawar2018.com">media@pawar2018.com</a></p>
+          <?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
+                    <div class="widget-sidebar">
+                        <?php dynamic_sidebar( 'sidebar-2' ); ?>
+                    </div>
+                <?php endif; ?>
         </div>
       </div>
     </aside>
