@@ -4,7 +4,7 @@ Template name: Column Blocked Template
  */
 get_header(); ?>
 
-<main>
+<main class="two-column">
   <section class="hero inner-page" style="background-image: url('<?php the_field('hero_image'); ?>');">
     <div class="row align-center align-middle">
       <h1 class="page-title"><?php the_title(); ?></h1>
@@ -12,15 +12,23 @@ get_header(); ?>
   </section>
   <section class="wrapper">
     <div class="main body">
-      <div class="row align-spaced small-collapse medium-uncollapse">
-        <div class="small-12 medium-6 left-content columns">
+      <div class="row align-center">
+        <div class="small-12 medium-12 columns">
+          <h1 class="section-title special-event__title"><?php echo the_field('left_column_title'); ?></h1>
+          <h2 class="section-subtitle special-event__title"><?php echo the_field('left_column_subtitle'); ?></h2>
          <?php echo the_field('first_column'); ?>
        </div>
-        <div class="small-12 medium-6 right-content columns">
-         <?php echo the_field('second_column'); ?>
+     </div>
+   </div>
+   <aside class="sidebar" role="complementary">
+      <div class="row align-center">
+        <div class="small-12 medium-12 columns">
+         <h1 class="section-title special-event__title"><?php echo the_field('right_column_title'); ?></h1>
+          <h2 class="section-subtitle special-event__title"><?php echo the_field('right_column_subtitle'); ?></h2>
+          <?php echo the_field('second_column'); ?>
         </div>
       </div>
-    </div>
+    </aside>
   </section>
   <div class="row align-center">
     <?php

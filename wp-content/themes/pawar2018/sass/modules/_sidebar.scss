@@ -6,6 +6,31 @@
     padding-top: 4rem;
     flex: 1 0 33.3333%;
   }
+  .two-column  & {
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    @include breakpoint(medium) {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      flex: 1 0 50%;
+      padding-left: 2%;
+      padding-right: 2%;
+    }
+    @include breakpoint(large) {
+      padding-left: 3.333333333%;
+      padding-right: 3.333333333%;
+    }
+    p {
+      font-size: 1rem;
+      line-height: 1.5;
+      @include breakpoint(large) {
+        font-size: 1.125rem;
+        line-height: 1.6;
+      }
+    }
+  }
 }
 
 .widget-sidebar {
