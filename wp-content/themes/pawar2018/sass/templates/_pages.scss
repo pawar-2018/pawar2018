@@ -34,7 +34,7 @@
     padding-left: 2.5%;
     padding-right: 2.5%;
     @include breakpoint(medium) {
-      flex: 1 0 50%;
+      flex: 1 0 100%;
       padding-left: 2%;
       padding-right: 2%;
       margin: 2rem 0;
