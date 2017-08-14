@@ -34,35 +34,35 @@
 }
 
 .widget-sidebar {
+  margin: 0 0 2rem 0;
+  .widget {
     margin: 0 0 2rem 0;
-    .widget {
-        margin: 0 0 2rem 0;
-        input[type="submit"] {
-            cursor: pointer;
-            background: $color__background-button;
-            border-radius: 1.5rem;
-            color: $white;
-            font-weight: 600;
-            min-width: 10rem;
-            padding: 0.5rem 2rem;
-            transition: all .15s ease;
-            border: 0;
+    input[type="submit"] {
+      cursor: pointer;
+      background: $color__background-button;
+      border-radius: 1.5rem;
+      color: $white;
+      font-weight: 600;
+      min-width: 10rem;
+      padding: 0.5rem 2rem;
+      transition: all .15s ease;
+      border: 0;
 
-            &:hover {
-              text-decoration: none;
-              background: darken($color__background-button, 10);
-            }
+      &:hover {
+        text-decoration: none;
+        background: darken($color__background-button, 10);
+      }
 
-            &:focus {
-              background: darken($color__background-button, 15);
-              outline: none;
-            }
-        }
-        ul {
-            list-style: none;
-            li.cat-item {
+      &:focus {
+        background: darken($color__background-button, 15);
+        outline: none;
+      }
+  }
+  ul {
+      list-style: none;
+      li.cat-item {
 
-            }
-        }
+      }
     }
+  }
 }
