@@ -10,8 +10,8 @@
 		endif;
 
 		if ( 'post' === get_post_type() ) : ?>
-        <h6 class="entre-date">
-          <?php the_date('F j, Y'); ?>
+        <h6 class="entry-meta">
+          <?php the_date('F j, Y'); ?> by <?php the_author(); ?>
         </h6>
         <!--
         <div class="social-share-btns">
@@ -24,5 +24,5 @@
 	<div class="entry-content">
 		<?php the_content(); ?>
 	</div><!-- .entry-content -->
-    <a href="/new-deal-journal">&larr; Back to the journal</a>
+    <a href="/new-deal-journal">&larr; Back to the New Deal Journal</a>
 </article><!-- #post-## -->
