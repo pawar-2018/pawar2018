@@ -29,7 +29,7 @@
     padding-left: calc(4% + 1rem);
     padding-top: 0;
   }
-  @include breakpoint(64rem) {
+  @include breakpoint(large) {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
@@ -37,8 +37,12 @@
     width: initial;
     height: initial;
     padding-left: 0;
-    flex: 0 0 73%;
-    max-width: 73%;
+    flex: 0 0 77%;
+    max-width: 77%;
+  }
+  @include breakpoint(xlarge) {
+    flex: 0 0 75%;
+    max-width: 75%;
   }
 }
 
@@ -57,7 +61,7 @@
   max-width: 19.875rem;
   @include breakpoint(40rem) {
     flex: 0 0 36.25%;
-    max-width: 14.5rem;
+    max-width: 13rem;
   }
   @include breakpoint(75rem) {
     flex: 0 0 25.5%;
@@ -139,7 +143,7 @@
     padding: 0;
   }
 
-  &:hover {
+  &:hover, &:focus {
     color: white;
     text-decoration: none;
 

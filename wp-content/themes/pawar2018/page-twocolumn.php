@@ -1,6 +1,6 @@
 <?php
 /*
-Template name: Two Column Template
+Template name: Two Column Tour Template
  */
 get_header(); ?>
 
@@ -12,7 +12,7 @@ get_header(); ?>
       <div class="row align-center">
         <div class="small-12 columns">
           <h1 class="section-title special-event__title"><?php echo the_field('inner_section_title'); ?></h1>
-          <h2 class="section-subtitle special-event__title"><?php echo the_field('inner_section_subtitle'); ?></h1>
+          <h2 class="section-subtitle special-event__title"><?php echo the_field('inner_section_subtitle'); ?></h2>
         </div>
       </div>
       <div class="row align-spaced small-collapse large-uncollapse">

@@ -6,38 +6,63 @@
     padding-top: 4rem;
     flex: 1 0 33.3333%;
   }
+  .two-column  & {
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    @include breakpoint(medium) {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      flex: 1 0 100%;
+      padding-left: 2%;
+      padding-right: 2%;
+    }
+    @include breakpoint(large) {
+      padding-left: 3.333333333%;
+      padding-right: 3.333333333%;
+    }
+    p {
+      font-size: 1rem;
+      line-height: 1.5;
+      @include breakpoint(large) {
+        font-size: 1.125rem;
+        line-height: 1.6;
+      }
+    }
+  }
 }
 
 .widget-sidebar {
+  margin: 0 0 2rem 0;
+  .widget {
     margin: 0 0 2rem 0;
-    .widget {
-        margin: 0 0 2rem 0;
-        input[type="submit"] {
-            cursor: pointer;
-            background: $color__background-button;
-            border-radius: 1.5rem;
-            color: $white;
-            font-weight: 600;
-            min-width: 10rem;
-            padding: 0.5rem 2rem;
-            transition: all .15s ease;
-            border: 0;
+    input[type="submit"] {
+      cursor: pointer;
+      background: $color__background-button;
+      border-radius: 1.5rem;
+      color: $white;
+      font-weight: 600;
+      min-width: 10rem;
+      padding: 0.5rem 2rem;
+      transition: all .15s ease;
+      border: 0;
 
-            &:hover {
-              text-decoration: none;
-              background: darken($color__background-button, 10);
-            }
+      &:hover {
+        text-decoration: none;
+        background: darken($color__background-button, 10);
+      }
 
-            &:focus {
-              background: darken($color__background-button, 15);
-              outline: none;
-            }
-        }
-        ul {
-            list-style: none;
-            li.cat-item {
+      &:focus {
+        background: darken($color__background-button, 15);
+        outline: none;
+      }
+  }
+  ul {
+      list-style: none;
+      li.cat-item {
 
-            }
-        }
+      }
     }
+  }
 }
