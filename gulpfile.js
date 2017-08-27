@@ -45,10 +45,6 @@ gulp.task('scripts', function() {
 
 gulp.task('serve', function() {
 
-  browserSync.init({
-    proxy: "localhost:8000"
-  });
-
   gulp.watch(wpPath + 'sass/**/*.scss',  gulp.series('styles')).on('change', browserSync.reload);
   // gulp.watch(wpPath + 'js/scripts/*.js', gulp.series('scripts')).on('change', browserSync.reload);
   gulp.watch(wpPath + 'images/*.{svg,png,jpg,gif}',  gulp.series('images')).on('change', browserSync.reload);
