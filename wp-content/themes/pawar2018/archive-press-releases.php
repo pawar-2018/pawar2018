@@ -11,8 +11,12 @@
         <div class="press-release small-12 medium-11 large-11 small-order-2 medium-order-1 columns">
         <?php
 
+        $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
         $args = array(
-          'post_type' => 'press-releases'
+          'post_type' => 'press-releases',
+          'posts_per_page' => 5,
+          'paged' => $paged,
+          'order' => 'DESC'
         ) ?>
       <?php $loop = new WP_Query( $args ); ?>
       <?php while ($loop->have_posts() ) : $loop->the_post(); ?>
