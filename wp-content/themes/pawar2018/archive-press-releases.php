@@ -39,20 +39,13 @@
         <?php echo get_next_posts_link( 'See More', $loop->max_num_pages ); ?>
       </div>
     </div>
-    <aside class="sidebar" role="complementary">
+    <aside class="sidebar widget-sidebar" role="complementary">
       <div class="row align-center">
         <div class="small-12 medium-8 columns">
-          <p>
-          <strong>Contact: Tom Elliott</strong>
-          <br>
-          773-819-0503
-          <br>
-          <a href="mailto:media@pawar2018.com">media@pawar2018.com</a>
-          <br>
-          <a href="//www.pawar2018.com/wp-content/uploads/2017/05/Pawar-for-Governor-Media-Packet.pdf" target="_blank">Media Packet</a>
-          <br>
-          <a href="//goo.gl/forms/lktSWFnm0NvyqUR82" target="_blank">Media Signup</a>
-          </p>
+          <?php get_template_part( 'template-parts/widget', 'search-press-releases' ); ?>
+        </div>
+        <div class="small-12 medium-8 columns">
+          <?php get_template_part( 'template-parts/widget', 'press-contact' ); ?>
         </div>
       </div>
     </aside>
