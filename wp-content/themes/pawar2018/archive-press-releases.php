@@ -16,8 +16,7 @@
           'post_type' => 'press-releases',
           'posts_per_page' => 5,
           'paged' => $paged,
-          'order' => 'DESC'
-        ) ?>
+          'order' => 'DESC') ?>
       <?php $loop = new WP_Query( $args ); ?>
       <?php while ($loop->have_posts() ) : $loop->the_post(); ?>
           <h1 class="press-release__title section-title">
