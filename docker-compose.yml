@@ -17,12 +17,13 @@ services:
      depends_on:
        - db
      ports:
-       - "3000:80"
+       - "8000:80"
      restart: always
      environment:
        WORDPRESS_DB_HOST: db:3306
        WORDPRESS_DB_PASSWORD: wordpress
      volumes:
        - ./wp-content:/var/www/html/wp-content
+       - ./debug.ini:/usr/local/etc/php/conf.d/debug.ini
 volumes:
     db_data:

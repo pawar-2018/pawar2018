@@ -12,9 +12,7 @@
         <?php
 
         $args = array(
-          'post_type' => 'press-releases',
-          'tag_id' => 6,
-          'suppress_filters' => true
+          'post_type' => 'press-releases'
         ) ?>
       <?php $loop = new WP_Query( $args ); ?>
       <?php while ($loop->have_posts() ) : $loop->the_post(); ?>
