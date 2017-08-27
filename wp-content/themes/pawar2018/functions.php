@@ -224,7 +224,7 @@ function set_posts_per_page( $query ) {
     global $wp_the_query;
 
     if ( ( ! is_admin() ) && ( $query === $wp_the_query ) && ( $query->is_search() ) ) {
-        $query->set( 'posts_per_page', 3 );
+        $query->set( 'posts_per_page', 5 );
     }
     elseif ( ( ! is_admin() ) && ( $query === $wp_the_query ) && ( $query->is_archive() ) ) {
         $query->set( 'posts_per_page', 5 );
