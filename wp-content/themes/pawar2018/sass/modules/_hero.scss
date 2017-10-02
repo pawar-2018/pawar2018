@@ -20,7 +20,9 @@
   .row {
     justify-content: space-between;
     > * {
-      max-width: 58%;
+      @include breakpoint(medium) {
+        max-width: 58%;
+      }
       @include breakpoint(large) {
         max-width: 70%;
       }
@@ -54,7 +56,7 @@
   h1 {
     @include breakpoint(small only) {
       margin-top: 1.5rem;
-      margin-bottom: 2rem;
+      margin-bottom: .5rem;
       line-height: 1;
       font-size: 1.75rem;
       max-width: 13rem;
@@ -78,9 +80,10 @@
   h2 {
     font-family: $font__main;
     @include breakpoint(small only) {
-      margin-top: 1.5rem;
+      margin-top: 1rem;
       font-size: 1.25rem;
       color: $white;
+      font-weight: 600;
     }
     @include breakpoint(21rem) {
       margin-top: 2rem;
