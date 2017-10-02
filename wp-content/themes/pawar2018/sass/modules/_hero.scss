@@ -74,6 +74,7 @@
     }
     @include breakpoint(40rem) {
       max-width: 45rem;
+      margin-bottom: 1.5rem;
     }
   }
 
