@@ -1,25 +1,23 @@
 .hero {
   background-image: url("./assets/Pawar_01.jpg");
-  background-position: top center;
-  background-size: contain;
   background-repeat: no-repeat;
   background-color: #f7f7f7;
+  background-position: 68% 0;
   @include breakpoint(medium) {
     background-color: $primary-color;
-    background-size: cover; // todo: move to row? Look at new mocks
     height: 32.5rem;
+  }
+  @include breakpoint(large) {
+    background-position: top center;
+    background-size: cover; // todo: move to row? Look at new mocks
   }
   .row:first-child,
   .row:last-child {
     height: 40%;
   }
   .row {
-    justify-content: center;
-    @include breakpoint(medium) {
-      justify-content: space-between;
-    }
+    justify-content: space-between;
     > * {
-      @include breakpoint(medium) {
         max-width: 58%;
       }
       @include breakpoint(large) {
