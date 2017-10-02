@@ -21,9 +21,9 @@
     justify-content: space-between;
     > * {
       max-width: 58%;
-    }
-    @include breakpoint(large) {
-      max-width: 70%;
+      @include breakpoint(large) {
+        max-width: 70%;
+      }
     }
   }
 
