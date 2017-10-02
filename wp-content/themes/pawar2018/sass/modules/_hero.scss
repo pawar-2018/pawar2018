@@ -117,6 +117,7 @@
     }
     @include breakpoint(40rem) {
       margin-top: 1rem;
+      font-weight: 400;
     }
   }
   h3 {
