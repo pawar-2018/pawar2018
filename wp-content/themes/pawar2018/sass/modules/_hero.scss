@@ -12,7 +12,6 @@
   @include breakpoint(xlarge) {
     background-position: 0 0;
   }
-
   .row:first-child,
   .row:last-child {
     height: 40%;
@@ -21,7 +20,6 @@
   .row {
     justify-content: space-between;
     > * {
-      @include breakpoint(medium) {
         max-width: 58%;
       }
       @include breakpoint(large) {
