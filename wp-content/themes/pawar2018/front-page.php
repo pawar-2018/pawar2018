@@ -19,7 +19,7 @@ get_header(); ?>
         </div>
       </div>
       <div class="row align-middle">
-        <div class="small-11 large-7 columns">
+        <div class="small-7 columns">
           <h2><?php the_field('hero_subheadline'); ?></h2>
         </div>
       </div>
