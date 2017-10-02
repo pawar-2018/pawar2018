@@ -20,11 +20,10 @@
   .row {
     justify-content: space-between;
     > * {
-        max-width: 58%;
-      }
-      @include breakpoint(large) {
-        max-width: 70%;
-      }
+      max-width: 58%;
+    }
+    @include breakpoint(large) {
+      max-width: 70%;
     }
   }
 
