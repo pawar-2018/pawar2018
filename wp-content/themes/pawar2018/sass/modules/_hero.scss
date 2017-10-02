@@ -1,10 +1,16 @@
 .hero {
-  background-position: top right;
-  background-size: cover;
+  background-position: 68% 0;
   background-repeat: no-repeat;
   background-color: $primary-color;
   @include breakpoint(medium) {
     height: 32.5rem;
+  }
+  @include breakpoint(large) {
+    background-size: cover;
+    background-position: 50% 0;
+  }
+  @include breakpoint(xlarge) {
+    background-position: 0 0;
   }
 
   .row:first-child,
@@ -13,11 +19,7 @@
   }
 
   .row {
-    justify-content: center;
-    @include breakpoint(medium) {
-      justify-content: space-between;
-    }
-
+    justify-content: space-between;
     > * {
       @include breakpoint(medium) {
         max-width: 58%;
